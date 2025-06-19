@@ -1,0 +1,136 @@
+################################################################################
+# 📁 HIMKS FILE 11 – NUTRITION_ENGINE.txt                                      #
+################################################################################
+
+Purpose: Outlines the adaptive, modular, evidence-based nutrition management system for HIMKS Health & Fitness. Enables safe, effective, and personalized guidance for every user, integrating education, monitoring, risk control, and feedback loops.
+
+--------------------------------------------------------------------------------
+*** MICRO-INDEX ***
+--------------------------------------------------------------------------------
+
+CHUNK_SIZE : 950  
+OVERLAP    : 50  
+FILE_VER   : 2.8-B  
+
+ID   | TOPIC                                  | OFFSET | TOK_LEN  
+10   | NUTRITION PHILOSOPHY & GUIDING PRINCIPLES | 0   | 950  
+20   | ASSESSMENT, MONITORING & DATA INPUT     | 950   | 950  
+30   | PERSONALIZATION, ADAPTATION & RISK      | 1900  | 950  
+40   | EDUCATION, FEEDBACK & SYSTEM INTEGRATION| 2850  | 900  
+
+--------------------------------------------------------------------------------
+*** MAIN CONTENT CHUNKS ***
+--------------------------------------------------------------------------------
+
+#### 🔹 1100 | NUTRITION PHILOSOPHY & GUIDING PRINCIPLES
+
+The HIMKS Nutrition Engine is grounded in the belief that **nutrition is foundational to health, adaptation, and performance**. Nutrition support is accessible, personalized, safe, and culturally sensitive.
+
+- **Guiding Principles**:
+    - Whole food, minimally processed, balanced nutrition is promoted for all users (WHO, 2022).
+    - Nutrition supports not just body composition but recovery, cognition, immunity, and mental well-being.
+    - Education, not prescriptive diets: Focus on user empowerment and autonomy (Spronk et al., 2022).
+    - No “one-size-fits-all”: Plans respect age, sex, culture, ethics, health, phase, and personal goals.
+
+- **Evidence Base**:
+    - All nutrition guidance is based on global consensus, updated meta-analyses, and guidelines from WHO, ACSM, ISSN, and relevant authorities.
+    - Nutrition logic is reviewed annually and with every major guideline update.
+
+- **Safety First**:
+    - Red-flag triggers for eating disorders, rapid weight loss, food intolerances, allergies, or special populations (e.g., pregnancy, chronic illness).
+    - Encourages referral to registered dietitians/nutrition professionals as needed.
+
+#### 🔹 1110 | ASSESSMENT, MONITORING & DATA INPUT
+
+Robust assessment ensures all recommendations are **safe, appropriate, and user-centered**.
+
+- **Initial Assessment**:
+    - Medical and dietary history, allergies, intolerances, ethical/religious restrictions.
+    - Anthropometrics: height, weight, body comp (if available), age, sex.
+    - Lifestyle: work patterns, family eating, food access, cooking skills, budget.
+    - Current nutrition tracking (if user consents): macro/micronutrient intake, hydration, supplements.
+
+- **Ongoing Monitoring**:
+    - Simple daily/weekly check-ins on energy, appetite, digestion, sleep, recovery, mood.
+    - Optional detailed food diary/logging (with AI-driven feedback and no shaming).
+    - Periodic re-assessment at major phase changes or user request.
+
+- **Biofeedback Integration**:
+    - Sleep, HRV, energy, and training recovery data linked to adaptive nutrition prompts (e.g., higher carb intake after HIIT, extra fluids in heat).
+
+- **Data Privacy & Consent**:
+    - All nutrition data is user-controlled, encrypted, and never shared outside HIMKS without explicit permission.
+
+#### 🔹 1120 | PERSONALIZATION, ADAPTATION & RISK
+
+The Nutrition Engine **dynamically adapts all recommendations** in real time, based on the user's phase, profile, goals, and risks.
+
+- **Energy & Macro Distribution**:
+    - Baseline estimated using validated equations (Mifflin-St Jeor, Harris-Benedict, WHO).
+    - Macros (protein, carb, fat) are phase- and goal-matched: higher protein for strength/recovery, higher carbs for endurance/HIIT, moderate fat for hormonal health.
+    - Flexible for low-carb, plant-based, or cultural diets, with auto-adaptive guidance.
+
+- **Micronutrient Attention**:
+    - Highlights iron, vitamin D, calcium, B12, omega-3, magnesium, zinc—adapting to user group (e.g., women, vegans, older adults).
+    - Red-flag for common deficiencies and risk-based prompts for bloodwork (referral to MD/registered dietitian as needed).
+
+- **Hydration Logic**:
+    - Hydration targets based on weight, climate, exercise, and phase (Sawka, 2023).
+    - AI reminders for fluid intake, especially in high sweat/heat or illness.
+
+- **Special Populations**:
+    - Pregnancy, youth, elderly, chronic disease, athletes, and those with eating disorder risk receive tailored protocols or prompts for professional guidance.
+    - Allergy/intolerance database triggers recipe/substitution logic.
+
+- **Risk Controls**:
+    - Fast/unsafe weight change (>1%/week), recurring GI distress, or flagged disordered eating triggers a temporary pause and referral protocol.
+    - Manual override only with “risk acknowledgment” and education provided.
+
+#### 🔹 1130 | EDUCATION, FEEDBACK & SYSTEM INTEGRATION
+
+Continuous **education and feedback** ensure users build nutrition literacy and lifelong healthy habits.
+
+- **Just-in-Time Education**:
+    - Micro-lessons: “How to balance your plate,” “Smart snacking,” “Post-workout recovery nutrition.”
+    - Debunking myths, busting fads, encouraging critical thinking about diet trends.
+
+- **Behavioral Nudges**:
+    - Positive reinforcement for healthy choices, new habits, and compliance streaks.
+    - Identity-based and motivational messaging: “You fuel like an athlete,” “Small changes, big impact.”
+
+- **Personalized Feedback**:
+    - Automated, phase-relevant nudges: “Recovery week? Emphasize protein and hydration.”
+    - Recipe suggestions, shopping lists, meal prep guides (matched to dietary profile, budget, skill).
+
+- **System Integration**:
+    - Nutrition status/flags inform and are informed by Compliance_Engine, Recovery_Stack, Adaptive_Programmer, Session_Engine.
+    - Coaches can access user nutrition history and system recommendations for deeper personalization.
+
+- **User Autonomy**:
+    - All plans are editable, feedback is two-way, and users may opt out or customize any feature.
+    - Self-reporting is celebrated, not penalized; feedback is always supportive.
+
+- **Export & Professional Referral**:
+    - Users may export nutrition logs for allied health, or request referral to a registered dietitian.
+
+--------------------------------------------------------------------------------
+*** File 11 Summary ***
+--------------------------------------------------------------------------------
+
+- Modular, adaptive, user-first nutrition logic for health, performance, and safety
+- Full-spectrum support: assessment, monitoring, adaptation, education, and risk control
+- Evidence-based, phase- and population-tailored, with seamless system integration
+
+--------------------------------------------------------------------------------
+*** Key References ***
+--------------------------------------------------------------------------------
+
+- World Health Organization (2022). Healthy diet. [https://www.who.int/news-room/fact-sheets/detail/healthy-diet](https://www.who.int/news-room/fact-sheets/detail/healthy-diet)
+- Spronk, I., et al. (2022). Nutrition knowledge and dietary behavior. *Public Health Nutrition*, 25(3), 547–559. [https://doi.org/10.1017/S1368980021004003](https://doi.org/10.1017/S1368980021004003)
+- Sawka, M.N., et al. (2023). Hydration, Performance, and Safety. *British Journal of Sports Medicine*, 57(6), 345–353. [https://bjsm.bmj.com/content/57/6/345](https://bjsm.bmj.com/content/57/6/345)
+- Academy of Nutrition and Dietetics (2022). Nutrition Care Manual. [https://www.nutritioncaremanual.org/](https://www.nutritioncaremanual.org/)
+- American College of Sports Medicine (2022). ACSM’s Guidelines for Exercise Testing and Prescription (11th ed.). [https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription](https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription)
+
+################################################################################
+# END OF FILE 11 – NUTRITION_ENGINE.txt                                        #
+################################################################################

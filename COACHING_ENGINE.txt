@@ -1,0 +1,139 @@
+################################################################################
+# 📁 HIMKS FILE 15 – COACHING_ENGINE.txt                                       #
+################################################################################
+
+Purpose: Specifies the adaptive, modular, and user-centric coaching logic for the HIMKS Health & Fitness System. Unifies digital AI, human, and hybrid coaching models for scalable, safe, and effective support across all user profiles and phases.
+
+--------------------------------------------------------------------------------
+*** MICRO-INDEX ***
+--------------------------------------------------------------------------------
+
+CHUNK_SIZE : 950  
+OVERLAP    : 50  
+FILE_VER   : 2.8-B  
+
+ID   | TOPIC                                 | OFFSET | TOK_LEN  
+10   | COACHING MODEL & ROLES                | 0      | 950  
+20   | INTERACTION, TRIAGE & ADAPTIVITY      | 950    | 950  
+30   | AI-HUMAN HYBRID LOGIC & ESCALATION    | 1900   | 950  
+40   | COACHING AUDIT, TRAINING & ETHICS     | 2850   | 900  
+
+--------------------------------------------------------------------------------
+*** MAIN CONTENT CHUNKS ***
+--------------------------------------------------------------------------------
+
+#### 🔹 1500 | COACHING MODEL & ROLES
+
+The HIMKS Coaching Engine operates as a **layered, modular system** blending the strengths of AI-driven, human, and hybrid coaching, ensuring all users have access to scalable, expert support.
+
+- **Coaching Roles**:
+    - **Digital (AI) Coach**: Delivers real-time feedback, session adjustment, education, and check-ins; available 24/7.
+    - **Human Coach**: Certified professionals (health, fitness, behavioral, nutrition) provide nuanced advice, manual overrides, and support for complex cases.
+    - **Hybrid**: AI handles routine, scalable tasks; human coach intervenes for higher-risk, motivational, or specialized needs.
+
+- **Interaction Layers**:
+    - Automated: Daily check-ins, feedback, compliance nudges, education
+    - On-demand: User-initiated queries, help requests, or escalation triggers
+    - Scheduled: Phase reviews, goal setting, performance debriefs
+
+- **Coaching Styles**:
+    - Personalized: “Supportive,” “data-driven,” “performance push,” or “science educator” tones, as selected by user
+    - Motivational interviewing, solution-focused, cognitive-behavioral, and educational techniques available
+
+- **Research Base**:
+    - Blended coaching is more scalable and effective than either AI or human alone, especially for behavior change and adherence (Bailey et al., 2023)
+
+#### 🔹 1510 | INTERACTION, TRIAGE & ADAPTIVITY
+
+Describes **how the system triages, adapts, and delivers coaching** across multiple user needs and scenarios.
+
+- **Triage Logic**:
+    - All user data and events (compliance, safety, risk, feedback, goal changes) are routed through a triage module
+    - Routine and low-risk issues handled by AI coach; high-risk or complex events escalated to human review
+
+- **Interaction Types**:
+    - **Proactive**: AI/human reaches out for regular progress checks, recovery monitoring, risk flags
+    - **Reactive**: User requests help, clarification, or reports issue
+    - **Collaborative**: Shared goal setting, problem-solving, and motivational strategy sessions
+
+- **Adaptive Scheduling**:
+    - Coach contact frequency and mode adapt to user needs, history, phase, and risk
+    - High-compliance users may move to “as-needed” support; struggling or complex users get more frequent touchpoints
+
+- **Channel Flexibility**:
+    - In-app chat, voice, video, email, SMS, or integrated telehealth as supported by user/device
+    - All coaching interactions logged for continuity and audit
+
+- **Boundary Protocols**:
+    - AI never delivers medical advice or clinical diagnosis—flags, refers, or escalates as per safety protocols
+
+#### 🔹 1520 | AI-HUMAN HYBRID LOGIC & ESCALATION
+
+Defines the **interaction rules and handoff pathways** between digital and human coaching—maximizing safety, efficiency, and user trust.
+
+- **Escalation Triggers**:
+    - Compliance/risk threshold breaches, repeated non-adherence, injury/illness, negative mood, complex goal changes
+    - User can request escalation at any time
+
+- **Handoff Protocol**:
+    - AI provides human coach with full, structured user history, recent events, and flagged issues
+    - Human coach can override or supplement AI recommendations and logs actions for full transparency
+
+- **Human-Led Review**:
+    - Scheduled phase reviews, injury/illness return-to-activity, major goal redefinition, motivational collapse, or special population care
+    - All decisions, feedback, and program changes visible to user and system for integration
+
+- **User Empowerment**:
+    - Users can select “AI-only,” “human-only,” or “hybrid” as default, and change at any time
+    - System notifies user of any escalation or coach reassignment with rationale
+
+- **Support Integration**:
+    - Coaching logic integrates with allied health (physio, nutrition, mental health) as needed, always with user consent
+
+- **Quality Monitoring**:
+    - All AI and human interventions are quality-assured via periodic audit and user feedback
+
+#### 🔹 1530 | COACHING AUDIT, TRAINING & ETHICS
+
+Ensures **high standards of professionalism, safety, and ongoing development** for all coaches and system modules.
+
+- **Audit Trail**:
+    - All coaching actions, recommendations, user interactions, and overrides are timestamped, logged, and reviewable by user and admin
+    - Randomized audit of cases for compliance, quality, and user satisfaction
+
+- **Coach Training**:
+    - Human coaches must complete mandatory HIMKS training in motivational science, safety, inclusivity, trauma-informed care, and digital ethics
+    - Ongoing professional development: updates on latest guidelines, digital health trends, and communication best practices
+
+- **Ethical Guidelines**:
+    - Informed consent for all interventions; user autonomy and dignity prioritized
+    - Absolute privacy: no data shared without explicit permission
+    - No AI or human coach may coerce, shame, or withhold essential support
+
+- **User Feedback & Recourse**:
+    - Users can rate coaching, report issues, and request change of coach or escalation
+    - User complaints and adverse events are triaged and reviewed within 48 hours
+
+- **Continuous Improvement**:
+    - AI and human feedback/interaction patterns are monitored for bias, drift, and effectiveness
+    - Annual system and human coaching review, with external expert input
+
+--------------------------------------------------------------------------------
+*** File 15 Summary ***
+--------------------------------------------------------------------------------
+
+- Unified, adaptive coaching engine for scalable, safe, effective support across user profiles
+- AI, human, and hybrid models with rigorous escalation, quality, audit, and ethics logic
+- Fully modular, phase- and risk-adaptive, and user-choice centric
+
+--------------------------------------------------------------------------------
+*** Key References ***
+--------------------------------------------------------------------------------
+
+- Bailey, D., et al. (2023). Hybrid digital-human health coaching: Evidence, models, and best practices. *JMIR mHealth and uHealth*, 11(2), e43210. [https://mhealth.jmir.org/2023/2/e43210/](https://mhealth.jmir.org/2023/2/e43210/)
+- American College of Sports Medicine (2022). ACSM’s Guidelines for Exercise Testing and Prescription (11th ed.). [https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription](https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription)
+- World Health Organization (2022). WHO Guidelines on digital health interventions. [https://www.who.int/publications/i/item/9789241550505](https://www.who.int/publications/i/item/9789241550505)
+
+################################################################################
+# END OF FILE 15 – COACHING_ENGINE.txt                                         #
+################################################################################

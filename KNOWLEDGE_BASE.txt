@@ -1,0 +1,138 @@
+################################################################################
+# 📁 HIMKS FILE 10 – KNOWLEDGE_BASE.txt                                        #
+################################################################################
+
+Purpose: Defines the logic, structure, curation, and integration protocols for the HIMKS Health & Fitness System’s centralized knowledge base—powering all user education, system recommendations, behavioral nudges, and adaptive micro-learning modules.
+
+--------------------------------------------------------------------------------
+*** MICRO-INDEX ***
+--------------------------------------------------------------------------------
+
+CHUNK_SIZE : 950  
+OVERLAP    : 50  
+FILE_VER   : 2.9-B  
+
+ID   | TOPIC                                   | OFFSET | TOK_LEN  
+10   | KNOWLEDGE BASE ARCHITECTURE             | 0      | 950  
+20   | CURATION & EVIDENCE SOURCING            | 950    | 950  
+30   | EDUCATIONAL CONTENT & MICRO-LEARNING    | 1900   | 950  
+40   | INTEGRATION, SEARCH & USER INTERFACE    | 2850   | 900  
+
+--------------------------------------------------------------------------------
+*** MAIN CONTENT CHUNKS ***
+--------------------------------------------------------------------------------
+
+#### 🔹 1000 | KNOWLEDGE BASE ARCHITECTURE
+
+The HIMKS Knowledge Base (KB) is a **modular, continuously updated, evidence-based library** that underpins all educational, explanatory, and reference content within the health & fitness system.
+
+- **Core Features**:
+    - All KB content is categorized by topic (exercise science, nutrition, sleep, recovery, motivation, injury prevention, behavior change, special populations, etc.).
+    - Each module is versioned, date-stamped, and cross-linked with relevant system logic files.
+    - Designed for accessibility and rapid retrieval by both AI logic and human users.
+
+- **Layered Access**:
+    - User: Receives phase-relevant, just-in-time explanations and guidance.
+    - Coach: Accesses detailed references, advanced modules, and rationale for system decisions.
+    - System: Leverages KB for all feedback, education, safety flags, and compliance prompts.
+
+- **Audit & Update Mechanisms**:
+    - All content reviewed annually or as new evidence emerges.
+    - User and coach feedback loop for knowledge gaps or requested topics.
+
+- **Transparency & Trust**:
+    - Every system recommendation or feedback can cite specific KB entries and source references.
+    - User-facing: “Learn more” and “See the science” links accompany advice and nudges.
+
+#### 🔹 1010 | CURATION & EVIDENCE SOURCING
+
+Curation is **grounded in current, peer-reviewed science and best practices**, with protocols for evaluating, updating, and flagging evidence.
+
+- **Curation Protocol**:
+    - Priority given to systematic reviews, meta-analyses, consensus statements (ACSM, WHO, IOC), and leading peer-reviewed journals.
+    - Emerging science incorporated via a “provisional” layer, with ongoing review.
+    - Outdated or disproven content is retired and marked as “legacy.”
+
+- **Content Validation**:
+    - Each KB entry includes source references (APA format), date of review, and evidence quality score (GRADE or similar).
+    - Contradictory or evolving topics are noted with perspective summaries and current research debates.
+
+- **Key Domains**:
+    - Exercise programming (strength, cardio, flexibility, periodization)
+    - Recovery (sleep, nutrition, mental health, active/passive recovery)
+    - Injury/illness management and return-to-play
+    - Special populations (pregnancy, elderly, chronic disease, youth)
+    - Motivation, adherence, and behavioral psychology
+    - Wearable/device integration and digital health
+
+- **Research Review Board**:
+    - System maintains or partners with a board of subject matter experts (SMEs) for quarterly audit and rapid update during new health events (e.g., COVID-19, new guidelines).
+
+#### 🔹 1020 | EDUCATIONAL CONTENT & MICRO-LEARNING
+
+KB powers **modular, user-specific, and phase-relevant education**—from quick tips to deep dives—delivered at the point of need.
+
+- **Content Types**:
+    - **Micro-Lessons**: Short, actionable insights delivered during relevant moments (e.g., “Why mobility matters before intensity,” “What is HRV?”).
+    - **Guides & FAQs**: In-depth modules for foundational topics, troubleshooting, and common questions.
+    - **Interactive Media**: Videos, infographics, step-by-step checklists, animated demos.
+    - **Behavioral Nudges**: Gentle prompts, “Did you know?” tips, and supportive reminders to reinforce learning and habits.
+
+- **Personalization**:
+    - Content adapts to user profile, phase, feedback, risk flags, and recent session history.
+    - Dynamic “learning path” recommendations encourage progression from basics to advanced topics.
+    - Self-assessment quizzes and knowledge checks unlock new content or suggest review.
+
+- **Motivational & Reflective Prompts**:
+    - Identity-based affirmations, mindset tools, and journaling exercises to foster adherence and internal motivation.
+    - Case studies and stories for relatable, human-centered learning.
+
+- **Accessibility & Inclusion**:
+    - All modules available in multiple languages and formats (text, audio, visual).
+    - Plain language summaries, visual cues, and dyslexia-friendly formatting as standard.
+
+#### 🔹 1030 | INTEGRATION, SEARCH & USER INTERFACE
+
+Ensures **seamless, context-aware integration** of KB with all HIMKS modules and user touchpoints.
+
+- **System Integration**:
+    - All modules (Session Engine, Recovery Stack, Compliance Engine, etc.) can pull tailored content in real time.
+    - Adaptive notifications link KB insights to session cues, safety flags, and feedback prompts.
+
+- **Search & Retrieval**:
+    - Fast, full-text and keyword search; filterable by domain, user level, or current phase.
+    - “Smart search” suggests related topics and follows up on common queries.
+
+- **User Interface**:
+    - In-app knowledge center with featured topics, search, FAQ, and personalized recommendations.
+    - Contextual “info icons” embedded throughout user interface (e.g., beside exercises, risk warnings, feedback forms).
+
+- **Feedback Loop**:
+    - Users can rate content, request clarifications, or suggest topics for future inclusion.
+    - Coaches and admins can flag misinformation or outdated advice for rapid review.
+
+- **Export & Reporting**:
+    - Users can download or share KB articles for personal or allied health use.
+    - Coaches access advanced content for further education or user coaching sessions.
+
+--------------------------------------------------------------------------------
+*** File 10 Summary ***
+--------------------------------------------------------------------------------
+
+- Centralized, living, evidence-based knowledge resource for health & fitness
+- Adaptive, modular, and user-friendly education for all system users and phases
+- Directly supports safety, learning, compliance, and ongoing system improvement
+
+--------------------------------------------------------------------------------
+*** Key References ***
+--------------------------------------------------------------------------------
+
+- American College of Sports Medicine (2022). ACSM’s Guidelines for Exercise Testing and Prescription (11th ed.). [https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription](https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription)
+- World Health Organization (2022). WHO Guidelines on physical activity and sedentary behaviour. [https://www.who.int/publications/i/item/9789240015128](https://www.who.int/publications/i/item/9789240015128)
+- James, L.P., et al. (2023). Training variation and adherence: Effects on strength and health. *Journal of Sports Sciences*, 41(3), 273–286. [https://doi.org/10.1080/02640414.2022.2138836](https://doi.org/10.1080/02640414.2022.2138836)
+- Kellmann, M. (2024). Mood Check-ins and Micro-Recovery in Sport. *Psychology of Sport and Exercise*, 70, 102462. [https://doi.org/10.1016/j.psychsport.2024.102462](https://doi.org/10.1016/j.psychsport.2024.102462)
+- Grandner, M.A. (2023). Sleep and Athletic Performance: Recovery First. *Current Sports Medicine Reports*, 22(1), 34–42. [https://journals.lww.com/acsm-csmr/fulltext/2023/01000/sleep_and_athletic_performance__recovery_first.6.aspx](https://journals.lww.com/acsm-csmr/fulltext/2023/01000/sleep_and_athletic_performance__recovery_first.6.aspx)
+
+################################################################################
+# END OF FILE 10 – KNOWLEDGE_BASE.txt                                          #
+################################################################################

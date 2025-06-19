@@ -1,0 +1,137 @@
+################################################################################
+# 📁 HIMKS FILE 07 – USER_PROFILE.txt                                          #
+################################################################################
+
+Purpose: Outlines the HIMKS Health & Fitness System’s advanced user profiling logic. This includes initial assessment, ongoing data capture, personalization, risk stratification, contextual adaptation, and secure data governance—enabling hyper-personalized, safe, and effective program delivery.
+
+--------------------------------------------------------------------------------
+*** MICRO-INDEX ***
+--------------------------------------------------------------------------------
+
+CHUNK_SIZE : 950  
+OVERLAP    : 50  
+FILE_VER   : 2.7-B  
+
+ID   | TOPIC                                 | OFFSET | TOK_LEN  
+10   | INITIAL USER ASSESSMENT               | 0      | 950  
+20   | PROFILE DATA DOMAINS & LIFECYCLE      | 950    | 950  
+30   | RISK STRATIFICATION & SPECIAL POPULATIONS | 1900 | 950  
+40   | PRIVACY, CONSENT & DATA GOVERNANCE    | 2850   | 900  
+
+--------------------------------------------------------------------------------
+*** MAIN CONTENT CHUNKS ***
+--------------------------------------------------------------------------------
+
+#### 🔹 700 | INITIAL USER ASSESSMENT
+
+Every HIMKS user journey begins with a **comprehensive intake and baseline assessment** to ensure programs are safe, relevant, and personalized from the outset.
+
+- **Assessment Domains**:
+    - **Demographics**: Age, biological sex, occupation, contact details (as permitted by privacy policy).
+    - **Medical History**: Chronic diseases, musculoskeletal injuries, medication, allergies, surgery, family history (ACSM, 2022).
+    - **Current Health Status**: Vital signs, basic anthropometrics (height, weight, BMI, body comp if available).
+    - **Lifestyle**: Sleep patterns, stress level, occupation activity level, nutrition habits, tobacco/alcohol use.
+    - **Physical Fitness**: Baseline movement screen, flexibility, cardiovascular fitness, muscular strength/endurance, balance.
+    - **Psychological Readiness**: Motivation, goals, prior training experience, attitude toward exercise, perceived barriers (Kellmann, 2024).
+    - **Technology Use**: Wearables, smartphone/desktop preference, data-sharing comfort.
+
+- **Risk Screening**:
+    - Follows established pre-participation screening protocols (PAR-Q+, ACSM, 2022).
+    - Flags for physician clearance, contraindications, or adaptive programming.
+
+- **Goal Clarification**:
+    - Short- and long-term goal capture: health, weight, performance, lifestyle, mental well-being, rehab.
+    - User ranks importance and perceived achievability.
+
+#### 🔹 710 | PROFILE DATA DOMAINS & LIFECYCLE
+
+Describes the **structure, evolution, and utilization of user data** in the system—supporting real-time adaptivity and precision programming.
+
+- **Profile Layers**:
+    - **Static**: Baseline data—demographics, medical history, major injury.
+    - **Dynamic**: Ongoing metrics—adherence, performance, recovery, mood, feedback, incident reports.
+
+- **Lifecycle Events**:
+    - Intake → periodic re-assessment (every 1–6 months, or after key milestones/injuries) → continuous daily/weekly updates.
+
+- **Key Dynamic Metrics**:
+    - Sleep, HRV, resting heart rate, pain, hydration, session RPE, mood, compliance, dietary feedback, wearable metrics.
+    - Event flags: missed sessions, phase changes, manual overrides, health events.
+
+- **Data Use Cases**:
+    - Drive adaptive programming, safety overrides, compliance scoring, and personalized feedback.
+    - Enable detailed reporting for users, coaches, and allied health professionals.
+
+- **User Engagement**:
+    - Users prompted to update dynamic fields regularly; high friction minimized.
+    - System uses micro-interactions and reminders to keep data current and meaningful.
+
+#### 🔹 720 | RISK STRATIFICATION & SPECIAL POPULATIONS
+
+System incorporates **risk stratification logic and tailored support for diverse populations** to maximize safety and equity.
+
+- **Stratification Algorithm**:
+    - Combines initial risk assessment, ongoing data, and event history to classify user as:
+        1. Low risk (no chronic conditions, <45y, no symptoms)
+        2. Moderate risk (chronic but stable, >45y, risk factors present)
+        3. High risk (unstable chronic disease, symptoms, high falls risk, pregnancy, or injury)
+    - Program restrictions and safety overrides scale accordingly (ACSM, 2022; Grandner, 2023).
+
+- **Special Populations Supported**:
+    - Older adults, youth/adolescents, pregnancy/postpartum, diabetes, hypertension, cardiac, orthopedic, neurological, mental health, obesity, athletes, and those returning from injury/illness.
+
+- **Adaptive Programming**:
+    - Each flag triggers module-specific protocols (e.g., lower starting load, referral to live coach, additional education).
+
+- **Automated Alerts**:
+    - Red-flag events (syncope, chest pain, severe pain, new symptoms) trigger emergency response and physician notification protocols.
+
+- **Manual Review**:
+    - Users or coaches may request manual profile update or additional assessment at any time.
+
+#### 🔹 730 | PRIVACY, CONSENT & DATA GOVERNANCE
+
+All HIMKS profiling is conducted with the **highest standards of privacy, informed consent, and ethical data management**, in full compliance with global health data guidelines.
+
+- **Consent Protocols**:
+    - Explicit, informed user consent for every data domain.
+    - Clear explanation of data uses, sharing, retention, and user rights.
+
+- **Data Security**:
+    - All personal and health data encrypted in transit and at rest.
+    - Strict access controls, audit logs, and optional anonymization for research.
+
+- **User Control**:
+    - Users can view, edit, download, or delete their profile at any time.
+    - Sharing to coaches or external health professionals is opt-in only.
+
+- **Transparency & Compliance**:
+    - All logic regarding risk, program adaptation, and overrides visible to user.
+    - Compliance with GDPR, HIPAA, and relevant local standards.
+
+- **Data Use for Research**:
+    - Aggregate, de-identified data may be used to improve system with user opt-in only.
+    - No individual health data shared externally without explicit written permission.
+
+- **Education**:
+    - Users receive ongoing education on digital health privacy and safe data practices.
+
+--------------------------------------------------------------------------------
+*** File 07 Summary ***
+--------------------------------------------------------------------------------
+
+- Advanced, modular, health-focused user profiling and risk logic
+- Integrates assessment, risk stratification, adaptation, privacy, and compliance
+- Lays foundation for safe, effective, and personalized health & fitness programs
+
+--------------------------------------------------------------------------------
+*** Key References ***
+--------------------------------------------------------------------------------
+
+- American College of Sports Medicine (2022). ACSM’s Guidelines for Exercise Testing and Prescription (11th ed.). [https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription](https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription)
+- Grandner, M.A. (2023). Sleep and Athletic Performance: Recovery First. *Current Sports Medicine Reports*, 22(1), 34–42. [https://journals.lww.com/acsm-csmr/fulltext/2023/01000/sleep_and_athletic_performance__recovery_first.6.aspx](https://journals.lww.com/acsm-csmr/fulltext/2023/01000/sleep_and_athletic_performance__recovery_first.6.aspx)
+- Kellmann, M. (2024). Mood Check-ins and Micro-Recovery in Sport. *Psychology of Sport and Exercise*, 70, 102462. [https://doi.org/10.1016/j.psychsport.2024.102462](https://doi.org/10.1016/j.psychsport.2024.102462)
+
+################################################################################
+# END OF FILE 07 – USER_PROFILE.txt                                            #
+################################################################################

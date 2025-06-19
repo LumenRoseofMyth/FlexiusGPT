@@ -1,0 +1,128 @@
+################################################################################
+# 📁 HIMKS FILE 18 – ACCESSIBILITY_ENGINE.txt                                  #
+################################################################################
+
+Purpose: Details the logic, protocols, standards, and adaptive features that ensure every aspect of the HIMKS Health & Fitness System is accessible, inclusive, and empowering for users of all abilities, backgrounds, and circumstances.
+
+--------------------------------------------------------------------------------
+*** MICRO-INDEX ***
+--------------------------------------------------------------------------------
+
+CHUNK_SIZE : 950  
+OVERLAP    : 50  
+FILE_VER   : 1.0-B  
+
+ID   | TOPIC                                 | OFFSET | TOK_LEN  
+10   | ACCESSIBILITY PHILOSOPHY & FRAMEWORK  | 0      | 950  
+20   | MULTI-MODALITY & UNIVERSAL DESIGN     | 950    | 950  
+30   | LANGUAGE, LITERACY & INCLUSION        | 1900   | 950  
+40   | MONITORING, FEEDBACK & CONTINUOUS IMPROVEMENT | 2850 | 900  
+
+--------------------------------------------------------------------------------
+*** MAIN CONTENT CHUNKS ***
+--------------------------------------------------------------------------------
+
+#### 🔹 1800 | ACCESSIBILITY PHILOSOPHY & FRAMEWORK
+
+The HIMKS Accessibility Engine is built on the principle that **fitness, health, and digital empowerment are universal rights** (WHO, 2022).
+
+- **Core Philosophy**:
+    - Accessibility is foundational: “no one left behind.”
+    - Proactive design for users with disabilities, chronic health conditions, low literacy, or language barriers.
+    - Universal usability and enjoyment, not just compliance.
+
+- **Legal and Ethical Frameworks**:
+    - Adheres to WCAG 2.2 (Web Content Accessibility Guidelines), ADA, EN 301 549, Section 508, and local/global digital health regulations.
+    - Co-designed and audited with people of lived experience of disability and neurodiversity.
+
+- **Scope**:
+    - Covers all digital interfaces, communication, educational content, physical activity protocols, and device integrations.
+
+- **Transparency & User Empowerment**:
+    - Accessibility features, rationale, and support always visible and modifiable by the user.
+    - Commitment to transparency, user education, and recourse.
+
+#### 🔹 1810 | MULTI-MODALITY & UNIVERSAL DESIGN
+
+Outlines the **multi-modal and universal design principles** that enable full participation for all users.
+
+- **Interface Design**:
+    - Responsive design: mobile, tablet, desktop, screen readers, voice assistants.
+    - High-contrast themes, scalable font sizes, dyslexia-friendly fonts, simple layouts.
+    - Keyboard and switch navigation, large touch targets, “skip to main content” feature.
+
+- **Alternative Formats**:
+    - All content available as text, audio, and visual (captions/subtitles on all videos, alt text for all images).
+    - Interactive elements (quizzes, forms) accessible via screen reader and keyboard.
+    - Sensory-friendly design: no flashing, low-sensory options, sound/motion reduction toggles.
+
+- **Physical Accessibility**:
+    - All recommended exercise protocols include seated/chair, standing, and lying modifications.
+    - Adaptive movement guides for wheelchair users, prosthetic users, or people with chronic pain.
+    - Activity modules avoid exclusionary language and provide options for any ability level.
+
+#### 🔹 1820 | LANGUAGE, LITERACY & INCLUSION
+
+Ensures **full accessibility across languages, literacy levels, and cultural backgrounds**.
+
+- **Language Access**:
+    - All modules, education, and UI in multiple languages (with community feedback for clarity).
+    - On-demand machine and human translation options.
+    - Real-time captioning for live events, chat, and support.
+
+- **Literacy Adaptation**:
+    - Plain language summaries, visual cues, step-by-step pictograms for instructions.
+    - Glossaries and “define this” buttons for medical/technical terms.
+    - Option for narrated guidance and audio explanations.
+
+- **Cultural & Contextual Inclusion**:
+    - Culturally respectful imagery, attire, and dietary/nutrition guidance.
+    - Sensitive to religious, gender, and social norms—customizable by user.
+
+- **Cognitive & Neurodiversity**:
+    - Visual schedules, task checklists, focus aids for users with ADHD, ASD, or learning disabilities.
+    - Customizable pace, color-coding, and interface layout.
+    - Calm mode and distraction reduction options.
+
+#### 🔹 1830 | MONITORING, FEEDBACK & CONTINUOUS IMPROVEMENT
+
+Describes **monitoring, user feedback, and improvement cycles** to maintain and expand accessibility.
+
+- **Accessibility Audits**:
+    - Automated and manual accessibility testing quarterly.
+    - Community beta testers with disabilities/neurodiversity for all new features.
+    - Rapid response to flagged accessibility barriers.
+
+- **User Feedback & Recourse**:
+    - “Report accessibility issue” available on every page and feature.
+    - All feedback triaged within 48 hours; critical access issues prioritized.
+    - Option for live human support (text, audio, video, language interpreter).
+
+- **Continuous Learning**:
+    - User education on available accessibility features.
+    - Staff and coach training on accessibility, inclusion, and bias reduction.
+    - Ongoing consultation with accessibility SMEs and advocacy organizations.
+
+- **Transparency & Accountability**:
+    - Public accessibility roadmap, annual impact report, and open call for user collaboration.
+    - All resolved and unresolved accessibility issues logged and viewable by users.
+
+--------------------------------------------------------------------------------
+*** File 18 Summary ***
+--------------------------------------------------------------------------------
+
+- Modular, universal accessibility logic for all HIMKS health & fitness modules
+- Research-driven, user-informed, and continuously improved for all users and contexts
+- Direct integration with compliance, content, coaching, and safety engines
+
+--------------------------------------------------------------------------------
+*** Key References ***
+--------------------------------------------------------------------------------
+
+- World Health Organization (2022). Global report on health equity for persons with disabilities. [https://www.who.int/publications/i/item/9789240063600](https://www.who.int/publications/i/item/9789240063600)
+- Web Content Accessibility Guidelines (WCAG) 2.2 (2023). [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/)
+- American College of Sports Medicine (2022). ACSM’s Guidelines for Exercise Testing and Prescription (11th ed.). [https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription](https://www.acsm.org/read-research/books/acsm-s-guidelines-for-exercise-testing-and-prescription)
+
+################################################################################
+# END OF FILE 18 – ACCESSIBILITY_ENGINE.txt                                    #
+################################################################################

@@ -1,0 +1,127 @@
+################################################################################
+# 📁 HIMKS FILE 17 – GOAL_SETTING_ENGINE.txt                                   #
+################################################################################
+
+Purpose: Provides comprehensive, adaptive, and evidence-based logic for setting, tracking, revising, and celebrating user goals across all domains of the HIMKS Health & Fitness System. Supports behavior change, self-efficacy, and long-term progress for every user.
+
+--------------------------------------------------------------------------------
+*** MICRO-INDEX ***
+--------------------------------------------------------------------------------
+
+CHUNK_SIZE : 950  
+OVERLAP    : 50  
+FILE_VER   : 1.0-B  
+
+ID   | TOPIC                                 | OFFSET | TOK_LEN  
+10   | GOAL SCIENCE & DESIGN PRINCIPLES      | 0      | 950  
+20   | GOAL SETTING, TRACKING & REVIEW       | 950    | 950  
+30   | ADAPTATION, REVISION & BARRIERS       | 1900   | 950  
+40   | CELEBRATION, FEEDBACK & SYSTEM LINK   | 2850   | 900  
+
+--------------------------------------------------------------------------------
+*** MAIN CONTENT CHUNKS ***
+--------------------------------------------------------------------------------
+
+#### 🔹 1700 | GOAL SCIENCE & DESIGN PRINCIPLES
+
+The HIMKS Goal Setting Engine is grounded in **behavioral science, self-determination theory, and positive psychology** (Ryan & Deci, 2023; Swann et al., 2023).
+
+- **Principles**:
+    - User-driven: goals must reflect personal values, context, and identity, not just system prompts.
+    - Clarity: every goal is specific, measurable, attainable, relevant, and time-bound (SMART), with built-in flexibility.
+    - Dual focus: combines outcome (weight, distance, strength) and process (attendance, effort, sleep) goals.
+    - Positive framing: emphasizes growth, mastery, and “becoming” rather than “fixing” or “avoiding.”
+    - Phased approach: supports macro (long-term), meso (block), and micro (daily/weekly) goal structures.
+
+- **Motivational Roots**:
+    - Identity-based goal cues (“I am someone who…”).
+    - Encourages self-reflection and ownership at each step.
+    - System scaffolds autonomy, competence, and relatedness.
+
+#### 🔹 1710 | GOAL SETTING, TRACKING & REVIEW
+
+Describes the **full logic for setting, recording, tracking, and reviewing goals** for every user and context.
+
+- **Goal Creation**:
+    - Guided interview: clarifies motivation, readiness, barriers, context, and support needs.
+    - User selects focus: physical (strength, endurance), health (BP, A1c), recovery, nutrition, mental, or lifestyle domains.
+    - Templates and “create your own” options; coach or peer review available.
+    - Privacy and sharing controls at every step.
+
+- **Goal Recording**:
+    - All goals are timestamped, versioned, and tagged by type and phase.
+    - Linked to relevant modules (Session, Nutrition, Recovery, etc.) for seamless tracking.
+
+- **Goal Tracking**:
+    - Daily/weekly check-ins: progress markers, streaks, and micro-goal completion.
+    - Dashboard visualization: traffic lights, progress bars, badges for milestone completion.
+    - Adaptive reminders: nudges for missed check-ins, encouragement for consistency, “reset” prompts if off-track.
+
+- **Review Frequency**:
+    - Micro: end of each week/session
+    - Meso: every phase or major life change
+    - Macro: quarterly or at user’s discretion
+
+#### 🔹 1720 | ADAPTATION, REVISION & BARRIERS
+
+Ensures **dynamic goal adaptation** and barrier troubleshooting as part of the core HIMKS logic.
+
+- **Adaptive Goal Logic**:
+    - System suggests edits or new goals if progress plateaus, user feedback flags, or context changes.
+    - Users can edit, pause, or replace goals at any time; changes logged with rationale and date.
+    - Coach or peer support available for stuck or discouraged users.
+
+- **Barriers & Solutions**:
+    - Prompts for weekly reflection: “What got in your way?” “How did you adapt?”
+    - System detects common barriers (illness, injury, stress, life change) and recommends micro-goals or alternative focus areas.
+    - Library of barrier-busting tips and peer stories (“What worked for others in your situation?”).
+
+- **Risk Flags**:
+    - Persistent non-progress or repeated drops in motivation triggers system/coach review.
+    - Escalation to mental health, medical, or motivational resources as appropriate.
+
+- **User Empowerment**:
+    - All changes must be user-approved; no forced re-goaling.
+    - Goal history exportable for coaching, clinical, or personal review.
+
+#### 🔹 1730 | CELEBRATION, FEEDBACK & SYSTEM LINK
+
+Describes **how progress is recognized and system logic adapts to goals**.
+
+- **Celebration & Recognition**:
+    - Badges, certificates, and personal bests celebrated with positive feedback (never shame for missed goals).
+    - Option to share wins with community, coach, or privately journal.
+    - Seasonal or phase-based “achievement review” with prompts to reflect and look ahead.
+
+- **Feedback & Education**:
+    - Real-time feedback for progress (“3 weeks in a row!”) and “micro-win” messaging (“You moved today—success!”).
+    - Links to micro-lessons: “How to set great goals,” “Mindset matters,” “Progress over perfection.”
+
+- **System Integration**:
+    - Goals directly inform compliance, session, nutrition, feedback, and recovery engines.
+    - Adaptive programming shifts focus when user goals or progress markers change.
+    - Coach dashboard highlights goal status, barriers, and user reflections.
+
+- **Continuous Learning**:
+    - Periodic user surveys and AI review of goal success rates for logic improvement.
+    - Quarterly SME (Subject Matter Expert) review of goal templates, evidence, and best practices.
+
+--------------------------------------------------------------------------------
+*** File 17 Summary ***
+--------------------------------------------------------------------------------
+
+- Modular, adaptive, user-driven goal logic for all health & fitness domains
+- Research-based, transparent, and deeply integrated with all HIMKS system modules
+- Dynamic adaptation, recognition, and education to support lasting change
+
+--------------------------------------------------------------------------------
+*** Key References ***
+--------------------------------------------------------------------------------
+
+- Ryan, R.M., & Deci, E.L. (2023). Self-determination theory: Basic psychological needs in motivation, development, and wellness (2nd ed.). *Guilford Press*. [https://psycnet.apa.org/record/2023-09394-000](https://psycnet.apa.org/record/2023-09394-000)
+- Swann, C., et al. (2023). Setting and achieving goals in sport and health. *International Review of Sport and Exercise Psychology*, 16(1), 75–100. [https://doi.org/10.1080/1750984X.2022.2135529](https://doi.org/10.1080/1750984X.2022.2135529)
+- Locke, E.A., & Latham, G.P. (2019). Building a practically useful theory of goal setting and task motivation. *American Psychologist*, 57(9), 705–717. [https://doi.org/10.1037/0003-066X.57.9.705](https://doi.org/10.1037/0003-066X.57.9.705)
+
+################################################################################
+# END OF FILE 17 – GOAL_SETTING_ENGINE.txt                                     #
+################################################################################
