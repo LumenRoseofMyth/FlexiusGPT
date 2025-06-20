@@ -11,6 +11,7 @@ jobs:
           cache: "pip"
       - run: |
           pip install fastapi uvicorn pydantic
+          export PYTHONPATH=$PWD
           python scripts/export_openapi.py > openapi.json
       - uses: actions/upload-artifact@v4
         with:
