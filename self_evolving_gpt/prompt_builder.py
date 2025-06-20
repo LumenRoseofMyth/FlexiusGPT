@@ -13,6 +13,15 @@ class PromptBuilder:
         )
         return [{"role": "user", "content": message}]
 
+    def build_planner_prompt(self, goal: str, context: str) -> list[dict]:
+        prompt = (
+            f"{self.system_msg}\n\n"
+            f"User Goal:\n{goal.strip()}\n\n"
+            f"Project Context:\n\"\"\"\n{context.strip()}\n\"\"\"\n\n"
+            f"Break down the goal into a step-by-step technical plan. Use bullet points. No code yet."
+        )
+        return [{"role": "user", "content": prompt}]
+
     def build_pr_author_prompt(self, summary_list: list[str]) -> list[dict]:
         joined = "\n- ".join([""] + summary_list)
         prompt = (
