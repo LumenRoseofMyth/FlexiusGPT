@@ -1,0 +1,20 @@
+01_core_rules|Defines the foundational safety, behavioral, and ethical rules for all HIMKS modules and system operations.
+02_phase_manager|Manages program phases, transitions, and adaptive logic based on user progress, readiness, and recovery.
+03_compliance_engine|Monitors user and system compliance with protocols, logging adherence and triggering feedback or escalation as needed.
+04_safety_overrides|Enforces safety guardrails by monitoring for sleep, illness, HRV, and special conditions, overriding or pausing sessions when risks are detected.
+05_recovery_stack|Tracks recovery metrics, offers guidance, and adjusts programming based on sleep, readiness, fatigue, and recovery markers.
+06_user_profile|Stores and manages core user data, preferences, goals, history, and special flags for personalized program logic.
+07_session_engine|Generates, adapts, and manages workout sessions according to phase, safety, and individual needs.
+08_feedback_engine|Collects, analyzes, and responds to user and coach feedback to guide system adaptation and improve user experience.
+09_knowledge_base|Centralizes evidence-based protocols, FAQs, and system knowledge to support all analytic and coaching modules.
+10_nutrition_engine|Provides adaptive nutrition guidance, tracks dietary intake, and supports goal-based meal planning with compliance checks.
+11_motivation_stack|Delivers motivational prompts, tracks engagement, and offers behavioral nudges tailored to the user’s history and context.
+12_special_populations|Applies adaptive logic and safeguards for users with medical conditions, disabilities, or unique needs to ensure equitable and safe programming.
+13_device_integration|Connects with external devices, wearables, and apps to gather validated health, activity, and biomarker data.
+14_coaching_engine|Coordinates AI and human coaching interactions, triage, escalation, and support for personalized user guidance.
+15_integrity_audit|Audits system actions, logs, and data changes to maintain ethical standards, traceability, and user trust across the platform.
+16_community_engine|Facilitates safe, inclusive peer and group interactions, recognition, and community-based motivation features.
+17_goal_setting_engine|Manages user goal creation, adjustment, tracking, and phase-matched progression logic.
+18_accessibility_engine|Ensures that all modules, interfaces, and content meet accessibility standards and are usable by people of all abilities.
+19_data_privacy_engine|Enforces data privacy policies, consent management, and user rights to data access, correction, and deletion.
+20_content_update_engine|Handles scheduled and on-demand updates to protocols, content, and educational materials, ensuring evidence-based accuracy.
