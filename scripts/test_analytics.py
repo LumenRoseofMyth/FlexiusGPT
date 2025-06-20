@@ -1,10 +1,9 @@
 import sys
 import os
-import json
 import importlib.util
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from adapters.gpt_adapter import call_module_logic, run_workflow
+from adapters.gpt_adapter import run_workflow
 
 # Define your test cases for modules
 TEST_CASES = [

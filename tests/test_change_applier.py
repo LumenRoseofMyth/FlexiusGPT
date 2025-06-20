@@ -1,6 +1,5 @@
 from self_evolving_gpt.repo_manager import RepoManager
 from self_evolving_gpt.change_applier import ChangeApplier
-import tempfile
 
 
 def test_apply_patch(tmp_path):

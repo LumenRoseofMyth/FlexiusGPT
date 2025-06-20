@@ -1,5 +1,5 @@
 from self_evolving_gpt.repo_manager import RepoManager
-import tempfile, os, hashlib
+import hashlib
 
 
 def test_read_write_md5_roundtrip(tmp_path):

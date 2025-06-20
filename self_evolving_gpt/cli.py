@@ -1,5 +1,4 @@
 import argparse, sys
-from pathlib import Path
 from self_evolving_gpt.evolution_orchestrator import EvolutionOrchestrator
 
 

@@ -3,7 +3,6 @@ import os
 import json
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from kernel.base_kernel import load_schemas
 
 def call_module_logic(module_id, action, user_log=None):
     module_path = os.path.join(os.path.dirname(__file__), '..', 'modules', module_id)
