@@ -8,6 +8,7 @@ from self_evolving_gpt.agents import (
     FileMutationAgent,
     PatchSummarizationAgent,
     PRAuthorAgent,
+    AutoDocAgent,
 )
 from self_evolving_gpt.prompt_builder import PromptBuilder
 from self_evolving_gpt.codex_client import CodexClient
@@ -33,6 +34,7 @@ class EvolutionOrchestrator:
 
         self.memory_store = VectorStore()
         self.memory_agent = MemoryAgent(self.memory_store)
+        self.autodoc_agent = AutoDocAgent(repo_root)
 
         self.test_runner = TestRunner(repo_root)
 
@@ -40,6 +42,8 @@ class EvolutionOrchestrator:
     def evolve(self, user_goal: str, target_file: str) -> Dict[str, str]:
         """Run full evolution cycle and return results."""
         mem = self.memory_agent.run(user_goal, "")
+        if user_goal.lower().startswith("generate docs"):
+            return {"summary": self.autodoc_agent.run("generate docs", "")}
         # 1) Plan
         plan = self.planner.run(user_goal, f"Repo scope: {target_file}")
 

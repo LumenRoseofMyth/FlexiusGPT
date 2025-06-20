@@ -6,6 +6,7 @@ from .agents import (
     FileMutationAgent,
     PlannerAgent,
     MemoryAgent,
+    AutoDocAgent,
 )
 from .codex_client import CodexClient
 from .orchestrator import ExecutionOrchestrator
@@ -25,6 +26,7 @@ __all__ = [
     "FileMutationAgent",
     "PlannerAgent",
     "MemoryAgent",
+    "AutoDocAgent",
     "VectorStore",
     "ExecutionOrchestrator",
     "EvolutionOrchestrator",
