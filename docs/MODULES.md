@@ -365,3 +365,6 @@
 
 ---
 
+## Utilities
+
+- self_evolving_gpt: Core scaffolding for Self-Evolving GPT system.

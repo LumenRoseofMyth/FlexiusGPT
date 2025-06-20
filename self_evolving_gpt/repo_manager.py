@@ -1,0 +1,2 @@
+class RepoManager:
+    pass
