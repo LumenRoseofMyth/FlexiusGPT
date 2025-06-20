@@ -1,4 +1,4 @@
-# Trigger PR diff – PromptBuilder v3 (no logic change)
+# Trigger PR diff – PromptBuilder v4 (adds diff summary)
 
 class PromptBuilder:
     def __init__(self):
@@ -10,5 +10,20 @@ class PromptBuilder:
             f"Task:\n{task.strip()}\n\n"
             f"Context:\n\"\"\"\n{context.strip()}\n\"\"\"\n\n"
             f"Respond with only the complete updated code block."
+        )
+        return [{"role": "user", "content": message}]
+
+    def build_diff_summary_prompt(self, diff: str, filename: str = "") -> list[dict]:
+        """Construct a prompt directing Codex to summarize a code diff."""
+
+        header = f"Filename: {filename}\n\n" if filename else ""
+        message = (
+            f"{self.system_msg}\n\n"
+            "Task:\nSummarize the functional changes in the following code diff "
+            "for inclusion in a GitHub pull request description.\n\n"
+            f"{header}"
+            f"Diff:\n\"\"\"\n{diff.strip()}\n\"\"\"\n\n"
+            "Respond with a concise summary of what was changed, focusing on "
+            "functionality and structure."
         )
         return [{"role": "user", "content": message}]
