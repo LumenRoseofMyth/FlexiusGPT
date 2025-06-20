@@ -14,6 +14,7 @@ from .evolution_orchestrator import EvolutionOrchestrator
 from .runner import AgentRunner
 from .repo_manager import RepoManager
 from .change_applier import ChangeApplier
+from .tools.tool_registry import ToolRegistry
 from .cli import main as evolve_cli  # noqa: F401
 from .memory.vector_store import VectorStore
 
@@ -33,4 +34,5 @@ __all__ = [
     "AgentRunner",
     "RepoManager",
     "ChangeApplier",
+    "ToolRegistry",
 ]
