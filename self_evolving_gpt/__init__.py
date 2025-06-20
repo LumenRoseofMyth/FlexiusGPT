@@ -12,6 +12,7 @@ from .evolution_orchestrator import EvolutionOrchestrator
 from .runner import AgentRunner
 from .repo_manager import RepoManager
 from .change_applier import ChangeApplier
+from .cli import main as evolve_cli
 
 __all__ = [
     "GPTClient",

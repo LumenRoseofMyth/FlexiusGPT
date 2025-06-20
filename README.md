@@ -1,3 +1,5 @@
+![CI](https://github.com/${{github.repository}}/actions/workflows/ci.yml/badge.svg)
+![Self-Evolve](https://github.com/${{github.repository}}/actions/workflows/self_evolve.yml/badge.svg)
 # 🔧 Project Setup
 
 ```bash
