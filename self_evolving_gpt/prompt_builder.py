@@ -1,4 +1,4 @@
-# Trigger PR diff – PromptBuilder base version 3
+# Trigger PR diff – PromptBuilder v3 (no logic change)
 
 class PromptBuilder:
     def __init__(self):
