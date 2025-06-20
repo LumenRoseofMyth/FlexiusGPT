@@ -9,6 +9,8 @@ from .agents import (
 from .codex_client import CodexClient
 from .orchestrator import ExecutionOrchestrator
 from .runner import AgentRunner
+from .repo_manager import RepoManager
+from .change_applier import ChangeApplier
 
 __all__ = [
     "GPTClient",
@@ -20,4 +22,6 @@ __all__ = [
     "PlannerAgent",
     "ExecutionOrchestrator",
     "AgentRunner",
+    "RepoManager",
+    "ChangeApplier",
 ]
