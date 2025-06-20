@@ -1,0 +1,8 @@
+# Ignore logs folder and all its contents
+logs/
+
+# Ignore any log files in the root or subfolders
+*.log
+
+# Ignore environment files with secrets
+.env
