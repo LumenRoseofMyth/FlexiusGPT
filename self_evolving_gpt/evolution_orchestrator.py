@@ -41,7 +41,7 @@ class EvolutionOrchestrator:
     # ----- public API -----
     def evolve(self, user_goal: str, target_file: str) -> Dict[str, str]:
         """Run full evolution cycle and return results."""
-        mem = self.memory_agent.run(user_goal, "")
+        _ = self.memory_agent.run(user_goal, "")  # noqa: F841  (stored for side-effects)
         if user_goal.lower().startswith("generate docs"):
             return {"summary": self.autodoc_agent.run("generate docs", "")}
         # 1) Plan

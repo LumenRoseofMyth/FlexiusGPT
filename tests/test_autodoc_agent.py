@@ -1,5 +1,4 @@
 from self_evolving_gpt.agents.autodoc_agent import AutoDocAgent
-import tempfile, shutil, os
 
 
 def test_autodoc_generates_files(tmp_path, monkeypatch):
