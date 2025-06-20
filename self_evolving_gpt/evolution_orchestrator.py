@@ -12,6 +12,8 @@ from self_evolving_gpt.agents import (
 from self_evolving_gpt.prompt_builder import PromptBuilder
 from self_evolving_gpt.codex_client import CodexClient
 from self_evolving_gpt.testing.test_runner import TestRunner
+from self_evolving_gpt.memory.vector_store import VectorStore
+from self_evolving_gpt.agents.memory_agent import MemoryAgent
 
 
 class EvolutionOrchestrator:
@@ -29,11 +31,15 @@ class EvolutionOrchestrator:
         self.summarizer = PatchSummarizationAgent(self.builder, codex)
         self.pr_author = PRAuthorAgent(self.builder, codex)
 
+        self.memory_store = VectorStore()
+        self.memory_agent = MemoryAgent(self.memory_store)
+
         self.test_runner = TestRunner(repo_root)
 
     # ----- public API -----
     def evolve(self, user_goal: str, target_file: str) -> Dict[str, str]:
         """Run full evolution cycle and return results."""
+        mem = self.memory_agent.run(user_goal, "")
         # 1) Plan
         plan = self.planner.run(user_goal, f"Repo scope: {target_file}")
 
