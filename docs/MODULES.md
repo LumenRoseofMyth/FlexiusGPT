@@ -368,3 +368,9 @@
 ## Utilities
 
 - self_evolving_gpt: Core scaffolding for Self-Evolving GPT system.
+
+## Agents
+
+- PatchSummarizationAgent
+- PRAuthorAgent
+- ExecutionOrchestrator
