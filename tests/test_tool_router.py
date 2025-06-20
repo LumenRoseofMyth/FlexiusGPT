@@ -1,5 +1,5 @@
 from self_evolving_gpt.agents.dispatcher_agent import DispatcherAgent
-from self_evolving_gpt.tools import tool_registry  # ensures decorators run
+from self_evolving_gpt.tools import tool_registry  # noqa: F401 - import triggers tool registration
 
 
 def test_add_tool():
