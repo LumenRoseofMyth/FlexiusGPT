@@ -1,3 +1,4 @@
+# Trigger PR diff – no functional change
 class PromptBuilder:
     def __init__(self):
         self.system_msg = "You are a repo-aware developer assistant."
