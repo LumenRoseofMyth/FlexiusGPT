@@ -8,6 +8,7 @@ from .agents import (
 )
 from .codex_client import CodexClient
 from .orchestrator import ExecutionOrchestrator
+from .evolution_orchestrator import EvolutionOrchestrator
 from .runner import AgentRunner
 from .repo_manager import RepoManager
 from .change_applier import ChangeApplier
@@ -21,6 +22,7 @@ __all__ = [
     "FileMutationAgent",
     "PlannerAgent",
     "ExecutionOrchestrator",
+    "EvolutionOrchestrator",
     "AgentRunner",
     "RepoManager",
     "ChangeApplier",
