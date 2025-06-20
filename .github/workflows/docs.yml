@@ -1,0 +1,26 @@
+name: Docs
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - run: |
+          pip install -r requirements.txt
+          python -m self_evolving_gpt.cli --goal "generate docs" --file dummy.py
+          echo "Docs built."
+
+      - name: Upload docs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: docs/
+
