@@ -13,6 +13,17 @@ class PromptBuilder:
         )
         return [{"role": "user", "content": message}]
 
+    def build_pr_author_prompt(self, summary_list: list[str]) -> list[dict]:
+        joined = "\n- ".join([""] + summary_list)
+        prompt = (
+            f"{self.system_msg}\n\n"
+            f"Write a concise GitHub PR title and a short description based on these changes:\n"
+            f"{joined}\n\n"
+            f"Format:\n"
+            f"Title: <title here>\n\nDescription: <description here>"
+        )
+        return [{"role": "user", "content": prompt}]
+
     def build_diff_summary_prompt(self, diff: str, filename: str = "") -> list[dict]:
         """Construct a prompt directing Codex to summarize a code diff."""
 
