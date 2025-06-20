@@ -374,3 +374,4 @@
 - PatchSummarizationAgent
 - PRAuthorAgent
 - ExecutionOrchestrator
+- FileMutationAgent: Applies task-based Codex-driven mutations to individual files.
