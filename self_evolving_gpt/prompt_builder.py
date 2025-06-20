@@ -47,3 +47,12 @@ class PromptBuilder:
             "functionality and structure."
         )
         return [{"role": "user", "content": message}]
+
+    def build_memory_prompt(self, task: str, memories: str) -> list[dict]:
+        prompt = (
+            f"{self.system_msg}\n\n"
+            f"Task:\n{task}\n\n"
+            f"Previous relevant context:\n\"\"\"\n{memories}\n\"\"\"\n\n"
+            f"Use these memories when answering."
+        )
+        return [{"role": "user", "content": prompt}]

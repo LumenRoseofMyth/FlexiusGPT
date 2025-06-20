@@ -5,6 +5,7 @@ from .agents import (
     PRAuthorAgent,
     FileMutationAgent,
     PlannerAgent,
+    MemoryAgent,
 )
 from .codex_client import CodexClient
 from .orchestrator import ExecutionOrchestrator
@@ -13,6 +14,7 @@ from .runner import AgentRunner
 from .repo_manager import RepoManager
 from .change_applier import ChangeApplier
 from .cli import main as evolve_cli  # noqa: F401
+from .memory.vector_store import VectorStore
 
 __all__ = [
     "GPTClient",
@@ -22,6 +24,8 @@ __all__ = [
     "PRAuthorAgent",
     "FileMutationAgent",
     "PlannerAgent",
+    "MemoryAgent",
+    "VectorStore",
     "ExecutionOrchestrator",
     "EvolutionOrchestrator",
     "AgentRunner",
