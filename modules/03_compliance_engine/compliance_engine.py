@@ -15,24 +15,35 @@ def load_schema():
             return yaml.safe_load('\n'.join(yaml_lines))
     return {}
 
-def check_user_compliance(user_log):
+def check_user_compliance(user_log: dict) -> tuple:
     """
-    Placeholder logic:
-    Checks if all required actions are present in user_log (dict).
+    Validates whether all required compliance events were completed.
+
+    Args:
+        user_log (dict): Dictionary with boolean keys:
+            - session_completed
+            - feedback_given
+            - nutrition_logged
+
+    Returns:
+        tuple: (bool, str)
+            - True if compliant, False otherwise
+            - Message indicating status or missing elements
     """
-    required_fields = ["session_completed", "feedback_given", "nutrition_logged"]
-    missing = [field for field in required_fields if not user_log.get(field)]
-    if missing:
+    required = ["session_completed", "feedback_given", "nutrition_logged"]
+    missing = [key for key in required if not user_log.get(key, False)]
+
+    if not missing:
+        return True, "All compliance actions present."
+    else:
         return False, f"Missing: {', '.join(missing)}"
-    return True, "All compliance actions present."
+
 
 if __name__ == "__main__":
-    # Example: test user log
+    # For local CLI testing
     test_log = {
         "session_completed": True,
         "feedback_given": False,
         "nutrition_logged": True
     }
-    compliant, message = check_user_compliance(test_log)
-    print("Compliant?" , compliant)
-    print("Details:" , message)
+    print(check_user_compliance(test_log))
