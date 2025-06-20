@@ -1,6 +1,7 @@
+# tests/test_agent_runner.py
+
 from self_evolving_gpt.runner import AgentRunner
 from self_evolving_gpt.agents import AgentBase
-
 
 class DummyAgent(AgentBase):
     def run(self, task, context):
@@ -8,7 +9,6 @@ class DummyAgent(AgentBase):
 
     def needs(self):
         return ["task", "context"]
-
 
 def test_agent_runner_executes_all():
     runner = AgentRunner([DummyAgent()])

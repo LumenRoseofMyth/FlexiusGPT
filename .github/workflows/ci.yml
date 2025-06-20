@@ -1,4 +1,4 @@
-name: FlexiusGPT CI
+name: CI
 
 on:
   push:
@@ -7,23 +7,33 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pyyaml watchdog
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install flake8 pytest coverage
 
-    - name: Run analytic tests
-      run: |
-        python scripts/test_analytics.py
+      - name: Lint
+        run: flake8 self_evolving_gpt tests
+
+      - name: Tests
+        run: |
+          coverage run -m pytest -q
+          coverage xml
+
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage
+          path: coverage.xml

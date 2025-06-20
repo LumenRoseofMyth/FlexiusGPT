@@ -1,6 +1,6 @@
-import inspect
-from self_evolving_gpt.agents import AgentBase
+# self_evolving_gpt/runner/agent_runner.py
 
+from self_evolving_gpt.agents import AgentBase
 
 class AgentRunner:
     """Discovers and executes agents that implement the AgentBase interface."""
