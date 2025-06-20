@@ -1,4 +1,5 @@
 # Trigger PR diff – PromptBuilder v4 (adds diff summary)
+import json
 
 class PromptBuilder:
     def __init__(self):
@@ -56,3 +57,7 @@ class PromptBuilder:
             f"Use these memories when answering."
         )
         return [{"role": "user", "content": prompt}]
+
+    def build_tool_call_prompt(self, tool_name: str, **kwargs) -> list[dict]:
+        payload = {"tool": tool_name, "args": kwargs}
+        return [{"role": "user", "content": json.dumps(payload)}]
