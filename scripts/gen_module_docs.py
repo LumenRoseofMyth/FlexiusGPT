@@ -1,6 +1,5 @@
 import os
 import sys
-import yaml
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from kernel.base_kernel import load_schemas
@@ -28,7 +27,7 @@ def main():
             f.write(f"**Compliance Tags:** {schema.get('compliance_tags')}\n\n")
             f.write(f"**Last Reviewed:** {schema.get('last_reviewed','N/A')}\n\n")
             f.write("---\n\n")
-    print(f"Documentation generated at docs/MODULES.md")
+    print("Documentation generated at docs/MODULES.md")
 
 if __name__ == "__main__":
     main()

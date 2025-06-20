@@ -3,7 +3,6 @@ from typing import Dict
 
 from self_evolving_gpt.repo_manager import RepoManager
 from self_evolving_gpt.change_applier import ChangeApplier
-from self_evolving_gpt.runner import AgentRunner
 from self_evolving_gpt.agents import (
     PlannerAgent,
     FileMutationAgent,

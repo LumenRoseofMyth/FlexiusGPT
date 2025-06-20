@@ -1,5 +1,3 @@
-import pytest
-
 from self_evolving_gpt.orchestrator import ExecutionOrchestrator
 
 

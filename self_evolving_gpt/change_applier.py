@@ -1,4 +1,3 @@
-import difflib
 from .repo_manager import RepoManager
 
 
