@@ -1,0 +1,51 @@
+name: Self-Evolve
+
+on:
+  workflow_dispatch:        # manual trigger
+  schedule:
+    - cron:  "0 2 * * *"    # 02:00 UTC nightly
+
+jobs:
+  evolve:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # allow bot commits
+      pull-requests: write
+
+    env:
+      PYTHONUNBUFFERED: 1
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run orchestrator
+        id: evolve
+        run: |
+          python -m self_evolving_gpt.cli --goal "Automated nightly improvement" --file "modules/03_compliance_engine/compliance_engine.py"
+
+      - name: Commit changes (if any)
+        run: |
+          if git diff --quiet; then
+            echo "No changes produced."
+          else
+            git config user.name  "flexius-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git checkout -b ai/evolve-$(date +%Y%m%d)
+            git add -A
+            git commit -m "chore: nightly self-evolve $(date -u +'%Y-%m-%d')"
+            git push -u origin HEAD
+            gh pr create --fill --title "AI: nightly evolve $(date -u +'%Y-%m-%d')" --body "Automated PR from EvolutionOrchestrator"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
