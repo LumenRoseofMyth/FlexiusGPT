@@ -1,6 +1,18 @@
 # Codex Upgrade Timestamp: 2025-06-20T04:09:43.835231Z
+"""Compliance Engine module (module_id: 03_compliance_engine)"""
+
+import logging
 import os
 import yaml
+
+MODULE_ID = "03_compliance_engine"
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+def log_module_use(module_id: str, action: str, result: str) -> None:
+    """Log module usage in a structured format."""
+    logger.info("module=%s action=%s result=%s", module_id, action, result)
 
 SCHEMA_FILE = os.path.join(os.path.dirname(__file__), "schema.md")
 
@@ -17,27 +29,26 @@ def load_schema():
     return {}
 
 def check_user_compliance(user_log: dict) -> tuple:
-    """
-    Validates whether all required compliance events were completed.
+    """Validate required compliance events and return status."""
 
-    Args:
-        user_log (dict): Dictionary with boolean keys:
-            - session_completed
-            - feedback_given
-            - nutrition_logged
+    if not isinstance(user_log, dict):
+        raise ValueError("user_log must be a dictionary of compliance flags")
 
-    Returns:
-        tuple: (bool, str)
-            - True if compliant, False otherwise
-            - Message indicating status or missing elements
-    """
     required = ["session_completed", "feedback_given", "nutrition_logged"]
     missing = [key for key in required if not user_log.get(key, False)]
 
     if not missing:
-        return True, "All compliance actions present."
+        result = (True, "All compliance actions present.")
     else:
-        return False, f"Missing: {', '.join(missing)}"
+        result = (False, f"Missing: {', '.join(missing)}")
+
+    log_module_use(MODULE_ID, "check_user_compliance", result[1])
+    return result
+
+
+module_map = {
+    "check_user_compliance": check_user_compliance,
+}
 
 
 if __name__ == "__main__":
