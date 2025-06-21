@@ -2,6 +2,8 @@
 """Feedback Engine module (module_id: 08_feedback_engine)"""
 
 import logging
+from datetime import datetime
+import statistics
 
 from modules.core_tools.feedback_types import MultiModalFeedback
 from modules.core.twin.digital_twin_engine import DigitalTwin
@@ -40,6 +42,24 @@ module_map = {
     "process_feedback": process_feedback,
     "init_digital_twin": init_digital_twin,
 }
+
+
+def _commit_sentiment(messages: list[str]) -> str:
+    """Very naive sentiment check on commit messages."""
+    pos = ["add", "improve", "fix", "refactor", "update"]
+    neg = ["revert", "bug", "fail", "issue", "broken"]
+    score = 0
+    for msg in messages:
+        low = msg.lower()
+        if any(w in low for w in pos):
+            score += 1
+        if any(w in low for w in neg):
+            score -= 1
+    if score > 0:
+        return "positive"
+    if score < 0:
+        return "negative"
+    return "neutral"
 
 def generate_coding_feedback(daily_metrics: list) -> list:
     """Generate coding-specific feedback from daily metrics."""
@@ -93,6 +113,20 @@ def generate_coding_feedback(daily_metrics: list) -> list:
                 feedback.append(
                     "😌 Balanced phase—consider some light tasks or mentoring others."
                 )
+            # END
+            # START CODE_ANALYTICS_SIMULATION_FEEDBACK
+            msgs = metric.get("data", {}).get("commit_messages", [])
+            if msgs:
+                sentiment = _commit_sentiment(msgs)
+                if sentiment == "positive":
+                    feedback.append("✨ Positive commit energy detected.")
+                elif sentiment == "negative":
+                    feedback.append("😟 Commit tone negative—take a short break.")
+                else:
+                    feedback.append("💬 Commit tone neutral.")
+
+            if digital_twin and digital_twin.simulate_fatigue_risk():
+                feedback.append("⚠️ Simulation: potential mental fatigue risk.")
             # END
         # END
     return feedback
