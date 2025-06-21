@@ -1,6 +1,9 @@
 import statistics
 from datetime import datetime
 
+# ⚠️ Manual Control Zone: External device or API integrations are optional
+# and user-managed. Activate them only if you accept associated privacy risk.
+
 
 class DigitalTwin:
     def __init__(self, user_profile):
