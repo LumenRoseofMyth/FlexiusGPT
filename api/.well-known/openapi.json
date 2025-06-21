@@ -5,83 +5,297 @@
     "description": "Internal API for HIMKS module analytics and workflows.",
     "version": "1.0.0"
   },
-  "servers": [
-    {
-      "url": "https://4aa5-130-105-158-110.ngrok-free.app",
-      "description": "Ngrok tunnel for Custom GPT"
-    }
-  ],
   "paths": {
     "/module": {
       "post": {
         "summary": "Api Call Module",
         "operationId": "api_call_module_module_post",
         "requestBody": {
-          "required": true,
           "content": {
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/ModuleRequest"
               }
             }
-          }
+          },
+          "required": true
         },
         "responses": {
           "200": {
             "description": "Successful Response",
             "content": {
               "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ModuleResponse"
+                  "$ref": "#/components/schemas/HTTPValidationError"
                 }
               }
             }
           }
-        }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/workflow": {
+      "post": {
+        "summary": "Api Run Workflow",
+        "operationId": "api_run_workflow_workflow_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/WorkflowRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
+      }
+    },
+    "/feedback": {
+      "post": {
+        "summary": "Api Feedback",
+        "operationId": "api_feedback_feedback_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "APIKeyHeader": []
+          }
+        ]
       }
     }
   },
   "components": {
     "schemas": {
-      "ModuleRequest": {
-        "type": "object",
+      "FeedbackRequest": {
         "properties": {
-          "module_name": {
-            "type": "string"
-          },
-          "input_dict": {
+          "feedback_data": {
+            "additionalProperties": true,
             "type": "object",
-            "additionalProperties": true
+            "title": "Feedback Data"
           },
-          "test_mode": {
-            "type": "boolean"
+          "user_profile": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "User Profile"
           },
-          "log_path": {
-            "type": "string"
+          "session_outcome": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Session Outcome"
           },
-          "override_clearance": {
-            "type": "boolean"
+          "context": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Context"
           }
         },
-        "required": ["module_name", "input_dict"]
-      },
-      "ModuleResponse": {
         "type": "object",
+        "required": [
+          "feedback_data"
+        ],
+        "title": "FeedbackRequest"
+      },
+      "HTTPValidationError": {
         "properties": {
-          "success": {
-            "type": "boolean"
-          },
-          "message": {
-            "type": "string"
-          },
-          "tags": {
-            "type": "array",
+          "detail": {
             "items": {
-              "type": "string"
-            }
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
           }
-        }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "ModuleRequest": {
+        "properties": {
+          "module_id": {
+            "type": "string",
+            "title": "Module Id"
+          },
+          "action": {
+            "type": "string",
+            "title": "Action"
+          },
+          "user_log": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "User Log"
+          }
+        },
+        "type": "object",
+        "required": [
+          "module_id",
+          "action"
+        ],
+        "title": "ModuleRequest"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "WorkflowRequest": {
+        "properties": {
+          "workflow": {
+            "type": "string",
+            "title": "Workflow"
+          },
+          "user_log": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "User Log"
+          }
+        },
+        "type": "object",
+        "required": [
+          "workflow"
+        ],
+        "title": "WorkflowRequest"
+      }
+    },
+    "securitySchemes": {
+      "APIKeyHeader": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-KEY"
       }
     }
-  }
+  },
+  "servers": [
+    {
+      "url": "https://4aa5-130-105-158-110.ngrok-free.app",
+      "description": "Ngrok tunnel for Custom GPT"
+    }
+  ]
 }
