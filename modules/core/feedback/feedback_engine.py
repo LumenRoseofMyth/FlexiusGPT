@@ -9,6 +9,7 @@ from modules.core_tools.feedback_types import MultiModalFeedback
 from modules.core.twin.digital_twin_engine import DigitalTwin
 from pathlib import Path
 import datetime
+from tools.forecast import forecast
 
 MODULE_ID = "08_feedback_engine"
 
@@ -174,3 +175,18 @@ def generate_digest_trend(daily_metrics: list) -> str:
     return "➖ PR count unchanged from previous day."
 
 module_map.update({"generate_digest_trend": generate_digest_trend})
+
+
+def generate_forecast_card(out_dir: str = "out") -> str:
+    """Write a simple weekly forecast card and return its contents."""
+    if digital_twin is None:
+        raise RuntimeError("Digital twin not initialized")
+    Path(out_dir).mkdir(exist_ok=True)
+    card_text = "## Weekly Forecast\n" + forecast(digital_twin.state)
+    path = Path(out_dir) / "forecast.md"
+    path.write_text(card_text)
+    log_module_use(MODULE_ID, "generate_forecast_card", "written")
+    return card_text
+
+
+module_map.update({"generate_forecast_card": generate_forecast_card})
