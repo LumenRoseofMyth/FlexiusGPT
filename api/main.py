@@ -24,6 +24,7 @@ def get_api_key(api_key_header: str = Security(api_key_header)):
 # === PATHS FOR MODULES ===
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from adapters.gpt_adapter import call_module_logic, run_workflow
+from modules.core.io.connector import get_active_connector_url
 
 # === FASTAPI APP ===
 app = FastAPI(
@@ -45,7 +46,9 @@ def log_api_call(endpoint, data, status):
     log_file = os.path.join(log_folder, f"api_access_{date_str}.log")
     try:
         with open(log_file, "a") as f:
-            log_entry = f"{datetime.datetime.now()} | {endpoint} | {data} | {status}\n"
+            log_entry = (
+                f"{datetime.datetime.now()} | {endpoint} | {data} | {status}\n"
+            )
             f.write(log_entry)
     except Exception as log_err:
         print(f"Failed to log API call: {log_err}")
@@ -59,6 +62,12 @@ class ModuleRequest(BaseModel):
 class WorkflowRequest(BaseModel):
     workflow: str
     user_log: Optional[Dict] = None
+
+class FeedbackRequest(BaseModel):
+    feedback_data: Dict
+    user_profile: Optional[Dict] = None
+    session_outcome: Optional[Dict] = None
+    context: Optional[Dict] = None
 
 # === ENDPOINTS ===
 @app.post("/module")
@@ -103,6 +112,26 @@ def api_run_workflow(
         log_api_call("/workflow", req.dict(), f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
+
+@app.post("/feedback")
+def api_feedback(
+    req: FeedbackRequest,
+    api_key: APIKey = Depends(get_api_key)
+):
+    try:
+        from modules.core.feedback.feedback_engine import process_feedback
+        nudge = process_feedback(
+            req.user_profile or {},
+            req.feedback_data,
+            req.session_outcome,
+            req.context,
+        )
+        log_api_call("/feedback", req.dict(), "OK")
+        return {"nudge": nudge}
+    except Exception as e:
+        log_api_call("/feedback", req.dict(), f"ERR: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 # === OPENAPI ENDPOINT FOR CUSTOM GPTs ===
 
 def custom_openapi():
@@ -114,10 +143,11 @@ def custom_openapi():
         description=app.description,
         routes=app.routes,
     )
+    server_url = get_active_connector_url() or "http://localhost:8000"
     openapi_schema["servers"] = [
         {
-            "url": " https://e1b7-130-105-158-110.ngrok-free.app",
-            "description": "Ngrok tunnel for Custom GPT"
+            "url": server_url,
+            "description": "Ngrok tunnel for Custom GPT",
         }
     ]
     app.openapi_schema = openapi_schema
