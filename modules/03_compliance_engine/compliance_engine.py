@@ -46,8 +46,21 @@ def check_user_compliance(user_log: dict) -> tuple:
     return result
 
 
+def record_coding_score(metric: dict, compliance: dict) -> None:
+    """Update compliance metrics with a coding score."""
+    # START UPGRADE_BLOCK_DUAL_COMPLIANCE
+    if metric["type"] == "coding":
+        score = min(100, (metric["metrics"].get("pull_requests", 0) * 10))
+        if hasattr(compliance, "add"):
+            compliance.add("coding_score", score)
+        else:
+            compliance["coding_score"] = score
+    # END
+
+
 module_map = {
     "check_user_compliance": check_user_compliance,
+    "record_coding_score": record_coding_score,
 }
 
 

@@ -40,3 +40,20 @@ module_map = {
     "process_feedback": process_feedback,
     "init_digital_twin": init_digital_twin,
 }
+
+def generate_coding_feedback(daily_metrics: list) -> list:
+    """Generate coding-specific feedback from daily metrics."""
+    feedback = []
+    for metric in daily_metrics:
+        # START UPGRADE_BLOCK_CODING_FEEDBACK
+        if metric["type"] == "coding":
+            if metric["metrics"].get("pull_requests", 0) > 2:
+                feedback.append("✅ Productive coding day! Keep reviewing your PRs.")
+            else:
+                feedback.append(
+                    "👀 Try to review or push at least 2 PRs a day to build consistency."
+                )
+        # END
+    return feedback
+
+module_map.update({"generate_coding_feedback": generate_coding_feedback})
