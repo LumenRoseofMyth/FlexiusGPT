@@ -1,0 +1,3 @@
+HIMKS Phase Manager - Version v2.6-B
+
+Responsible for controlling workflow phases.

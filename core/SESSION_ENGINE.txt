@@ -1,0 +1,3 @@
+HIMKS Session Engine - Version v2.6-B
+
+Manages and persists user sessions.
