@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "FlexiusGPT",
+  "name_for_model": "flexiusgpt",
+  "description_for_human": "Run module and workflow analysis.",
+  "description_for_model": "Use this action to execute module and workflow analysis based on HIMKS logic.",
+  "auth": {
+    "type": "api_key",
+    "api_key_header_name": "X-API-KEY"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://abcd1234.ngrok-free.app/openapi.json"
+  },
+  "logo_url": "https://abcd1234.ngrok-free.app/logo.png",
+  "contact_email": "admin@flexiusgpt.local",
+  "legal_info_url": "https://abcd1234.ngrok-free.app/legal"
+}

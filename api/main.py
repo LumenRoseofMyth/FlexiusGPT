@@ -3,6 +3,7 @@ import os
 import datetime
 from fastapi import FastAPI, HTTPException, Security, Depends
 from fastapi.security.api_key import APIKeyHeader, APIKey
+from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional, Dict
 
@@ -27,6 +28,10 @@ app = FastAPI(
     description="Internal API for HIMKS module analytics and workflows.",
     version="1.0.0"
 )
+
+# === MOUNT .WELL-KNOWN FOR CHATGPT ACTIONS ===
+well_known_path = os.path.join(os.path.dirname(__file__), ".well-known")
+app.mount("/.well-known", StaticFiles(directory=well_known_path), name="plugin-meta")
 
 # === AUDIT LOGGING ===
 def log_api_call(endpoint, data, status):
@@ -88,3 +93,13 @@ def api_run_workflow(
     except Exception as e:
         log_api_call("/workflow", req.dict(), f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
+
+# === OPENAPI ENDPOINT FOR CHATGPT ACTIONS ===
+@app.get("/openapi.json")
+def custom_openapi():
+    return app.openapi()
+
+# === BASIC HEALTH CHECK ===
+@app.get("/")
+def health_check():
+    return {"status": "FlexiusGPT is alive"}
