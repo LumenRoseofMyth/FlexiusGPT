@@ -19,8 +19,7 @@ api_key_header = APIKeyHeader(name=API_KEY_NAME, auto_error=False)
 def get_api_key(api_key_header: str = Security(api_key_header)):
     if api_key_header == API_KEY:
         return api_key_header
-    else:
-        raise HTTPException(status_code=401, detail="Invalid or missing API Key")
+    raise HTTPException(status_code=401, detail="Invalid or missing API Key")
 
 # === PATHS FOR MODULES ===
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
