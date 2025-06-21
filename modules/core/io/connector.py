@@ -3,6 +3,10 @@ import re
 from pathlib import Path
 import httpx
 
+# ⚠️ Manual Control Zone: Enabling connectors may open ngrok tunnels or
+# trigger webhooks. Manage privacy exposure by editing `connector_config.json`
+# or disabling related integrations.
+
 CONFIG_PATH = Path("connector_config.json")
 
 
