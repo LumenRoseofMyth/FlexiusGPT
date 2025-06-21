@@ -1,3 +1,10 @@
+import statistics
+from datetime import datetime
+
+# ⚠️ Manual Control Zone: External device or API integrations are optional
+# and user-managed. Activate them only if you accept associated privacy risk.
+
+
 class DigitalTwin:
     def __init__(self, user_profile):
         self.state = {
@@ -9,7 +16,8 @@ class DigitalTwin:
     def update(self, feedback, session_outcome, context, metric=None):
         """Update state with feedback, session data, and optional metrics."""
         # Continuously update state with new feedback, session data, and context
-        self.state['phys'].update(feedback.to_dict())
+        phys_fb = feedback.to_dict() if hasattr(feedback, "to_dict") else feedback.__dict__
+        self.state['phys'].update(phys_fb)
         self.state['psych']['mood'] = feedback.mood
         # Add more behavioral/context integration as needed
         if metric is not None:
@@ -44,7 +52,9 @@ class DigitalTwin:
             values = [m.get("lines_added", 0) for m in hist[-7:]]
             if values:
                 avg = sum(values) / len(values)
-                twin["volatility"] = (sum((v - avg) ** 2 for v in values) / len(values)) ** 0.5
+                twin["volatility"] = (
+                    sum((v - avg) ** 2 for v in values) / len(values)
+                ) ** 0.5
             # END
             # START SPEC004_CIRCADIAN
             hour = metric.get("hour")
@@ -66,6 +76,27 @@ class DigitalTwin:
                 twin["burnout_risk"] = "low"
             # END
 
+            # START CODE_ANALYTICS_SIMULATION
+            if metric.get("type") == "coding":
+                commits = metric["metrics"].get("pull_requests", 0)
+                twin.setdefault("daily_commit_history", []).append(commits)
+                twin["daily_commit_history"] = twin["daily_commit_history"][-7:]
+                if len(twin["daily_commit_history"]) > 1:
+                    twin["commit_volatility"] = statistics.stdev(
+                        twin["daily_commit_history"]
+                    )
+                else:
+                    twin["commit_volatility"] = 0.0
+
+                commit_times = metric.get("data", {}).get("commit_times", [])
+                if commit_times:
+                    hrs = [datetime.fromisoformat(t).hour for t in commit_times]
+                    avg_hr = sum(hrs) / len(hrs)
+                    twin.setdefault("commit_hours_history", []).append(avg_hr)
+                    twin["commit_hours_history"] = twin["commit_hours_history"][-7:]
+                    twin["circadian_rhythm_hour"] = sum(twin["commit_hours_history"])/len(twin["commit_hours_history"])
+            # END
+
     def risk_score(self):
         # Predict risk of injury/burnout based on composite state
         if self.state['phys'].get('fatigue', 0) > 8 or self.state['psych'].get('mood', 5) < 3:
@@ -76,3 +107,13 @@ class DigitalTwin:
         if self.risk_score() == "high":
             return "Recommend deload/rest week, mental health check-in, or motivational intervention."
         return "Continue adaptive progression."
+
+    def simulate_fatigue_risk(self) -> bool:
+        """Micro-simulate mental fatigue based on mood, fatigue, and volatility."""
+        twin = self.state.get("meta", {})
+        volatility = twin.get("commit_volatility", 0)
+        fatigue = self.state["phys"].get("fatigue", 0)
+        mood = self.state["psych"].get("mood", 5)
+        score = fatigue + volatility - mood
+        return score > 8
+
