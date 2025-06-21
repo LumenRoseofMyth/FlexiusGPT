@@ -30,7 +30,7 @@ Each HIMKS session begins with a **personalized, phase-matched initiation proces
 
 - **Session Types**:
     - Foundation, Progression, Peak, Recovery, Specialty, and Microcycle sessions as determined by PHASE_MANAGER.
-    - Automatically selected based on user profile, phase, compliance, and recovery data.
+    - Automatically selected based on user profile, phase, micro_state, compliance, and recovery data.
 
 - **Pre-Session Checklist**:
     - Mood/energy check-in (mood, soreness, motivation)

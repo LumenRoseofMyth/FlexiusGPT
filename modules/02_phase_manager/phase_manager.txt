@@ -68,6 +68,10 @@ Each phase contains its own **entry, progression, and exit logic** governed by u
         elif should_regress(user, compliance_trend, feedback):
             regress_phase()
 
+        from modules.core_tools.phase_microstep_engine import microstep_phase
+
+        user['micro_state'] = microstep_phase(user, phase, user.get('micro_state', 'ramp-up'))
+
 - **Specialty Phases**:
     - Activated for specific needs: rehab, travel, time constraints, new skill focus.
     - Can override main phases for up to 2 weeks, then auto-review.
