@@ -1,4 +1,5 @@
 import sys
+import importlib.util
 import os
 import json
 
@@ -24,34 +25,21 @@ def call_module_logic(module_id, action, user_log=None):
         print(f"Action '{action}' not found in {logic_file}")
 
 def run_workflow(workflow_name, user_log):
-    if workflow_name == "full_compliance_check":
-        modules_to_check = [
-            ("03_compliance_engine", "check_user_compliance"),
-            # Add more modules/actions here if desired, e.g.,
-            # ("07_session_engine", "analyze_session"),
-        ]
-        results = []
-        for module_id, action in modules_to_check:
-            module_path = os.path.join(os.path.dirname(__file__), '..', 'modules', module_id)
-            logic_file = os.path.join(module_path, f"{module_id.split('_',1)[1]}.py")
-            if not os.path.isfile(logic_file):
-                results.append((module_id, "No logic file"))
-                continue
-            import importlib.util
-            spec = importlib.util.spec_from_file_location("module_logic", logic_file)
-            module_logic = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(module_logic)
-            func = getattr(module_logic, action, None)
-            if func:
-                result = func(user_log)
-                results.append((module_id, result))
-            else:
-                results.append((module_id, f"Action '{action}' not found"))
-        print("Workflow results:")
-        for mod_id, res in results:
-            print(f"{mod_id}: {res}")
-    else:
+    workflow_path = os.path.join(os.path.dirname(__file__), '..', 'workflows', f"{workflow_name}.py")
+    if not os.path.isfile(workflow_path):
         print(f"Unknown workflow: {workflow_name}")
+        return
+
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("workflow_module", workflow_path)
+    workflow_module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(workflow_module)
+
+    if hasattr(workflow_module, "run"):
+        result = workflow_module.run(user_log)
+        print(f"Workflow '{workflow_name}' result: {result}")
+    else:
+        print(f"'run' function not found in workflow: {workflow_name}")
 
 if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "workflow":
