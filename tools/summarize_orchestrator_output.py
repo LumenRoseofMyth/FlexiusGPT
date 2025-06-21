@@ -19,10 +19,10 @@ if recs:
 else:
     summary.append("\n✅ No actionable recommendations at this time.")
 
-# TODOs or FIXMEs
+# Flags from scan results
 notes = report.get("scan", {}).get("notes", [])
 if notes:
-    summary.append("\n### ⚠️ TODOs / FIXMEs found:")
+    summary.append("\n### ⚠️ Comment flags found:")
     for note in notes[:10]:  # limit to first 10
         summary.append(f"- {note['file']} ({note['flag']})")
 

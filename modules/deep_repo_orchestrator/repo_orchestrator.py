@@ -18,7 +18,7 @@ def scan_repository(base_path="."):
                 with open(full_path, "r", encoding="utf-8", errors="ignore") as f:
                     content = f.read()
                     if "TODO" in content or "# FIXME" in content:
-                        findings["notes"].append({"file": full_path, "flag": "TODO or FIXME present"})
+                        findings["notes"].append({"file": full_path, "flag": "comment flag present"})
     return findings
 
 def call_internal_modules():
@@ -44,7 +44,7 @@ def generate_report():
 
     # Simple rule-based upgrade tip logic
     if len(scan["notes"]) > 0:
-        report["recommendations"].append("Resolve all TODO/FIXME in Python scripts.")
+        report["recommendations"].append("Resolve all flagged comments in Python scripts.")
     if any("deprecated" in mod.get("output", "") for mod in calls):
         report["recommendations"].append("Migrate legacy modules to HIMKS schema v2.9+.")
     return report
