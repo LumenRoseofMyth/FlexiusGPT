@@ -49,6 +49,9 @@ def generate_report():
         report["recommendations"].append("Migrate legacy modules to HIMKS schema v2.9+.")
     return report
 
+def repo_orchestrator():
+    return generate_report()
+
 if __name__ == "__main__":
     output = generate_report()
     print(json.dumps(output, indent=2))
