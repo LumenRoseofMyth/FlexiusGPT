@@ -4,6 +4,8 @@
 
 Purpose: Defines the logic, structure, safety protocols, and adaptive workflow for session planning, execution, and logging in the HIMKS Health & Fitness System. Optimized for personalization, phase relevance, compliance, feedback, and real-time safety integration.
 
+from modules.core_tools.safety_constants import get_guardrail
+
 --------------------------------------------------------------------------------
 *** MICRO-INDEX ***
 --------------------------------------------------------------------------------
@@ -41,7 +43,7 @@ Each HIMKS session begins with a **personalized, phase-matched initiation proces
     - Brief reminder of session’s key goals and how it supports overall progress
 
 - **Session Readiness Scoring**:
-    - Composite score from readiness factors; if below threshold, system auto-adjusts session (e.g., swaps high-intensity for restorative or mobility work)
+    - Composite score from readiness factors; if user['hrv'] < get_guardrail('hrv', user) or user['sleep'] < get_guardrail('sleep', user), system auto-adjusts session (e.g., swaps high-intensity for restorative or mobility work)
 
 - **Dynamic Warm-up Prescription**:
     - Personalized based on recent activity, reported issues, and planned session focus
@@ -77,7 +79,7 @@ Session execution is **dynamic, feedback-driven, and safety-prioritized**. Syste
 
 - **Intra-Session Feedback**:
     - Optional live tracking of heart rate, RPE, form feedback (via device/manual entry)
-    - Auto-pauses, skips, or intensity reduction if pain, dizziness, red-flag symptoms, or risk metrics detected
+    - Auto-pauses, skips, or intensity reduction if pain, dizziness, red-flag symptoms, or metrics like HRV or sleep fall below guardrails
 
 - **Auto-Adjustments**:
     - Repeats warm-up or recovery block if readiness is still low after initial set
