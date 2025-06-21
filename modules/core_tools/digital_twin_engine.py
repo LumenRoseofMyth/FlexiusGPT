@@ -22,6 +22,15 @@ class DigitalTwin:
                     "average_lines_added": metric["metrics"].get("lines_added", 0),
                 }
             # END
+            # START UPGRADE_BLOCK_WEEKLY_DELTA
+            if "coding_week_history" not in twin:
+                twin["coding_week_history"] = []
+
+            current_week_prs = metric["metrics"].get("pull_requests", 0)
+            twin["coding_week_history"].append(current_week_prs)
+            if len(twin["coding_week_history"]) > 2:
+                twin["coding_week_delta"] = twin["coding_week_history"][-1] - twin["coding_week_history"][-2]
+            # END
 
     def risk_score(self):
         # Predict risk of injury/burnout based on composite state

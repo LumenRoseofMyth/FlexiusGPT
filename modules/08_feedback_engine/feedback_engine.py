@@ -44,6 +44,9 @@ module_map = {
 def generate_coding_feedback(daily_metrics: list) -> list:
     """Generate coding-specific feedback from daily metrics."""
     feedback = []
+    twin = {}
+    if digital_twin is not None:
+        twin = digital_twin.state.get("meta", {})
     for metric in daily_metrics:
         # START UPGRADE_BLOCK_CODING_FEEDBACK
         if metric["type"] == "coding":
@@ -53,6 +56,15 @@ def generate_coding_feedback(daily_metrics: list) -> list:
                 feedback.append(
                     "👀 Try to review or push at least 2 PRs a day to build consistency."
                 )
+            # START UPGRADE_BLOCK_TREND_FEEDBACK
+            week_delta = twin.get("coding_week_delta", 0)
+            if week_delta > 1:
+                feedback.append("📈 Your coding productivity increased 2x this week. Great trend!")
+            elif week_delta < -1:
+                feedback.append("⚠️ Your coding activity dropped. Let's explore what affected your flow.")
+            else:
+                feedback.append("🧭 Consistent effort—stay steady and focused this week.")
+            # END
         # END
     return feedback
 
