@@ -1,11 +1,14 @@
 import sys
 import os
 import datetime
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Security, Depends
 from fastapi.security.api_key import APIKeyHeader, APIKey
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 from typing import Optional, Dict
+
+load_dotenv()
 
 # === API KEY SETUP ===
 API_KEY = os.environ.get("FLEXIUSGPT_API_KEY")
