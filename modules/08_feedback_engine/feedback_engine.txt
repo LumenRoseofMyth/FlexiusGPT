@@ -87,9 +87,20 @@ Outlines the **algorithmic logic for personalizing and optimizing feedback** for
     - Immediate for urgent or session-linked events; periodic for trends and progress reviews.
     - Avoids over-notification by batching or combining feedback when appropriate.
 
-- **Behavioral Adaptivity**:
-    - Feedback adapts in tone and content if disengagement or negative feedback is detected.
-    - System suggests micro-goals, motivational content, or support escalation as needed.
+ - **Behavioral Adaptivity**:
+     - Feedback adapts in tone and content if disengagement or negative feedback is detected.
+     - System suggests micro-goals, motivational content, or support escalation as needed.
+
+```python
+from modules.core_tools.feedback_types import MultiModalFeedback
+
+def process_feedback(data):
+    feedback = MultiModalFeedback(**data)
+    if feedback.is_critical():
+        trigger_override()
+    else:
+        store_feedback(feedback)
+```
 
 - **Research Basis**:
     - Personalized, adaptive, and multimodal feedback increases adherence, engagement, and user satisfaction (Gardner et al., 2020; James et al., 2023).
