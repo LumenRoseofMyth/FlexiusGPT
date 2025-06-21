@@ -30,3 +30,12 @@ Status: ✅ Finalized recovery logic for developer cycle
 Date: 2025-06-21
 Auditor: FlexiusGPT Codex
 Status: ✅
+
+# [SPEC003_UNIFICATION_AND_CONNECTOR]
+- All core modules unified under modules/core/
+- Introduced connector.py and config.json for ngrok integration
+- Added brain_router.py for dynamic query routing
+- Updated all codex templates for unified path model
+Date: 2025-06-21
+Auditor: FlexiusGPT
+Status: ✅

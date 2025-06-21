@@ -32,7 +32,7 @@ jobs:
       - name: Run orchestrator
         id: evolve
         run: |
-          python -m self_evolving_gpt.cli --goal "Automated nightly improvement" --file "modules/03_compliance_engine/compliance_engine.py"
+          python -m self_evolving_gpt.cli --goal "Automated nightly improvement" --file "modules/core/compliance/compliance_engine.py"
 
       - name: Commit changes (if any)
         run: |
