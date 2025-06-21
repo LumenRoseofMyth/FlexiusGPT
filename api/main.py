@@ -99,8 +99,10 @@ def api_run_workflow(
         raise HTTPException(status_code=500, detail=str(e))
 
 # === OPENAPI ENDPOINT FOR CUSTOM GPTs ===
-@app.get("/openapi.json")
+
 def custom_openapi():
+    if app.openapi_schema:
+        return app.openapi_schema
     openapi_schema = get_openapi(
         title=app.title,
         version=app.version,
@@ -108,11 +110,12 @@ def custom_openapi():
         routes=app.routes,
     )
     openapi_schema["servers"] = [
-        {"url": "https://718d-130-105-158-110.ngrok-free.app"}
+        {
+            "url": "https://718d-130-105-158-110.ngrok-free.app",
+            "description": "Ngrok tunnel for Custom GPT"
+        }
     ]
-    return openapi_schema
+    app.openapi_schema = openapi_schema
+    return app.openapi_schema
 
-# === BASIC HEALTH CHECK ===
-@app.get("/")
-def health_check():
-    return {"status": "FlexiusGPT is alive"}
+app.openapi = custom_openapi
