@@ -46,6 +46,56 @@ class DigitalTwin:
             else:
                 twin["peak_push_flag"] = False
             # END
+            # START SPEC004_VOLATILITY
+            hist = twin.setdefault("coding_metrics_history", [])
+            hist.append(metric["metrics"])
+            values = [m.get("lines_added", 0) for m in hist[-7:]]
+            if values:
+                avg = sum(values) / len(values)
+                twin["volatility"] = (
+                    sum((v - avg) ** 2 for v in values) / len(values)
+                ) ** 0.5
+            # END
+            # START SPEC004_CIRCADIAN
+            hour = metric.get("hour")
+            if hour is not None:
+                hours = twin.setdefault("activity_hours", [])
+                hours.append(hour)
+                if len(hours) > 50:
+                    hours.pop(0)
+                buckets = {}
+                for h in hours:
+                    b = h // 6
+                    buckets[b] = buckets.get(b, 0) + 1
+                twin["circadian_peak"] = max(buckets, key=buckets.get)
+            # END
+            # START SPEC004_BURNOUT
+            if twin.get("volatility", 0) > 300 or twin.get("peak_push_flag"):
+                twin["burnout_risk"] = "high"
+            else:
+                twin["burnout_risk"] = "low"
+            # END
+
+            # START CODE_ANALYTICS_SIMULATION
+            if metric.get("type") == "coding":
+                commits = metric["metrics"].get("pull_requests", 0)
+                twin.setdefault("daily_commit_history", []).append(commits)
+                twin["daily_commit_history"] = twin["daily_commit_history"][-7:]
+                if len(twin["daily_commit_history"]) > 1:
+                    twin["commit_volatility"] = statistics.stdev(
+                        twin["daily_commit_history"]
+                    )
+                else:
+                    twin["commit_volatility"] = 0.0
+
+                commit_times = metric.get("data", {}).get("commit_times", [])
+                if commit_times:
+                    hrs = [datetime.fromisoformat(t).hour for t in commit_times]
+                    avg_hr = sum(hrs) / len(hrs)
+                    twin.setdefault("commit_hours_history", []).append(avg_hr)
+                    twin["commit_hours_history"] = twin["commit_hours_history"][-7:]
+                    twin["circadian_rhythm_hour"] = sum(twin["commit_hours_history"])/len(twin["commit_hours_history"])
+            # END
 
             # START CODE_ANALYTICS_SIMULATION
             if metric["type"] == "coding":

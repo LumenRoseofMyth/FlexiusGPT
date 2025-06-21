@@ -17,6 +17,7 @@ from .change_applier import ChangeApplier
 from .tools.tool_registry import ToolRegistry
 from .cli import main as evolve_cli  # noqa: F401
 from .memory.vector_store import VectorStore
+from .memory.memory_store import MemoryStore
 
 __all__ = [
     "GPTClient",
@@ -29,6 +30,7 @@ __all__ = [
     "MemoryAgent",
     "AutoDocAgent",
     "VectorStore",
+    "MemoryStore",
     "ExecutionOrchestrator",
     "EvolutionOrchestrator",
     "AgentRunner",
