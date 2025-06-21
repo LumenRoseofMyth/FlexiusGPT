@@ -4,6 +4,8 @@
 
 Purpose: Defines the phase-based logic, transitions, auto-adjustment criteria, and research-backed parameters for adaptive training, recovery, and health management in the HIMKS system.
 
+from modules.core_tools.safety_constants import get_guardrail
+
 --------------------------------------------------------------------------------
 *** MICRO-INDEX ***
 --------------------------------------------------------------------------------
@@ -69,7 +71,7 @@ Each phase contains its own **entry, progression, and exit logic** governed by u
 A robust **failsafe and override system** is integrated to protect user safety and long-term adaptation.
 
 - **Automatic Pausing/Regressing**:
-    - Severe negative trends (e.g., HRV >20% drop, sleep <6h for 3 days, persistent negative mood, pain reports) cause phase regression or full pause.
+    - Severe negative trends (e.g., HRV < get_guardrail('hrv', user), sleep < get_guardrail('sleep', user) for 3 days, persistent negative mood, pain reports) cause phase regression or full pause.
     - Missed sessions: 3+ missed in a row → mandatory microcycle review.
 
 - **Manual Override**:
