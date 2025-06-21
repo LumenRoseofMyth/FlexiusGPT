@@ -1,0 +1,86 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "FlexiusGPT Analytic API",
+    "description": "Internal API for HIMKS module analytics and workflows.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://78f4-130-105-158-110.ngrok-free.app"
+    }
+  ],
+  "paths": {
+    "/module": {
+      "post": {
+        "summary": "Api Call Module",
+        "operationId": "api_call_module_module_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ModuleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModuleResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ModuleRequest": {
+        "type": "object",
+        "properties": {
+          "module_name": {
+            "type": "string"
+          },
+          "input_dict": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "test_mode": {
+            "type": "boolean"
+          },
+          "log_path": {
+            "type": "string"
+          },
+          "override_clearance": {
+            "type": "boolean"
+          }
+        },
+        "required": ["module_name", "input_dict"]
+      },
+      "ModuleResponse": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "message": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
