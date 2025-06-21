@@ -14,3 +14,8 @@ def test_orchestrator_flow():
     assert "summary" in result
     assert "pr_title" in result
     assert "pr_body" in result
+from tools import deep_repo_orchestrator
+
+def test_generate_report():
+    report = deep_repo_orchestrator.generate_report()
+    assert "scan" in report and "timestamp" in report
