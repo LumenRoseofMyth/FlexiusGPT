@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://be3d-130-105-158-110.ngrok-free.app",
+      "url": "https://e1b7-130-105-158-110.ngrok-free.app",
       "description": "Ngrok tunnel for Custom GPT"
     }
   ],
