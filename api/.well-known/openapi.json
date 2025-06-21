@@ -7,7 +7,8 @@
   },
   "servers": [
     {
-      "url": "https://78f4-130-105-158-110.ngrok-free.app"
+      "url": "https://718d-130-105-158-110.ngrok-free.app",
+      "description": "FlexiusGPT local tunnel"
     }
   ],
   "paths": {
