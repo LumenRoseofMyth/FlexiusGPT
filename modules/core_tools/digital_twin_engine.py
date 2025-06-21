@@ -31,6 +31,13 @@ class DigitalTwin:
             if len(twin["coding_week_history"]) > 2:
                 twin["coding_week_delta"] = twin["coding_week_history"][-1] - twin["coding_week_history"][-2]
             # END
+            # START UPGRADE_BLOCK_PEAK_FLAGGING
+            lines_added = metric["metrics"].get("lines_added", 0)
+            if lines_added > 1200:
+                twin["peak_push_flag"] = True
+            else:
+                twin["peak_push_flag"] = False
+            # END
 
     def risk_score(self):
         # Predict risk of injury/burnout based on composite state

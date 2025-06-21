@@ -36,4 +36,28 @@ def recommend_next_protocol(twin_state: dict) -> list:
     return protocol
 
 
-module_map = {"recommend_next_protocol": recommend_next_protocol}
+def protocol_push_alert(metric: dict) -> list:
+    """Provide nudges based on weekly pull request volume."""
+    protocol = []
+    # START UPGRADE_BLOCK_PEAK_PROTOCOL
+    pr_count = metric["metrics"].get("pull_requests", 0)
+    if pr_count >= 5:
+        protocol.append(
+            "🏁 Peak protocol: You’re eligible for an advanced challenge. Try debugging someone else’s code."
+        )
+    elif pr_count <= 1:
+        protocol.append(
+            "🔄 Let’s maintain flow. Aim for at least 2 PRs this week to stay in rhythm."
+        )
+    else:
+        protocol.append(
+            "🎯 Mid-range achieved—focus on deeper code quality this sprint."
+        )
+    # END
+    return protocol
+
+
+module_map = {
+    "recommend_next_protocol": recommend_next_protocol,
+    "protocol_push_alert": protocol_push_alert,
+}
