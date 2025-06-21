@@ -97,6 +97,27 @@ class DigitalTwin:
                     twin["circadian_rhythm_hour"] = sum(twin["commit_hours_history"])/len(twin["commit_hours_history"])
             # END
 
+            # START CODE_ANALYTICS_SIMULATION
+            if metric["type"] == "coding":
+                commits = metric["metrics"].get("pull_requests", 0)
+                twin.setdefault("daily_commit_history", []).append(commits)
+                twin["daily_commit_history"] = twin["daily_commit_history"][-7:]
+                if len(twin["daily_commit_history"]) > 1:
+                    twin["commit_volatility"] = statistics.stdev(
+                        twin["daily_commit_history"]
+                    )
+                else:
+                    twin["commit_volatility"] = 0.0
+
+                commit_times = metric.get("data", {}).get("commit_times", [])
+                if commit_times:
+                    hrs = [datetime.fromisoformat(t).hour for t in commit_times]
+                    avg_hr = sum(hrs) / len(hrs)
+                    twin.setdefault("commit_hours_history", []).append(avg_hr)
+                    twin["commit_hours_history"] = twin["commit_hours_history"][-7:]
+                    twin["circadian_rhythm_hour"] = sum(twin["commit_hours_history"])/len(twin["commit_hours_history"])
+            # END
+
     def risk_score(self):
         # Predict risk of injury/burnout based on composite state
         if self.state['phys'].get('fatigue', 0) > 8 or self.state['psych'].get('mood', 5) < 3:
