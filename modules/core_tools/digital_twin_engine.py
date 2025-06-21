@@ -6,11 +6,22 @@ class DigitalTwin:
             'social': user_profile.get('social_state', {}),
         }
 
-    def update(self, feedback, session_outcome, context):
+    def update(self, feedback, session_outcome, context, metric=None):
+        """Update state with feedback, session data, and optional metrics."""
         # Continuously update state with new feedback, session data, and context
         self.state['phys'].update(feedback.to_dict())
         self.state['psych']['mood'] = feedback.mood
         # Add more behavioral/context integration as needed
+        if metric is not None:
+            twin = self.state.setdefault('meta', {})
+            # START UPGRADE_BLOCK_INIT_TWIN
+            if not twin.get("coding_baseline"):
+                twin["coding_baseline"] = {
+                    "initial_pr_count": metric["metrics"].get("pull_requests", 0),
+                    "start_date": metric["date"],
+                    "average_lines_added": metric["metrics"].get("lines_added", 0),
+                }
+            # END
 
     def risk_score(self):
         # Predict risk of injury/burnout based on composite state
