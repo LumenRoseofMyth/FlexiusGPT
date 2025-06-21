@@ -65,6 +65,21 @@ def generate_coding_feedback(daily_metrics: list) -> list:
             else:
                 feedback.append("🧭 Consistent effort—stay steady and focused this week.")
             # END
+            # START UPGRADE_BLOCK_PEAK_PERFORMANCE_FEEDBACK
+            lines_added = metric["metrics"].get("lines_added", 0)
+            if lines_added > 1000:
+                feedback.append(
+                    "🚀 Massive code push detected! Don’t forget to review and refactor."
+                )
+            elif lines_added < 50:
+                feedback.append(
+                    "📉 Low commit volume—was this intentional? Consider a micro-task."
+                )
+            else:
+                feedback.append(
+                    "📊 Solid day—your commit size was balanced. Maintain quality."
+                )
+            # END
         # END
     return feedback
 
