@@ -61,6 +61,12 @@ Each phase contains its own **entry, progression, and exit logic** governed by u
 - **Transition Management**:
     - Every transition includes a short review of progress, adherence, and injury/pain feedback.
     - System provides summary report and new phase orientation, including revised goals, risk factors, and personalized focus.
+    - After any session or compliance summary, evaluate phase movement:
+        from modules.core_tools.dynamic_phase_engine import should_progress, should_regress
+        if should_progress(user, compliance_trend, feedback):
+            advance_phase()
+        elif should_regress(user, compliance_trend, feedback):
+            regress_phase()
 
 - **Specialty Phases**:
     - Activated for specific needs: rehab, travel, time constraints, new skill focus.
