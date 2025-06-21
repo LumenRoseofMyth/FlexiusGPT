@@ -61,6 +61,24 @@ def _commit_sentiment(messages: list[str]) -> str:
         return "negative"
     return "neutral"
 
+
+def _commit_motivation(messages: list[str]) -> str:
+    """Rudimentary motivation assessment from commit messages."""
+    positive = ["awesome", "great", "clean", "refactor"]
+    low_energy = ["wip", "temp", "hack"]
+    score = 0
+    for msg in messages:
+        msg_low = msg.lower()
+        if any(w in msg_low for w in positive):
+            score += 1
+        if any(w in msg_low for w in low_energy):
+            score -= 1
+    if score > 0:
+        return "high"
+    if score < 0:
+        return "low"
+    return "medium"
+
 def generate_coding_feedback(daily_metrics: list) -> list:
     """Generate coding-specific feedback from daily metrics."""
     feedback = []
@@ -118,12 +136,20 @@ def generate_coding_feedback(daily_metrics: list) -> list:
             msgs = metric.get("data", {}).get("commit_messages", [])
             if msgs:
                 sentiment = _commit_sentiment(msgs)
+                motivation = _commit_motivation(msgs)
                 if sentiment == "positive":
                     feedback.append("✨ Positive commit energy detected.")
                 elif sentiment == "negative":
                     feedback.append("😟 Commit tone negative—take a short break.")
                 else:
                     feedback.append("💬 Commit tone neutral.")
+
+                if motivation == "high":
+                    feedback.append("🔥 Motivation high—great momentum!")
+                elif motivation == "low":
+                    feedback.append("😴 Motivation low—consider a quick win task.")
+                else:
+                    feedback.append("🙂 Motivation steady.")
 
             if digital_twin and digital_twin.simulate_fatigue_risk():
                 feedback.append("⚠️ Simulation: potential mental fatigue risk.")
@@ -132,3 +158,18 @@ def generate_coding_feedback(daily_metrics: list) -> list:
     return feedback
 
 module_map.update({"generate_coding_feedback": generate_coding_feedback})
+
+
+def generate_digest_trend(daily_metrics: list) -> str:
+    """Provide simple digest trend feedback across days."""
+    pr_counts = [m.get("metrics", {}).get("pull_requests", 0) for m in daily_metrics if m.get("type") == "coding"]
+    if len(pr_counts) < 2:
+        return "Not enough data for digest trends."
+    delta = pr_counts[-1] - pr_counts[-2]
+    if delta > 0:
+        return "📈 PR count increased compared to previous day."
+    if delta < 0:
+        return "📉 PR count decreased compared to previous day."
+    return "➖ PR count unchanged from previous day."
+
+module_map.update({"generate_digest_trend": generate_digest_trend})
