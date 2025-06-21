@@ -13,9 +13,17 @@ class MemoryAgent(AgentBase):
         # retrieve memories to help current agent chain
         memories = self.store.query(task, 3)
         joined = "\n---\n".join(memories) if memories else "No prior memory."
+
+        if context:
+            commit_refs = self.store.query(context, 1)
+            if commit_refs:
+                joined += f"\nCommitRef: {commit_refs[0]}"
+            self.store.add(context)
+
         # Save this task for future
         self.store.add(task)
         return joined
 
     def needs(self):
         return ["task"]
+
