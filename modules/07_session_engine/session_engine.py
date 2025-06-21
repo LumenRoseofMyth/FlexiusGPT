@@ -4,7 +4,7 @@
 import logging
 
 from modules.core_tools.feedback_types import MultiModalFeedback
-from modules.core_tools.digital_twin_engine import DigitalTwin
+from modules.core.twin.digital_twin_engine import DigitalTwin
 
 MODULE_ID = "07_session_engine"
 
