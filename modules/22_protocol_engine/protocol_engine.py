@@ -32,6 +32,20 @@ def recommend_next_protocol(twin_state: dict) -> list:
             "✅ Maintain your rhythm—focus on clean, high-quality commits this week."
         )
     # END
+    # START UPGRADE_BLOCK_RECOVERY_PROTOCOL
+    if twin.get("peak_push_flag"):
+        protocol.append(
+            "🧘 Switch to recovery mode: No new PRs—focus on review, cleanup, or writing tests."
+        )
+    elif twin.get("coding_week_delta", 0) < 0:
+        protocol.append(
+            "🔁 Rebuild rhythm: One small, complete PR or fix a low-risk bug."
+        )
+    else:
+        protocol.append(
+            "🎯 Light goal: Write one wiki entry or improve onboarding docs."
+        )
+    # END
     log_module_use(MODULE_ID, "recommend_next_protocol", "generated")
     return protocol
 

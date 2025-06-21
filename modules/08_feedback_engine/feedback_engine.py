@@ -80,6 +80,20 @@ def generate_coding_feedback(daily_metrics: list) -> list:
                     "📊 Solid day—your commit size was balanced. Maintain quality."
                 )
             # END
+            # START UPGRADE_BLOCK_RECOVERY_FEEDBACK
+            if metric["type"] == "coding" and twin.get("peak_push_flag"):
+                feedback.append(
+                    "🛑 You had a heavy push recently. Take a step back—review, refactor, or document your code today."
+                )
+            elif twin.get("coding_week_delta", 0) < 0:
+                feedback.append(
+                    "🔄 Regression detected. Now’s a good time for cleanup or learning sprints."
+                )
+            else:
+                feedback.append(
+                    "😌 Balanced phase—consider some light tasks or mentoring others."
+                )
+            # END
         # END
     return feedback
 
