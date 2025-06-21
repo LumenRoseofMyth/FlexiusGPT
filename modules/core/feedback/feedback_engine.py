@@ -5,6 +5,8 @@ import logging
 
 from modules.core_tools.feedback_types import MultiModalFeedback
 from modules.core.twin.digital_twin_engine import DigitalTwin
+from pathlib import Path
+import datetime
 
 MODULE_ID = "08_feedback_engine"
 
@@ -98,3 +100,25 @@ def generate_coding_feedback(daily_metrics: list) -> list:
     return feedback
 
 module_map.update({"generate_coding_feedback": generate_coding_feedback})
+
+
+def generate_forecast_card() -> str:
+    """Create a simple markdown forecast card based on digital twin state."""
+    if digital_twin is None:
+        return "No twin data"
+    twin = digital_twin.state.get("meta", {})
+    risk = twin.get("burnout_risk", "low")
+    week = datetime.date.today().isocalendar()[1]
+    lines = ["# Weekly Forecast"]
+    if risk == "high":
+        lines.append("- 🔥 High burnout risk. Plan a recovery week.")
+    else:
+        lines.append("- 👍 Balanced workload expected.")
+    card = "\n".join(lines)
+    out_dir = Path("out")
+    out_dir.mkdir(exist_ok=True)
+    out_file = out_dir / f"forecast_week_{week}.md"
+    out_file.write_text(card)
+    return card
+
+module_map.update({"generate_forecast_card": generate_forecast_card})

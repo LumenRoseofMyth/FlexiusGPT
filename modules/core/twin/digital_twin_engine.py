@@ -38,6 +38,33 @@ class DigitalTwin:
             else:
                 twin["peak_push_flag"] = False
             # END
+            # START SPEC004_VOLATILITY
+            hist = twin.setdefault("coding_metrics_history", [])
+            hist.append(metric["metrics"])
+            values = [m.get("lines_added", 0) for m in hist[-7:]]
+            if values:
+                avg = sum(values) / len(values)
+                twin["volatility"] = (sum((v - avg) ** 2 for v in values) / len(values)) ** 0.5
+            # END
+            # START SPEC004_CIRCADIAN
+            hour = metric.get("hour")
+            if hour is not None:
+                hours = twin.setdefault("activity_hours", [])
+                hours.append(hour)
+                if len(hours) > 50:
+                    hours.pop(0)
+                buckets = {}
+                for h in hours:
+                    b = h // 6
+                    buckets[b] = buckets.get(b, 0) + 1
+                twin["circadian_peak"] = max(buckets, key=buckets.get)
+            # END
+            # START SPEC004_BURNOUT
+            if twin.get("volatility", 0) > 300 or twin.get("peak_push_flag"):
+                twin["burnout_risk"] = "high"
+            else:
+                twin["burnout_risk"] = "low"
+            # END
 
     def risk_score(self):
         # Predict risk of injury/burnout based on composite state
