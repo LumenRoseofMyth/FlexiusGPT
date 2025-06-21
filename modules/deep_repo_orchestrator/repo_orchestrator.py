@@ -54,4 +54,10 @@ def repo_orchestrator():
 
 if __name__ == "__main__":
     output = generate_report()
-    print(json.dumps(output, indent=2))
+    
+    # Optional: print a short preview
+    print(json.dumps(output.get("recommendations", {}), indent=2))
+
+    # Save full output to file
+    with open("orchestrator_report.json", "w") as f:
+        json.dump(output, f, indent=2)
