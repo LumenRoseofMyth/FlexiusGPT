@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Security, Depends
 from fastapi.security.api_key import APIKeyHeader, APIKey
 from fastapi.staticfiles import StaticFiles
+from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel
 from typing import Optional, Dict
 
@@ -97,10 +98,19 @@ def api_run_workflow(
         log_api_call("/workflow", req.dict(), f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-# === OPENAPI ENDPOINT FOR CHATGPT ACTIONS ===
+# === OPENAPI ENDPOINT FOR CUSTOM GPTs ===
 @app.get("/openapi.json")
 def custom_openapi():
-    return app.openapi()
+    openapi_schema = get_openapi(
+        title=app.title,
+        version=app.version,
+        description=app.description,
+        routes=app.routes,
+    )
+    openapi_schema["servers"] = [
+        {"url": "https://718d-130-105-158-110.ngrok-free.app"}
+    ]
+    return openapi_schema
 
 # === BASIC HEALTH CHECK ===
 @app.get("/")
