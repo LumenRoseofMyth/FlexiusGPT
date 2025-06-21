@@ -98,7 +98,7 @@ class DigitalTwin:
             # END
 
             # START CODE_ANALYTICS_SIMULATION
-            if metric["type"] == "coding":
+            if metric.get("type") == "coding":
                 commits = metric["metrics"].get("pull_requests", 0)
                 twin.setdefault("daily_commit_history", []).append(commits)
                 twin["daily_commit_history"] = twin["daily_commit_history"][-7:]

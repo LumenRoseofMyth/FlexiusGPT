@@ -3,7 +3,6 @@ from modules.core.feedback.feedback_engine import (
     generate_forecast_card,
     process_feedback,
 )
-from modules.core_tools.feedback_types import MultiModalFeedback
 
 
 def test_forecast_card(tmp_path, monkeypatch):
