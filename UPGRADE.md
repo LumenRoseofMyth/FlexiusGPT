@@ -13,3 +13,11 @@ Status: ✅ Deployed and linked to twin baseline
 Date: 2025-06-21
 Auditor: FlexiusGPT Codex
 Status: ✅ Validated with PR load scenarios
+
+# [PHASE_04_SPEC001]
+- Integrated peak-to-recovery feedback logic
+- Added light task protocol for behavioral recovery
+- Twin state used to route effort back to safe, maintainable zones
+Date: 2025-06-21
+Auditor: FlexiusGPT Codex
+Status: ✅ Finalized recovery logic for developer cycle
