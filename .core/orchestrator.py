@@ -1,12 +1,14 @@
 # @lock
 """
-Central orchestrator routing for FlexiusGPT core.
+Central orchestrator (Phase 2).
 
-NOTE: This is a stub implementation to be expanded in Phase 3.
+Validates payloads before routing.  
+Full routing logic arrives in Phase 3.
 """
-
 from typing import Dict
+from .validator import validate_payload
 
 def call_module_logic(module_name: str, payload: Dict, override_protection: bool = False) -> Dict:
-    """Route a payload to a plugin module. Currently unimplemented."""
+    """Validate and route a payload – routing TBD in Phase 3."""
+    validate_payload(payload)
     raise NotImplementedError("Routing logic will be implemented in Phase 3.")
