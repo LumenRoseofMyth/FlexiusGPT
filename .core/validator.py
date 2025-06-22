@@ -1,10 +1,28 @@
 # @lock
-"""Core payload validator for FlexiusGPT."""
-from typing import Dict
+"""
+Payload schema and validator for FlexiusGPT.
+"""
+from jsonschema import validate, ValidationError
 
-def validate_payload(payload: Dict) -> None:
-    """Trivial schema validator (Phase 3 placeholder)."""
-    if not isinstance(payload, dict):
-        raise ValueError("payload must be a dict")
-    if "payload" not in payload:
-        raise ValueError("payload missing 'payload' field")
+SCHEMA = {
+    "type": "object",
+    "properties": {
+        "payload": {
+            "type": "object",
+            "properties": {
+                "action": {"type": "string"},
+                "data": {"type": "object"}
+            },
+            "required": ["action", "data"]
+        }
+    },
+    "required": ["payload"],
+    "additionalProperties": False
+}
+
+def validate_payload(payload: dict) -> None:
+    """Validate payload or raise ValueError."""
+    try:
+        validate(instance=payload, schema=SCHEMA)
+    except ValidationError as exc:
+        raise ValueError(f"Invalid payload: {exc.message}") from None
