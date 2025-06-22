@@ -77,19 +77,39 @@ def list_modules():
 @app.post("/module")
 def api_call_module(
     req: ModuleRequest,
-    api_key: APIKey = Depends(get_api_key)
+    api_key: APIKey = Depends(get_api_key),
 ):
     module_id = req.module_id
     payload = req.payload or {}
     try:
         result = call_module_logic(module_id, payload)
-        log_api_call("/module", req.dict(), "OK")
+        log_api_call("/module", req.model_dump(), "OK")
         return result
     except HTTPException as e:
-        log_api_call("/module", req.dict(), f"ERR: {e.detail}")
+        log_api_call("/module", req.model_dump(), f"ERR: {e.detail}")
         raise e
     except Exception as e:
-        log_api_call("/module", req.dict(), f"ERR: {str(e)}")
+        log_api_call("/module", req.model_dump(), f"ERR: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/module/{module_id}/call")
+def api_call_module_direct(
+    module_id: str,
+    payload: Dict,
+    api_key: APIKey = Depends(get_api_key),
+):
+    """Direct call format for plugins expecting flat JSON payloads."""
+    print("DEBUG received_payload:", payload)
+    try:
+        result = call_module_logic(module_id, payload)
+        log_api_call(f"/module/{module_id}/call", payload, "OK")
+        return result
+    except HTTPException as e:
+        log_api_call(f"/module/{module_id}/call", payload, f"ERR: {e.detail}")
+        raise e
+    except Exception as e:
+        log_api_call(f"/module/{module_id}/call", payload, f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/workflow")
