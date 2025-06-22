@@ -17,7 +17,8 @@ def pydantic_model_from_sig(fn: t.Callable) -> type[BaseModel]:
             inspect.Parameter.KEYWORD_ONLY,
             inspect.Parameter.POSITIONAL_OR_KEYWORD,
         ):
-            fields[name] = (hints.get(name, t.Any), ...)
+            default = param.default if param.default is not inspect._empty else ...
+            fields[name] = (hints.get(name, t.Any), default)
     return create_model(fn.__name__.title() + "Model", **fields)
 
 
