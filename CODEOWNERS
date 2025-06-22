@@ -1,0 +1,3 @@
+# Locked directories require mandatory review
+.core/          @LumenRoseofMyth
+infra/secure/   @LumenRoseofMyth
