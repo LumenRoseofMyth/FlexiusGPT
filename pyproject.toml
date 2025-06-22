@@ -1,0 +1,18 @@
+[tool.poetry]
+packages = []
+name = "flexius-monorepo"
+version = "1.0.0"
+description = "FlexiusGPT Monorepo"
+authors = ["Flexius Team"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+flake8 = "^6.0"
+black = "^23.0"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/LumenRoseofMyth/FlexiusGPT"
+
