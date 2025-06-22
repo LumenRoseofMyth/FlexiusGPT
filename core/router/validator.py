@@ -29,7 +29,20 @@ def validate_payload(fn: t.Callable):
         try:
             data = Model(**payload)
         except ValidationError as e:
-            raise HTTPException(status_code=422, detail=e.errors())
+            sample = {
+                name: f"<{info.get('type', 'value')}>"
+                for name, info in Model.model_json_schema().get('properties', {}).items()
+            }
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    'errors': e.errors(),
+                    'expected_schema': Model.model_json_schema().get('properties', {}),
+                    'received_payload': payload,
+                    'sample_payload': sample,
+                },
+            )
         return fn(**data.model_dump(), **kw)
 
+    wrapper.__payload_model__ = Model
     return wrapper

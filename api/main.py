@@ -80,12 +80,15 @@ def api_call_module(
     req: ModuleRequest,
     api_key: APIKey = Depends(get_api_key)
 ):
+    payload = req.dict()
+    module_id = payload.pop("module_id")
     try:
-        payload = req.dict()
-        module_id = payload.pop("module_id")
         result = call_module_logic(module_id, payload)
         log_api_call("/module", req.dict(), "OK")
         return result
+    except HTTPException as e:
+        log_api_call("/module", req.dict(), f"ERR: {e.detail}")
+        raise e
     except Exception as e:
         log_api_call("/module", req.dict(), f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -95,13 +98,16 @@ def api_run_workflow(
     req: Dict,
     api_key: APIKey = Depends(get_api_key)
 ):
+    name = req.pop("workflow", None)
+    if not name or name not in WORKFLOWS:
+        raise HTTPException(status_code=404, detail=f"Unknown workflow: {name}")
     try:
-        name = req.pop("workflow", None)
-        if not name or name not in WORKFLOWS:
-            raise HTTPException(status_code=404, detail=f"Unknown workflow: {name}")
         result = WORKFLOWS[name](payload=req)
         log_api_call("/workflow", {"workflow": name}, "OK")
         return result
+    except HTTPException as e:
+        log_api_call("/workflow", req, f"ERR: {e.detail}")
+        raise e
     except Exception as e:
         log_api_call("/workflow", req, f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))

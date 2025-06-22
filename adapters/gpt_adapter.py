@@ -18,7 +18,18 @@ def _lazy_import(module_id: str):
 
 def call_module_logic(module_id: str, payload: dict):
     fn = _lazy_import(module_id)
-    return fn(payload=payload)
+    try:
+        return fn(payload=payload)
+    except HTTPException as e:
+        if e.status_code == 422:
+            expected = getattr(fn, "__payload_model__", None)
+            schema = expected.model_json_schema().get("properties", {}) if expected else {}
+            print(
+                "Payload validation error:",
+                "expected", schema,
+                "received", payload,
+            )
+        raise
 
 
 def run_workflow(name: str, payload: dict | None = None):
