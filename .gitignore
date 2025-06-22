@@ -8,3 +8,6 @@ logs/
 .env
 __pycache__/
 venv/ 
+*.pdf
+__pycache__/
+data/health/*.json
