@@ -34,3 +34,18 @@ print(prompt)
    - Authentication: **None** (or "API Key" if you add header auth)
    - Paste the contents of `openapi.json` in "Schema".
    - Update → Done.
+
+### Calling Modules
+
+Module entrypoints decorated with `@validate_payload` must be invoked with a
+single `payload` dictionary. For example:
+
+```python
+from adapters.gpt_adapter import call_module_logic
+
+result = call_module_logic(
+    "01_core_rules", payload={"action": "test_mode", "test_mode": True}
+)
+```
+
+Passing parameters directly as kwargs is not supported.
