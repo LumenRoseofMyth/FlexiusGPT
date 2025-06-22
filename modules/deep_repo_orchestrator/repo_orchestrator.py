@@ -1,3 +1,4 @@
+from core.router.validator import validate_payload
 import os
 import json
 import subprocess
@@ -61,3 +62,9 @@ if __name__ == "__main__":
     # Save full output to file
     with open("orchestrator_report.json", "w") as f:
         json.dump(output, f, indent=2)
+
+@validate_payload
+def run_module(*, action: str, test_mode: bool=False) -> dict:
+    if action == "test_mode":
+        return {"success": True, "msg": "OK"}
+    return {"success": False, "msg": "unknown action"}

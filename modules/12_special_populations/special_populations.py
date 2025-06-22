@@ -1,3 +1,4 @@
+from core.router.validator import validate_payload
 # Codex Upgrade Timestamp: 2025-06-20T04:09:43.840230Z
 """Special Populations module (module_id: 12_special_populations)"""
 
@@ -14,3 +15,9 @@ def log_module_use(module_id: str, action: str, result: str) -> None:
 
 
 module_map = {}
+
+@validate_payload
+def run_module(*, action: str, test_mode: bool=False) -> dict:
+    if action == "test_mode":
+        return {"success": True, "msg": "OK"}
+    return {"success": False, "msg": "unknown action"}

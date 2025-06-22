@@ -8,6 +8,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel
 from typing import Optional, Dict
+from pathlib import Path
 
 load_dotenv()
 
@@ -23,14 +24,15 @@ def get_api_key(api_key_header: str = Security(api_key_header)):
 
 # === PATHS FOR MODULES ===
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from adapters.gpt_adapter import call_module_logic, run_workflow
+from adapters.gpt_adapter import call_module_logic
 from modules.core.io.connector import get_active_connector_url
+from workflows import WORKFLOWS
 
 # === FASTAPI APP ===
 app = FastAPI(
     title="FlexiusGPT Analytic API",
     description="Internal API for HIMKS module analytics and workflows.",
-    version="1.0.0"
+    version="1.1.0"
 )
 
 # === MOUNT .WELL-KNOWN FOR CHATGPT ACTIONS ===
@@ -59,9 +61,6 @@ class ModuleRequest(BaseModel):
     action: str
     user_log: Optional[Dict] = None
 
-class WorkflowRequest(BaseModel):
-    workflow: str
-    user_log: Optional[Dict] = None
 
 class FeedbackRequest(BaseModel):
     feedback_data: Dict
@@ -70,46 +69,41 @@ class FeedbackRequest(BaseModel):
     context: Optional[Dict] = None
 
 # === ENDPOINTS ===
+
+@app.get("/modules", tags=["registry"])
+def list_modules():
+    base = Path(__file__).parents[1] / "modules"
+    mods = [p.name for p in base.iterdir() if p.is_dir()]
+    return {"modules": mods}
 @app.post("/module")
 def api_call_module(
     req: ModuleRequest,
     api_key: APIKey = Depends(get_api_key)
 ):
     try:
-        import io
-        from contextlib import redirect_stdout
-        buf = io.StringIO()
-        with redirect_stdout(buf):
-            call_module_logic(req.module_id, req.action, req.user_log)
-        output = buf.getvalue()
+        payload = req.dict()
+        module_id = payload.pop("module_id")
+        result = call_module_logic(module_id, payload)
         log_api_call("/module", req.dict(), "OK")
-        return {"result": output}
+        return result
     except Exception as e:
         log_api_call("/module", req.dict(), f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/workflow")
 def api_run_workflow(
-    req: WorkflowRequest,
+    req: Dict,
     api_key: APIKey = Depends(get_api_key)
 ):
     try:
-        import io
-        from contextlib import redirect_stdout
-        buf = io.StringIO()
-
-        if req.workflow == "sample_workflow":
-            # TEMP fallback: this allows Custom GPT testing to succeed
-            print("Sample workflow executed.")
-        else:
-            with redirect_stdout(buf):
-                run_workflow(req.workflow, req.user_log)
-        
-        output = buf.getvalue() or f"Workflow '{req.workflow}' executed."
-        log_api_call("/workflow", req.dict(), "OK")
-        return {"result": output}
+        name = req.pop("workflow", None)
+        if not name or name not in WORKFLOWS:
+            raise HTTPException(status_code=404, detail=f"Unknown workflow: {name}")
+        result = WORKFLOWS[name](payload=req)
+        log_api_call("/workflow", {"workflow": name}, "OK")
+        return result
     except Exception as e:
-        log_api_call("/workflow", req.dict(), f"ERR: {str(e)}")
+        log_api_call("/workflow", req, f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -143,7 +137,11 @@ def custom_openapi():
         description=app.description,
         routes=app.routes,
     )
-    server_url = get_active_connector_url() or "http://localhost:8000"
+    server_url = (
+        os.environ.get("CONNECTOR_PUBLIC_URL")
+        or get_active_connector_url()
+        or "http://localhost:8000"
+    )
     openapi_schema["servers"] = [
         {
             "url": server_url,

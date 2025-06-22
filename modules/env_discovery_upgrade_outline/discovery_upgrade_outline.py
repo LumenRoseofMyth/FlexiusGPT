@@ -1,3 +1,4 @@
+from core.router.validator import validate_payload
 import os, json
 
 def run_audit_and_upgrade_map():
@@ -30,3 +31,9 @@ def run_audit_and_upgrade_map():
 
 if __name__ == "__main__":
     print(run_audit_and_upgrade_map())
+
+@validate_payload
+def run_module(*, action: str, test_mode: bool=False) -> dict:
+    if action == "test_mode":
+        return {"success": True, "msg": "OK"}
+    return {"success": False, "msg": "unknown action"}

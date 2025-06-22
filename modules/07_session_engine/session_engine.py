@@ -1,3 +1,4 @@
+from core.router.validator import validate_payload
 # Codex Upgrade Timestamp: 2025-06-20T04:09:43.837231Z
 """Session Engine module (module_id: 07_session_engine)"""
 
@@ -40,3 +41,9 @@ module_map = {
     "complete_session": complete_session,
     "init_digital_twin": init_digital_twin,
 }
+
+@validate_payload
+def run_module(*, action: str, test_mode: bool=False) -> dict:
+    if action == "test_mode":
+        return {"success": True, "msg": "OK"}
+    return {"success": False, "msg": "unknown action"}

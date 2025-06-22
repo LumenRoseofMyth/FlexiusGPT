@@ -1,3 +1,4 @@
+from core.router.validator import validate_payload
 # Codex Upgrade Timestamp: 2025-06-20T04:09:43.835231Z
 """Safety Overrides module (module_id: 04_safety_overrides).
 
@@ -94,3 +95,9 @@ if __name__ == "__main__":
     }
     print(enforce_safety_protocols(test_user))
 
+
+@validate_payload
+def run_module(*, action: str, test_mode: bool=False) -> dict:
+    if action == "test_mode":
+        return {"success": True, "msg": "OK"}
+    return {"success": False, "msg": "unknown action"}
