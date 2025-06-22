@@ -3,9 +3,28 @@
   "info": {
     "title": "FlexiusGPT Analytic API",
     "description": "Internal API for HIMKS module analytics and workflows.",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "paths": {
+    "/modules": {
+      "get": {
+        "tags": [
+          "registry"
+        ],
+        "summary": "List Modules",
+        "operationId": "list_modules_modules_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
     "/module": {
       "post": {
         "summary": "Api Call Module",
@@ -55,7 +74,9 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/WorkflowRequest"
+                "additionalProperties": true,
+                "type": "object",
+                "title": "Req"
               }
             }
           },
@@ -257,31 +278,6 @@
           "type"
         ],
         "title": "ValidationError"
-      },
-      "WorkflowRequest": {
-        "properties": {
-          "workflow": {
-            "type": "string",
-            "title": "Workflow"
-          },
-          "user_log": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "User Log"
-          }
-        },
-        "type": "object",
-        "required": [
-          "workflow"
-        ],
-        "title": "WorkflowRequest"
       }
     },
     "securitySchemes": {
@@ -291,11 +287,5 @@
         "name": "X-API-KEY"
       }
     }
-  },
-  "servers": [
-    {
-      "url": "https://4aa5-130-105-158-110.ngrok-free.app",
-      "description": "Ngrok tunnel for Custom GPT"
-    }
-  ]
+  }
 }
