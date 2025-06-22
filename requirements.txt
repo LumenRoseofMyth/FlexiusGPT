@@ -8,3 +8,5 @@ pydantic>=2.7.0
 httpx>=0.24.0
 requests>=2.31.0
 matplotlib>=3.8.4
+pandas
+reportlab
