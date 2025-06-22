@@ -11,14 +11,15 @@ SCHEMA = {
             "type": "object",
             "properties": {
                 "action": {"type": "string"},
-                "data": {"type": "object"}
+                "data": {"type": "object"},
             },
-            "required": ["action", "data"]
+            "required": ["action", "data"],
         }
     },
     "required": ["payload"],
-    "additionalProperties": False
+    "additionalProperties": False,
 }
+
 
 def validate_payload(payload: dict) -> None:
     """Validate payload or raise ValueError."""

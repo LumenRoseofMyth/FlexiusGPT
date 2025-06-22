@@ -1,0 +1,21 @@
+name: Integrity Check
+on: [push, pull_request]
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify @lock headers and run_module interfaces
+        shell: bash
+        run: |
+          set -e
+          bad=0
+          # locked header check
+          git ls-files '.core/*' 'infra/secure/*' | while read -r f; do
+            head -1 "$f" | grep -q '# @lock' || { echo "Missing @lock in $f"; bad=1; }
+          done
+          # interface check
+          find modules -name interface.py | while read -r iface; do
+            grep -q "def run_module" "$iface" || { echo "$iface missing run_module()"; bad=1; }
+          done
+          exit $bad

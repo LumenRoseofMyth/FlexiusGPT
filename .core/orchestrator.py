@@ -27,11 +27,15 @@ def _import_run(module_path: str):
         mod = import_module(module_path)
         return getattr(mod, "run_module")
     except (ImportError, AttributeError) as exc:
-        raise ModuleInterfaceError(f"run_module missing in {module_path}") from exc
+        message = f"run_module missing in {module_path}"
+        raise ModuleInterfaceError(message) from exc
 
 
 def call_module_logic(
-    module_name: str, payload: Dict[str, Any], *, override_protection: bool = False
+    module_name: str,
+    payload: Dict[str, Any],
+    *,
+    override_protection: bool = False,
 ) -> Dict[str, Any]:
     """
     Entry-point for every plugin invocation.
@@ -62,9 +66,11 @@ def call_module_logic(
 
     # 2. core protection
     if module_name.startswith(PROTECTED_PREFIXES) and not override_protection:
-        raise CorePermissionError(
-            f"Module '{module_name}' is protected; override_protection required."
+        msg = (
+            "Module '" + module_name + "' is protected; "
+            "override_protection required."
         )
+        raise CorePermissionError(msg)
 
     # 3. dynamic import (expects modules.<name>.interface)
     interface_path = f"modules.{module_name}.interface"
