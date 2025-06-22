@@ -6,6 +6,7 @@ description = "FlexiusGPT Monorepo"
 authors = ["Flexius Team"]
 
 [tool.poetry.dependencies]
+jsonschema = "^4.0"
 python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
