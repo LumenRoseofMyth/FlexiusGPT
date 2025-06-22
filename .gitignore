@@ -11,3 +11,4 @@ venv/
 *.pdf
 __pycache__/
 data/health/*.json
+.venv/
