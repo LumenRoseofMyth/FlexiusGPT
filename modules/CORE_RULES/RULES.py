@@ -6,7 +6,7 @@ description: Rule logic for core compliance
 from core.router.validator import validate_payload
 
 @validate_payload
-def run_module(*, action: str, test_mode: bool = False, log_path: str | None = None, override_clearance: bool = False) -> dict:
+def run_module(*, action: str, log_path: str | None = None, override_clearance: bool = False) -> dict:
     if action == "test_mode":
         return {
             "success": True,
@@ -16,6 +16,6 @@ def run_module(*, action: str, test_mode: bool = False, log_path: str | None = N
     return {
         "success": True,
         "message": "CORE_RULES executed successfully.",
-        "tags": ["core", "rule-check", "test-mode" if test_mode else "run"],
+        "tags": ["core", "rule-check", "run"],
     }
 
