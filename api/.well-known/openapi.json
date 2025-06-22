@@ -222,27 +222,15 @@
             "type": "string",
             "title": "Module Id"
           },
-          "action": {
-            "type": "string",
-            "title": "Action"
-          },
-          "user_log": {
-            "anyOf": [
-              {
-                "additionalProperties": true,
-                "type": "object"
-              },
-              {
-                "type": "null"
-              }
-            ],
-            "title": "User Log"
+          "payload": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Payload"
           }
         },
         "type": "object",
         "required": [
-          "module_id",
-          "action"
+          "module_id"
         ],
         "title": "ModuleRequest"
       },

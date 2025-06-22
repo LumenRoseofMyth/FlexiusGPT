@@ -16,19 +16,25 @@ def _lazy_import(module_id: str):
         raise HTTPException(status_code=404, detail=f"Module {module_id} missing") from e
 
 
-def call_module_logic(module_id: str, payload: dict):
+def call_module_logic(module_id: str, payload: dict | None):
+    """Invoke a module's run_module function with standardized payload handling."""
     fn = _lazy_import(module_id)
+    if not isinstance(payload, dict):
+        raise HTTPException(status_code=400, detail="Payload must be a dictionary")
     try:
         return fn(payload=payload)
     except HTTPException as e:
         if e.status_code == 422:
             expected = getattr(fn, "__payload_model__", None)
             schema = expected.model_json_schema().get("properties", {}) if expected else {}
-            print(
-                "Payload validation error:",
-                "expected", schema,
-                "received", payload,
-            )
+            raise HTTPException(
+                status_code=422,
+                detail={
+                    "error": "Invalid payload",
+                    "expected_schema": schema,
+                    "received_payload": payload,
+                },
+            ) from e
         raise
 
 
