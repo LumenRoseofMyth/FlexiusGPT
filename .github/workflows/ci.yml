@@ -65,6 +65,9 @@ jobs:
       - name: Run pytest
         run: poetry run pytest -q
 
+      - name: Run integrity module test
+        run: poetry run pytest -q tests/test_module01_core_rules.py
+
 # ─────────────────────────────────── integrity-audit ─────────────────────
   integrity-audit:
     name: Run Integrity Audit
