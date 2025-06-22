@@ -1,3 +1,0 @@
-HIMKS User Profile - Version v2.6-B
-
-Maintains persistent user-related data.

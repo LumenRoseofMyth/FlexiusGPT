@@ -1,4 +1,0 @@
-- [x] File: modules/deep_repo_orchestrator/repo_orchestrator.py
-  - TODO resolved: rephrased flag message to 'comment flag present'.
-- [x] File: tools/summarize_orchestrator_output.py
-  - TODO resolved: replaced 'TODOs or FIXMEs' comment with neutral wording.

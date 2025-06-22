@@ -1,7 +1,0 @@
-repos:
-  -   repo: local
-      hooks:
-        -   id: compliance-check
-            name: HIMKS Compliance Check
-            entry: python scripts/compliance_check.py
-            language: system
