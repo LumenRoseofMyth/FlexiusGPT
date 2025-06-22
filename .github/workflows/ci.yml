@@ -1,0 +1,57 @@
+name: CI
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+
+  governance-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate override flag & module interfaces
+        shell: bash
+        run: |
+          changed=$(git diff --name-only ${{ github.event.pull_request.base.sha || 'HEAD^' }} ${{ github.event.pull_request.head.sha || 'HEAD' }})
+          if echo "$changed" | grep -Eq '^(\.core/|infra/secure/)'; then
+            flag=$(jq -r '.override_protection' governance_config.json)
+            if [[ "$flag" != "true" ]]; then
+              echo "ERROR: core/infra edits require override_protection=true"; exit 1
+            fi
+          fi
+          missing=0
+          while IFS= read -r iface; do
+            grep -q "def run_module" "$iface" || { echo "ERROR: $iface missing run_module"; missing=1; }
+          done < <(find modules -name interface.py)
+          exit $missing
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install linters
+        run: pip install flake8 black
+      - name: flake8
+        run: flake8 .
+      - name: black check
+        run: black --check .
+
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: pip install -r requirements.txt
+      - name: Run pytest
+        run: pytest -q
