@@ -1,10 +1,11 @@
 from importlib import import_module
 from fastapi import HTTPException
+from typing import Callable, Any
 
-REGISTRY: dict[str, callable] = {}
+REGISTRY: dict[str, Callable[[dict[str, Any]], Any]] = {}
 
 
-def _lazy_import(module_id: str):
+def _lazy_import(module_id: str) -> Callable[..., Any]:
     if module_id in REGISTRY:
         return REGISTRY[module_id]
     pkg = f"modules.{module_id}.{module_id.split('_',1)[1]}"
@@ -16,7 +17,7 @@ def _lazy_import(module_id: str):
         raise HTTPException(status_code=404, detail=f"Module {module_id} missing") from e
 
 
-def call_module_logic(module_id: str, payload: dict | None):
+def call_module_logic(module_id: str, payload: dict[str, Any] | None) -> Any:
     """Invoke a module's run_module function with standardized payload handling."""
     fn = _lazy_import(module_id)
     if not isinstance(payload, dict):
@@ -26,7 +27,7 @@ def call_module_logic(module_id: str, payload: dict | None):
     except HTTPException as e:
         if e.status_code == 422:
             expected = getattr(fn, "__payload_model__", None)
-            schema = expected.model_json_schema().get("properties", {}) if expected else {}
+            schema: dict[str, Any] = expected.model_json_schema().get("properties", {}) if expected else {}
             raise HTTPException(
                 status_code=422,
                 detail={
@@ -38,10 +39,14 @@ def call_module_logic(module_id: str, payload: dict | None):
         raise
 
 
-def run_workflow(name: str, payload: dict | None = None):
+from typing import Any, Callable, cast
+
+def run_workflow(name: str, payload: dict[str, Any] | None = None) -> Any:
     from workflows import WORKFLOWS
-    if name not in WORKFLOWS:
+    workflows_dict = cast(dict[str, Callable[[dict[str, Any]], Any]], WORKFLOWS)
+    if name not in workflows_dict:
         print(f"Unknown workflow: {name}")
         return None
     payload = payload or {}
-    return WORKFLOWS[name](payload=payload)
+    result: Any = workflows_dict[name](payload)
+    return result

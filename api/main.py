@@ -3,7 +3,8 @@ import os
 import datetime
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Security, Depends
-from fastapi.security.api_key import APIKeyHeader, APIKey
+from fastapi.security.api_key import APIKeyHeader
+from fastapi.openapi.models import APIKey
 from fastapi.staticfiles import StaticFiles
 from fastapi.openapi.utils import get_openapi
 from pydantic import BaseModel, Field
@@ -26,7 +27,12 @@ def get_api_key(api_key_header: str = Security(api_key_header)):
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from adapters.gpt_adapter import call_module_logic
 from modules.core.io.connector import get_active_connector_url
+from typing import Dict
+from typing import Callable, Dict, Any
 from workflows import WORKFLOWS
+
+WORKFLOWS: Dict[str, Callable[[Dict[str, Any]], Dict[str, Any]]] = WORKFLOWS
+
 
 # === FASTAPI APP ===
 app = FastAPI(
@@ -40,7 +46,7 @@ well_known_path = os.path.join(os.path.dirname(__file__), ".well-known")
 app.mount("/.well-known", StaticFiles(directory=well_known_path), name="plugin-meta")
 
 # === AUDIT LOGGING ===
-def log_api_call(endpoint, data, status):
+def log_api_call(endpoint: str, data: Dict[str, object], status: str):
     date_str = datetime.datetime.now().strftime("%Y-%m-%d")
     log_folder = "logs"
     if not os.path.exists(log_folder):
@@ -58,14 +64,14 @@ def log_api_call(endpoint, data, status):
 # === REQUEST MODELS ===
 class ModuleRequest(BaseModel):
     module_id: str
-    payload: Dict = Field(default_factory=dict)
+    payload: Dict[str, object] = Field(default_factory=dict)
 
 
 class FeedbackRequest(BaseModel):
-    feedback_data: Dict
-    user_profile: Optional[Dict] = None
-    session_outcome: Optional[Dict] = None
-    context: Optional[Dict] = None
+    feedback_data: Dict[str, object]
+    user_profile: Optional[Dict[str, object]] = None
+    session_outcome: Optional[Dict[str, object]] = None
+    context: Optional[Dict[str, object]] = None
 
 # === ENDPOINTS ===
 
@@ -96,7 +102,7 @@ def api_call_module(
 @app.post("/module/{module_id}/call")
 def api_call_module_direct(
     module_id: str,
-    payload: Dict,
+    payload: Dict[str, object],
     api_key: APIKey = Depends(get_api_key),
 ):
     """Direct call format for plugins expecting flat JSON payloads."""
@@ -114,14 +120,14 @@ def api_call_module_direct(
 
 @app.post("/workflow")
 def api_run_workflow(
-    req: Dict,
+    req: Dict[str, object],
     api_key: APIKey = Depends(get_api_key)
-):
-    name = req.pop("workflow", None)
+) -> Dict[str, object]:
+    name = str(req.pop("workflow", None))
     if not name or name not in WORKFLOWS:
         raise HTTPException(status_code=404, detail=f"Unknown workflow: {name}")
     try:
-        result = WORKFLOWS[name](payload=req)
+        result: Dict[str, object] = WORKFLOWS[name](req)
         log_api_call("/workflow", {"workflow": name}, "OK")
         return result
     except HTTPException as e:
@@ -145,10 +151,10 @@ def api_feedback(
             req.session_outcome,
             req.context,
         )
-        log_api_call("/feedback", req.dict(), "OK")
+        log_api_call("/feedback", req.model_dump(), "OK")
         return {"nudge": nudge}
     except Exception as e:
-        log_api_call("/feedback", req.dict(), f"ERR: {str(e)}")
+        log_api_call("/feedback", req.model_dump(), f"ERR: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 # === OPENAPI ENDPOINT FOR CUSTOM GPTs ===

@@ -1,23 +1,24 @@
 import os
-import json
+from typing import Optional, Dict, List
 
-def run(user_log=None):
+def run(user_log: Optional[str] = None) -> None:
     print("🔍 Starting deep dive review of repository...")
 
     # === Step 1: Walk the Repo and Build Structure Index ===
     repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-    structure_map = {}
-    for root, dirs, files in os.walk(repo_root):
+    structure_map: Dict[str, List[str]] = {}
+    for root, _, files in os.walk(repo_root):
         rel_path = os.path.relpath(root, repo_root)
-        structure_map[rel_path] = files
+        structure_map[rel_path] = list(files)
 
-    print("✅ Repository structure mapped.")
+    print(f"✅ Repository structure mapped. {len(structure_map)} directories found.")
 
     # === Step 2: Identify API integration layers ===
-    connector_files = []
+    connector_files: List[str] = []
     for path, file_list in structure_map.items():
         for file in file_list:
-            if "openapi" in file.lower() or file.endswith((".yaml", ".json")):
+            file_str = file
+            if "openapi" in file_str.lower() or file_str.endswith((".yaml", ".json")):
                 connector_files.append(os.path.join(path, file))
 
     print(f"📡 Found {len(connector_files)} potential connector files:")
@@ -41,7 +42,8 @@ def run(user_log=None):
 
     print("\n🧠 Connection Layer Checkpoints:")
     for k, v in connector_checkpoints.items():
-        print(f" - {k}: {'✅ Present' if v else '⚠️ Missing'}")
+        status = "✅ Present" if v else "⚠️ Missing"
+        print(f" - {k}: {status}")
 
     # === Step 4: Suggest Next Upgrades ===
     print("\n🚀 Upgrade Suggestions:")

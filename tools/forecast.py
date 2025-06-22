@@ -1,14 +1,13 @@
 import argparse
 import json
+from typing import Any
 
-from modules.core.twin.digital_twin_engine import DigitalTwin
 
-
-def forecast(twin_state: dict) -> str:
+def forecast(twin_state: dict[str, Any]) -> str:
     meta = twin_state.get("meta", {})
     volatility = meta.get("commit_volatility", 0)
     circadian = meta.get("circadian_rhythm_hour", None)
-    lines = []
+    lines: list[str] = []
     if volatility < 1:
         lines.append("### Momentum: expect steady progress next week.")
     else:

@@ -2,13 +2,11 @@
 """Feedback Engine module (module_id: 08_feedback_engine)"""
 
 import logging
-from datetime import datetime
-import statistics
+
 
 from modules.core_tools.feedback_types import MultiModalFeedback
 from modules.core.twin.digital_twin_engine import DigitalTwin
 from pathlib import Path
-import datetime
 from tools.forecast import forecast
 
 MODULE_ID = "08_feedback_engine"
@@ -21,27 +19,51 @@ def log_module_use(module_id: str, action: str, result: str) -> None:
     logger.info("module=%s action=%s result=%s", module_id, action, result)
 
 
-digital_twin = None
+from typing import Any, Optional
+
+digital_twin: Optional[DigitalTwin] = None
 
 
-def init_digital_twin(user_profile: dict) -> None:
+def init_digital_twin(user_profile: dict[str, object]) -> None:
     """Initialize the digital twin for a user profile."""
     global digital_twin
     digital_twin = DigitalTwin(user_profile)
 
 
-def process_feedback(user_profile: dict, feedback_data: dict, session_outcome=None, context=None) -> str:
+from typing import cast, Callable
+
+def process_feedback(
+    user_profile: dict[str, object],
+    feedback_data: dict[str, Any],
+    session_outcome: Optional[Any] = None,
+    context: Optional[dict[str, Any]] = None
+) -> str:
     """Update digital twin with feedback and return suggested nudge."""
     global digital_twin
     if digital_twin is None:
         init_digital_twin(user_profile)
-    feedback = MultiModalFeedback(**feedback_data)
-    digital_twin.update(feedback, session_outcome, context or {})
+    if digital_twin is None:
+        raise RuntimeError("Digital twin not initialized")
+    # Explicitly extract and type-cast expected arguments for MultiModalFeedback
+    feedback: MultiModalFeedback = MultiModalFeedback(
+        pain=int(feedback_data.get("pain", 0)),
+        fatigue=int(feedback_data.get("fatigue", 0)),
+        mood=int(feedback_data.get("mood", 0)),
+        **{k: v for k, v in feedback_data.items() if k not in {"pain", "fatigue", "mood"}}
+    )
+    # Use cast to help type checkers know the update method signature
+    update_fn = cast(
+        Callable[[MultiModalFeedback, Optional[Any], dict[str, Any], Optional[Any]], None],
+        digital_twin.update
+    )
+    update_fn(feedback, session_outcome, context or {}, None)
     log_module_use(MODULE_ID, "process_feedback", "updated")
     return digital_twin.suggest_nudge()
 
 
-module_map = {
+from typing import Any, Optional
+
+module_map: dict[str, Any] = {
     "process_feedback": process_feedback,
     "init_digital_twin": init_digital_twin,
 }
@@ -82,12 +104,14 @@ def _commit_motivation(messages: list[str]) -> str:
         return "low"
     return "medium"
 
-def generate_coding_feedback(daily_metrics: list) -> list:
+from typing import Any, Optional
+
+def generate_coding_feedback(daily_metrics: list[dict[str, Any]]) -> list[str]:
     """Generate coding-specific feedback from daily metrics."""
-    feedback = []
-    twin = {}
+    feedback: list[str] = []
+    twin: dict[str, Any] = {}
     if digital_twin is not None:
-        twin = digital_twin.state.get("meta", {})
+        twin = cast(dict[str, Any], getattr(digital_twin, "state", {})).get("meta", {})
     for metric in daily_metrics:
         # START UPGRADE_BLOCK_CODING_FEEDBACK
         if metric["type"] == "coding":
@@ -98,7 +122,11 @@ def generate_coding_feedback(daily_metrics: list) -> list:
                     "👀 Try to review or push at least 2 PRs a day to build consistency."
                 )
             # START UPGRADE_BLOCK_TREND_FEEDBACK
-            week_delta = twin.get("coding_week_delta", 0)
+            coding_week_delta_val: Any = twin.get("coding_week_delta", 0)
+            try:
+                week_delta = int(float(coding_week_delta_val))
+            except (TypeError, ValueError):
+                week_delta = 0
             if week_delta > 1:
                 feedback.append("📈 Your coding productivity increased 2x this week. Great trend!")
             elif week_delta < -1:
@@ -122,11 +150,11 @@ def generate_coding_feedback(daily_metrics: list) -> list:
                 )
             # END
             # START UPGRADE_BLOCK_RECOVERY_FEEDBACK
-            if metric["type"] == "coding" and twin.get("peak_push_flag"):
+            if metric["type"] == "coding" and bool(twin.get("peak_push_flag", False)):
                 feedback.append(
                     "🛑 You had a heavy push recently. Take a step back—review, refactor, or document your code today."
                 )
-            elif twin.get("coding_week_delta", 0) < 0:
+            elif int(float(cast(float, twin.get("coding_week_delta", 0)))) < 0:
                 feedback.append(
                     "🔄 Regression detected. Now’s a good time for cleanup or learning sprints."
                 )
@@ -162,7 +190,9 @@ def generate_coding_feedback(daily_metrics: list) -> list:
 
 module_map.update({"generate_coding_feedback": generate_coding_feedback})
 
-def generate_digest_trend(daily_metrics: list) -> str:
+from typing import Any, Optional
+
+def generate_digest_trend(daily_metrics: list[dict[str, Any]]) -> str:
     """Provide simple digest trend feedback across days."""
     pr_counts = [m.get("metrics", {}).get("pull_requests", 0) for m in daily_metrics if m.get("type") == "coding"]
     if len(pr_counts) < 2:
@@ -177,12 +207,16 @@ def generate_digest_trend(daily_metrics: list) -> str:
 module_map.update({"generate_digest_trend": generate_digest_trend})
 
 
+from typing import Any, cast
+from typing import Any, Optional
+
 def generate_forecast_card(out_dir: str = "out") -> str:
     """Write a simple weekly forecast card and return its contents."""
     if digital_twin is None:
         raise RuntimeError("Digital twin not initialized")
     Path(out_dir).mkdir(exist_ok=True)
-    card_text = "## Weekly Forecast\n" + forecast(digital_twin.state)
+    state: dict[str, Any] = cast(dict[str, Any], getattr(digital_twin, "state", {}))
+    card_text = "## Weekly Forecast\n" + forecast(state)
     path = Path(out_dir) / "forecast.md"
     path.write_text(card_text)
     log_module_use(MODULE_ID, "generate_forecast_card", "written")
