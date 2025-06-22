@@ -1,0 +1,15 @@
+name: Protection Audit
+on: [pull_request]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure CODEOWNERS contains locked paths
+        shell: bash
+        run: |
+          required=(".core/" "infra/secure/")
+          for path in "${required[@]}"; do
+            grep -q "^$path" CODEOWNERS || { echo "Missing CODEOWNERS entry for $path"; exit 1; }
+          done
