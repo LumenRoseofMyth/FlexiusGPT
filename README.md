@@ -44,7 +44,7 @@ single `payload` dictionary. For example:
 from adapters.gpt_adapter import call_module_logic
 
 result = call_module_logic(
-    "01_core_rules", payload={"action": "test_mode", "test_mode": True}
+    "01_core_rules", payload={"action": "test_mode"}
 )
 ```
 

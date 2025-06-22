@@ -13,7 +13,7 @@ def test_module_endpoint_success():
     resp = client.post(
         "/module",
         headers={"X-API-KEY": "testkey"},
-        json={"module_id": "01_core_rules", "payload": {"action": "test_mode", "test_mode": True}},
+        json={"module_id": "01_core_rules", "payload": {"action": "test_mode"}},
     )
     assert resp.status_code == 200
     assert resp.json()["success"] is True
@@ -23,7 +23,7 @@ def test_module_endpoint_requires_payload_dict():
     resp = client.post(
         "/module",
         headers={"X-API-KEY": "testkey"},
-        json={"module_id": "01_core_rules", "action": "test_mode", "test_mode": True},
+        json={"module_id": "01_core_rules", "action": "test_mode"},
     )
     assert resp.status_code in (400, 422)
 

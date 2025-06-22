@@ -13,7 +13,7 @@ def test_run_module_requires_payload():
 
 
 def test_call_module_logic_success():
-    result = call_module_logic("01_core_rules", {"action": "test_mode", "test_mode": True})
+    result = call_module_logic("01_core_rules", {"action": "test_mode"})
     assert result["success"] is True
 
 
