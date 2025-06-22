@@ -6,7 +6,7 @@ from fastapi import FastAPI, HTTPException, Security, Depends
 from fastapi.security.api_key import APIKeyHeader, APIKey
 from fastapi.staticfiles import StaticFiles
 from fastapi.openapi.utils import get_openapi
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from typing import Optional, Dict
 from pathlib import Path
 
@@ -58,8 +58,7 @@ def log_api_call(endpoint, data, status):
 # === REQUEST MODELS ===
 class ModuleRequest(BaseModel):
     module_id: str
-    action: str
-    user_log: Optional[Dict] = None
+    payload: Dict = Field(default_factory=dict)
 
 
 class FeedbackRequest(BaseModel):
@@ -80,8 +79,8 @@ def api_call_module(
     req: ModuleRequest,
     api_key: APIKey = Depends(get_api_key)
 ):
-    payload = req.dict()
-    module_id = payload.pop("module_id")
+    module_id = req.module_id
+    payload = req.payload or {}
     try:
         result = call_module_logic(module_id, payload)
         log_api_call("/module", req.dict(), "OK")
