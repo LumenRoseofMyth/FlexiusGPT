@@ -1,0 +1,2 @@
+# @lock
+"""Core package init."""
