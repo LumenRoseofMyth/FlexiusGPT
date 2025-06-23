@@ -1,5 +1,6 @@
 import os
 
+
 def test_all_core_files_have_lock():
     locked_paths = [".core", "infra/secure"]
     bad_files = []

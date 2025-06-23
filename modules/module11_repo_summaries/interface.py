@@ -1,10 +1,12 @@
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 from datetime import datetime
 import os
+
 
 class Input(BaseModel):
     action: str
     data: dict
+
 
 def run_module(*, payload: dict) -> dict:
     Input(**payload)
@@ -19,7 +21,10 @@ def run_module(*, payload: dict) -> dict:
     text = data.get("text", "").strip()
 
     if not text:
-        return {"status": "error", "message": "Missing summary text in payload"}
+        return {
+            "status": "error",
+            "message": "Missing summary text in payload",
+        }
 
     # Generate filename
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
@@ -30,4 +35,7 @@ def run_module(*, payload: dict) -> dict:
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(text)
 
-    return {"status": "success", "result": {"file": filename}}
+    return {
+        "status": "success",
+        "result": {"file": filename},
+    }

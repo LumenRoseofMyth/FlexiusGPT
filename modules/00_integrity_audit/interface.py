@@ -1,6 +1,7 @@
 from typing import Dict
 import os
 
+
 def run_module(payload: Dict) -> Dict:
     """
     Governance audit module.
@@ -27,7 +28,11 @@ def run_module(payload: Dict) -> Dict:
     # 2. Check plugin folders
     for mod in os.listdir("modules"):
         mod_path = os.path.join("modules", mod)
-        if not os.path.isdir(mod_path) or mod.startswith(".") or not mod[0].isdigit():
+        if (
+            not os.path.isdir(mod_path)
+            or mod.startswith(".")
+            or not mod[0].isdigit()
+        ):
             continue
 
         iface = os.path.join(mod_path, "interface.py")

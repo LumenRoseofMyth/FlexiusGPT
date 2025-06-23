@@ -1,5 +1,6 @@
 import importlib
 
+
 def test_core_rules_module_naming():
     mod = importlib.import_module("modules.module01_core_rules.interface")
     result = mod.run_module(payload={"action": "enforce", "data": {}})

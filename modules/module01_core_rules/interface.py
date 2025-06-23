@@ -1,9 +1,11 @@
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
 import os
+
 
 class Input(BaseModel):
     action: str
     data: dict
+
 
 def run_module(*, payload: dict) -> dict:
     Input(**payload)  # validation check
@@ -19,6 +21,7 @@ def run_module(*, payload: dict) -> dict:
     for module in os.listdir("modules"):
         if module.startswith("."):
             continue
+
         path = os.path.join("modules", module)
         iface = os.path.join(path, "interface.py")
         init_file = os.path.join(path, "__init__.py")
