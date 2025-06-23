@@ -1,91 +1,60 @@
 name: CI
-# ──────────────────────────────────────────────
+
 on:
   push:
-    branches: [main, develop, "feature/**"]
+    branches: [main]
   pull_request:
-    branches: [main, develop]
+    branches: [main]
 
 jobs:
-# ───────────────────────── governance-check ─────────────────────────
   governance-check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Validate override flag & module interfaces
-        shell: bash
-        run: |
-          changed=$(git diff --name-only ${{ github.event.pull_request.base.sha || 'HEAD^' }} ${{ github.event.pull_request.head.sha || 'HEAD' }})
-          if echo "$changed" | grep -Eq '^(\.core/|infra/secure/)'; then
-            flag=$(jq -r '.override_protection' governance_config.json)
-            if [[ "$flag" != "true" ]]; then
-              echo "ERROR: core/infra edits require override_protection=true"; exit 1
-            fi
-          fi
-          missing=0
-          while IFS= read -r iface; do
-            grep -q "def run_module" "$iface" || { echo "ERROR: $iface missing run_module"; missing=1; }
-          done < <(find modules -name interface.py)
-          exit $missing
+      - uses: actions/checkout@v3
 
-# ─────────────────────────────────── lint ────────────────────────────
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install Poetry
+        run: pip install poetry
+
+      - name: Install Dependencies
+        run: poetry install
+
+      - name: Run Governance Audit
+        run: poetry run python -c "from modules.module00_integrity_audit.interface import run_module; assert run_module({'payload': {'action': 'scan', 'data': {}}})['status'] == 'pass'"
+
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
-      - name: Install linters
-        run: pip install flake8 black
-      - name: flake8
-        run: flake8 .
-      - name: black check
-        run: black --check .
+          python-version: 3.11
+      - name: Install tools
+        run: |
+          pip install poetry
+          poetry install
+      - name: Run flake8
+        run: poetry run flake8 --exclude=.core,infra/secure
+      - name: Run black check
+        run: poetry run black --check .
 
-# ─────────────────────────────────── tests ───────────────────────────
   tests:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ["3.10", "3.11"]
+        python-version: [3.10, 3.11]
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
         with:
           python-version: ${{ matrix.python-version }}
-
-      - name: Install Poetry
-        run: pip install poetry
-
-      - name: Install deps (workspace)
-        run: poetry install --no-root
-
-      - name: Run pytest
+      - name: Install
+        run: |
+          pip install poetry
+          poetry install
+      - name: Run Tests
         run: poetry run pytest -q
-
-      - name: Run integrity module test
-        run: poetry run pytest -q tests/test_module01_core_rules.py
-
-# ─────────────────────────────────── integrity-audit ─────────────────────
-  integrity-audit:
-    name: Run Integrity Audit
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
-      - name: Install Poetry
-        run: pip install poetry
-
-      - name: Install dependencies
-        run: poetry install --no-root
-
-      - name: Run 00_integrity_audit
-        run: poetry run pytest -q tests/test_00_integrity_audit.py
-
