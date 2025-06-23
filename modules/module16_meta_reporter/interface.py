@@ -1,8 +1,8 @@
 from pydantic import BaseModel
-import importlib
-import json
 import os
+import json
 from datetime import datetime
+from modules.module15_deep_repo_orchestrator.interface import run_module as run_orchestrator
 
 
 class Input(BaseModel):
@@ -10,53 +10,74 @@ class Input(BaseModel):
     data: dict
 
 
+def collect_detailed_repo_data() -> dict:
+    repo_data = {}
+
+    for root, dirs, files in os.walk("."):
+        root_display = root.replace("\\", "/")
+        repo_data[root_display] = []
+
+        for fname in files:
+            path = os.path.join(root, fname)
+            try:
+                with open(path, "r", encoding="utf-8", errors="ignore") as f:
+                    lines = f.readlines()
+                size = os.path.getsize(path)
+                mtime = datetime.fromtimestamp(os.path.getmtime(path)).isoformat()
+                repo_data[root_display].append({
+                    "file": fname,
+                    "lines": len(lines),
+                    "size": size,
+                    "modified": mtime,
+                })
+            except Exception as e:
+                repo_data[root_display].append({
+                    "file": fname,
+                    "error": str(e),
+                })
+
+    return repo_data
+
+
 def run_module(*, payload: dict) -> dict:
-    Input(**payload)
+    Input(**payload)  # validates payload
 
     results = {}
 
-    mod_integrity = importlib.import_module(
-        "modules.00_integrity_audit.interface"
-    )
-    mod_analyzer = importlib.import_module(
-        "modules.module10_repo_analyzer.module10_repo_analyzer"
-    )
-    mod_orchestrator = importlib.import_module(
-        "modules.module15_deep_repo_orchestrator.interface"
-    )
+    try:
+        results["orchestrator"] = run_orchestrator(payload={"action": "deep_scan", "data": {}})
+    except Exception as e:
+        results["orchestrator"] = {"status": "fail", "error": str(e)}
 
-    results["integrity"] = mod_integrity.run_module(
-        {"payload": {"action": "scan", "data": {}}}
-    )
-    results["repo_analysis"] = mod_analyzer.run_analysis({})
-    results["orchestrator"] = mod_orchestrator.run_module(
-        payload={"action": "meta", "data": {}}
-    )
+    try:
+        results["repo_analysis"] = collect_detailed_repo_data()
+    except Exception as e:
+        results["repo_analysis"] = {"status": "fail", "error": str(e)}
 
-    out_dir = os.path.join(os.path.dirname(__file__), "summaries")
-    os.makedirs(out_dir, exist_ok=True)
-    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    json_path = os.path.join(out_dir, f"{timestamp}_meta_summary.json")
-    txt_path = os.path.join(out_dir, f"{timestamp}_meta_summary.txt")
+    os.makedirs("summaries", exist_ok=True)
+    timestamp = datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
+    output_file_txt = f"summaries/meta_report_{timestamp}.txt"
+    output_file_json = f"summaries/meta_report_{timestamp}.json"
 
-    with open(json_path, "w", encoding="utf-8") as f:
+    with open(output_file_txt, "w", encoding="utf-8") as f:
+        for folder, files in results["repo_analysis"].items():
+            f.write(f"\n📁 {folder}\n")
+            for file_info in files:
+                if "error" in file_info:
+                    f.write(f"  └── {file_info['file']} ❌ {file_info['error']}\n")
+                else:
+                    f.write(
+                        f"  └── {file_info['file']} "
+                        f"(🧮 {file_info['lines']} lines, 📦 {file_info['size']} bytes, 🕓 {file_info['modified']})\n"
+                    )
+
+    with open(output_file_json, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
-
-    with open(txt_path, "w", encoding="utf-8") as f:
-        f.write("📦 Meta Summary\n")
-        f.write(f"- Governance: {results['integrity']['status']}\n")
-        f.write(
-            f"- Analyzer File: {results['repo_analysis']['summary_file']}\n"
-        )
-        f.write(
-            f"- Summary Save: "
-            f"{results['orchestrator']['result']['summary_save']['status']}\n"
-        )
 
     return {
         "status": "complete",
         "output": {
-            "json_file": os.path.basename(json_path),
-            "txt_file": os.path.basename(txt_path),
+            "txt_file": output_file_txt,
+            "json_file": output_file_json,
         },
     }

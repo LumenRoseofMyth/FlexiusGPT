@@ -1,0 +1,2338 @@
+
+📁 .
+  └── CODEOWNERS (🧮 3 lines, 📦 115 bytes, 🕓 2025-06-23T05:43:39.661174)
+  └── governance_config.json (🧮 1 lines, 📦 33 bytes, 🕓 2025-06-23T05:55:13.555421)
+  └── poetry (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T11:18:47.590266)
+  └── poetry.lock (🧮 674 lines, 📦 59106 bytes, 🕓 2025-06-23T09:30:44.757204)
+  └── pyproject.toml (🧮 22 lines, 📦 453 bytes, 🕓 2025-06-23T09:30:44.758210)
+  └── README.md (🧮 1 lines, 📦 2 bytes, 🕓 2025-06-23T08:07:09.942832)
+  └── repo_analysis_output.txt (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T09:24:14.347440)
+  └── repo_analysis_summary.txt (🧮 790 lines, 📦 13854 bytes, 🕓 2025-06-23T11:09:33.221275)
+  └── requirements.txt (🧮 1 lines, 📦 17 bytes, 🕓 2025-06-23T05:43:39.664174)
+  └── sitecustomize.py (🧮 3 lines, 📦 46 bytes, 🕓 2025-06-23T09:33:08.922970)
+
+📁 ./.core
+  └── engine.py (🧮 11 lines, 📦 206 bytes, 🕓 2025-06-23T05:43:39.656174)
+  └── exceptions.py (🧮 16 lines, 📦 411 bytes, 🕓 2025-06-23T05:43:39.656174)
+  └── orchestrator.py (🧮 80 lines, 📦 2290 bytes, 🕓 2025-06-23T05:43:39.658174)
+  └── validator.py (🧮 29 lines, 📦 763 bytes, 🕓 2025-06-23T05:43:39.658174)
+  └── __init__.py (🧮 10 lines, 📦 216 bytes, 🕓 2025-06-23T05:43:39.655174)
+
+📁 ./.git
+  └── COMMIT_EDITMSG (🧮 1 lines, 📦 55 bytes, 🕓 2025-06-23T11:07:44.592130)
+  └── config (🧮 41 lines, 📦 1326 bytes, 🕓 2025-06-23T09:21:00.934191)
+  └── description (🧮 1 lines, 📦 73 bytes, 🕓 2025-06-20T07:54:27.450171)
+  └── FETCH_HEAD (🧮 2 lines, 📦 240 bytes, 🕓 2025-06-23T11:39:16.911644)
+  └── HEAD (🧮 1 lines, 📦 38 bytes, 🕓 2025-06-23T08:07:06.704319)
+  └── index (🧮 81 lines, 📦 15623 bytes, 🕓 2025-06-23T11:07:44.589129)
+  └── ORIG_HEAD (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T11:07:52.602368)
+
+📁 ./.git/hooks
+  └── applypatch-msg.sample (🧮 15 lines, 📦 478 bytes, 🕓 2025-06-20T07:54:27.451172)
+  └── commit-msg.sample (🧮 24 lines, 📦 896 bytes, 🕓 2025-06-20T07:54:27.451172)
+  └── fsmonitor-watchman.sample (🧮 174 lines, 📦 4726 bytes, 🕓 2025-06-20T07:54:27.451172)
+  └── post-update.sample (🧮 8 lines, 📦 189 bytes, 🕓 2025-06-20T07:54:27.452169)
+  └── pre-applypatch.sample (🧮 14 lines, 📦 424 bytes, 🕓 2025-06-20T07:54:27.452169)
+  └── pre-commit.sample (🧮 49 lines, 📦 1649 bytes, 🕓 2025-06-20T07:54:27.452169)
+  └── pre-merge-commit.sample (🧮 13 lines, 📦 416 bytes, 🕓 2025-06-20T07:54:27.453169)
+  └── pre-push.sample (🧮 53 lines, 📦 1374 bytes, 🕓 2025-06-20T07:54:27.453169)
+  └── pre-rebase.sample (🧮 169 lines, 📦 4898 bytes, 🕓 2025-06-20T07:54:27.453169)
+  └── pre-receive.sample (🧮 24 lines, 📦 544 bytes, 🕓 2025-06-20T07:54:27.454169)
+  └── prepare-commit-msg.sample (🧮 42 lines, 📦 1492 bytes, 🕓 2025-06-20T07:54:27.454169)
+  └── push-to-checkout.sample (🧮 78 lines, 📦 2783 bytes, 🕓 2025-06-20T07:54:27.454169)
+  └── sendemail-validate.sample (🧮 77 lines, 📦 2308 bytes, 🕓 2025-06-20T07:54:27.454169)
+  └── update.sample (🧮 128 lines, 📦 3650 bytes, 🕓 2025-06-20T07:54:27.455169)
+
+📁 ./.git/info
+  └── exclude (🧮 6 lines, 📦 240 bytes, 🕓 2025-06-20T07:54:27.455169)
+
+📁 ./.git/logs
+  └── HEAD (🧮 114 lines, 📦 22578 bytes, 🕓 2025-06-23T11:07:44.597130)
+
+📁 ./.git/logs/refs
+
+📁 ./.git/logs/refs/heads
+  └── main (🧮 60 lines, 📦 11909 bytes, 🕓 2025-06-23T08:06:40.909040)
+
+📁 ./.git/logs/refs/heads/dummy
+  └── ruleset-trigger (🧮 9 lines, 📦 1812 bytes, 🕓 2025-06-23T11:07:44.597130)
+
+📁 ./.git/logs/refs/heads/feat
+  └── prompt-builder-v1 (🧮 1 lines, 📦 169 bytes, 🕓 2025-06-21T04:49:10.960655)
+  └── prompt-builder-v2 (🧮 1 lines, 📦 169 bytes, 🕓 2025-06-21T04:50:37.329533)
+  └── prompt-builder-v3 (🧮 1 lines, 📦 169 bytes, 🕓 2025-06-21T04:52:09.675703)
+  └── pyyaml-dep (🧮 2 lines, 📦 341 bytes, 🕓 2025-06-21T04:33:26.613979)
+  └── self-evolving-gpt-skeleton (🧮 2 lines, 📦 371 bytes, 🕓 2025-06-21T04:25:16.607106)
+
+📁 ./.git/logs/refs/heads/upgrade
+  └── deep_dive_v1 (🧮 5 lines, 📦 1005 bytes, 🕓 2025-06-21T12:26:10.352124)
+  └── phase_enforcement_v1 (🧮 4 lines, 📦 700 bytes, 🕓 2025-06-22T06:02:24.953097)
+
+📁 ./.git/logs/refs/heads/xw9h8q-codex
+  └── refactor-core-module-for-dynamic-validation (🧮 4 lines, 📦 773 bytes, 🕓 2025-06-22T09:36:17.036529)
+
+📁 ./.git/logs/refs/remotes
+
+📁 ./.git/logs/refs/remotes/origin
+  └── HEAD (🧮 1 lines, 📦 149 bytes, 🕓 2025-06-21T04:22:34.726332)
+  └── main (🧮 60 lines, 📦 9818 bytes, 🕓 2025-06-23T08:18:40.153909)
+
+📁 ./.git/logs/refs/remotes/origin/codex
+  └── add-.flake8-config-and-relax-lint-rules (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.649281)
+  └── add-autonomous-orchestrator-for-himks-upgrade (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-21T11:27:43.175438)
+  └── add-build_diff_summary_prompt-method (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.650278)
+  └── add-code-analytics-and-fatigue-simulation (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.667432)
+  └── add-codex-reflection-and-validation-tools (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.668973)
+  └── add-custom-gpt-action-api-and-openapi-schema (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.652278)
+  └── add-digital-twin-module-and-integration (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.670649)
+  └── add-dynamic-phase-progression-engine (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.671646)
+  └── add-evolutionorchestrator-and-testrunner (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.653279)
+  └── add-executionorchestrator-module-and-tests (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.654279)
+  └── add-github-action-for-csv-to-json-conversion (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.432705)
+  └── add-microphase-logic-and-integrate-into-phase_manager (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.672644)
+  └── add-patchsummarizationagent-for-codex-diff-summaries (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.656104)
+  └── add-prauthoragent-for-codex-powered-pr-metadata-generation (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.657109)
+  └── add-recovery-logic-to-feedback-and-protocol-engines (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.674645)
+  └── add-repomanager-and-changeapplier-modules (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.658883)
+  └── add-toolregistry-and-dispatcheragent (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.660888)
+  └── add-vectorstore-and-memoryagent-for-task-memory (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.661888)
+  └── add-weekly-health-report-github-action (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.435701)
+  └── clean-up-todo-and-fixme-markers (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T12:17:07.785187)
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.663889)
+  └── create-phase-1-core-setup-for-flexiusgpt (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T04:41:42.941770)
+  └── create-user-profile-for-aetherfitness (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.436702)
+  └── enable-api-triggered-workflow-with-repository_dispatch (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.438702)
+  └── enable-coordinator-branch-creation-for-phase-enforcement-blu (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-21T12:37:04.314605)
+  └── finalize-batch-5--digest-and-export (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.675645)
+  └── fix-deep_repo_orchestrator-call-failure (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.440704)
+  └── fix-deep_repo_orchestrator-test_mode-issue (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.441703)
+  └── fix-invalid-or-missing-api-key-error (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T07:24:53.945525)
+  └── fix-pythonpath-for-openapi-export-workflow (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.666894)
+  └── fix-server-url-origin-mismatch (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T07:08:52.885382)
+  └── implement-adaptive-feedback-scaling-and-trend-analytics (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.676643)
+  └── implement-autodocagent-and-docs-ci-workflow (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.667894)
+  └── implement-batch-1-for-codex-integration (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.679161)
+  └── implement-filemutationagent-for-codex-driven-file-rewrites (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.669894)
+  └── implement-github-ingestion-and-feedback-hooks (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.683206)
+  └── implement-himks-upgrade-toolkit (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T12:17:07.787187)
+  └── implement-peak-performance-feedback-and-protocol-nudging (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.684204)
+  └── implement-promptbuilder-for-codex-prompts (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.670894)
+  └── implement-unified-upgrade-path-for-codex-integration (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.685204)
+  └── initialize-healthconnect-insight-app (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.443703)
+  └── integrate-ci-with-self-evolution-workflow (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.672893)
+  └── modularize-feedback-engine-for-multi-modal-input (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.687203)
+  └── refactor-core-module-for-dynamic-validation (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T07:49:27.078883)
+  └── refactor-python-logic-files-with-improvements (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T04:22:34.721343)
+  └── remove-test_mode-from-backend-schema (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.444702)
+  └── restore-himks-core-logic-and-audit-tools (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-21T11:27:43.177444)
+  └── run-and-fix-code-structure-tests (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.688204)
+  └── scaffold-core-package-for-phase-1 (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T04:22:34.722332)
+  └── set-up-environment-for-local-gpt-evolution (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.673893)
+  └── set-up-healthconnect-insight-hub-backend (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.447495)
+  └── set-up-healthconnect-insight-hub-module (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-23T02:46:41.448500)
+  └── standardize-payload-structure-and-improve-validation (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T09:12:45.891078)
+  └── unify-code-structure-and-integrate-connector (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.689961)
+  └── update-compliance-framework-for-zero-cost-policy (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.691583)
+  └── update-ngrok-url (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T07:08:52.886383)
+  └── upgrade-logic-files-with-codex (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T04:22:34.724333)
+  └── validate-codex-structure-and-prevent-duplicates (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.692585)
+
+📁 ./.git/logs/refs/remotes/origin/codex/fix-flake8-f401
+  └── f841-issues (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.665894)
+
+📁 ./.git/logs/refs/remotes/origin/codex/implement-dynamic-guardrails-for-phase
+  └── session-management (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-22T06:07:08.680204)
+
+📁 ./.git/logs/refs/remotes/origin/codex/standardize-
+  └── module-endpoint-payload-structure (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-22T09:37:39.432799)
+
+📁 ./.git/logs/refs/remotes/origin/dummy
+  └── ruleset-trigger (🧮 6 lines, 📦 948 bytes, 🕓 2025-06-23T11:07:54.715360)
+
+📁 ./.git/logs/refs/remotes/origin/feat
+  └── prompt-builder-v1 (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T04:49:35.320486)
+  └── prompt-builder-v2 (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T04:50:39.889250)
+  └── prompt-builder-v3 (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T04:52:12.199754)
+  └── pyyaml-dep (🧮 2 lines, 📦 321 bytes, 🕓 2025-06-21T04:32:49.710771)
+  └── self-evolving-gpt-skeleton (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T04:25:25.301762)
+
+📁 ./.git/logs/refs/remotes/origin/ixxttp-codex
+  └── implement-himks-upgrade-toolkit (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T12:17:07.789189)
+
+📁 ./.git/logs/refs/remotes/origin/lo68oc-codex
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.675894)
+
+📁 ./.git/logs/refs/remotes/origin/srhtwg-codex
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.677893)
+
+📁 ./.git/logs/refs/remotes/origin/upgrade
+  └── deep_dive_v1 (🧮 3 lines, 📦 474 bytes, 🕓 2025-06-21T12:26:12.436555)
+  └── phase_enforcement_v1 (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T12:37:50.852221)
+
+📁 ./.git/logs/refs/remotes/origin/x4h8da-codex
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-21T07:13:48.679893)
+
+📁 ./.git/logs/refs/remotes/origin/xw9h8q-codex
+  └── refactor-core-module-for-dynamic-validation (🧮 2 lines, 📦 328 bytes, 🕓 2025-06-22T08:58:36.315765)
+
+📁 ./.git/objects
+
+📁 ./.git/objects/00
+  └── 1e874b89ee90f6f01f02001f94cee2ace570b8 (🧮 3 lines, 📦 356 bytes, 🕓 2025-06-23T07:06:32.767118)
+  └── 35d71686de76843405ab123e85f24283349602 (🧮 3 lines, 📦 217 bytes, 🕓 2025-06-22T08:50:07.309111)
+  └── 5ce0bca59f414a4f39bc01246604d676fe2069 (🧮 6 lines, 📦 437 bytes, 🕓 2025-06-22T08:50:07.449890)
+  └── 91639e5782d2bafd78bb4fa70f0fa5d9d5f7f2 (🧮 2 lines, 📦 192 bytes, 🕓 2025-06-22T09:50:05.896077)
+  └── 9e610407467b4d3f9addb9c320b9d4d0350c6a (🧮 10 lines, 📦 935 bytes, 🕓 2025-06-23T02:46:31.670263)
+  └── d0f650b4336c43477f422da6a0421cbb0798ed (🧮 6 lines, 📦 396 bytes, 🕓 2025-06-23T02:46:31.786167)
+
+📁 ./.git/objects/01
+  └── 5c92180d58d1c8c10a5ca31723397e452ce785 (🧮 1 lines, 📦 178 bytes, 🕓 2025-06-20T12:10:00.020844)
+  └── 9403ec170456588adac4005687a01611ba7541 (🧮 6 lines, 📦 924 bytes, 🕓 2025-06-23T02:46:31.683189)
+  └── b8e2fc79afbb8f38db15383f6a2bf0aae8e48e (🧮 33 lines, 📦 3638 bytes, 🕓 2025-06-20T09:29:17.718181)
+
+📁 ./.git/objects/02
+  └── 33665b5d4e09314a1f3fc82498a60507044faa (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-22T08:58:25.874038)
+  └── 7124b7ab4d4aa5f1929ce7c7b16728d947505d (🧮 3 lines, 📦 157 bytes, 🕓 2025-06-21T10:14:29.045402)
+  └── d523153451da543e47d12c0dcbd01fdedee8d8 (🧮 5 lines, 📦 1227 bytes, 🕓 2025-06-22T06:44:07.195096)
+
+📁 ./.git/objects/03
+  └── 711fc3c7e9ec259f42bbc6c59e7cdf4f4f2980 (🧮 6 lines, 📦 291 bytes, 🕓 2025-06-22T07:49:27.029198)
+  └── 7386205e205906ae3f6e9f071600931d46325c (🧮 8 lines, 📦 1051 bytes, 🕓 2025-06-21T11:35:14.677666)
+  └── 92f788a940b1e5196a2728b81f249959a1d50b (🧮 1 lines, 📦 88 bytes, 🕓 2025-06-23T05:43:07.637485)
+  └── bcd67007aff0a65722f2b01dcbe61c87436cfb (🧮 8 lines, 📦 541 bytes, 🕓 2025-06-23T10:27:18.891868)
+  └── cb3f3f5c5c131b83ea36c6ce065ece044afdb5 (🧮 4 lines, 📦 641 bytes, 🕓 2025-06-23T10:24:06.850528)
+
+📁 ./.git/objects/04
+  └── 42c45ec298ba3ae9b5dace9b04a5a1d759efcc (🧮 2 lines, 📦 65 bytes, 🕓 2025-06-21T09:19:06.842326)
+  └── 4995573b9c4a00bc1f7630be8c073f93918845 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.962958)
+  └── 695874030b62e2d2561836fd8cd726b1f4d187 (🧮 1 lines, 📦 173 bytes, 🕓 2025-06-23T07:32:41.848150)
+  └── 9895875263ec5ee9a6378c0ae29905def0e9fa (🧮 1 lines, 📦 104 bytes, 🕓 2025-06-23T10:24:06.904249)
+  └── b376676c953d851ea2f6d27095c1252076daad (🧮 2 lines, 📦 208 bytes, 🕓 2025-06-21T08:49:31.795706)
+  └── d5c60cb9195845f0c7af5da55215bfb2356510 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.640809)
+  └── f683e9412dba8018805125ad9b5f8aee35b074 (🧮 4 lines, 📦 187 bytes, 🕓 2025-06-22T09:50:05.854617)
+
+📁 ./.git/objects/05
+  └── 28bd60585f6af7984e86def429caf0f6eb5fd1 (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-21T12:36:36.898095)
+  └── 3f1f2d1a13a22dfd02ccfa69813554f54a7a49 (🧮 1 lines, 📦 110 bytes, 🕓 2025-06-21T04:25:15.804824)
+  └── b30f773e5aeb299421ca96b339439fad4cfc5b (🧮 1 lines, 📦 173 bytes, 🕓 2025-06-23T07:32:41.848150)
+  └── bc13d6920270897fb9c1e25044c50815ae98f3 (🧮 5 lines, 📦 246 bytes, 🕓 2025-06-20T12:07:34.042003)
+
+📁 ./.git/objects/06
+  └── 15f8a08052279dc0fdd499f94ea4527fbb6e67 (🧮 2 lines, 📦 335 bytes, 🕓 2025-06-23T05:43:07.840618)
+  └── 4f39632f0d3a3dd111a23fb922adb77e6ae6f2 (🧮 27 lines, 📦 2563 bytes, 🕓 2025-06-21T08:36:35.458838)
+
+📁 ./.git/objects/07
+  └── 0d921a20db436a5d7a474749f1814a918094e8 (🧮 1 lines, 📦 250 bytes, 🕓 2025-06-21T04:25:15.808744)
+  └── 46758d338b2d464708ff5aa66e5f754709e930 (🧮 5 lines, 📦 581 bytes, 🕓 2025-06-23T07:06:32.660875)
+  └── 54baf79bb5f28bd98b721088d7d26c68ada48a (🧮 11 lines, 📦 1134 bytes, 🕓 2025-06-21T12:17:07.662235)
+  └── a475e0f6f1b081f67cad8b01b0303566d8ae51 (🧮 4 lines, 📦 966 bytes, 🕓 2025-06-23T05:43:07.644113)
+  └── af0121a124cb2b151d433f544d797144370f20 (🧮 6 lines, 📦 336 bytes, 🕓 2025-06-21T08:49:31.183935)
+  └── c08c1939047630ba5129adfb98a4b4cba1a9ba (🧮 1 lines, 📦 233 bytes, 🕓 2025-06-23T02:46:31.775167)
+
+📁 ./.git/objects/08
+  └── 2660cc44663a4163cfa3c1cddc1c412d8f2a61 (🧮 3 lines, 📦 247 bytes, 🕓 2025-06-20T12:07:34.040002)
+  └── 52f6586022f11730003dd3c086e9aa8e2fd704 (🧮 3 lines, 📦 216 bytes, 🕓 2025-06-21T12:17:07.653441)
+  └── 568b7935c358da46ac8720e2946176128a987f (🧮 2 lines, 📦 65 bytes, 🕓 2025-06-21T12:18:06.171396)
+  └── 58457f33f620b83c88ab97995dcd62bf98a36f (🧮 5 lines, 📦 415 bytes, 🕓 2025-06-22T09:50:05.984029)
+  └── 695c6409c648a175d6f87d0b49582d306b2f90 (🧮 8 lines, 📦 917 bytes, 🕓 2025-06-23T02:45:50.805352)
+  └── 991dc930e294ad96c87527f895f34e9d3de55d (🧮 14 lines, 📦 1158 bytes, 🕓 2025-06-21T12:23:39.873654)
+  └── bca2a5fa563bc095333aecee413c7a7f1b5660 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.647071)
+  └── c38ab877702abd2fe27563b60991763b7ef82c (🧮 12 lines, 📦 1223 bytes, 🕓 2025-06-23T10:24:06.994630)
+
+📁 ./.git/objects/09
+  └── 05f7ba913171ea45f1f40216c2e6b7889cb286 (🧮 3 lines, 📦 198 bytes, 🕓 2025-06-23T02:45:50.812350)
+  └── 3584cdd86ff79018837eb66fe8f6a18b4fcc3f (🧮 1 lines, 📦 224 bytes, 🕓 2025-06-20T12:07:34.076002)
+  └── 7c4c5b6550ecca7d889b81e3651f072542e079 (🧮 5 lines, 📦 944 bytes, 🕓 2025-06-22T09:58:14.519650)
+  └── e4590eff33201679e3e5130061c48a68efdf93 (🧮 3 lines, 📦 250 bytes, 🕓 2025-06-23T06:27:04.022495)
+  └── f9c5459e8b588a6003f018a0df7964655ea493 (🧮 6 lines, 📦 459 bytes, 🕓 2025-06-22T08:53:04.074761)
+
+📁 ./.git/objects/0a
+  └── 5a803ffd93ff388163c81272b66bf338c95843 (🧮 5 lines, 📦 180 bytes, 🕓 2025-06-20T09:27:21.042557)
+  └── 5cb05a96574b5871a1fbe56412ea1935b75ffa (🧮 2 lines, 📦 97 bytes, 🕓 2025-06-21T11:26:56.134606)
+  └── c31359fe1485ca472a25f5f9c155f0c6465d92 (🧮 1 lines, 📦 191 bytes, 🕓 2025-06-22T09:50:05.903085)
+
+📁 ./.git/objects/0b
+  └── 1033dd6522f8b8bd26a14ec37747eb1b0591bf (🧮 4 lines, 📦 293 bytes, 🕓 2025-06-23T10:58:31.207884)
+  └── 2fd03ea793a78b383cdcbf2bf2a96ee6c5ef7d (🧮 2 lines, 📦 166 bytes, 🕓 2025-06-23T07:32:41.791154)
+  └── 33c1c9529b6c3aee5c9fd6e994df7657360160 (🧮 3 lines, 📦 221 bytes, 🕓 2025-06-23T10:58:31.278872)
+  └── 4bc2464a767ae5f95ed671349c3e70dd04919d (🧮 5 lines, 📦 549 bytes, 🕓 2025-06-23T11:05:51.441625)
+  └── b249aa11de1f3f5190bd1736ffabf1125e7a25 (🧮 8 lines, 📦 432 bytes, 🕓 2025-06-22T08:50:07.445882)
+  └── f599b6e5a6c563e51cc3c55a9ba48d70ebed57 (🧮 1 lines, 📦 101 bytes, 🕓 2025-06-23T10:24:07.031631)
+
+📁 ./.git/objects/0c
+  └── 08b23b857c9b06f13b1480241b7877aaee2f70 (🧮 1 lines, 📦 57 bytes, 🕓 2025-06-22T08:50:24.319534)
+  └── 55849ce92ecdf639215742432b08d8a8db9b2e (🧮 2 lines, 📦 196 bytes, 🕓 2025-06-22T09:50:05.927869)
+  └── 8002a03e20f4c40d2ada3f0a899d581a55ec65 (🧮 20 lines, 📦 2440 bytes, 🕓 2025-06-21T08:36:35.476383)
+  └── 8896e514b22a70e5756fe1ec127692be4071d4 (🧮 1 lines, 📦 195 bytes, 🕓 2025-06-23T06:27:04.118859)
+  └── 8dcffb8bf233bb2bf74f1c818ca197eb575a58 (🧮 4 lines, 📦 498 bytes, 🕓 2025-06-23T08:06:14.435271)
+  └── 9172c05dc180e193438f2b79c5965b2bdeb785 (🧮 2 lines, 📦 197 bytes, 🕓 2025-06-21T12:18:06.737392)
+
+📁 ./.git/objects/0d
+  └── 3fcbb55c80087fedb89ba117b9bd22f4c8f19b (🧮 31 lines, 📦 3508 bytes, 🕓 2025-06-20T09:29:17.741243)
+  └── 5c6f8508ce3f374efd6c7a48e34df5b32acc17 (🧮 1 lines, 📦 179 bytes, 🕓 2025-06-20T09:29:17.668586)
+  └── bcedd88f0d04b01a95efe8e9cffa96957dfc66 (🧮 3 lines, 📦 197 bytes, 🕓 2025-06-22T09:12:45.806908)
+
+📁 ./.git/objects/0e
+  └── 27c018326675f64b2281e1a0d7946264526462 (🧮 2 lines, 📦 198 bytes, 🕓 2025-06-21T10:14:29.618508)
+  └── 4253ca8351b818b2ef9c8eeba9c1669a886619 (🧮 2 lines, 📦 161 bytes, 🕓 2025-06-20T12:07:34.076002)
+  └── cf0cce58fadbbb1cab7bc5e3fca53fe4e130ac (🧮 2 lines, 📦 252 bytes, 🕓 2025-06-21T04:25:15.815578)
+  └── e3952c9a3e01bda8017d0d74f46cb85e3006cb (🧮 5 lines, 📦 370 bytes, 🕓 2025-06-23T07:06:32.763900)
+
+📁 ./.git/objects/0f
+  └── 15f0b07300462055347b343f0c6fca4a1154cc (🧮 3 lines, 📦 243 bytes, 🕓 2025-06-23T05:43:07.873740)
+  └── ddc72c7b52857ea9fbacd99193f94afc2f3cf5 (🧮 3 lines, 📦 767 bytes, 🕓 2025-06-20T09:30:10.975942)
+
+📁 ./.git/objects/10
+  └── 297c8d77097151f0b10784ce671ba9fec7348a (🧮 6 lines, 📦 1229 bytes, 🕓 2025-06-22T07:09:29.146792)
+  └── 5574334d7b90b23e0d4a5504bca5218dcc4b33 (🧮 1 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:24.273195)
+  └── 608efa5daacf626d86c13aecf438003a4e22d0 (🧮 9 lines, 📦 923 bytes, 🕓 2025-06-21T04:25:02.938684)
+  └── 91ae101f20255ecf6826fd5ff131e231705fd8 (🧮 11 lines, 📦 1151 bytes, 🕓 2025-06-21T08:36:35.493189)
+  └── 98b1d3d29c491b093590b867c84c94d5385c37 (🧮 1 lines, 📦 70 bytes, 🕓 2025-06-21T11:31:14.084190)
+  └── cf99e133d8f7c118bd694b492701bdf8edcd49 (🧮 1 lines, 📦 168 bytes, 🕓 2025-06-20T12:07:34.082002)
+
+📁 ./.git/objects/11
+  └── 05f52beaca574e16ee290c7a3ec7462d566895 (🧮 1 lines, 📦 194 bytes, 🕓 2025-06-23T10:24:06.846529)
+  └── 07ca0610c1065263c6fab308e5ab7830930db8 (🧮 2 lines, 📦 245 bytes, 🕓 2025-06-20T12:07:34.044002)
+  └── 4d4f7916173a27e327edb17e6e118803c29346 (🧮 3 lines, 📦 211 bytes, 🕓 2025-06-23T02:46:31.679190)
+  └── c5dc3b228b1880cc854356ae763a57c893b969 (🧮 5 lines, 📦 191 bytes, 🕓 2025-06-23T10:24:06.908249)
+  └── c80a0de2c7b0b599c9a46b69d13154c267002c (🧮 1 lines, 📦 213 bytes, 🕓 2025-06-22T08:50:24.254174)
+  └── f8ae8f4e5f02af4d234e82f77b875305a1de26 (🧮 1 lines, 📦 188 bytes, 🕓 2025-06-22T09:50:05.907084)
+
+📁 ./.git/objects/12
+  └── 0a0cb6c57dbfe59873a6ccea5d10517ced2920 (🧮 3 lines, 📦 178 bytes, 🕓 2025-06-22T06:43:41.115820)
+  └── 147831ab15bc016efebce6b303452b481fb936 (🧮 9 lines, 📦 938 bytes, 🕓 2025-06-23T06:43:53.957784)
+  └── 4a658dbf5b82b7d316a0786bba1e20aaff884c (🧮 1 lines, 📦 107 bytes, 🕓 2025-06-21T04:25:15.777597)
+  └── 6198759c406101785ca89c5ffd727dd4cb2605 (🧮 5 lines, 📦 267 bytes, 🕓 2025-06-20T12:06:11.655713)
+  └── 882803d89880cf263fd02212b87e7fe4c2aba3 (🧮 10 lines, 📦 1866 bytes, 🕓 2025-06-22T07:49:26.910320)
+  └── 8f475ddf394b528177d4a331a35a575798d6f2 (🧮 4 lines, 📦 484 bytes, 🕓 2025-06-23T10:58:44.048773)
+  └── b6b3a6acb2cf74ad4747e125cbaacbfb95eef0 (🧮 33 lines, 📦 3262 bytes, 🕓 2025-06-20T09:29:17.754243)
+  └── f19382cbccdbf795759e6266c5b6f4f070214d (🧮 6 lines, 📦 392 bytes, 🕓 2025-06-22T08:50:07.311926)
+  └── fa4d9475d528645567bf713923d1683c2a443c (🧮 4 lines, 📦 534 bytes, 🕓 2025-06-20T12:06:11.768538)
+
+📁 ./.git/objects/13
+  └── 12ace2fb7ab7ed95c610b0746c4c0398ecbf22 (🧮 10 lines, 📦 827 bytes, 🕓 2025-06-21T09:19:06.730832)
+  └── 2920e433132dda28613c5ab946f345c03516d1 (🧮 2 lines, 📦 549 bytes, 🕓 2025-06-23T10:58:44.129027)
+  └── 7a70c6fc466c2cccd641ef1194c352756299b1 (🧮 1 lines, 📦 196 bytes, 🕓 2025-06-22T09:50:05.953874)
+  └── 940e2d9c6d205e668c60acdef8a600952fceaa (🧮 1 lines, 📦 186 bytes, 🕓 2025-06-23T08:07:12.704783)
+  └── bbd34d45a1ccea9f369e9cd29f8018cf80b72d (🧮 2 lines, 📦 90 bytes, 🕓 2025-06-23T07:32:41.791154)
+  └── f09b99bf33ba5056d1b99e6bb60c366e61c710 (🧮 6 lines, 📦 953 bytes, 🕓 2025-06-21T11:26:56.183965)
+
+📁 ./.git/objects/14
+  └── 207901c5d0b42f2074ebf086dd097da727f278 (🧮 3 lines, 📦 193 bytes, 🕓 2025-06-21T10:38:06.055041)
+  └── 40ee61162339c430688ee066eff1204557f05b (🧮 2 lines, 📦 248 bytes, 🕓 2025-06-20T12:06:11.658713)
+  └── 6d065e02b360aaa75d584c1037b695d2b80740 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T02:46:31.837767)
+  └── cb103e7987eea3af96fb54108e4b6240727aeb (🧮 8 lines, 📦 1052 bytes, 🕓 2025-06-21T11:31:14.091610)
+  └── e25223a0b68c003d3978a59e72b8d0232b5ef7 (🧮 5 lines, 📦 212 bytes, 🕓 2025-06-22T08:53:04.078762)
+  └── ed669ef25bf5a4d53f21fa96740b4ca6aa0897 (🧮 1 lines, 📦 46 bytes, 🕓 2025-06-23T02:46:31.741212)
+
+📁 ./.git/objects/15
+  └── 35e4562fecfb2cd465f418c3df6fe7aca116ec (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T04:25:02.978125)
+  └── 5303f9e82187f96a1157868519ee3617d19171 (🧮 2 lines, 📦 229 bytes, 🕓 2025-06-21T08:36:35.504699)
+  └── 7b0fb759e232171a1be45ea539c0d397106c80 (🧮 2 lines, 📦 188 bytes, 🕓 2025-06-20T12:10:00.074821)
+  └── c587d59d320a610dc4d2c165091ca37595f281 (🧮 4 lines, 📦 336 bytes, 🕓 2025-06-23T05:43:07.650068)
+  └── dca06667ba96b75f7a9dfa4542e11be019db5c (🧮 1 lines, 📦 60 bytes, 🕓 2025-06-23T08:06:14.445052)
+  └── e1a134062ba998fab48114e659881c0c253740 (🧮 4 lines, 📦 596 bytes, 🕓 2025-06-20T11:13:25.130184)
+
+📁 ./.git/objects/16
+  └── 27dd171b86f43752be8091268b38e71fe3e1bc (🧮 9 lines, 📦 1130 bytes, 🕓 2025-06-22T08:50:07.315276)
+  └── 8d2913dd79d8a675f35310cbace33550284b6b (🧮 4 lines, 📦 165 bytes, 🕓 2025-06-23T10:24:06.893579)
+  └── bbc6a117a5f109801f4c29abe90e0dca25bb0c (🧮 31 lines, 📦 3688 bytes, 🕓 2025-06-21T09:18:23.302806)
+
+📁 ./.git/objects/17
+  └── 7fb2c9d5b4b8e97ab415dbc8bd25fc6b8ebd33 (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-22T06:02:24.864404)
+  └── 82c3d631cd747418993322c7401e02d205841d (🧮 2 lines, 📦 575 bytes, 🕓 2025-06-23T10:24:07.093199)
+  └── b0d4bab16406bc8dfe2390e17b0aa9c63598d8 (🧮 1 lines, 📦 133 bytes, 🕓 2025-06-21T08:36:35.598433)
+  └── b496a913d5728c29d562f9e28d3cd4f6d7c917 (🧮 1 lines, 📦 134 bytes, 🕓 2025-06-20T09:30:10.954088)
+
+📁 ./.git/objects/18
+  └── 17c6b5296debe27813eed62f24874b5e41a2de (🧮 2 lines, 📦 65 bytes, 🕓 2025-06-21T08:36:35.576042)
+  └── 2dd87dc262696130aeef79f994278665c89b57 (🧮 5 lines, 📦 585 bytes, 🕓 2025-06-23T10:24:07.098199)
+  └── b94d82b654ae24cfc64f9056bf7b6b7c1dfeca (🧮 2 lines, 📦 157 bytes, 🕓 2025-06-21T08:49:31.223682)
+  └── d7c2eb08190f6b0eb56864c1b7d669c1b8a91c (🧮 5 lines, 📦 273 bytes, 🕓 2025-06-23T11:05:51.389612)
+  └── d9ac48ddd903b4516971ac9b5787c95a4955b2 (🧮 9 lines, 📦 903 bytes, 🕓 2025-06-23T05:43:07.654068)
+  └── ed938830170171b25aa12797a806fdfafd86bd (🧮 1 lines, 📦 84 bytes, 🕓 2025-06-23T07:32:41.786154)
+
+📁 ./.git/objects/19
+  └── 35d0c70999c5ff9799c8eaeae9dc150c8d6537 (🧮 3 lines, 📦 368 bytes, 🕓 2025-06-23T05:43:07.869713)
+  └── 4e8600f3cb9498105ace0830858af149ffe254 (🧮 4 lines, 📦 183 bytes, 🕓 2025-06-21T12:18:06.134771)
+  └── 62fb3ef4e7d237ff22b604f1f254bfe5e43dd6 (🧮 1 lines, 📦 97 bytes, 🕓 2025-06-21T11:26:56.138607)
+  └── 79e9b9c49b91d78efc5c0b65cdf5ac03503083 (🧮 1 lines, 📦 139 bytes, 🕓 2025-06-20T09:30:10.943737)
+  └── 8362ce2fbd717f7dc01db259904c009bc90307 (🧮 2 lines, 📦 157 bytes, 🕓 2025-06-22T09:37:09.893331)
+  └── b9f6b09eac3d02a2f5f70a1e75db0fc68bb7b9 (🧮 1 lines, 📦 72 bytes, 🕓 2025-06-21T08:36:35.601969)
+
+📁 ./.git/objects/1a
+  └── 0c566e040713eb0faa121e416a1dc855a19e72 (🧮 10 lines, 📦 674 bytes, 🕓 2025-06-21T10:14:23.082864)
+  └── 3b6701415583662721e632de667fa29761a7da (🧮 1 lines, 📦 440 bytes, 🕓 2025-06-23T07:41:42.553300)
+  └── 448d58e7eb07cb80076e9d0eeecdd7215288c8 (🧮 11 lines, 📦 1226 bytes, 🕓 2025-06-22T07:13:41.217144)
+  └── 7da1d34586c32a52ae39e6de2e6a98e30ead43 (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-22T08:50:07.318288)
+  └── 7fdd91395c43e6410fefecb9552e97c5c53c18 (🧮 6 lines, 📦 365 bytes, 🕓 2025-06-23T06:27:04.123319)
+  └── eb3ce68993a18ae996e5de42897edb57407427 (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-23T07:29:50.757193)
+  └── f1e8691c7ccf3c895e944b8974b48879d7c584 (🧮 4 lines, 📦 161 bytes, 🕓 2025-06-23T07:06:32.644872)
+
+📁 ./.git/objects/1b
+  └── 4cd09b1be618acc8f55bb1ad92cf8002d21959 (🧮 3 lines, 📦 223 bytes, 🕓 2025-06-23T05:43:07.656067)
+  └── 6a96c9fde8673608256dbc42ab7ce52eb67895 (🧮 3 lines, 📦 189 bytes, 🕓 2025-06-23T11:06:03.420690)
+  └── 7917556e4dd25cf239d94fb20fb7b16c8d0e8e (🧮 6 lines, 📦 763 bytes, 🕓 2025-06-22T09:50:05.876746)
+  └── ca352a5d98c96c64bc2f6995041977aa65ca8b (🧮 1 lines, 📦 182 bytes, 🕓 2025-06-20T12:10:00.024852)
+
+📁 ./.git/objects/1c
+  └── 99f298e3276e5f617374cdc731e61798e7a732 (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-22T08:50:07.321839)
+  └── 9ed52773ad12cbcae50629711fa17cfb417499 (🧮 3 lines, 📦 57 bytes, 🕓 2025-06-23T10:24:06.928780)
+  └── bb355e171f57b7107ad32ff565af53ec7fdcf2 (🧮 2 lines, 📦 242 bytes, 🕓 2025-06-23T05:43:07.854076)
+  └── eefec64293bc7277631eb03f19838cb954cb85 (🧮 5 lines, 📦 465 bytes, 🕓 2025-06-22T08:53:04.069758)
+
+📁 ./.git/objects/1d
+  └── 5a3528c20e56bdb7983a2163b49d571eb07bd9 (🧮 8 lines, 📦 427 bytes, 🕓 2025-06-22T08:50:07.456648)
+  └── 5a4421e890d5899ea0b233a034967ad64788eb (🧮 2 lines, 📦 165 bytes, 🕓 2025-06-23T07:32:41.790154)
+  └── 5c19be856a091112b2b81b9dabffd0788e6855 (🧮 3 lines, 📦 460 bytes, 🕓 2025-06-22T08:53:04.071762)
+  └── ecdf2b96d8e72c4d7b6052ffc514cfe0ca6500 (🧮 2 lines, 📦 64 bytes, 🕓 2025-06-21T11:40:51.203172)
+  └── fbafd266ac2de1c8a49d90be7795fd0fc3320e (🧮 2 lines, 📦 116 bytes, 🕓 2025-06-21T12:17:07.730493)
+
+📁 ./.git/objects/1e
+  └── 33fd7010f4ee56cfa466ec18750f5afbf82755 (🧮 1 lines, 📦 169 bytes, 🕓 2025-06-23T07:32:41.847150)
+  └── 3c0c67945b15caffda0d1657a6921d00f7e241 (🧮 2 lines, 📦 64 bytes, 🕓 2025-06-23T05:43:07.659069)
+  └── 502c11bb9d3bb101d07b201df57e50bef35311 (🧮 5 lines, 📦 333 bytes, 🕓 2025-06-22T08:58:21.175802)
+  └── 5e08e13ae608526878902c4cc6e5fc9c2cbb33 (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-22T09:50:05.885077)
+  └── 795a43a9c235bc6da01ce792eaf9b8be714794 (🧮 6 lines, 📦 1053 bytes, 🕓 2025-06-21T11:37:14.305612)
+
+📁 ./.git/objects/1f
+  └── 0162bf0b337c4b308b263962f7a917a7dff982 (🧮 34 lines, 📦 3999 bytes, 🕓 2025-06-20T09:29:17.718181)
+  └── 2c5a0f0749e39f9bf0f16f76a7d3f803b13b47 (🧮 1 lines, 📦 184 bytes, 🕓 2025-06-20T12:10:00.068306)
+  └── 2f42a65e080bfcd0cf6302e3a9c27604d11f6d (🧮 11 lines, 📦 1441 bytes, 🕓 2025-06-20T09:31:49.441467)
+  └── 3b35c24ec5ebcc1b446ca349fbe4e696632088 (🧮 1 lines, 📦 89 bytes, 🕓 2025-06-22T06:43:41.146959)
+  └── 4c756fb03c8a8512860cd09220293b8bd1f683 (🧮 23 lines, 📦 3404 bytes, 🕓 2025-06-20T09:29:17.745243)
+  └── 80fb9a1a93575f81bdd5c1583dd9051c62bec3 (🧮 1 lines, 📦 196 bytes, 🕓 2025-06-22T09:50:05.945869)
+  └── 9c8c4927245bd3713ba3811d8ad9ab1b6ea69e (🧮 1 lines, 📦 135 bytes, 🕓 2025-06-20T09:30:10.937445)
+
+📁 ./.git/objects/20
+  └── 158dcfeb1a932639ab8c77579c0af83f098c18 (🧮 3 lines, 📦 253 bytes, 🕓 2025-06-21T04:25:15.856302)
+  └── 49d9a275391fcc525f80f00f2ddb979e3b72b2 (🧮 13 lines, 📦 1902 bytes, 🕓 2025-06-22T09:12:45.827713)
+  └── 523d4a389c42d833f525b5885a04630818fbfc (🧮 11 lines, 📦 1013 bytes, 🕓 2025-06-21T12:17:07.697457)
+  └── 66fafe2953574349c0188781f394df5ae74f20 (🧮 2 lines, 📦 89 bytes, 🕓 2025-06-23T02:46:31.793307)
+  └── 9782c6ceef7e5dec9655b856cc668e882e67e1 (🧮 2 lines, 📦 107 bytes, 🕓 2025-06-23T10:24:07.081742)
+
+📁 ./.git/objects/21
+  └── 17bbcc3d6cce18f6319e18bab131b122d3e8f0 (🧮 1 lines, 📦 172 bytes, 🕓 2025-06-23T10:24:07.062032)
+  └── 27d330f6295efb1401ae1025fdb70d4c346e6b (🧮 2 lines, 📦 145 bytes, 🕓 2025-06-20T12:06:11.728251)
+  └── f90f6b4183d21bb908f0435b4fa48159f3a65a (🧮 1 lines, 📦 208 bytes, 🕓 2025-06-23T07:34:58.997188)
+
+📁 ./.git/objects/22
+  └── 2aa083d19d31af8f80b687b2d753ebcbb27ba5 (🧮 1 lines, 📦 213 bytes, 🕓 2025-06-22T08:50:24.295321)
+  └── 542f0229fd04ee511fa174d929b8eb066e9066 (🧮 1 lines, 📦 159 bytes, 🕓 2025-06-23T05:43:07.662535)
+  └── 72c97597650dfc4e9c725d92f8ee72cb12d082 (🧮 3 lines, 📦 198 bytes, 🕓 2025-06-21T11:26:56.179496)
+  └── c1352f3c3f1963d09ba9c256d4a33bf80ba221 (🧮 4 lines, 📦 198 bytes, 🕓 2025-06-21T11:03:58.639290)
+  └── c4e0e1d83d005fcd0db2c523844f4a49603f12 (🧮 3 lines, 📦 212 bytes, 🕓 2025-06-21T12:26:10.345753)
+  └── fa1eb57f96b82f44b73efcfd08c4ebea3b2e39 (🧮 2 lines, 📦 136 bytes, 🕓 2025-06-20T09:30:10.940446)
+
+📁 ./.git/objects/23
+  └── 9d706e4979debd282851aabaa5bc17a3dd6c4a (🧮 1 lines, 📦 108 bytes, 🕓 2025-06-21T08:36:35.616006)
+  └── d3935ce8cd15133bbb227ccc4875c2ed4a0b06 (🧮 1 lines, 📦 52 bytes, 🕓 2025-06-23T02:46:31.748208)
+
+📁 ./.git/objects/24
+  └── 1dfaca2f4f7b782f2aa9b13a136f08ca17f442 (🧮 3 lines, 📦 196 bytes, 🕓 2025-06-23T05:43:07.814874)
+  └── 52548e9af634bd5aa0bc3ae687e059606b5d97 (🧮 3 lines, 📦 416 bytes, 🕓 2025-06-22T08:50:07.523532)
+  └── 616ce9c20d2e80c37e6a49d42c0226d8e199f4 (🧮 1 lines, 📦 73 bytes, 🕓 2025-06-21T11:26:56.145888)
+  └── 8d68ba501c7ce38d9fbe5dc207bc7b2653fdab (🧮 3 lines, 📦 280 bytes, 🕓 2025-06-23T07:06:32.651871)
+  └── 99b6375cd6e3e470ef485006e4a3043ad44177 (🧮 1 lines, 📦 187 bytes, 🕓 2025-06-20T12:10:00.058297)
+  └── 9c4143ba79c5197bf7de523fbd921f805e128a (🧮 3 lines, 📦 159 bytes, 🕓 2025-06-23T04:41:42.875847)
+  └── a335176f317a4a2f70d209e632f37b32e4d475 (🧮 8 lines, 📦 648 bytes, 🕓 2025-06-23T10:58:44.031519)
+  └── fdf456407654f6495ef616c651b2b64a6ed315 (🧮 1 lines, 📦 113 bytes, 🕓 2025-06-21T04:25:15.845873)
+
+📁 ./.git/objects/25
+  └── 4f764cfc2f9b93cf754719c355478520c7dae0 (🧮 1 lines, 📦 95 bytes, 🕓 2025-06-21T11:26:56.152276)
+  └── 85ad01df7b6b8f5611e3b7f5e4a458cf5ff485 (🧮 7 lines, 📦 762 bytes, 🕓 2025-06-20T12:10:00.089682)
+  └── 9bb67c1a5185c1ac7be6b20707ff1ab5282042 (🧮 2 lines, 📦 248 bytes, 🕓 2025-06-21T04:25:15.767592)
+  └── a5bdcc89114516b22b406d11ff8c767b8d52d5 (🧮 2 lines, 📦 154 bytes, 🕓 2025-06-21T11:26:56.149276)
+
+📁 ./.git/objects/26
+  └── 11cfc72e488b6a2ef64e906411275736f2d441 (🧮 4 lines, 📦 922 bytes, 🕓 2025-06-23T05:43:07.835618)
+  └── 26f8f7507a315681c6c8ba492857e1bb6a254f (🧮 4 lines, 📦 548 bytes, 🕓 2025-06-23T11:07:44.586131)
+  └── 2b21d4e924bcc2e1fdf134221b80c36f538f8b (🧮 11 lines, 📦 1273 bytes, 🕓 2025-06-21T08:36:35.525097)
+  └── 86c1f99d70f93637acd4747939dcef5f1f9050 (🧮 1 lines, 📦 190 bytes, 🕓 2025-06-20T12:10:00.085682)
+  └── dc1789c9e7328a847b3dcc17d52f7f66d37bdd (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T10:24:07.044319)
+  └── f699b5a9d2db872967f5438e58b2f0ccb006c1 (🧮 4 lines, 📦 294 bytes, 🕓 2025-06-23T11:06:03.368691)
+
+📁 ./.git/objects/27
+  └── 1b4dc855c9c56f44815d430b6475e4c39aec84 (🧮 1 lines, 📦 157 bytes, 🕓 2025-06-21T04:25:02.975019)
+  └── 7fa158b3ddf07ebb37e2b2c28acac21f2bff5d (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-22T07:13:41.761230)
+  └── a5645896645490c2b95997b5c7d46b12c920cb (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-23T05:43:07.867078)
+  └── a7b14a50102770eedc35afad972f1ebca510ec (🧮 2 lines, 📦 97 bytes, 🕓 2025-06-21T08:36:35.618996)
+
+📁 ./.git/objects/28
+  └── 12f0fe64addbafe79feac092b4422f52c90446 (🧮 7 lines, 📦 766 bytes, 🕓 2025-06-20T11:13:25.211467)
+  └── 324c5708b89213be7fa101117b9abeaba71162 (🧮 3 lines, 📦 126 bytes, 🕓 2025-06-21T08:36:35.579042)
+  └── 41c5daa6c7912347dc3a38d87dde2f99e79bbc (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-23T02:45:50.921163)
+  └── d2ec2a66efa44c3f0705eff167d91235552fc4 (🧮 5 lines, 📦 908 bytes, 🕓 2025-06-23T05:43:07.676481)
+  └── e4076c7ecdfb5ec6314e1af329d541d5117b97 (🧮 1 lines, 📦 143 bytes, 🕓 2025-06-23T07:06:32.643872)
+  └── f8b97086c967c2f344bc725ce655ac4f8fe0af (🧮 8 lines, 📦 242 bytes, 🕓 2025-06-22T07:49:27.035292)
+
+📁 ./.git/objects/29
+  └── 0e6e7ee13074ee9138dcee884754decd0a15a1 (🧮 2 lines, 📦 196 bytes, 🕓 2025-06-22T08:58:25.873037)
+  └── 293f74f1d71310835a0253cbf8e85da48a8a1f (🧮 6 lines, 📦 435 bytes, 🕓 2025-06-22T08:50:07.461149)
+  └── 974c5b163f3e521066caf7b18f75e71a8f8398 (🧮 5 lines, 📦 832 bytes, 🕓 2025-06-22T06:43:41.119044)
+  └── c63383c6543e486a6bc797b6b93a69bd2ef7c5 (🧮 8 lines, 📦 745 bytes, 🕓 2025-06-23T10:24:06.973985)
+  └── cfc15784e3a96fab5247b751e0e8d5a75833f0 (🧮 1 lines, 📦 160 bytes, 🕓 2025-06-20T12:07:34.075002)
+
+📁 ./.git/objects/2a
+  └── 4d069997b84c3b57b903f01bdacb9dd00d59e3 (🧮 6 lines, 📦 943 bytes, 🕓 2025-06-21T11:26:56.156782)
+  └── 7f2ee05d14d990a847c80fa92755f779a466b3 (🧮 9 lines, 📦 964 bytes, 🕓 2025-06-22T07:49:26.886599)
+  └── 8a20d4ad1fddc2880f449d65c9cf99e9f06221 (🧮 7 lines, 📦 933 bytes, 🕓 2025-06-22T06:02:24.844164)
+  └── b7218d639b87d738cf606ffa990a2799bf1124 (🧮 1 lines, 📦 164 bytes, 🕓 2025-06-20T09:31:55.909475)
+
+📁 ./.git/objects/2b
+  └── 4b194d10fe9cde58041ed59df4d3194a7bcca2 (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-20T12:07:34.080002)
+  └── 4e4db95a09bccf4f91ebd44615d1e5a313e6ba (🧮 2 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.678481)
+  └── 5b63a7ae371016d57cfffb04fb09f9cbbdfabe (🧮 4 lines, 📦 727 bytes, 🕓 2025-06-21T12:17:07.683883)
+  └── b8148c965e682afd08cd798c3286a6221c6f07 (🧮 1 lines, 📦 139 bytes, 🕓 2025-06-20T09:30:10.964381)
+  └── c543266ff7f60aad993fc6a78d9eb17c0122bb (🧮 3 lines, 📦 117 bytes, 🕓 2025-06-23T07:32:41.785154)
+  └── cea5598f138c7c5ee7f773942c533df4c0cb43 (🧮 2 lines, 📦 159 bytes, 🕓 2025-06-23T02:46:31.810791)
+
+📁 ./.git/objects/2c
+  └── 26f04799b1e4c2c2b7c3e738e6b5b199db7c21 (🧮 17 lines, 📦 2030 bytes, 🕓 2025-06-21T08:36:35.467379)
+  └── 2844610944ca11225eb2ab844e65a85badeb8e (🧮 1 lines, 📦 193 bytes, 🕓 2025-06-22T09:50:05.924323)
+  └── 4d7fa03febca889f5e670a8073dd892a54b703 (🧮 51 lines, 📦 6292 bytes, 🕓 2025-06-23T05:43:07.687481)
+  └── 67499c0aeb5c4295e4dea1a7722f702a28a9e0 (🧮 2 lines, 📦 200 bytes, 🕓 2025-06-21T10:38:06.626215)
+  └── 722278b6253f0ada5a49cb747a2b4384998d35 (🧮 10 lines, 📦 1231 bytes, 🕓 2025-06-22T07:49:14.706426)
+
+📁 ./.git/objects/2d
+  └── 51cb398fe67ee2cfaf428f567deb2ff0e27cfc (🧮 24 lines, 📦 3511 bytes, 🕓 2025-06-20T09:29:17.717182)
+  └── 87c7eb9fb7aaa2a17f472927e2c3fbd382ff3d (🧮 5 lines, 📦 343 bytes, 🕓 2025-06-23T06:27:04.052296)
+
+📁 ./.git/objects/2e
+  └── a635d751ab31842a41989de85df57a639fe08c (🧮 1 lines, 📦 50 bytes, 🕓 2025-06-23T04:41:42.893685)
+  └── ab038fe30f6b0c4336500e4ddaad39cf26f185 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-22T08:58:25.879037)
+  └── c432000f78d5db819e19cd9cb46ee6dade2a9f (🧮 3 lines, 📦 216 bytes, 🕓 2025-06-22T08:50:07.325846)
+
+📁 ./.git/objects/2f
+  └── 45dce8420b2897fe7fb1bb1faa1dda41ed581b (🧮 2 lines, 📦 166 bytes, 🕓 2025-06-20T12:07:34.081002)
+  └── 4b05738f0835b5254b9e856db5e11f26356ab0 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T10:52:46.314849)
+  └── ab92b2689e78023c9826451003269431680be5 (🧮 3 lines, 📦 164 bytes, 🕓 2025-06-23T07:32:41.785154)
+  └── f38deed959ec140f2e4cbdd1ea27ab926f827b (🧮 2 lines, 📦 118 bytes, 🕓 2025-06-21T11:41:31.352182)
+
+📁 ./.git/objects/30
+  └── 127c280da72e27da2c4c37ef61d4adb475e295 (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-22T08:50:07.378253)
+  └── 44370bdd345b23ade3e46e47382c4c668eccbf (🧮 3 lines, 📦 278 bytes, 🕓 2025-06-23T02:45:50.903385)
+  └── 84e2f104853365ca46a2a2ba259a787cf8e26e (🧮 3 lines, 📦 546 bytes, 🕓 2025-06-21T08:36:35.460838)
+  └── a1ff647ddf1aaa87e1845d6eb05c2e928d7837 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T10:24:07.047322)
+
+📁 ./.git/objects/31
+  └── 4fc025cc64a9a632b10ce190332060e5a46c97 (🧮 7 lines, 📦 879 bytes, 🕓 2025-06-21T04:32:49.676852)
+
+📁 ./.git/objects/32
+  └── 212a04336487ddc7ee3df2218920671b60e423 (🧮 3 lines, 📦 159 bytes, 🕓 2025-06-21T09:35:51.223351)
+  └── 353d50b5a745fad25fe192925d72b811d8b47a (🧮 15 lines, 📦 1341 bytes, 🕓 2025-06-23T02:46:31.822136)
+  └── 40a32ad657456ac598cbfe7b9b01cc53bdd5f9 (🧮 4 lines, 📦 344 bytes, 🕓 2025-06-23T10:24:06.957473)
+  └── 629cd7d332ad5578dfb8c135cd62daa62872b0 (🧮 1 lines, 📦 229 bytes, 🕓 2025-06-23T05:43:07.670125)
+  └── 6e12e4adc3c3b5759f32ad8cc8b5dd7bb41d58 (🧮 2 lines, 📦 198 bytes, 🕓 2025-06-21T12:17:07.710300)
+  └── de8a1a3b0c4562033da4f42ee4b92442b0fd2e (🧮 10 lines, 📦 734 bytes, 🕓 2025-06-20T12:09:59.945958)
+  └── ecb488251996c2f201f12ad29128beb8b4e8bc (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T10:14:29.048575)
+  └── f1645854c86a5571d3ab78bd3e2c6028eddae4 (🧮 10 lines, 📦 1225 bytes, 🕓 2025-06-23T10:24:06.970985)
+
+📁 ./.git/objects/33
+  └── 3e29c590d96b0ae62f491fa795702e253fdde2 (🧮 2 lines, 📦 461 bytes, 🕓 2025-06-22T08:53:04.065712)
+  └── 6016f03fb2a35e69c6e0ca1f48ac248816d187 (🧮 3 lines, 📦 714 bytes, 🕓 2025-06-22T08:53:04.079762)
+  └── 67e5017c25f1004e10e3b91cc2ac4f70fb8525 (🧮 2 lines, 📦 473 bytes, 🕓 2025-06-23T08:07:12.698996)
+  └── 743e4146b4ad1f60f183b8820df3fa20073fb0 (🧮 2 lines, 📦 179 bytes, 🕓 2025-06-20T09:23:04.827299)
+  └── d3e5e8f2a62ee174338f939b61507384fa14e6 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.957959)
+
+📁 ./.git/objects/35
+  └── 624138c97a56c78bd97190924f93b13d449c06 (🧮 1 lines, 📦 137 bytes, 🕓 2025-06-20T09:30:10.947195)
+  └── c4d676befa1904609778244b423b9fcb623e5f (🧮 1 lines, 📦 142 bytes, 🕓 2025-06-20T12:06:11.724247)
+
+📁 ./.git/objects/36
+  └── 36b86d2788998ae7aad27d08a99d6326383db8 (🧮 2 lines, 📦 196 bytes, 🕓 2025-06-22T08:58:25.874038)
+  └── c4f15b4e073de8f0af10822d0e8c240a8f42af (🧮 1 lines, 📦 246 bytes, 🕓 2025-06-21T04:25:15.781597)
+
+📁 ./.git/objects/37
+  └── 919c8b4243d3e958fe0fae7c9bce8016b51307 (🧮 1 lines, 📦 140 bytes, 🕓 2025-06-20T09:30:10.971941)
+  └── 97e6381a3311c80aa806f5d4bd1165f321416c (🧮 6 lines, 📦 423 bytes, 🕓 2025-06-22T09:36:55.801684)
+  └── a1e3dd06327cd740bf3e5a62f03777259530a4 (🧮 1 lines, 📦 96 bytes, 🕓 2025-06-20T09:27:21.077344)
+  └── cc4d7dd9841616695532e4e3c741e4da5d46a8 (🧮 4 lines, 📦 195 bytes, 🕓 2025-06-23T05:43:07.818227)
+
+📁 ./.git/objects/38
+  └── 24c805498d2259f97a134aebd5eab20446f267 (🧮 1 lines, 📦 202 bytes, 🕓 2025-06-23T05:43:07.810874)
+  └── 5030410b7955a7bf256c2b45591fafaccbb47a (🧮 4 lines, 📦 744 bytes, 🕓 2025-06-23T07:06:32.679870)
+  └── c86ed4b3516b1160970c0fb529f9abcde4f8da (🧮 1 lines, 📦 317 bytes, 🕓 2025-06-21T09:24:45.814836)
+  └── e6dda7585eeb83bcf5de961a3161cef4346e22 (🧮 1 lines, 📦 182 bytes, 🕓 2025-06-22T09:58:14.522659)
+
+📁 ./.git/objects/39
+  └── 5fccf1ce54163c110b4908b2db1e4912148027 (🧮 2 lines, 📦 160 bytes, 🕓 2025-06-21T09:19:06.843324)
+  └── d7eb3c7e0cc3e95af14610f5cd334339a5909f (🧮 6 lines, 📦 737 bytes, 🕓 2025-06-23T10:24:06.991631)
+  └── f111d8a5401338c38bfcc1b306f3087281a96d (🧮 1 lines, 📦 109 bytes, 🕓 2025-06-21T04:25:15.797823)
+
+📁 ./.git/objects/3a
+  └── 865c56da553d74443ea68e9c872228f6b94394 (🧮 7 lines, 📦 1058 bytes, 🕓 2025-06-22T06:02:24.853237)
+  └── cf202df6d7b482fb9f4fc17cc813077f9d9be6 (🧮 1 lines, 📦 223 bytes, 🕓 2025-06-23T10:58:31.265306)
+  └── d6866ee7a392376ab2696ad1852a70670b65c8 (🧮 8 lines, 📦 748 bytes, 🕓 2025-06-23T10:58:31.200979)
+  └── e527dc211617c867d5e9576ecf15b98f52aa23 (🧮 1 lines, 📦 157 bytes, 🕓 2025-06-21T04:25:02.951683)
+
+📁 ./.git/objects/3b
+  └── 2ed6b6acb97a8bfa1977ef82ddb36fd9299aee (🧮 2 lines, 📦 196 bytes, 🕓 2025-06-22T08:58:25.871038)
+  └── 5a22ba9e3478432c4f62a260dfafaa7a255c31 (🧮 7 lines, 📦 599 bytes, 🕓 2025-06-21T12:36:36.864159)
+  └── 5c087bfddc7341681e45aaae1107e4272e8aba (🧮 13 lines, 📦 1228 bytes, 🕓 2025-06-22T06:43:41.126892)
+  └── 5d39d6e0e871e72f0b34d613fafce081d63481 (🧮 1 lines, 📦 117 bytes, 🕓 2025-06-21T12:17:07.700567)
+  └── 888a49f08c20d85fcd322e4dde422183d92550 (🧮 7 lines, 📦 994 bytes, 🕓 2025-06-22T09:37:09.894331)
+
+📁 ./.git/objects/3c
+  └── 1796ab10306dff3a76296eb752cb4a5e1983eb (🧮 6 lines, 📦 201 bytes, 🕓 2025-06-23T07:41:42.492298)
+  └── 33443a5bd6864051af4a7d658521180a6fcc19 (🧮 2 lines, 📦 72 bytes, 🕓 2025-06-22T08:50:24.113153)
+  └── 33a76e8073a40e6be79b038ea07cab0e0a02bb (🧮 2 lines, 📦 59 bytes, 🕓 2025-06-20T09:23:04.251336)
+  └── 388afeadd5f21ae5cc49858ce22a5f6a184633 (🧮 6 lines, 📦 1012 bytes, 🕓 2025-06-21T08:36:35.510107)
+  └── 5dc9ddb126dace283c783ece5a011e9b845db1 (🧮 2 lines, 📦 269 bytes, 🕓 2025-06-23T05:43:07.691481)
+  └── 65188ad02041425016531a78e5a183f15b4799 (🧮 4 lines, 📦 1094 bytes, 🕓 2025-06-22T07:49:26.923031)
+  └── 6599b96c0a6d82bcf5865d97da8295d21b1eda (🧮 2 lines, 📦 140 bytes, 🕓 2025-06-23T10:24:06.950609)
+  └── d086fb2fc48cead71f90a91e4278ed1938f177 (🧮 17 lines, 📦 1783 bytes, 🕓 2025-06-23T06:43:53.979783)
+  └── e7c9980f1038c70edc7f1d790e5ea6a3a5f389 (🧮 1 lines, 📦 97 bytes, 🕓 2025-06-23T02:45:50.935718)
+  └── f332060028cda09fdf5cf20d57245443c31c32 (🧮 4 lines, 📦 227 bytes, 🕓 2025-06-21T11:26:56.158791)
+  └── f49b7e649885d5e295b013d9c8ef89677d723c (🧮 14 lines, 📦 1504 bytes, 🕓 2025-06-22T08:53:04.064712)
+
+📁 ./.git/objects/3d
+  └── 0303409b899bfe9c3b8f881ec3f5e139d25dd9 (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-21T12:17:07.644325)
+  └── 1e5c234057d8f226035b4cfe9e03ce04090011 (🧮 1 lines, 📦 204 bytes, 🕓 2025-06-23T11:07:44.592130)
+  └── 416d8fe1148ec57b908e06a9c829e5f6ee4bb1 (🧮 3 lines, 📦 259 bytes, 🕓 2025-06-21T08:36:35.515095)
+  └── 7d6dc61b8630aba9a3e4e2a8d3d472fb12b133 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T10:24:07.040876)
+  └── bef15e2236d01f75f3242852b60c437afdc6ed (🧮 3 lines, 📦 165 bytes, 🕓 2025-06-20T12:06:11.708266)
+  └── e9c92ad120600274afd952248b0e4eca405704 (🧮 4 lines, 📦 192 bytes, 🕓 2025-06-22T08:58:25.872039)
+
+📁 ./.git/objects/3e
+  └── 52f521cb2cf8e8f133775fd5a61f9e52373658 (🧮 30 lines, 📦 3190 bytes, 🕓 2025-06-20T11:13:25.141190)
+  └── 82fa3bf03d2a99c8326cdc7c1579624565f25e (🧮 1 lines, 📦 103 bytes, 🕓 2025-06-21T04:25:15.743224)
+  └── a166e547bffd802d9298bbf9e35a09326615be (🧮 8 lines, 📦 742 bytes, 🕓 2025-06-22T08:50:07.439882)
+  └── bc360b479df2c42d47523c59702ca12f84da4f (🧮 2 lines, 📦 165 bytes, 🕓 2025-06-21T08:36:35.626005)
+  └── f7ed95e49f3a4ab71ce1d9abf1a4cbba8703d5 (🧮 1 lines, 📦 138 bytes, 🕓 2025-06-20T12:06:11.694266)
+
+📁 ./.git/objects/3f
+  └── 9b28c36f0eb72a452e00428176774610a64dc0 (🧮 2 lines, 📦 45 bytes, 🕓 2025-06-23T02:46:31.745613)
+  └── bae7c0295fde352b3d467ab8a305a4d5d0489e (🧮 2 lines, 📦 169 bytes, 🕓 2025-06-23T10:58:44.056679)
+
+📁 ./.git/objects/40
+  └── 50cf810478b9ebd42325fd1573cfffdd328df9 (🧮 11 lines, 📦 898 bytes, 🕓 2025-06-21T09:18:23.348453)
+  └── 7d45488692bf0708f460381b7a9d3d6ecc160f (🧮 2 lines, 📦 236 bytes, 🕓 2025-06-20T12:06:11.653713)
+  └── 8c829d2a421478cc31de0a308a9afc946be12e (🧮 2 lines, 📦 223 bytes, 🕓 2025-06-23T11:06:03.427690)
+  └── 8fde1a5ea221f701b50228cda927b69286fbf6 (🧮 1 lines, 📦 156 bytes, 🕓 2025-06-21T04:25:02.940679)
+  └── c061fe0e78970f15ba17b2fa76f75d776699ed (🧮 169 lines, 📦 19339 bytes, 🕓 2025-06-23T10:24:06.922781)
+  └── c2a3f58ff3ae1f9d9266ebda7d30ffa3d9e0f8 (🧮 2 lines, 📦 69 bytes, 🕓 2025-06-23T07:06:32.736871)
+  └── f12e71e1276fe3e771cdff62f61a7965d543c8 (🧮 1 lines, 📦 58 bytes, 🕓 2025-06-22T08:58:25.861440)
+
+📁 ./.git/objects/41
+  └── 165a46ff0d1b83864fcf902d298c89d121caa8 (🧮 26 lines, 📦 4049 bytes, 🕓 2025-06-20T09:29:17.740254)
+  └── 338c951da1227c4e46765d338f391b2818bc58 (🧮 1 lines, 📦 624 bytes, 🕓 2025-06-23T06:27:04.028689)
+  └── 5173d72280249558db6c6c5ca4df914cfb8b3b (🧮 8 lines, 📦 728 bytes, 🕓 2025-06-22T09:12:45.837714)
+  └── 9a9737cdcce3de99898e1df2821d4790b745a9 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T11:41:31.350182)
+  └── a52a55ca39db66cdacf77aed9d4fae1f2d05a2 (🧮 2 lines, 📦 207 bytes, 🕓 2025-06-22T08:50:07.382254)
+  └── d2c263a3ec4e48c15ea3d165e83e1d35126412 (🧮 3 lines, 📦 282 bytes, 🕓 2025-06-23T04:41:42.889849)
+
+📁 ./.git/objects/42
+  └── 023e9c8155b43a3b81065c65adc97633f71167 (🧮 2 lines, 📦 206 bytes, 🕓 2025-06-21T11:37:14.911069)
+  └── 409d41c2bb1b2b6fae385ffa2de69eba2d90d0 (🧮 1 lines, 📦 70 bytes, 🕓 2025-06-23T06:27:04.101238)
+  └── 4c91f75819d20239baeccea1428d8e0f23e1cc (🧮 3 lines, 📦 181 bytes, 🕓 2025-06-20T12:10:00.037580)
+  └── 9894171c888c4ba5cda4b0dfd58380f8cac51b (🧮 1 lines, 📦 68 bytes, 🕓 2025-06-23T02:46:31.814137)
+  └── afc772c84fba35507bebeecf362e48cea705f3 (🧮 2 lines, 📦 159 bytes, 🕓 2025-06-21T09:36:08.171371)
+  └── b7f859de6cf93e13f061906406bec8e1d839b7 (🧮 7 lines, 📦 291 bytes, 🕓 2025-06-23T02:45:50.824349)
+  └── c3400713de29c7175a980df07e61dd09cb9fb3 (🧮 3 lines, 📦 458 bytes, 🕓 2025-06-22T08:53:04.069758)
+  └── ea9d5e54a3b0526936d1b4d7f22cbba36de536 (🧮 2 lines, 📦 565 bytes, 🕓 2025-06-20T09:29:17.686592)
+  └── ee0fb78682c44d2e310ad1da0fb354540d25c4 (🧮 1 lines, 📦 63 bytes, 🕓 2025-06-23T08:06:14.429966)
+
+📁 ./.git/objects/43
+  └── 06206bda93a525d31cf00941dc9c9599634f2b (🧮 5 lines, 📦 164 bytes, 🕓 2025-06-23T10:24:06.878581)
+  └── 1b469b6ab0a1d1ecfb25455923546b22a5c5bf (🧮 5 lines, 📦 1094 bytes, 🕓 2025-06-22T07:13:41.214135)
+  └── 32850ca2ce60ea109a8aa63545bfe4f1a44e27 (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-21T11:03:58.054160)
+  └── 8e8ee87ebd6503097365b6dbb4b7d221c75974 (🧮 3 lines, 📦 277 bytes, 🕓 2025-06-22T08:50:24.320536)
+
+📁 ./.git/objects/44
+  └── 1c90457edb8b7c46cf4cf97ad2bb50eb39a18b (🧮 7 lines, 📦 1287 bytes, 🕓 2025-06-23T02:46:31.854030)
+  └── 2e2ae51c228d774b7a60bd8f6db0cf62bf4909 (🧮 1 lines, 📦 45 bytes, 🕓 2025-06-23T02:46:31.728164)
+  └── 6a4a4d0c4c60b7f9cea6cc2b0a4a6cc0ab5186 (🧮 2 lines, 📦 154 bytes, 🕓 2025-06-23T05:43:07.698091)
+  └── 927e83b0aee3bb1c9c12465841cfe44426cc95 (🧮 6 lines, 📦 719 bytes, 🕓 2025-06-23T05:43:07.702037)
+  └── de23742f0365bf44ccd75e20ba115f53d1d45e (🧮 3 lines, 📦 321 bytes, 🕓 2025-06-21T08:36:35.402380)
+
+📁 ./.git/objects/45
+  └── 06bc27f5373a863aeadbd9e923734fd45b95d4 (🧮 1 lines, 📦 246 bytes, 🕓 2025-06-21T04:25:15.774597)
+  └── 3d66f7794075808412cb7d47cd3b6ba97a28bb (🧮 7 lines, 📦 1254 bytes, 🕓 2025-06-22T09:50:05.863141)
+  └── 6ec1617e93b730431b032a66bde4bc812e5dd6 (🧮 2 lines, 📦 89 bytes, 🕓 2025-06-23T07:32:41.784154)
+  └── 9b3e5e2c86ee1689282981c5bd2cff9e435f8c (🧮 12 lines, 📦 1228 bytes, 🕓 2025-06-22T08:50:07.520990)
+  └── a3175bd09734e24d3d894fd69eadca7ba07dc8 (🧮 7 lines, 📦 736 bytes, 🕓 2025-06-20T07:57:01.968876)
+  └── a8b847a2ddf998df35e71b151ccd6321b61949 (🧮 10 lines, 📦 1185 bytes, 🕓 2025-06-21T12:37:48.257851)
+  └── e0f2fa1299f30f68f3b169e68bd109fbfd2798 (🧮 9 lines, 📦 911 bytes, 🕓 2025-06-23T05:43:07.704036)
+  └── f8c7357bd3c6ab543ee04e9bcf109dbf69dc02 (🧮 1 lines, 📦 133 bytes, 🕓 2025-06-23T10:27:18.927158)
+
+📁 ./.git/objects/46
+  └── 040c3180230740b10ab1b24a1fe11e57e381e9 (🧮 1 lines, 📦 189 bytes, 🕓 2025-06-20T12:10:00.078682)
+  └── 38cfa4421c3db7ccf32c6f8454145ed68dabd8 (🧮 3 lines, 📦 244 bytes, 🕓 2025-06-20T12:07:34.043002)
+  └── 41399ec8376bae492e91efa66934d3ed24e973 (🧮 2 lines, 📦 157 bytes, 🕓 2025-06-22T08:50:07.514150)
+  └── bdeefa76d5acfa06334aa5f2abcba14a9a945d (🧮 2 lines, 📦 250 bytes, 🕓 2025-06-21T04:25:15.801826)
+  └── cc72bc30689884c57dd39cf37dedce88ef4890 (🧮 1 lines, 📦 157 bytes, 🕓 2025-06-22T06:43:41.133038)
+  └── ffbf1fb7ef6bc3a53ad97274d912599449555b (🧮 5 lines, 📦 910 bytes, 🕓 2025-06-21T04:32:49.673848)
+
+📁 ./.git/objects/47
+  └── 4b6b43529e20aa5711cdccdc01e1ea21601396 (🧮 3 lines, 📦 124 bytes, 🕓 2025-06-22T09:12:45.824681)
+  └── 57fc88f00243ea47253088124e55e982982e0d (🧮 1 lines, 📦 96 bytes, 🕓 2025-06-20T09:27:42.793900)
+  └── 623080a923890b02b6ff4d6c4938fd82fd490b (🧮 1 lines, 📦 134 bytes, 🕓 2025-06-20T09:30:10.915816)
+  └── 89487ea745b5824a51c1f89f1bdfd2ba21bd01 (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-23T07:06:32.696872)
+  └── 8a093dfec28f1b6fbe66ded274bb2c34233767 (🧮 9 lines, 📦 708 bytes, 🕓 2025-06-21T08:36:35.448331)
+  └── 906b6136a5033aee5819e74ec9119b946784d1 (🧮 3 lines, 📦 53 bytes, 🕓 2025-06-23T02:45:50.911392)
+  └── d8409d358021d95eab75d4c6be5e32e56c67e7 (🧮 16 lines, 📦 1361 bytes, 🕓 2025-06-21T08:36:35.396774)
+
+📁 ./.git/objects/48
+  └── 17bc01b10c5000f4f2d60c43c21bc9e16afef2 (🧮 1 lines, 📦 184 bytes, 🕓 2025-06-23T02:46:31.703299)
+  └── 58bb6b92dd6e093241fd9f05d59174d0bb42ae (🧮 4 lines, 📦 430 bytes, 🕓 2025-06-22T08:50:07.464703)
+  └── 61742d6b1a20930a2d90ce37907cfdf22270b0 (🧮 1 lines, 📦 78 bytes, 🕓 2025-06-20T11:13:25.203467)
+  └── 70a1a357f8ae9968ba6c5b1e44774bfc59c453 (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:24.288317)
+  └── 7344fc395e8b084a9260a8c61e0f1e2dc72860 (🧮 1 lines, 📦 147 bytes, 🕓 2025-06-20T12:06:11.758538)
+  └── c2d8b713fb641caeb33a1a35698eadd4acf831 (🧮 5 lines, 📦 768 bytes, 🕓 2025-06-21T04:25:15.877004)
+  └── e438d4675b09cfae580839c417159d52eb59fb (🧮 1 lines, 📦 124 bytes, 🕓 2025-06-22T07:49:19.865210)
+  └── eaf9865384fa86f2bde5deccc80cabe3853f92 (🧮 34 lines, 📦 3851 bytes, 🕓 2025-06-21T10:14:23.085304)
+
+📁 ./.git/objects/49
+  └── 2b6c124d9f3b4047df41fb31e8656bb94d154c (🧮 1 lines, 📦 219 bytes, 🕓 2025-06-22T08:50:24.144628)
+  └── 4039592c51051a388710b8eabcc00c87217ced (🧮 9 lines, 📦 685 bytes, 🕓 2025-06-23T02:46:31.716298)
+  └── 7a39e24e2ba10388f9660751e4988843f0f3b7 (🧮 37 lines, 📦 3897 bytes, 🕓 2025-06-21T09:53:19.525165)
+  └── 8a776e2ba4b6673065b070218bbc7ed58c3be0 (🧮 1 lines, 📦 76 bytes, 🕓 2025-06-21T11:03:58.057977)
+  └── 99b8cd1a2bf1fa43ff90f3aa5b42c0a052d498 (🧮 5 lines, 📦 767 bytes, 🕓 2025-06-21T04:32:49.679420)
+  └── a7e7330c3b39df61b9902bcc40e1ad7b4a060d (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-21T11:59:51.962317)
+  └── e96681d80899c7811f7c75e0251aa72b73c17b (🧮 8 lines, 📦 932 bytes, 🕓 2025-06-23T05:43:07.706036)
+
+📁 ./.git/objects/4a
+  └── 07bdc533cb5f31f4383b08d3abab3275420f7c (🧮 6 lines, 📦 297 bytes, 🕓 2025-06-20T12:06:11.656713)
+  └── 16abec10642b49952b3c325de808cd5bb3ff5e (🧮 4 lines, 📦 196 bytes, 🕓 2025-06-23T05:43:07.821502)
+  └── a82a0e8fb5a133cd86622c337418599cb7100e (🧮 10 lines, 📦 1229 bytes, 🕓 2025-06-22T06:47:09.111050)
+  └── b6e2e100faf805c89bf298269f373508570ea1 (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-20T09:30:10.892045)
+  └── be3e4da5ec7748c98fd25e7a16f34c199fdd40 (🧮 7 lines, 📦 446 bytes, 🕓 2025-06-23T02:46:31.758924)
+
+📁 ./.git/objects/4b
+  └── 3ae375c60d0ff1f954816fa11548aca7fa594b (🧮 6 lines, 📦 216 bytes, 🕓 2025-06-21T12:36:37.498422)
+  └── 825dc642cb6eb9a060e54bf8d69288fbee4904 (🧮 2 lines, 📦 15 bytes, 🕓 2025-06-23T04:23:16.347978)
+  └── e8922ac183b8e6e0d9c9699c4c574ae614065b (🧮 11 lines, 📦 829 bytes, 🕓 2025-06-21T09:19:06.733832)
+  └── f96c8a2dd50566fa86b30346f5dbc261672dc1 (🧮 4 lines, 📦 128 bytes, 🕓 2025-06-23T07:32:41.793154)
+
+📁 ./.git/objects/4c
+  └── 2dd37d44f6deeb7e5791ed55551c670f54fcc4 (🧮 1 lines, 📦 211 bytes, 🕓 2025-06-23T06:43:54.048164)
+  └── 4cd5d303bd81e64a28bfcfb869e502974764ab (🧮 3 lines, 📦 174 bytes, 🕓 2025-06-20T09:29:17.674584)
+  └── 8f5133f1bb295f99f6410914a9a10dc46c9947 (🧮 5 lines, 📦 648 bytes, 🕓 2025-06-23T06:43:53.981782)
+  └── 930884a64568abdb92cc4dbf69f0f6594e7b59 (🧮 3 lines, 📦 53 bytes, 🕓 2025-06-22T08:58:25.875038)
+
+📁 ./.git/objects/4d
+  └── 00fff97b6308f0c005036cf9591713812481e3 (🧮 19 lines, 📦 2441 bytes, 🕓 2025-06-23T02:46:31.817137)
+  └── 1f7a759f0bd1256701bad96de732a75369863b (🧮 2 lines, 📦 54 bytes, 🕓 2025-06-20T11:13:25.199552)
+  └── 2d223dfa5b3305118c130f14608c4e7eff8c05 (🧮 5 lines, 📦 556 bytes, 🕓 2025-06-20T11:13:25.134190)
+  └── 91c652063ef23d8d39758a48e276e38e73dda0 (🧮 2 lines, 📦 191 bytes, 🕓 2025-06-22T08:50:24.298320)
+  └── cfc3a6022a561a0bf53d6f9723274ffefd99b8 (🧮 2 lines, 📦 192 bytes, 🕓 2025-06-22T09:50:05.899081)
+  └── d0e99d5fe3e561421d334dd67ad124cbeaf024 (🧮 2 lines, 📦 247 bytes, 🕓 2025-06-20T12:06:11.654713)
+
+📁 ./.git/objects/4e
+  └── 676426977d66ce66578c10593989f5e0e23f6a (🧮 1 lines, 📦 233 bytes, 🕓 2025-06-23T02:46:31.841767)
+  └── ed69b8344876b7b6985b1c7843e2c686517985 (🧮 2 lines, 📦 199 bytes, 🕓 2025-06-20T09:52:08.867554)
+  └── ffb6761d9a57db1a9a420819c6860aa962caf1 (🧮 12 lines, 📦 1339 bytes, 🕓 2025-06-23T02:46:31.844768)
+
+📁 ./.git/objects/4f
+  └── 21b170d136052b85c0cb05577f9424225e1072 (🧮 7 lines, 📦 925 bytes, 🕓 2025-06-21T10:38:06.059048)
+  └── 29d00ad240272543dcbcf0a6d538a62c8402d1 (🧮 3 lines, 📦 204 bytes, 🕓 2025-06-22T08:58:26.762818)
+  └── 52446a79d9ff773740b78b1405a9ccce9754d7 (🧮 17 lines, 📦 1836 bytes, 🕓 2025-06-23T11:06:03.364691)
+  └── a6f41c20354d8bb0adb1aecf1ce079997c5ca5 (🧮 14 lines, 📦 1381 bytes, 🕓 2025-06-21T09:24:45.813831)
+  └── a9098486868ac528b5175a044681ec4acbe65d (🧮 8 lines, 📦 1133 bytes, 🕓 2025-06-21T11:59:51.361249)
+  └── aef2b194840e0d6e9bf18a0416456a64cb5ffe (🧮 5 lines, 📦 462 bytes, 🕓 2025-06-20T11:13:25.217467)
+  └── b30a11c176da79d1aa000ee348330738f0cb81 (🧮 3 lines, 📦 115 bytes, 🕓 2025-06-23T07:32:41.789155)
+  └── d7a5a77b6bcfd98cb573110cf60a0466d93e76 (🧮 5 lines, 📦 745 bytes, 🕓 2025-06-23T10:24:06.984626)
+
+📁 ./.git/objects/50
+  └── 05f6ccb73fd6742097267164f7261e392ddfed (🧮 4 lines, 📦 183 bytes, 🕓 2025-06-22T06:02:24.847165)
+  └── 54f34140b2568d8b7bd28eea6a01a5db163821 (🧮 1 lines, 📦 124 bytes, 🕓 2025-06-22T07:49:26.907320)
+  └── bf99cd9d37034466f5324fe4a05b4d0c5e0591 (🧮 3 lines, 📦 153 bytes, 🕓 2025-06-23T02:46:31.849769)
+  └── c9038241256e46d717a79be3f0bd87b2076e16 (🧮 12 lines, 📦 1340 bytes, 🕓 2025-06-23T02:46:31.834460)
+  └── f01b8b4c0ca0ec44dc3b15f60eac97ea90a279 (🧮 1 lines, 📦 136 bytes, 🕓 2025-06-20T09:30:10.958090)
+
+📁 ./.git/objects/51
+  └── 964696bd3e2684a219c35400a044407cfcf7fe (🧮 3 lines, 📦 279 bytes, 🕓 2025-06-23T10:58:31.204164)
+
+📁 ./.git/objects/52
+  └── 239afa83b3c365cfd306010f6713f035c69177 (🧮 3 lines, 📦 117 bytes, 🕓 2025-06-23T10:24:06.874579)
+  └── 68e57427cb5b4224b9968a122808970dcc8ae7 (🧮 28 lines, 📦 3641 bytes, 🕓 2025-06-21T08:36:35.393774)
+  └── 91c42ed009803e7c49001054eaed5ac117312f (🧮 7 lines, 📦 925 bytes, 🕓 2025-06-21T09:27:14.378690)
+  └── acca406fc5b31d640da2753c773a22c6037943 (🧮 7 lines, 📦 1096 bytes, 🕓 2025-06-22T08:58:25.880037)
+  └── b91e691b74441a617147a16fb0f62b4de565ae (🧮 2 lines, 📦 201 bytes, 🕓 2025-06-23T07:32:41.795154)
+  └── c1873670aad037926c82ab1217f2fabc5fd4d0 (🧮 2 lines, 📦 131 bytes, 🕓 2025-06-23T10:24:06.943610)
+  └── e82219c280985d5866e3d78805d3c2409c5394 (🧮 1 lines, 📦 142 bytes, 🕓 2025-06-21T08:36:35.622998)
+  └── f83bbed302d7e88460802b0f02eca84c8df7ad (🧮 2 lines, 📦 192 bytes, 🕓 2025-06-22T08:58:25.868037)
+
+📁 ./.git/objects/53
+  └── 27ae062bd6b11f77563b7c5badd736b14af408 (🧮 4 lines, 📦 89 bytes, 🕓 2025-06-21T08:36:35.633671)
+  └── 8930bd427bbe600fa4e01735a35b6e4cb5aa1d (🧮 1 lines, 📦 214 bytes, 🕓 2025-06-22T08:50:24.207751)
+  └── e0a72aa4b71582d352ac7a15e02ec44ac65bca (🧮 1 lines, 📦 160 bytes, 🕓 2025-06-21T10:14:29.052126)
+  └── f083ddc8da9ec3caa869206084a1396398dde0 (🧮 1 lines, 📦 181 bytes, 🕓 2025-06-20T09:24:13.807570)
+
+📁 ./.git/objects/54
+  └── 1adc343161317fb37c0b183b79087c582c97de (🧮 2 lines, 📦 259 bytes, 🕓 2025-06-23T06:00:22.629211)
+  └── 2da7efd471b803d44129cf217fab1727f8795f (🧮 5 lines, 📦 1133 bytes, 🕓 2025-06-21T12:37:04.403809)
+  └── 5eeda25adda1e8a9b62a6bd70fa0a61d420964 (🧮 1 lines, 📦 108 bytes, 🕓 2025-06-21T04:25:15.832873)
+  └── abe6717055c1616252ead6baefb5e80416f8df (🧮 5 lines, 📦 572 bytes, 🕓 2025-06-21T08:36:35.630005)
+  └── c9c83156c24a10d3b1c5476c6aaddacb6c1aaa (🧮 2 lines, 📦 47 bytes, 🕓 2025-06-21T12:17:07.686905)
+  └── cf0ff16a75dbc52ba9388ae22ef648aff7d43f (🧮 7 lines, 📦 729 bytes, 🕓 2025-06-21T09:53:19.524164)
+
+📁 ./.git/objects/55
+  └── 4a01661fa569c65da8f7f06c5289d10ad31ecf (🧮 4 lines, 📦 247 bytes, 🕓 2025-06-21T04:25:15.829652)
+  └── 5e4a68723acaff18aa1799aa529a3497db5261 (🧮 1 lines, 📦 123 bytes, 🕓 2025-06-22T09:37:09.893331)
+  └── 8185e2422b21e4caaffb5e1eecd5a831d75526 (🧮 4 lines, 📦 132 bytes, 🕓 2025-06-21T08:36:35.611697)
+
+📁 ./.git/objects/56
+  └── 083de76fe92dd8af31c9846932b3c626025440 (🧮 3 lines, 📦 253 bytes, 🕓 2025-06-20T12:06:11.658713)
+  └── 1b44238e2c09033200307d15b9478138e65ffc (🧮 1 lines, 📦 190 bytes, 🕓 2025-06-22T08:50:24.266195)
+  └── 1e1be0654ac981673a0d081ddc83f153cdf0eb (🧮 10 lines, 📦 747 bytes, 🕓 2025-06-23T10:24:06.977985)
+  └── 226a737a0c47a9dde0d0059aee861c3949f89d (🧮 3 lines, 📦 200 bytes, 🕓 2025-06-23T02:46:31.783167)
+  └── 2ec3bb12cbe0348e60ee4a3845ac3d147c0bf2 (🧮 10 lines, 📦 924 bytes, 🕓 2025-06-21T12:17:07.728132)
+  └── 5c1a4bdf8c295de8f487a00ea5c37b58422a16 (🧮 2 lines, 📦 218 bytes, 🕓 2025-06-22T08:50:24.191240)
+  └── 64c58488c3638ea95bda18807dbf14c5a4649e (🧮 12 lines, 📦 949 bytes, 🕓 2025-06-21T12:23:39.870941)
+  └── ebd23455ff532f934eb3e7aaa25a9384c0d622 (🧮 4 lines, 📦 255 bytes, 🕓 2025-06-21T12:37:04.406350)
+  └── f8c5845f239dc1a77510f93f914998a4b8cca2 (🧮 3 lines, 📦 689 bytes, 🕓 2025-06-21T11:26:56.126601)
+
+📁 ./.git/objects/57
+  └── 2f93716e999caf2376cdb82a5be6f785eaec72 (🧮 1 lines, 📦 153 bytes, 🕓 2025-06-21T04:25:02.944681)
+  └── 7b7bd12aa9d8dc24a7a4f3c08c2e46f7498eea (🧮 2 lines, 📦 249 bytes, 🕓 2025-06-20T12:07:34.041002)
+
+📁 ./.git/objects/58
+  └── 1a37d06ca9fef6df228480692ab44de1be76fb (🧮 9 lines, 📦 1161 bytes, 🕓 2025-06-21T12:18:06.175737)
+  └── 24dd4463ad17f4933bc209b8b30024f3ec3e47 (🧮 5 lines, 📦 201 bytes, 🕓 2025-06-23T07:06:32.664873)
+  └── 53978c5c2b6c891ff021655efbc6b84fcad250 (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-21T08:36:35.568630)
+  └── 584790d75726fdeb7fd09e4f62a44cdbcf938a (🧮 3 lines, 📦 103 bytes, 🕓 2025-06-21T11:03:58.049711)
+  └── 8992aef2962ed3b5f62f03e77582bdb344352c (🧮 2 lines, 📦 342 bytes, 🕓 2025-06-21T08:36:35.588041)
+  └── c25f61a59358c0e1dfca18845faa2b1e34f641 (🧮 11 lines, 📦 1624 bytes, 🕓 2025-06-21T10:52:32.663393)
+  └── c373185c013236bc95676bc6cbc338efa56f7f (🧮 2 lines, 📦 125 bytes, 🕓 2025-06-21T08:49:31.228687)
+  └── d1173c502d8006b5eaf677bdca7bc2e3c7930d (🧮 8 lines, 📦 852 bytes, 🕓 2025-06-21T11:37:14.302612)
+  └── ea9caa05ca012e3ebd896c00a21765f23971d6 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T09:24:45.848507)
+
+📁 ./.git/objects/59
+  └── 4d4ca0c4da2f173f638ac801aefa2aa9d27981 (🧮 2 lines, 📦 149 bytes, 🕓 2025-06-22T06:02:24.869908)
+  └── 53d93107b7f01dd1ad223a831f734f1fa0ba6a (🧮 2 lines, 📦 264 bytes, 🕓 2025-06-23T10:58:44.102459)
+  └── 5b7b414f6bc93d68862171000f57eca734911b (🧮 1 lines, 📦 193 bytes, 🕓 2025-06-22T09:50:05.942870)
+  └── 6d8239e19150a95abcb5a358e257ed956dbd85 (🧮 19 lines, 📦 1478 bytes, 🕓 2025-06-22T08:50:07.329848)
+
+📁 ./.git/objects/5a
+  └── 13a3582c37aa7ee35b957e611fb11983e17593 (🧮 3 lines, 📦 202 bytes, 🕓 2025-06-23T10:24:06.852528)
+  └── 336ee31d930938f7c6671c4fa419045575821d (🧮 8 lines, 📦 853 bytes, 🕓 2025-06-21T12:17:07.744536)
+  └── 6a162636260e0ee694ccd91f24ddd9693767d2 (🧮 1 lines, 📦 107 bytes, 🕓 2025-06-21T04:25:15.791831)
+
+📁 ./.git/objects/5b
+  └── 5d2b6f597cc9e279de51808f40d809486f9f1a (🧮 17 lines, 📦 1134 bytes, 🕓 2025-06-21T12:17:07.725194)
+  └── 9e424309f2fe2677b15629977f19bc7e0dd731 (🧮 2 lines, 📦 191 bytes, 🕓 2025-06-22T08:58:25.868037)
+  └── e589f5e858ebe3c44a6152820e41dbf2e7f2f2 (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-23T07:06:32.692875)
+
+📁 ./.git/objects/5c
+  └── 048a912d2ed630e89205a7610cc1e5d18319ab (🧮 9 lines, 📦 882 bytes, 🕓 2025-06-23T05:43:07.708036)
+  └── 21f4e287c47588dfde57e32018a4d5cf9ef0e7 (🧮 4 lines, 📦 449 bytes, 🕓 2025-06-23T07:32:41.848150)
+  └── 6b40fb9fb4999107700cd1acdfcaebdc04b69b (🧮 1 lines, 📦 36 bytes, 🕓 2025-06-23T08:06:14.439053)
+  └── 83296cab6b1cbbfb9a4d0103d463fb3c950729 (🧮 2 lines, 📦 156 bytes, 🕓 2025-06-23T02:46:31.721509)
+  └── c8765a11bb1e824c0c71998f5aecfb4134f8e4 (🧮 2 lines, 📦 249 bytes, 🕓 2025-06-20T12:06:11.655713)
+
+📁 ./.git/objects/5d
+  └── 192f4eb155fb46c7d1be30ad1ca014887b1d14 (🧮 10 lines, 📦 1092 bytes, 🕓 2025-06-22T08:50:24.317536)
+  └── 1d1c64ba7ad7c2e87408bcbe5ac9973b83d7a0 (🧮 3 lines, 📦 197 bytes, 🕓 2025-06-22T08:58:25.873037)
+  └── 1dba3facb2206fc75e64d9fcf0533970c6f3a1 (🧮 7 lines, 📦 769 bytes, 🕓 2025-06-20T09:23:04.254736)
+  └── 87e5f2c8355f121c7d5b25dc2a4609a86cd34d (🧮 33 lines, 📦 3164 bytes, 🕓 2025-06-20T09:29:17.767687)
+  └── e4f24fc3b654983282f1bd8034364551d0ff87 (🧮 12 lines, 📦 1279 bytes, 🕓 2025-06-23T02:45:50.940717)
+
+📁 ./.git/objects/5e
+  └── 32391f781fe3f1279b8bccb5275202b1b9d4a4 (🧮 3 lines, 📦 50 bytes, 🕓 2025-06-23T05:43:07.710036)
+  └── 6bc69377343bda5b0abdfb24bcce947003d638 (🧮 2 lines, 📦 186 bytes, 🕓 2025-06-22T09:50:05.881746)
+
+📁 ./.git/objects/5f
+  └── 5a4a8ac872fb047122e428682c3852b091fe11 (🧮 1 lines, 📦 185 bytes, 🕓 2025-06-20T12:10:00.044581)
+  └── a6ec46f69ea45246bc562bdca7e69929fc3d12 (🧮 36 lines, 📦 3257 bytes, 🕓 2025-06-20T09:29:17.750247)
+  └── c75719e9c03b13cf0ce5e2cf4381c0f833243c (🧮 1 lines, 📦 192 bytes, 🕓 2025-06-23T10:27:18.941719)
+  └── f8f8f94dda37cb485f57e1bd8a0f09e93e1a44 (🧮 4 lines, 📦 278 bytes, 🕓 2025-06-22T09:12:45.830714)
+
+📁 ./.git/objects/60
+  └── 02f6264404717833807a099443b68cd24a2929 (🧮 5 lines, 📦 704 bytes, 🕓 2025-06-23T07:06:32.649871)
+  └── 86f22f42eb8d1717bf0fb9ecfef0f4c1102e1e (🧮 2 lines, 📦 171 bytes, 🕓 2025-06-23T04:27:23.847103)
+  └── bca7d95f6f3d1cd874c2ea8a652bcc0b908057 (🧮 2 lines, 📦 48 bytes, 🕓 2025-06-23T04:41:42.882845)
+  └── c523e176c9ed5d23dc40a3b3c1149d211199fb (🧮 3 lines, 📦 564 bytes, 🕓 2025-06-20T12:07:34.039002)
+
+📁 ./.git/objects/61
+  └── 06d8d35727e83f19564dedeb2dd8a1df7b5a80 (🧮 7 lines, 📦 431 bytes, 🕓 2025-06-22T08:50:07.467703)
+  └── 1ffd409a889900d16c5a23579e8c377658f00e (🧮 2 lines, 📦 156 bytes, 🕓 2025-06-23T04:41:42.885845)
+  └── 7da27db6757d25363ccda8ad2a4da1afb55cd8 (🧮 8 lines, 📦 658 bytes, 🕓 2025-06-21T08:49:31.189043)
+  └── 96406cf9eac6c6b1b6ad9f233a51271aebeaf3 (🧮 8 lines, 📦 1093 bytes, 🕓 2025-06-21T11:41:31.355688)
+  └── cdeeab18df8f3c1914db32e5ec11d914bf47a6 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T02:46:31.709300)
+  └── d56a675d466034f30635ec2b70dfe313749c85 (🧮 1 lines, 📦 52 bytes, 🕓 2025-06-23T05:43:07.863081)
+  └── d8e98a8c8b7e19bbf8a770c0a0eebaa135e1f1 (🧮 5 lines, 📦 576 bytes, 🕓 2025-06-22T07:49:26.920375)
+
+📁 ./.git/objects/62
+  └── 134621d003c1b38eef087161bf90c4782abb04 (🧮 2 lines, 📦 207 bytes, 🕓 2025-06-22T08:50:24.314536)
+  └── 3aa131ae12f854776134c81a7c42f1390e10a2 (🧮 14 lines, 📦 2957 bytes, 🕓 2025-06-20T09:29:17.763311)
+  └── 567e3074516cec3d50978be5770db1517050dc (🧮 10 lines, 📦 1340 bytes, 🕓 2025-06-23T02:46:31.820138)
+  └── abfe7111b4309cc21bce2fd23a6d1d8155050a (🧮 3 lines, 📦 158 bytes, 🕓 2025-06-21T10:38:06.043629)
+  └── b75dc5d05a31ff23b7f1bb1e13bd7d9c9ddbbe (🧮 5 lines, 📦 523 bytes, 🕓 2025-06-23T08:06:14.504053)
+  └── f4e841c37b67ce50cd19f1df82445458ad8725 (🧮 22 lines, 📦 3702 bytes, 🕓 2025-06-20T09:29:17.727183)
+
+📁 ./.git/objects/63
+  └── 7b9d90e6bc091d84aa4501a44227d3624138d5 (🧮 3 lines, 📦 644 bytes, 🕓 2025-06-23T11:06:03.432691)
+
+📁 ./.git/objects/64
+  └── 2ae99ec504ebd694b5210336e6f55f2612bb87 (🧮 11 lines, 📦 849 bytes, 🕓 2025-06-23T08:18:40.112691)
+  └── 5b3fdc0edffd548fbaf32d95ae20e53b01ce00 (🧮 1 lines, 📦 152 bytes, 🕓 2025-06-22T09:37:09.892330)
+  └── 7a11480cf5bb3d465be03f06de217e5b1e494f (🧮 1 lines, 📦 212 bytes, 🕓 2025-06-22T08:50:24.223822)
+  └── 9e1c0a5598fa664e172eecaec9d83a3ddc3fe7 (🧮 8 lines, 📦 899 bytes, 🕓 2025-06-22T06:43:41.121049)
+
+📁 ./.git/objects/65
+  └── 08e2b84cf55402b5af703fff6625a08acfc515 (🧮 1 lines, 📦 92 bytes, 🕓 2025-06-23T10:24:07.078749)
+  └── 1b9155f8055c84a6c92a6c7a1473a02273d0c9 (🧮 1 lines, 📦 79 bytes, 🕓 2025-06-23T07:32:41.789155)
+  └── 59cea071d90caf29c5414537c7c28f26c111d5 (🧮 5 lines, 📦 733 bytes, 🕓 2025-06-23T02:46:31.718298)
+  └── 5efe261996fb222d1fde59aff70bcc71d2e026 (🧮 5 lines, 📦 441 bytes, 🕓 2025-06-22T07:49:26.903606)
+  └── 60fd26add86d76e63e1ce1a5b9396834e42f99 (🧮 6 lines, 📦 492 bytes, 🕓 2025-06-23T11:07:44.542531)
+  └── f3b66bc18daf5654eeeddf8615176b0bd3dd1c (🧮 1 lines, 📦 159 bytes, 🕓 2025-06-21T09:36:18.912891)
+
+📁 ./.git/objects/66
+  └── 00bcfb7f416629fca40467d71a2d16ed2b5343 (🧮 4 lines, 📦 192 bytes, 🕓 2025-06-22T08:58:25.872039)
+  └── 2b32f7f9089b59f248d30a50f06e7ea363f042 (🧮 2 lines, 📦 184 bytes, 🕓 2025-06-20T12:07:34.076002)
+  └── abcb1ab64e632f24a414f780fbeb48d5858079 (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-22T09:50:05.872746)
+
+📁 ./.git/objects/67
+  └── 4cef12fdb6c387cbb61a1cab0af87fbaf556fa (🧮 1 lines, 📦 206 bytes, 🕓 2025-06-23T02:46:31.691190)
+  └── bca550b91830cb5a28f41587f314e150ae0773 (🧮 4 lines, 📦 346 bytes, 🕓 2025-06-20T09:30:10.981943)
+  └── d98a766f91f4df10d5a3c65ae157d2867c830d (🧮 2 lines, 📦 604 bytes, 🕓 2025-06-23T10:58:44.120720)
+
+📁 ./.git/objects/68
+  └── 2e74fcf339fe9e1c59138ba7f0ba5a6b133f62 (🧮 1 lines, 📦 207 bytes, 🕓 2025-06-21T08:36:36.957785)
+  └── 8127dc72b74114622d8f95bd3d523844de2d33 (🧮 7 lines, 📦 763 bytes, 🕓 2025-06-22T09:12:45.815422)
+  └── 84588168c2ed41a7dccb4c554eefab1936f699 (🧮 7 lines, 📦 925 bytes, 🕓 2025-06-21T09:36:18.915890)
+  └── e35008fc95b98d5e050e5ef3b633a9564e0942 (🧮 2 lines, 📦 101 bytes, 🕓 2025-06-23T07:32:41.787154)
+  └── eafecf18d2b196cb223042d15129be3c253533 (🧮 11 lines, 📦 906 bytes, 🕓 2025-06-23T10:24:06.969985)
+  └── f19337ce28fcd8e3e51e4f97ff31d8001e8e7f (🧮 4 lines, 📦 926 bytes, 🕓 2025-06-23T08:18:40.109051)
+  └── f55af23323ced73f3d35d5791ef5b63ac05d50 (🧮 1 lines, 📦 54 bytes, 🕓 2025-06-20T09:24:18.914479)
+
+📁 ./.git/objects/69
+  └── 06ce09f0762778dc164afe98e296d7a53ecb7b (🧮 8 lines, 📦 453 bytes, 🕓 2025-06-22T08:53:04.062714)
+  └── 1ef917b6986fcc3063ee3a1172e17aa73cf3ce (🧮 3 lines, 📦 346 bytes, 🕓 2025-06-20T09:31:55.916474)
+  └── 217ccb85194dd8cd9c312155bb930b2d78082c (🧮 1 lines, 📦 254 bytes, 🕓 2025-06-21T04:25:15.870175)
+  └── 3d0fa57557e3bebf2b7bbe0c460150e49dd389 (🧮 2 lines, 📦 301 bytes, 🕓 2025-06-23T05:43:07.665997)
+  └── 59bf4431ae0fa7adf07dd37831c09f67038420 (🧮 1 lines, 📦 110 bytes, 🕓 2025-06-21T04:25:15.838872)
+  └── 60b990545c168afb9b3a54ba06745933e5ecef (🧮 4 lines, 📦 193 bytes, 🕓 2025-06-22T08:50:07.335131)
+  └── 697dd559b0ab48623dde7be76889259b76d373 (🧮 2 lines, 📦 137 bytes, 🕓 2025-06-20T09:30:10.912639)
+  └── 8e88a33ca28cc5e44f49b5943822f72d050a20 (🧮 6 lines, 📦 1131 bytes, 🕓 2025-06-23T02:46:31.971166)
+  └── b5732f0b049f146e24bf71990105aaa23b6698 (🧮 5 lines, 📦 210 bytes, 🕓 2025-06-21T12:17:07.647012)
+  └── ffef337fdcd7f95698b80ecaac1d0524f1f16d (🧮 4 lines, 📦 807 bytes, 🕓 2025-06-21T11:41:21.535019)
+
+📁 ./.git/objects/6a
+  └── 3772866a3250a009835426f2448be1baad6df9 (🧮 2 lines, 📦 286 bytes, 🕓 2025-06-23T08:06:40.904028)
+  └── 966dac2c0f1167f96fdde4e6195625b69ee63a (🧮 32 lines, 📦 4029 bytes, 🕓 2025-06-20T09:29:17.709286)
+  └── 9d59a9e3a6280464a661c23f519fe204c2aae5 (🧮 1 lines, 📦 97 bytes, 🕓 2025-06-22T08:50:24.109867)
+  └── b60b324ed930a49ce3250336a366f96bff9bd0 (🧮 2 lines, 📦 163 bytes, 🕓 2025-06-20T12:07:34.077002)
+  └── f5d9bb516dd8d11187e74a5779bea4e044e128 (🧮 1 lines, 📦 89 bytes, 🕓 2025-06-22T06:44:07.192005)
+
+📁 ./.git/objects/6b
+  └── 105ccdc158b12bc6f531afc869f49f1b5e5a05 (🧮 3 lines, 📦 173 bytes, 🕓 2025-06-23T10:24:06.867579)
+  └── 1414cbc8c2a32939b8421c0aa98e953c20ffa8 (🧮 6 lines, 📦 927 bytes, 🕓 2025-06-22T07:24:53.892904)
+  └── 806bf12037285c990fb71bfa8872be6c27f5b9 (🧮 2 lines, 📦 217 bytes, 🕓 2025-06-22T08:50:24.153627)
+
+📁 ./.git/objects/6c
+  └── 0223aa0b353830a8e839d96f4001f080f85fee (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-22T08:58:25.875038)
+  └── 9d94809b790ee880650d0959a1692ce1a0db87 (🧮 2 lines, 📦 164 bytes, 🕓 2025-06-20T09:30:10.902632)
+  └── e086c575a8a5e120c3528f8a2e4c6168ad4c78 (🧮 3 lines, 📦 91 bytes, 🕓 2025-06-23T05:43:07.713035)
+
+📁 ./.git/objects/6d
+  └── c629803afecb27c970637ca28dcccd220a5f82 (🧮 7 lines, 📦 924 bytes, 🕓 2025-06-21T10:14:29.056227)
+  └── d7946472fb5dc41ba93b40e540f549eb00bde7 (🧮 2 lines, 📦 90 bytes, 🕓 2025-06-20T11:13:25.196039)
+
+📁 ./.git/objects/6e
+  └── 03d00e96979323554bbc3a472438b0fe4392ff (🧮 9 lines, 📦 954 bytes, 🕓 2025-06-21T12:17:07.656242)
+  └── 3f27ca38a74cb9ca36c51e607480c3e2e9278e (🧮 10 lines, 📦 780 bytes, 🕓 2025-06-21T08:36:35.478384)
+  └── 4e8938f087abbf7c16b5469c6613a96bf11929 (🧮 4 lines, 📦 163 bytes, 🕓 2025-06-23T07:32:41.787154)
+  └── 52e0ca9daccd29fb916d3bec76294b670da9a1 (🧮 1 lines, 📦 124 bytes, 🕓 2025-06-23T04:41:42.878844)
+  └── 5bc46b37ba29e51607e3ebb0bcb4d847e19192 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T10:38:06.047608)
+  └── 71d7e0abbd419c4387e523da2fa4111c7a33b4 (🧮 3 lines, 📦 172 bytes, 🕓 2025-06-22T09:50:05.889077)
+  └── 7f40ad6a012a59dd8eda93d4b98fdb5811335c (🧮 2 lines, 📦 189 bytes, 🕓 2025-06-23T05:43:07.694858)
+  └── 962b47e1b32eb2181502f9f31f22413098a994 (🧮 2 lines, 📦 213 bytes, 🕓 2025-06-22T08:50:07.385408)
+  └── c3607bd2dbdadf73d37c106ff3c1b63befa674 (🧮 5 lines, 📦 997 bytes, 🕓 2025-06-21T11:03:58.065143)
+  └── cdc5a1e69b1e7863aeac27bcfe30ff859bf767 (🧮 2 lines, 📦 179 bytes, 🕓 2025-06-20T09:24:19.404426)
+  └── e40f743ec6bdce079b99621da6834fc75ff964 (🧮 12 lines, 📦 1160 bytes, 🕓 2025-06-21T12:26:09.754747)
+
+📁 ./.git/objects/6f
+  └── 58d1ba8fbdcac9911f6232f815017fee7b0b0f (🧮 2 lines, 📦 384 bytes, 🕓 2025-06-23T02:45:50.816350)
+  └── 58f0addbf72cb9bec9415b3d8fa582c840d7b9 (🧮 1 lines, 📦 133 bytes, 🕓 2025-06-23T06:27:04.093302)
+  └── f1b371235afc075f7a10fd3a0a7e0231e5e3a8 (🧮 5 lines, 📦 1054 bytes, 🕓 2025-06-21T11:41:01.922556)
+
+📁 ./.git/objects/70
+  └── 2e1e7678424b9cb5a5bf19e225b0009999de8e (🧮 1 lines, 📦 88 bytes, 🕓 2025-06-23T07:32:41.787154)
+  └── a8bf12efdeba4adfafe1da5ceca9d1e6cdb639 (🧮 3 lines, 📦 195 bytes, 🕓 2025-06-22T09:50:05.931870)
+  └── ca395c73add9af9c1764c2e8e8abd1707e094e (🧮 2 lines, 📦 217 bytes, 🕓 2025-06-22T08:50:07.389410)
+
+📁 ./.git/objects/71
+  └── 3e2b5711abd82e9a608635bfe8473a1fde95f6 (🧮 9 lines, 📦 1135 bytes, 🕓 2025-06-20T11:13:25.128259)
+  └── 3fb1817c1f46132561fd43be48f71e81f06662 (🧮 5 lines, 📦 346 bytes, 🕓 2025-06-23T02:46:31.779167)
+  └── 74d7f0e4c55c510222e6f8d25a795b3454565e (🧮 1 lines, 📦 70 bytes, 🕓 2025-06-23T08:06:14.496055)
+  └── b77ba9b67a072ebe5050d30fbde55dca0c528d (🧮 2 lines, 📦 155 bytes, 🕓 2025-06-23T06:43:53.975782)
+
+📁 ./.git/objects/72
+  └── 175d6ae8bd93808b6e7d6731107df9f9818912 (🧮 1 lines, 📦 143 bytes, 🕓 2025-06-20T12:06:11.711029)
+  └── 209af3a8d1a0b85ef5a50e48b9e91e89a316d3 (🧮 1 lines, 📦 60 bytes, 🕓 2025-06-23T02:46:31.754923)
+  └── 6ec15d1dd832e3638e3e06d4bd47ead1e87956 (🧮 5 lines, 📦 689 bytes, 🕓 2025-06-21T11:26:56.192306)
+  └── 7891a1733b22e0c42a57396b1315ecba9fb9d5 (🧮 2 lines, 📦 407 bytes, 🕓 2025-06-20T12:09:59.981966)
+  └── f55837a2cd4c8ca7c92dc2a51b7a01f992f361 (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-20T09:30:10.923374)
+
+📁 ./.git/objects/73
+  └── 1fc96c286187bb7613ec68388af3f51e9026a4 (🧮 1 lines, 📦 184 bytes, 🕓 2025-06-23T04:41:42.871849)
+  └── 26c2af286653098673a0fbfefc5a370abbe709 (🧮 1 lines, 📦 142 bytes, 🕓 2025-06-21T12:17:07.677016)
+  └── 3030f19fb4bd0ee2afd81225ec3b1935768656 (🧮 3 lines, 📦 226 bytes, 🕓 2025-06-23T05:59:54.618068)
+  └── 44a59164087309e95076916a1ade41c7d4f7ff (🧮 1 lines, 📦 195 bytes, 🕓 2025-06-23T07:32:41.784154)
+  └── 53a7aebe534bc30f2c4bc73c3af92cc52fb232 (🧮 9 lines, 📦 1459 bytes, 🕓 2025-06-21T08:36:35.469378)
+  └── 68e3203d7fce11146c14aa82772f4ae1e44805 (🧮 4 lines, 📦 229 bytes, 🕓 2025-06-23T05:43:07.717175)
+
+📁 ./.git/objects/74
+  └── 00e5749ceaa1a039c0a75158d251f217c053a6 (🧮 7 lines, 📦 926 bytes, 🕓 2025-06-22T06:43:41.112283)
+  └── 0b1333c6d21d464920b9db766a0164c06486f0 (🧮 4 lines, 📦 1255 bytes, 🕓 2025-06-22T09:58:14.525656)
+  └── 170538b84834e52d49778ea0bcd2d9cffc0fb0 (🧮 1 lines, 📦 149 bytes, 🕓 2025-06-20T12:06:11.762540)
+  └── 36b3d42612b2375955643feda7bce77b0d8d5a (🧮 2 lines, 📦 280 bytes, 🕓 2025-06-23T11:06:03.416690)
+  └── 8ddbe3bedbbc8a041ba5a8786fda9a9bd9ff46 (🧮 5 lines, 📦 902 bytes, 🕓 2025-06-23T05:43:07.720374)
+
+📁 ./.git/objects/75
+  └── 24a62f9125961875d5b78b8a2a5b8811574f04 (🧮 3 lines, 📦 235 bytes, 🕓 2025-06-21T12:37:14.835128)
+  └── 60d7f77453baceb79d5a58ad8a55be27e91718 (🧮 1 lines, 📦 134 bytes, 🕓 2025-06-20T09:30:10.951089)
+  └── af921ccfb0c4f27ddd6b220f40c231f9d04a12 (🧮 4 lines, 📦 360 bytes, 🕓 2025-06-23T05:43:07.860079)
+  └── bb95cb75cf53eb61e1ebc76a6b2836f99684cf (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-22T08:50:07.339481)
+  └── edfb6ede3131a5eb43c496f29cdf8d55e313e4 (🧮 3 lines, 📦 214 bytes, 🕓 2025-06-22T08:50:24.245965)
+
+📁 ./.git/objects/76
+  └── 8feaf63c248ae836cd9460bb1c3bf1e7ac19b0 (🧮 1 lines, 📦 208 bytes, 🕓 2025-06-21T11:35:15.274059)
+  └── ad2153272282e449ed8f98654f1f9b59cf2c3b (🧮 2 lines, 📦 277 bytes, 🕓 2025-06-23T05:43:07.722372)
+  └── fd6829233caaaf3b02e986041790ec53e393e3 (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-21T04:25:02.985357)
+
+📁 ./.git/objects/77
+  └── 3370327beda015a6e5fb6b42adc702d699bdf2 (🧮 2 lines, 📦 37 bytes, 🕓 2025-06-23T10:58:44.047773)
+  └── 5efde3e1376c2bc6f90902895534e9bc52e8e3 (🧮 12 lines, 📦 1256 bytes, 🕓 2025-06-22T08:50:24.322080)
+  └── 5f91426b1b0c6aa5d6838205a30b305de5893b (🧮 4 lines, 📦 254 bytes, 🕓 2025-06-20T12:07:34.045002)
+  └── 7c5eef5737757dec460eefe794d766bcd3c754 (🧮 5 lines, 📦 177 bytes, 🕓 2025-06-21T09:36:08.718899)
+  └── d8553d7e637e1730c26543694854750ea43a5e (🧮 3 lines, 📦 261 bytes, 🕓 2025-06-23T06:43:53.970784)
+  └── d9fc6fb8bffa67760833f7d0ab4749598e5b2a (🧮 9 lines, 📦 890 bytes, 🕓 2025-06-22T06:02:24.873753)
+  └── ff9cb0a403a32812ec6d774aba58e4e5c063f4 (🧮 9 lines, 📦 627 bytes, 🕓 2025-06-20T09:31:49.435180)
+
+📁 ./.git/objects/78
+  └── 0596dc2e7cdf000b0229d8593b243897f10b76 (🧮 1 lines, 📦 47 bytes, 🕓 2025-06-23T02:46:31.738163)
+  └── 8f04c20e0241e4f1e877ca785d67b30b369e66 (🧮 3 lines, 📦 217 bytes, 🕓 2025-06-22T08:50:24.238960)
+  └── c4400cb8ab1b98a2fe0f093647b6ab3696d779 (🧮 1 lines, 📦 125 bytes, 🕓 2025-06-21T08:36:35.572647)
+  └── ca765ca22f372a12f337396face66190389757 (🧮 8 lines, 📦 932 bytes, 🕓 2025-06-21T11:03:51.727116)
+  └── cdb61d81992e4f66adf626a541dd9bc1153f15 (🧮 1 lines, 📦 106 bytes, 🕓 2025-06-20T09:30:10.896362)
+
+📁 ./.git/objects/79
+  └── 02ae785506fcf8cb23a8ab689258e5292d8e63 (🧮 1 lines, 📦 81 bytes, 🕓 2025-06-21T11:26:56.162789)
+  └── 1c81d3ca7d0ca99f3ed5118ca8736d073db010 (🧮 17 lines, 📦 994 bytes, 🕓 2025-06-23T05:43:07.857076)
+  └── 403e986c8b0407ae051c14faa8dfe4599ee6a6 (🧮 3 lines, 📦 335 bytes, 🕓 2025-06-23T05:59:58.380404)
+  └── 9ebc8b3ee3e8b75529ca472f494a8bcddbd1fa (🧮 9 lines, 📦 915 bytes, 🕓 2025-06-23T06:27:04.018486)
+  └── c69ddbc149474b519f4040f8a7be61a2110cc0 (🧮 1 lines, 📦 134 bytes, 🕓 2025-06-20T09:30:10.930374)
+
+📁 ./.git/objects/7a
+  └── 087869cd16d611b0c1800ba7fcf1ce95c3e6c3 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.978966)
+  └── 4e7715df0ef4ebe9a315fc9f0a30d56b209ce9 (🧮 7 lines, 📦 431 bytes, 🕓 2025-06-22T08:50:07.471709)
+  └── 7cabbe2728e3af708450169bacc3bf67f7f008 (🧮 3 lines, 📦 506 bytes, 🕓 2025-06-21T08:36:35.519096)
+  └── abf1b3da8aa6214d6aa1d148c9df7abcf87ad6 (🧮 2 lines, 📦 139 bytes, 🕓 2025-06-20T09:29:17.656925)
+  └── d1c010797a46c2baa8fee4f3c729a4f09c9b2d (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-20T09:52:08.284794)
+  └── eb6a270affe4f9a853ef4b3483d8a926aeb022 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.944957)
+
+📁 ./.git/objects/7b
+  └── 03e18010ae9bf182b56804e3621d346a460b16 (🧮 8 lines, 📦 1134 bytes, 🕓 2025-06-21T12:36:36.900062)
+  └── 47ec7766aae8e5598cf3ae08f4f6b070c1fc79 (🧮 3 lines, 📦 104 bytes, 🕓 2025-06-21T08:36:35.564027)
+  └── 7557cef99f4c30c5f1e3e975f5b9dfb1ed185d (🧮 5 lines, 📦 488 bytes, 🕓 2025-06-20T09:29:17.660688)
+  └── c6bb77bf33798abdfeee17dc67bcee726142e8 (🧮 8 lines, 📦 909 bytes, 🕓 2025-06-21T12:43:40.895167)
+
+📁 ./.git/objects/7c
+  └── 83d0b2821f860dd9df99436e7850dea5e69a6b (🧮 1 lines, 📦 190 bytes, 🕓 2025-06-22T09:50:05.910085)
+  └── 88d104b236495fbdab1bf7844951d5d23d4cc4 (🧮 2 lines, 📦 143 bytes, 🕓 2025-06-20T09:29:17.665471)
+  └── 96cea8a570d0671a736c6652440ddf6a327a23 (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-23T06:43:54.029783)
+  └── b9eb8de1423b9907325597a6ebc319d50399ec (🧮 3 lines, 📦 182 bytes, 🕓 2025-06-20T12:10:00.048756)
+  └── bfb671386757c9cddcf73bd864b0d82842593e (🧮 2 lines, 📦 251 bytes, 🕓 2025-06-21T04:25:15.822578)
+  └── d84c771973ad62a1fa8ff06ff825bf6e3e13ae (🧮 1 lines, 📦 154 bytes, 🕓 2025-06-21T12:37:04.402809)
+  └── ed8bac5d394e7a3aacee046045712b67872165 (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:24.280744)
+
+📁 ./.git/objects/7d
+  └── 5f7343a1cd3f40051b39be2cf1933af935ff64 (🧮 2 lines, 📦 186 bytes, 🕓 2025-06-22T08:58:25.867037)
+  └── 61e8acbc614ed5aacd46fd517faf498f297aae (🧮 3 lines, 📦 333 bytes, 🕓 2025-06-23T07:07:06.945868)
+  └── 6c45279f8d4d37eb6db436779b02973878e688 (🧮 4 lines, 📦 199 bytes, 🕓 2025-06-21T04:25:16.601747)
+  └── 9f926f265c95739de8b4ae02de927e4210acfa (🧮 6 lines, 📦 574 bytes, 🕓 2025-06-20T11:13:25.149567)
+  └── b66875947fed0b00c5dcab44965c328f577bae (🧮 12 lines, 📦 1135 bytes, 🕓 2025-06-21T12:17:07.733500)
+  └── dc30ec3abbe15ba9701f314be4b4144a92c679 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T07:29:50.768278)
+  └── dfde7dc0b9441bcb3baabe9a7e23645f42813e (🧮 1 lines, 📦 185 bytes, 🕓 2025-06-21T12:17:07.671234)
+
+📁 ./.git/objects/7e
+  └── 392b1dc8b49cdc6e27b115a47cb723a2c9f0b2 (🧮 2 lines, 📦 656 bytes, 🕓 2025-06-21T08:36:35.636965)
+  └── 3a9877c60752bca264abf764c969be6e265d38 (🧮 2 lines, 📦 223 bytes, 🕓 2025-06-21T09:18:23.915407)
+  └── 8fc7bb4a5fa134a9495b2c6afdb3885b67b3f0 (🧮 1 lines, 📦 189 bytes, 🕓 2025-06-23T08:06:14.500053)
+  └── a43a24c9e9afd49e44b89d109d35b74f145611 (🧮 7 lines, 📦 1651 bytes, 🕓 2025-06-23T10:24:06.967988)
+
+📁 ./.git/objects/7f
+  └── 3306acf1d3ad24150f82d965f4a71402672862 (🧮 1 lines, 📦 139 bytes, 🕓 2025-06-20T09:31:49.439180)
+  └── 602e1d6b0002c50fe78ea6f76a85e5f950fe0c (🧮 8 lines, 📦 852 bytes, 🕓 2025-06-21T11:35:14.674363)
+  └── 8b6f587cdea64a3df22e68b50fc62828868832 (🧮 1 lines, 📦 190 bytes, 🕓 2025-06-22T09:50:05.892077)
+  └── 991c5b8d1d34331e93599938142ba2751e6ad6 (🧮 1 lines, 📦 161 bytes, 🕓 2025-06-20T12:07:34.077002)
+  └── ddb8e97493746a1467acb0b06d24f972b10ed5 (🧮 4 lines, 📦 119 bytes, 🕓 2025-06-23T10:24:06.897251)
+  └── e7b67495d2c9deafcf1fbad7cda0bcefd76f9d (🧮 2 lines, 📦 105 bytes, 🕓 2025-06-23T11:06:03.376694)
+
+📁 ./.git/objects/80
+  └── 06232b203e55e9eecefc08751ba533fa35d7c3 (🧮 2 lines, 📦 127 bytes, 🕓 2025-06-21T12:17:07.714195)
+  └── 123c0ee0302bd0e31418521826715d406ed27e (🧮 1 lines, 📦 440 bytes, 🕓 2025-06-23T07:32:41.850150)
+  └── 3269536e7bc75bb1061b19cee1035598d6fb0b (🧮 7 lines, 📦 967 bytes, 🕓 2025-06-21T08:36:35.485678)
+  └── 538fa6369008ac6c6e3031ff2c12e7e70898f0 (🧮 2 lines, 📦 218 bytes, 🕓 2025-06-22T08:50:07.342481)
+  └── 681f28cc05cd4b0b68efa1138220448b871a2e (🧮 2 lines, 📦 198 bytes, 🕓 2025-06-23T10:24:06.863472)
+  └── 68d8f85dfb7927684952bf06d8557496b52910 (🧮 7 lines, 📦 647 bytes, 🕓 2025-06-23T10:24:06.856977)
+  └── 8f368950a3421201aaa21487c320bedd73cc1a (🧮 12 lines, 📦 930 bytes, 🕓 2025-06-21T09:19:06.735831)
+  └── c07a03b64d620ded6ba781aa84935261774e20 (🧮 4 lines, 📦 1287 bytes, 🕓 2025-06-21T08:36:35.450647)
+  └── c750b5c355b6ba4cf60717983899be9cc117b8 (🧮 2 lines, 📦 161 bytes, 🕓 2025-06-20T12:07:34.077002)
+  └── cac482b96589bdece079cfbaf845256364e3e8 (🧮 11 lines, 📦 925 bytes, 🕓 2025-06-21T09:36:08.174998)
+
+📁 ./.git/objects/81
+  └── 00929a24d379e1156a84b3ed79f87b53d6e3de (🧮 1 lines, 📦 187 bytes, 🕓 2025-06-20T12:10:00.062298)
+  └── 097d9b6daec34480b47bec8fed4a494a444cdc (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-23T02:46:31.724198)
+  └── 4afc4828adc3cf8b9ef60dda63163d8aa23c47 (🧮 1 lines, 📦 101 bytes, 🕓 2025-06-23T07:32:41.843151)
+  └── 5c614a147d08b3209e05d35d757e150c1c1146 (🧮 2 lines, 📦 184 bytes, 🕓 2025-06-23T10:24:07.075749)
+  └── 6a355d5cfe6970f3e20424e457c7ca63e617b0 (🧮 10 lines, 📦 1134 bytes, 🕓 2025-06-21T12:17:07.742551)
+  └── 79ee03b3d72c2a0ccc919c459aea0d6571a96e (🧮 3 lines, 📦 160 bytes, 🕓 2025-06-21T08:36:35.496189)
+  └── 886facb8acc6ea8700ee946f86e0c9665e1be1 (🧮 1 lines, 📦 112 bytes, 🕓 2025-06-21T04:25:15.860302)
+  └── b0719d0a65526f8fb58f93cb3227b4e93cfa77 (🧮 1 lines, 📦 64 bytes, 🕓 2025-06-21T10:52:46.323853)
+  └── b865b7a11382a24d29e057652cedbe3a5f9057 (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-22T08:50:24.133226)
+
+📁 ./.git/objects/82
+  └── 08bddcb55c691b0e152d0d5427508e78359f2d (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-21T12:23:39.863026)
+  └── 24daad194da1e5f5107ae882f9a8ecbaf5f088 (🧮 2 lines, 📦 217 bytes, 🕓 2025-06-22T08:50:24.199240)
+  └── 28551eb4fb3fa06a3b08501b150b43defcaa7d (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-22T09:50:05.963382)
+  └── 8ab1050b214e91eb0916075fa91ef5327c6cb8 (🧮 1 lines, 📦 235 bytes, 🕓 2025-06-23T02:46:32.000164)
+  └── d089938b275692aa79f9310f6dd3ffdbe0831d (🧮 9 lines, 📦 437 bytes, 🕓 2025-06-22T08:50:07.475578)
+
+📁 ./.git/objects/83
+  └── 14e82a5aaf1eec4ae737aff93a406cb46e5171 (🧮 1 lines, 📦 89 bytes, 🕓 2025-06-23T11:06:03.368691)
+  └── 3ccf133faf9d150928c59c3b521d26f9d1b582 (🧮 1 lines, 📦 54 bytes, 🕓 2025-06-23T02:46:31.803306)
+  └── 3db13ba2884abed64d0718286307c437d90bae (🧮 1 lines, 📦 52 bytes, 🕓 2025-06-23T06:27:04.097308)
+  └── c35c02e573e8805f367378562caed1e9c4b157 (🧮 9891 lines, 📦 1450704 bytes, 🕓 2025-06-21T08:36:35.444821)
+  └── cb4dc5e869cdc2320d375708e04f52c81a1291 (🧮 10 lines, 📦 853 bytes, 🕓 2025-06-21T11:31:14.089106)
+
+📁 ./.git/objects/84
+  └── 2f0531c1f6f8f791dc5833181859b89dba2bd5 (🧮 6 lines, 📦 270 bytes, 🕓 2025-06-22T07:13:41.175760)
+  └── 3071248e7274a2d85be72bdc6ec1f8c23eab89 (🧮 8 lines, 📦 874 bytes, 🕓 2025-06-20T09:29:17.672586)
+  └── 4151cb39622af13f429d74106e7c71c19426dc (🧮 1 lines, 📦 103 bytes, 🕓 2025-06-23T07:06:32.744896)
+  └── b551d8964c70701b35bc2d6e8a66fc5d431a99 (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-22T08:50:24.137228)
+  └── c19bed96ef37e57d0c92c9e80aab2ead308790 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.969436)
+  └── e2125470dafe21762495948bc39d0d5ff6ec0d (🧮 2 lines, 📦 217 bytes, 🕓 2025-06-22T08:50:07.393524)
+  └── ed31b0663738d78823f00552b85f261f558f14 (🧮 3 lines, 📦 201 bytes, 🕓 2025-06-23T02:46:31.685191)
+
+📁 ./.git/objects/85
+  └── 1fffd2804a715e947ddbfc2fb9a76d61e2a94c (🧮 2 lines, 📦 215 bytes, 🕓 2025-06-22T08:50:24.231657)
+  └── 9a352b284f89051554792477cc813fbb80a5eb (🧮 2 lines, 📦 189 bytes, 🕓 2025-06-23T10:24:07.086043)
+  └── e956dd01c78db69f8520831a25e912d99a1c6a (🧮 8 lines, 📦 767 bytes, 🕓 2025-06-20T12:07:34.082002)
+  └── f652e8520af4e15af11f74e0c8a5430dca1421 (🧮 1 lines, 📦 226 bytes, 🕓 2025-06-23T06:27:04.043932)
+
+📁 ./.git/objects/86
+  └── 2264309fac4b16f644991b4c09e1b5972e8a34 (🧮 1 lines, 📦 54 bytes, 🕓 2025-06-20T09:25:09.985022)
+  └── 8e1b5ef964611a6748fcb3df049919c0d3d814 (🧮 2 lines, 📦 183 bytes, 🕓 2025-06-20T12:10:00.034582)
+  └── d6742e2223c0d366538842c56a69701d93a1bf (🧮 9 lines, 📦 1349 bytes, 🕓 2025-06-20T09:29:17.692910)
+
+📁 ./.git/objects/87
+  └── 164fdd584fd8d72fe9b7b08ff9cffff2023846 (🧮 1 lines, 📦 145 bytes, 🕓 2025-06-20T12:06:11.731248)
+  └── 56463da4739a918bac576a19122db77c1204a5 (🧮 2 lines, 📦 144 bytes, 🕓 2025-06-22T07:49:26.895332)
+  └── c0390d3959619557d83ea9c58761f5b22624d5 (🧮 21 lines, 📦 2149 bytes, 🕓 2025-06-23T02:45:50.802353)
+  └── ef7bed52070b9d4745264c8d9c4d2ed8e88d9d (🧮 1 lines, 📦 585 bytes, 🕓 2025-06-23T10:58:44.124716)
+
+📁 ./.git/objects/88
+  └── 583d3738d181a07aca35977128e46743c281b2 (🧮 1 lines, 📦 143 bytes, 🕓 2025-06-20T12:06:11.721247)
+  └── 5d013999f8a8caf9fa626986b56334107beb85 (🧮 6 lines, 📦 766 bytes, 🕓 2025-06-20T12:06:11.766538)
+  └── 6080030774fbda3ece32dead4ac42b3a8085cd (🧮 1 lines, 📦 168 bytes, 🕓 2025-06-23T06:27:04.111860)
+  └── 611b6510aecd1311cbc789523abfd8ebd701b2 (🧮 7 lines, 📦 229 bytes, 🕓 2025-06-21T12:37:04.382052)
+  └── 6f393840ee5363108457d9f27f673cf0c6841e (🧮 2 lines, 📦 91 bytes, 🕓 2025-06-23T02:45:50.845349)
+  └── 86883541020d28b614c4871052073b376d2ce0 (🧮 1 lines, 📦 198 bytes, 🕓 2025-06-22T09:50:05.956877)
+  └── 9b4787339aeba29d09d973db87d1dcdf457f26 (🧮 5 lines, 📦 609 bytes, 🕓 2025-06-20T12:10:00.092030)
+  └── e728aeb5a0bed937e6919a5e37574f06178507 (🧮 7 lines, 📦 645 bytes, 🕓 2025-06-20T13:37:34.986444)
+  └── fefeb97f1c1e414252f42159cf0631c6383685 (🧮 2 lines, 📦 222 bytes, 🕓 2025-06-22T06:47:09.712559)
+
+📁 ./.git/objects/89
+  └── 344d75f7bda9966d969fbee283831747710bc2 (🧮 5 lines, 📦 631 bytes, 🕓 2025-06-20T09:29:17.782913)
+  └── 5804ae016d19b808d2ba61528864b9a4d59bc0 (🧮 6 lines, 📦 481 bytes, 🕓 2025-06-23T11:05:51.380503)
+  └── bf42d4ce937ede69a68da2e9f703a324f7198a (🧮 1 lines, 📦 143 bytes, 🕓 2025-06-20T12:06:11.741435)
+  └── fe529384018e9782a365e22601b77bf4d906f1 (🧮 1 lines, 📦 133 bytes, 🕓 2025-06-20T09:30:10.933373)
+
+📁 ./.git/objects/8a
+  └── 29534e14e6dd7b9f0a70c6f35e07c68d68a3ba (🧮 3 lines, 📦 523 bytes, 🕓 2025-06-23T10:24:07.089200)
+  └── 7611e9cb48de8341bfd21e69a45fb002e0b359 (🧮 33 lines, 📦 3762 bytes, 🕓 2025-06-20T09:29:17.704910)
+  └── 7c93221364b392992b147322bbf70dc8ddf56b (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.953958)
+  └── c04f8b7b9cd81d6eba4d076a8b326ca0ec99fd (🧮 10 lines, 📦 1251 bytes, 🕓 2025-06-22T09:12:45.812422)
+  └── dd22625b2ac435a48b81122628a540f45d934a (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-20T09:30:10.920267)
+  └── e525b0a0d4caf25053634aeb77d270cbe0d9fe (🧮 4 lines, 📦 549 bytes, 🕓 2025-06-23T10:58:31.272871)
+  └── f1dcf5eb0c52d3cce1800e1bd64062d04c0cc9 (🧮 3 lines, 📦 158 bytes, 🕓 2025-06-21T09:35:51.226827)
+  └── f59fdc185835a98e2b1d21d873c9c7c0d630f1 (🧮 2 lines, 📦 645 bytes, 🕓 2025-06-23T11:05:51.438624)
+
+📁 ./.git/objects/8b
+  └── 137891791fe96927ad78e64b0aad7bded08bdc (🧮 1 lines, 📦 16 bytes, 🕓 2025-06-23T08:07:12.662987)
+  └── 749da193a323382a7577984b1aed7d65a264f8 (🧮 5 lines, 📦 213 bytes, 🕓 2025-06-22T08:50:07.396916)
+  └── 9290ac5ed6f7be208a31a773175daeb76a9953 (🧮 2 lines, 📦 188 bytes, 🕓 2025-06-23T10:58:44.116716)
+  └── af6baf006d8980f25908b7b8451a15041da8ae (🧮 3 lines, 📦 158 bytes, 🕓 2025-06-21T09:36:08.167482)
+  └── bc54eabf62ddcd81e31396b3c41dfc287b721c (🧮 3 lines, 📦 192 bytes, 🕓 2025-06-21T09:27:14.927968)
+
+📁 ./.git/objects/8c
+  └── 293b1efc82c150e0d910a96cbbe319a746f023 (🧮 2 lines, 📦 103 bytes, 🕓 2025-06-20T11:13:25.186112)
+  └── 479301d39d466dc18286320e8565f6c41bb66b (🧮 5 lines, 📦 911 bytes, 🕓 2025-06-23T08:18:40.114690)
+  └── 83db0d7ac2c522c8e59e89739817a78a66d15c (🧮 5 lines, 📦 432 bytes, 🕓 2025-06-22T08:50:07.478320)
+  └── 857dde6068cf349eddf4ebf8e0f498c7ce3484 (🧮 1 lines, 📦 103 bytes, 🕓 2025-06-23T07:32:41.792154)
+  └── 88210c6771da56e4d3f4e8dd867c14b2e80d9c (🧮 7 lines, 📦 953 bytes, 🕓 2025-06-22T09:36:16.912416)
+  └── a51da1427a8c4312033ee9ad287fd4acdad6de (🧮 2 lines, 📦 148 bytes, 🕓 2025-06-21T04:25:02.929855)
+  └── cc9a9bae6e244dc5519ed9eed0586dfbafc63e (🧮 1 lines, 📦 379 bytes, 🕓 2025-06-21T08:36:35.405380)
+
+📁 ./.git/objects/8d
+  └── 1c8b69c3fce7bea45c73efd06983e3c419a92f (🧮 2 lines, 📦 17 bytes, 🕓 2025-06-23T07:06:32.667871)
+  └── 1dc13a32689e490e40099a8da82028d94bc278 (🧮 1 lines, 📦 89 bytes, 🕓 2025-06-23T10:58:31.261115)
+  └── 21141eccf72ef3a8a83fcab51fd6e8f63e24fb (🧮 1 lines, 📦 235 bytes, 🕓 2025-06-20T12:06:11.654713)
+  └── 28c59add1f3505c6d08803032b66b6ce349a13 (🧮 3 lines, 📦 447 bytes, 🕓 2025-06-21T12:17:07.703165)
+  └── 38421f49ff69364ed732f92d1b6c431b27e6f2 (🧮 2 lines, 📦 137 bytes, 🕓 2025-06-23T07:41:42.499298)
+  └── 93890f25df173ffed4ccbf9aae9b4828ae21ef (🧮 1 lines, 📦 161 bytes, 🕓 2025-06-21T04:25:02.989362)
+  └── 9d9e652b9af7f727e14dd9347a34200431b79b (🧮 2 lines, 📦 108 bytes, 🕓 2025-06-21T04:25:15.825578)
+  └── a025d00a55c6730bd2879be292b276eefaae22 (🧮 18 lines, 📦 2996 bytes, 🕓 2025-06-20T09:29:17.772688)
+  └── c538a8a1c457c32b91c4dd63ce912f2b37b911 (🧮 14 lines, 📦 1089 bytes, 🕓 2025-06-21T08:36:35.508329)
+  └── d39cc5fddb6fa050515c1d4de9b9dbe1a55dc2 (🧮 1 lines, 📦 54 bytes, 🕓 2025-06-23T02:46:31.765520)
+  └── e13cc851bc8cd83e7819ff9f15f00c5eda7163 (🧮 13 lines, 📦 1229 bytes, 🕓 2025-06-22T06:44:45.703498)
+
+📁 ./.git/objects/8e
+  └── 031df0c6cd9d9d715d7f503f87e3dd32ba7e8b (🧮 2 lines, 📦 246 bytes, 🕓 2025-06-21T11:40:12.236646)
+  └── 22c8a622b4328cb66d665c947cf103a7b71cc4 (🧮 1 lines, 📦 197 bytes, 🕓 2025-06-22T09:50:05.949878)
+  └── 2ec159aaba831c1bd82c5812172d094b981019 (🧮 1 lines, 📦 75 bytes, 🕓 2025-06-21T11:32:58.318277)
+  └── 40dbeabaf2a4d723fb2345ab4d9311163de47b (🧮 2 lines, 📦 108 bytes, 🕓 2025-06-21T08:36:35.594925)
+  └── ec10be4b0c906d36da651a9d4141b307edd616 (🧮 11 lines, 📦 925 bytes, 🕓 2025-06-21T09:19:06.739145)
+
+📁 ./.git/objects/8f
+  └── 11003346fc0e1ec83ecb367888f623d2ec804d (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-21T04:25:02.957850)
+  └── 2533b4f33a9342e19be791545030eb96787849 (🧮 6 lines, 📦 1162 bytes, 🕓 2025-06-21T12:37:04.272904)
+  └── bf1526411a87583d9711a45490f7d9dd0b9d4f (🧮 3 lines, 📦 558 bytes, 🕓 2025-06-23T10:58:31.268860)
+  └── d28e754634571f43d22e3653ba476e0e5bd79c (🧮 1 lines, 📦 210 bytes, 🕓 2025-06-22T08:50:24.307205)
+
+📁 ./.git/objects/90
+  └── 7d1c08b4cd337b072ccc261efcf711cdf18f81 (🧮 1 lines, 📦 145 bytes, 🕓 2025-06-20T12:06:11.748435)
+  └── 95121ae415a0684b4e9409f06bf218d5bc6f39 (🧮 10 lines, 📦 921 bytes, 🕓 2025-06-23T02:46:31.701060)
+
+📁 ./.git/objects/91
+  └── 0476c0c993d2bef8764f9778a03b49f98882d5 (🧮 2 lines, 📦 293 bytes, 🕓 2025-06-23T11:06:03.373691)
+  └── 12f11e91253680b094852ae43b8a08941a0e02 (🧮 2 lines, 📦 96 bytes, 🕓 2025-06-20T09:24:18.918819)
+  └── 7ad66402cc3c37183dbc183dae2a05844dca6c (🧮 4 lines, 📦 316 bytes, 🕓 2025-06-22T08:50:07.517668)
+  └── cc06c7d353a36daebff47983435b755c079db5 (🧮 2 lines, 📦 101 bytes, 🕓 2025-06-21T11:03:58.061610)
+  └── da1d793299c9f621e8cb9c385b98889aa4185b (🧮 1 lines, 📦 301 bytes, 🕓 2025-06-23T07:06:32.760218)
+  └── dced25624117f071c6faf4720c31fee2855d05 (🧮 1 lines, 📦 247 bytes, 🕓 2025-06-20T12:06:11.655713)
+
+📁 ./.git/objects/92
+  └── 85cccfed58c6b2b0aebe1d260df7ee6020b542 (🧮 1 lines, 📦 103 bytes, 🕓 2025-06-23T10:24:07.071750)
+  └── a6fac9357e71e21339401ff0f5c3729c0db51d (🧮 7 lines, 📦 744 bytes, 🕓 2025-06-23T10:24:06.983186)
+
+📁 ./.git/objects/93
+  └── 04396d6f958f1a58e1123ce04fd7efcbd118d2 (🧮 5 lines, 📦 225 bytes, 🕓 2025-06-21T09:19:06.859325)
+  └── 3b50a9f0a23783ec195519c50373aee24e542d (🧮 1 lines, 📦 73 bytes, 🕓 2025-06-22T08:58:25.879037)
+  └── 6243592f5fcfc7a06bc58c03e938102da1e202 (🧮 1 lines, 📦 177 bytes, 🕓 2025-06-22T07:09:40.754177)
+  └── 956ca8e7a0391c0249d54481246c19a3daacb6 (🧮 7 lines, 📦 795 bytes, 🕓 2025-06-23T02:45:50.799349)
+  └── db0464c404ab95bcf4e33747e644933dfc2e7d (🧮 1 lines, 📦 160 bytes, 🕓 2025-06-21T04:25:02.982352)
+  └── f950b54675632384a68dc34977883ab3e00802 (🧮 1 lines, 📦 237 bytes, 🕓 2025-06-20T12:07:34.040002)
+  └── fbcb218d5c9bad76675abcee392e909bab9950 (🧮 3 lines, 📦 509 bytes, 🕓 2025-06-23T07:32:41.849150)
+
+📁 ./.git/objects/94
+  └── 44161928e8d0a46680b002a244f157c70f8cd2 (🧮 3 lines, 📦 341 bytes, 🕓 2025-06-23T10:24:33.959842)
+  └── 9155cd299595704a3ea3133ad75f954556f6ac (🧮 3 lines, 📦 165 bytes, 🕓 2025-06-23T05:43:07.725374)
+
+📁 ./.git/objects/95
+  └── 285dbaa7547f035eb474f57b5b79a603cf88a1 (🧮 4 lines, 📦 198 bytes, 🕓 2025-06-23T10:24:06.918779)
+  └── 298a9c8ed4af171f94717e999e3cb610b6bf59 (🧮 10 lines, 📦 933 bytes, 🕓 2025-06-23T05:43:07.728373)
+  └── 45c2d53bfe2f7d3399064b05d95ebc354a0779 (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-21T12:17:07.689890)
+  └── c7ae8e16bc8a85900030f499fe06d252aae371 (🧮 1 lines, 📦 210 bytes, 🕓 2025-06-21T12:23:40.469304)
+
+📁 ./.git/objects/96
+  └── 33322b3fc19a871e01f1327c78009dcb3b6e1d (🧮 3 lines, 📦 805 bytes, 🕓 2025-06-23T05:43:07.689483)
+
+📁 ./.git/objects/97
+  └── 31bfc6e279344390fcf8a94569cbe62ac1ef86 (🧮 4 lines, 📦 227 bytes, 🕓 2025-06-23T10:58:31.215019)
+  └── 42de7b573bdcd1421041d078a0c02d48622e7a (🧮 4 lines, 📦 434 bytes, 🕓 2025-06-22T08:50:07.441887)
+  └── 51c8db227d789f8fc1268c3a36e1d86352d496 (🧮 2 lines, 📦 246 bytes, 🕓 2025-06-21T04:25:15.754087)
+
+📁 ./.git/objects/98
+  └── 3003c63c4f8684ea65ec20d2fb72b8a9570e71 (🧮 7 lines, 📦 937 bytes, 🕓 2025-06-21T04:32:49.670848)
+  └── 571495d6e6d67ef2b990c6266fef5a83006f97 (🧮 2 lines, 📦 465 bytes, 🕓 2025-06-22T08:53:04.076762)
+  └── 9828011cf6bc06966e384f0e2d0e82fb7f9e7b (🧮 1 lines, 📦 32 bytes, 🕓 2025-06-23T05:43:07.731372)
+
+📁 ./.git/objects/99
+  └── 0903834e2fa099211c0bf62908df1c83c84c89 (🧮 3 lines, 📦 185 bytes, 🕓 2025-06-20T13:37:35.583079)
+  └── 12093be1774e990b555b926934772773a13e67 (🧮 5 lines, 📦 377 bytes, 🕓 2025-06-20T09:52:08.292602)
+  └── 15b581db91f7c162b88e43fb3f362e5c3e2e95 (🧮 1 lines, 📦 218 bytes, 🕓 2025-06-21T12:17:07.659235)
+  └── 27c7140b1edfb1e1d712c4cb9e522d6e606d23 (🧮 4 lines, 📦 279 bytes, 🕓 2025-06-20T09:29:17.779687)
+  └── 4b9cd71ad0ed5d22c3dd6ad9982744adac6cd8 (🧮 1 lines, 📦 194 bytes, 🕓 2025-06-20T12:10:00.746883)
+  └── a26f9a1ce9f2738b85910e6cf4cb7ea602ac7d (🧮 4 lines, 📦 748 bytes, 🕓 2025-06-23T10:24:06.987631)
+  └── fa58e6990addb3cfbb0e5cf341a1a5659f2159 (🧮 1 lines, 📦 183 bytes, 🕓 2025-06-20T12:10:00.031582)
+
+📁 ./.git/objects/9a
+  └── 202eec55899594a5a10353e3ffa01443e330a4 (🧮 2 lines, 📦 172 bytes, 🕓 2025-06-23T02:46:15.342023)
+  └── 2a6b44417f304295d23ede4202e69a563e53ae (🧮 2 lines, 📦 201 bytes, 🕓 2025-06-23T10:24:06.841043)
+  └── 37ec7ff4612235c8663c519fa4c1e29d2c5943 (🧮 2 lines, 📦 219 bytes, 🕓 2025-06-21T11:40:12.205507)
+  └── 53cf4d030e4f7fd728dc13bdcf83a12d64e6e4 (🧮 10 lines, 📦 621 bytes, 🕓 2025-06-21T08:36:35.455714)
+  └── ad89d79fb8149a5a28733e0d13528a08d6aa6c (🧮 3 lines, 📦 131 bytes, 🕓 2025-06-23T07:06:32.688875)
+  └── c2dc5a8bb475787627ad506b07b92dc6101710 (🧮 1 lines, 📦 147 bytes, 🕓 2025-06-20T12:06:11.738435)
+  └── c5809445a5dcb7fca58fcc6a5973240327eab5 (🧮 3 lines, 📦 88 bytes, 🕓 2025-06-22T08:50:07.481582)
+  └── e0c1bec799ab73179161a14852d4e401282c24 (🧮 9 lines, 📦 927 bytes, 🕓 2025-06-22T09:50:05.850614)
+
+📁 ./.git/objects/9b
+  └── 3400382e78bbe49c806046d81e7ae8c1b50fb4 (🧮 2 lines, 📦 215 bytes, 🕓 2025-06-22T08:50:07.345805)
+  └── 7f1323859c158feb484458727737c70defa1c0 (🧮 1 lines, 📦 63 bytes, 🕓 2025-06-23T02:45:50.914392)
+  └── b85c05dc6db624c1a1fb9345c42ecd5f76998f (🧮 2 lines, 📦 462 bytes, 🕓 2025-06-22T08:53:04.076762)
+  └── d06e84fba23bdf8ea8c998acc5119474f06191 (🧮 1 lines, 📦 63 bytes, 🕓 2025-06-21T10:38:06.051495)
+
+📁 ./.git/objects/9c
+  └── 522c4fa4455f81713237e4678a24e8df280337 (🧮 1 lines, 📦 148 bytes, 🕓 2025-06-20T12:06:11.755994)
+  └── b660d925e59f825990d1e6416732c4e707f278 (🧮 8 lines, 📦 941 bytes, 🕓 2025-06-21T12:37:04.266233)
+
+📁 ./.git/objects/9d
+  └── 197625bbbe657022da239e06965afdbdbbdfdc (🧮 1 lines, 📦 241 bytes, 🕓 2025-06-20T11:13:25.213466)
+  └── 1dcfdaf1a6857c5f83dc27019c7600e1ffaff8 (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-23T11:05:51.425625)
+  └── 2d92cd4af46f888713c4c9aa702fed40437ee4 (🧮 1 lines, 📦 237 bytes, 🕓 2025-06-20T12:07:34.043002)
+  └── 7b1bd728363027831dca11cb46a0996a07122f (🧮 1 lines, 📦 212 bytes, 🕓 2025-06-22T08:50:24.215822)
+  └── d63e7ed6c0337907ad26b87701fc37db6e3fcc (🧮 15 lines, 📦 2054 bytes, 🕓 2025-06-22T09:58:14.531655)
+  └── dd0fef748204c8530d1c341c41267aa46aae4b (🧮 1 lines, 📦 102 bytes, 🕓 2025-06-23T11:05:51.430624)
+
+📁 ./.git/objects/9e
+  └── 4084edb1275582808bdb91ed0aac10db0e1b81 (🧮 1 lines, 📦 94 bytes, 🕓 2025-06-23T10:58:44.113717)
+  └── 6483a36dba7876444c3ce9fe346ed4b04bd7fe (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-22T08:53:04.080761)
+  └── 6f9163229e0fab98a33267c9ce756d65e5e785 (🧮 3 lines, 📦 332 bytes, 🕓 2025-06-21T04:25:02.996357)
+  └── 7f9e430de582d4329eb969b7a6651181aa3763 (🧮 1 lines, 📦 164 bytes, 🕓 2025-06-20T12:07:34.079002)
+  └── 99cf2fd218fd581e6993e926937c6af83bf702 (🧮 15 lines, 📦 1272 bytes, 🕓 2025-06-23T10:24:06.970985)
+  └── 9ba254f33045267eccdac5966a14bf57081313 (🧮 35 lines, 📦 4000 bytes, 🕓 2025-06-21T10:52:32.659615)
+  └── a076def29f4e00dc9e6697d577ada92883638b (🧮 7 lines, 📦 483 bytes, 🕓 2025-06-21T08:36:35.471379)
+  └── ad40428c670c2a3eb15e087fbd92aa2675c436 (🧮 4 lines, 📦 189 bytes, 🕓 2025-06-23T07:29:50.746194)
+  └── e23a55c15ffd427ccda1db3cfad30a23e3e887 (🧮 14 lines, 📦 1781 bytes, 🕓 2025-06-23T10:58:44.035517)
+  └── e8245cd558bca746aadd66a80ac8fda4eb177d (🧮 1 lines, 📦 99 bytes, 🕓 2025-06-23T05:43:07.734022)
+  └── ed38d61d309943173c4f061503e359c6a72745 (🧮 6 lines, 📦 752 bytes, 🕓 2025-06-23T10:24:06.975986)
+
+📁 ./.git/objects/9f
+  └── 662a2dc9834204457f44518a44878574c1034f (🧮 2 lines, 📦 115 bytes, 🕓 2025-06-21T04:25:15.866724)
+  └── 6cc14b2c3d8e3680a99ad042bdaa4d2d69b3fb (🧮 2 lines, 📦 229 bytes, 🕓 2025-06-23T05:43:07.737881)
+  └── acf39e49525e644b0bab63f5cda010ac426320 (🧮 4 lines, 📦 458 bytes, 🕓 2025-06-22T08:53:04.062714)
+
+📁 ./.git/objects/a0
+  └── 0be128613d136a0060e31929b25925c4d2fc6c (🧮 2 lines, 📦 152 bytes, 🕓 2025-06-22T08:50:24.321074)
+  └── 1e365a997a1a15d9725ee9c2a68a490b628a29 (🧮 18 lines, 📦 2288 bytes, 🕓 2025-06-21T11:03:51.731903)
+  └── 8f00a11d40537a5a75845e4ba5d0272295fc03 (🧮 5 lines, 📦 747 bytes, 🕓 2025-06-23T07:06:32.684873)
+  └── a16b7bc6cf4afc61e84645df9255df075a18e4 (🧮 5 lines, 📦 925 bytes, 🕓 2025-06-21T12:17:07.640560)
+  └── b16f2dba1b89b52b740307ee3bcd0af9ffb48e (🧮 30 lines, 📦 3164 bytes, 🕓 2025-06-23T02:45:50.821353)
+  └── c01fe74b273a0f43ae6e609bc49273f7037aca (🧮 9 lines, 📦 1602 bytes, 🕓 2025-06-23T06:27:04.025494)
+
+📁 ./.git/objects/a1
+  └── 9178969e8e5f9c8cd0154c634ba4d8620d332a (🧮 1 lines, 📦 86 bytes, 🕓 2025-06-23T02:46:31.731164)
+
+📁 ./.git/objects/a2
+  └── 133c672350f34ca5bee2606bf12e15d82cafb6 (🧮 4 lines, 📦 183 bytes, 🕓 2025-06-23T02:46:31.696755)
+  └── c842325b1538e7ab6fcdaf0ae63da86e177dc3 (🧮 10 lines, 📦 1251 bytes, 🕓 2025-06-22T09:37:09.894331)
+  └── d61a9af93a65181c5558d923e642b1f17ab20a (🧮 5 lines, 📦 853 bytes, 🕓 2025-06-21T11:41:31.350182)
+  └── e6837ccf799d801b45dcda2cb89af38aef7b55 (🧮 6 lines, 📦 595 bytes, 🕓 2025-06-22T09:12:45.820675)
+
+📁 ./.git/objects/a3
+  └── 1fcfe148233a53944446aa8f3c3ddc3c2dd7a4 (🧮 2 lines, 📦 277 bytes, 🕓 2025-06-23T02:46:31.828614)
+  └── 25e88acb494edad46c91991e3cf081d673b487 (🧮 4 lines, 📦 287 bytes, 🕓 2025-06-20T09:52:08.250777)
+  └── 42d9cb19128a14df5cf4f83c5d5fa511fa8e60 (🧮 6 lines, 📦 943 bytes, 🕓 2025-06-23T02:46:31.677190)
+  └── 67c3e23e92cfdf5a8214c4d3bde21cc1febcca (🧮 4 lines, 📦 262 bytes, 🕓 2025-06-20T12:07:34.042003)
+  └── be0977ad9247b0dcf2cc6b751722ca06a675b5 (🧮 1 lines, 📦 144 bytes, 🕓 2025-06-20T12:06:11.745434)
+
+📁 ./.git/objects/a4
+  └── 4de8a1ab804c2972dda785914e641ee12665f4 (🧮 9 lines, 📦 1010 bytes, 🕓 2025-06-21T08:36:35.483674)
+  └── 72312e54050a17593c2b9f75aee4b057c5764b (🧮 2 lines, 📦 183 bytes, 🕓 2025-06-23T02:46:31.673183)
+  └── a63a05c059fd37eb396d51fc4c963195389a8c (🧮 1 lines, 📦 157 bytes, 🕓 2025-06-20T12:07:34.075002)
+  └── a71e87aa1541d258db4f3c82c6def3f8d83a5a (🧮 3 lines, 📦 194 bytes, 🕓 2025-06-22T08:58:25.870038)
+
+📁 ./.git/objects/a5
+  └── 2d3805515fcf50c7bf09f7420507e9e84a2a71 (🧮 1 lines, 📦 252 bytes, 🕓 2025-06-21T04:25:15.842874)
+  └── 4d338df78d6584761b10c35da82251880cbf42 (🧮 6 lines, 📦 800 bytes, 🕓 2025-06-22T08:53:04.080761)
+  └── 9aa0254d352a496fc82046ea4e58ef23e71fa2 (🧮 6 lines, 📦 769 bytes, 🕓 2025-06-20T09:27:21.081903)
+  └── b62a7963921684d615c6add2e32e7a7cfc1cc3 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.973967)
+
+📁 ./.git/objects/a6
+  └── 6b7c3eb1b00a95e9d8591b5e269faa65c965ba (🧮 7 lines, 📦 606 bytes, 🕓 2025-06-23T07:41:42.495298)
+  └── a7c19d67fe6632520c8530284f1166319eaf36 (🧮 2 lines, 📦 215 bytes, 🕓 2025-06-22T09:36:16.915418)
+  └── ab9fee0104aa3a176a04eded2bec0295734e8e (🧮 1 lines, 📦 405 bytes, 🕓 2025-06-23T07:29:50.750192)
+  └── cf2ca3086abe79b71e104aec72d10c7ee79d10 (🧮 6 lines, 📦 769 bytes, 🕓 2025-06-20T09:27:42.794901)
+  └── dc5c23094e7cd021970212aae76c5088e48b05 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T12:36:36.898095)
+  └── ddee6599a59244ab2ad5e32fd13bf0cde5e2a2 (🧮 1 lines, 📦 64 bytes, 🕓 2025-06-21T12:17:07.693935)
+  └── ff0878b54c90fbcb76c3d378eaf094fce91731 (🧮 1 lines, 📦 124 bytes, 🕓 2025-06-22T09:58:14.528657)
+
+📁 ./.git/objects/a7
+  └── 338399d29c49f2c4562dda5e7bd304e54c5368 (🧮 1 lines, 📦 206 bytes, 🕓 2025-06-21T11:32:58.920057)
+  └── e6f9b957e327139b38c94bc32f0833b2cf2661 (🧮 5 lines, 📦 1025 bytes, 🕓 2025-06-21T11:03:51.730115)
+
+📁 ./.git/objects/a8
+  └── 03646887b60590840994808bd983189fab7973 (🧮 8 lines, 📦 1246 bytes, 🕓 2025-06-21T08:36:35.481034)
+  └── 184ded83b622ccb5e23126c98dd31db43541b7 (🧮 14 lines, 📦 1272 bytes, 🕓 2025-06-23T06:43:53.986784)
+  └── 38b2e40aed60dc825972e883758cb3605ebd18 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-20T11:13:25.192736)
+  └── 88119b17111bd6fe112fdf976dd40e96487d6f (🧮 8 lines, 📦 899 bytes, 🕓 2025-06-23T05:43:07.741873)
+  └── 9810d0828a2ba06b50ee9b7755591caee4f2e2 (🧮 1 lines, 📦 156 bytes, 🕓 2025-06-21T04:25:02.972016)
+  └── b0b77cef255d14c4644b7e358411ff79b0edba (🧮 10 lines, 📦 1094 bytes, 🕓 2025-06-22T09:50:05.878746)
+  └── ddc18d5572da70bcb1eaec256b5359b8668be6 (🧮 13 lines, 📦 1184 bytes, 🕓 2025-06-21T08:36:35.499698)
+
+📁 ./.git/objects/a9
+  └── 031853cf5a399af5fcdc961ff86310ae2957fc (🧮 4 lines, 📦 102 bytes, 🕓 2025-06-23T10:24:06.881578)
+  └── 1cdc9525c07d4ab3d8bac7cd71fcd915edb82f (🧮 2 lines, 📦 261 bytes, 🕓 2025-06-23T05:43:07.746874)
+  └── 425768f327068029c499002cd4638beed2db28 (🧮 1 lines, 📦 231 bytes, 🕓 2025-06-23T05:43:07.743874)
+  └── 5b542c56488d02ca3bab6d0a3c0828193d2218 (🧮 3 lines, 📦 190 bytes, 🕓 2025-06-22T08:58:25.869038)
+  └── ab98bb68e0139864c54cdf929cc7762a1d7a22 (🧮 3 lines, 📦 213 bytes, 🕓 2025-06-23T11:05:51.448624)
+
+📁 ./.git/objects/aa
+  └── 0c1024b1452045acb2d8f1878ef0f8deb4c19f (🧮 7 lines, 📦 1254 bytes, 🕓 2025-06-22T08:09:04.762902)
+  └── 2468b696ed253a7edbbb80b133e49fca5449ed (🧮 11 lines, 📦 1600 bytes, 🕓 2025-06-23T08:06:14.442053)
+  └── 4a6ed67ccea689b56df41a1f3fe81131627ef3 (🧮 2 lines, 📦 185 bytes, 🕓 2025-06-20T12:10:00.052297)
+  └── 624ca1a95289f272a35f3abe5ca41fe36fc0d1 (🧮 5 lines, 📦 487 bytes, 🕓 2025-06-23T07:41:42.545301)
+  └── 64b366e5192cf146aaef5be79f84fad929b3f7 (🧮 4 lines, 📦 456 bytes, 🕓 2025-06-22T08:53:04.066712)
+  └── b2d1f2098346f00d100261e1fd9e6704d588b8 (🧮 2 lines, 📦 128 bytes, 🕓 2025-06-23T07:06:32.748895)
+
+📁 ./.git/objects/ab
+  └── 7c78d92a5d14fd91fc91d465372b0dc150eae6 (🧮 2 lines, 📦 159 bytes, 🕓 2025-06-21T09:19:06.744804)
+  └── 826af6189f87d5ef6e3873e1d9dc6a2cf876f0 (🧮 3 lines, 📦 193 bytes, 🕓 2025-06-23T05:43:07.825617)
+  └── e51022fd0b820600891e6ae64efacc7b4b96b4 (🧮 1 lines, 📦 199 bytes, 🕓 2025-06-22T08:09:05.317146)
+
+📁 ./.git/objects/ac
+  └── 104f7550232d3ae4bdaa35286df5239cd3279b (🧮 14 lines, 📦 1929 bytes, 🕓 2025-06-22T06:02:24.867832)
+  └── 77ec81a7067788ca1acef33aa1c4bc12b00b35 (🧮 2 lines, 📦 199 bytes, 🕓 2025-06-23T05:43:07.750873)
+  └── 82b929e9c5bf9785d54f1a4bee453e92c558c0 (🧮 3 lines, 📦 212 bytes, 🕓 2025-06-22T08:50:07.400915)
+  └── 8d213afc5b67ea8d72a9351cc8e2b80bbefe1c (🧮 1 lines, 📦 254 bytes, 🕓 2025-06-21T04:25:15.864303)
+  └── e3bfa8724b3347d3493bbb1f429d645606f288 (🧮 4 lines, 📦 218 bytes, 🕓 2025-06-22T08:50:07.403917)
+
+📁 ./.git/objects/ad
+  └── 0125a1544529e0c1c4e55d92aa676f6f497ab8 (🧮 3 lines, 📦 351 bytes, 🕓 2025-06-22T09:50:05.987031)
+  └── b966121ca4f776d4c47a142de88cac65925863 (🧮 1 lines, 📦 73 bytes, 🕓 2025-06-22T09:50:05.978027)
+  └── eda1b2866f19ba71b0820ca9fb2d04c867562c (🧮 1 lines, 📦 162 bytes, 🕓 2025-06-20T12:07:34.080002)
+
+📁 ./.git/objects/ae
+  └── 2cd6069bec76b4d20fad2eff667647ce5029f0 (🧮 1 lines, 📦 197 bytes, 🕓 2025-06-21T10:52:46.890042)
+  └── ca1ea96c9253716d09d2d447020e9e0379feae (🧮 2 lines, 📦 192 bytes, 🕓 2025-06-22T08:50:07.407915)
+  └── e5110b66eaa8c4f25e8c09292c56c24b619d53 (🧮 5 lines, 📦 755 bytes, 🕓 2025-06-22T09:50:05.866746)
+
+📁 ./.git/objects/af
+  └── 1d755469347da41dd354fde6e82ae1056a1160 (🧮 8 lines, 📦 1545 bytes, 🕓 2025-06-20T09:29:17.684277)
+  └── 3636d29569a628b0b6d75acb05b9004f251ac1 (🧮 4 lines, 📦 948 bytes, 🕓 2025-06-21T12:36:36.899095)
+  └── 6aff513831ebcaa88834eb7c07e41bbadc2431 (🧮 7 lines, 📦 431 bytes, 🕓 2025-06-22T08:50:07.485258)
+  └── c60cde05fdf20ef80ed457dea8ad13f987ad8f (🧮 1 lines, 📦 278 bytes, 🕓 2025-06-22T06:02:24.855794)
+  └── c7d3e2eae422f359ae9cac301f11be4877ccf0 (🧮 2 lines, 📦 219 bytes, 🕓 2025-06-21T11:40:51.181115)
+
+📁 ./.git/objects/b0
+  └── 82b1b9dc6097d9ea98fea279a26cda302778a0 (🧮 6 lines, 📦 465 bytes, 🕓 2025-06-22T08:53:04.075761)
+  └── 91569e1f93cbebecda60676e7beba864647e90 (🧮 3 lines, 📦 131 bytes, 🕓 2025-06-23T07:32:41.793154)
+  └── db73448fd07af630f20baeb44ca5662a0a62cd (🧮 2 lines, 📦 365 bytes, 🕓 2025-06-23T07:06:32.771116)
+
+📁 ./.git/objects/b1
+  └── 679c9c602119383be5c96cfd897cf8a2109843 (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-20T09:31:55.906697)
+  └── 9d565e7b287348e86cfbf7c18828e2cae51010 (🧮 21 lines, 📦 2745 bytes, 🕓 2025-06-22T06:02:24.862307)
+  └── a346d1742a091411270610976087ff68c0fb78 (🧮 2 lines, 📦 214 bytes, 🕓 2025-06-22T08:50:07.411418)
+  └── ceaab588da51f2d4df7bd485bc9d60a860e050 (🧮 3 lines, 📦 322 bytes, 🕓 2025-06-23T02:45:50.839349)
+  └── ef4899ec5904914daf74e3cec02b9e79e7f761 (🧮 10 lines, 📦 740 bytes, 🕓 2025-06-21T08:36:35.488184)
+
+📁 ./.git/objects/b2
+  └── 124227836ef5ea801a334846527e12584a78d9 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T07:29:50.775583)
+  └── 179460c37f507b54c854c5d489b235b0df53e8 (🧮 3 lines, 📦 343 bytes, 🕓 2025-06-21T08:36:35.583042)
+  └── 61bf91c885e550250fcd93b5076123e76ef5f3 (🧮 5 lines, 📦 314 bytes, 🕓 2025-06-21T11:26:56.195307)
+  └── a204700ffa8232c1804f17f31dfd785457bb9d (🧮 30 lines, 📦 3801 bytes, 🕓 2025-06-20T09:29:17.723181)
+  └── a72dcdc453f2ccfc22b542d7322f5e9132180c (🧮 3 lines, 📦 430 bytes, 🕓 2025-06-22T08:50:07.489315)
+  └── a9e0fcba47559135ce4c3010e3df17d7f3d0ce (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-23T07:32:41.792154)
+  └── b96aebc72afac91f1e646fc02ce71fb96d88ca (🧮 1 lines, 📦 120 bytes, 🕓 2025-06-21T09:18:23.301807)
+  └── f357913ce38032416cc036e06ee4fc8a314fcf (🧮 3 lines, 📦 196 bytes, 🕓 2025-06-23T08:06:14.448052)
+
+📁 ./.git/objects/b3
+  └── 25f732c8a482f7f786df076b2384ecb74acf21 (🧮 3 lines, 📦 248 bytes, 🕓 2025-06-21T04:25:15.835874)
+  └── 8925f091a068ceec2978320cbd425755c26abe (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:24.262196)
+  └── cebd24b7901289cef4270a779507fa1f08dbdc (🧮 10 lines, 📦 924 bytes, 🕓 2025-06-21T12:17:07.650434)
+
+📁 ./.git/objects/b4
+  └── 526d3f341399f7aae0db8ad7329fc43e13a11d (🧮 1 lines, 📦 103 bytes, 🕓 2025-06-23T07:06:32.737870)
+  └── 5cbe8e6cc7e925e3d621941e6d2be1d29a8343 (🧮 2 lines, 📦 144 bytes, 🕓 2025-06-23T06:27:04.030934)
+  └── bdf1135caec97d6f77801ea4d86b7c7b6af421 (🧮 2 lines, 📦 364 bytes, 🕓 2025-06-21T08:36:35.590857)
+  └── cacd1f5c8de2e06a294b1c939b44fef94ec572 (🧮 2 lines, 📦 204 bytes, 🕓 2025-06-20T12:07:17.227134)
+
+📁 ./.git/objects/b5
+  └── 0cb96fbf762cea7aff05a94a3936c017f8b47f (🧮 11 lines, 📦 1161 bytes, 🕓 2025-06-20T11:13:25.152900)
+  └── 48fb2e6056ff5ed9e988c7ab5f01188f9c0802 (🧮 1 lines, 📦 172 bytes, 🕓 2025-06-23T10:24:07.064745)
+  └── 5ca41b75bb28fa46f26e45ad15078c9f911b70 (🧮 11 lines, 📦 930 bytes, 🕓 2025-06-23T07:29:50.742579)
+  └── 6b7d0a80c18871929780ed7510df59a6926893 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.753874)
+  └── de1d82c2676a5e86a4a0d6ce150f49ddd9b976 (🧮 11 lines, 📦 1517 bytes, 🕓 2025-06-21T09:53:19.528165)
+  └── e7b4149cf2ffecffa8d28e20e70ed13492c7ba (🧮 2 lines, 📦 416 bytes, 🕓 2025-06-22T08:50:07.350108)
+
+📁 ./.git/objects/b6
+  └── 220c0a93fa257505fcdb28ee7b0da289e8ceb0 (🧮 1 lines, 📦 160 bytes, 🕓 2025-06-21T04:25:02.968015)
+  └── 6d4676b2f017f517c554b7a4ebb6630db06620 (🧮 4 lines, 📦 511 bytes, 🕓 2025-06-23T07:41:57.988999)
+  └── 8fad31ce62981a34b969293dc0f750d399adb9 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T12:23:39.867030)
+  └── a35a5f9540ca43e6984f79021a43f7f5578c9c (🧮 5 lines, 📦 304 bytes, 🕓 2025-06-22T08:50:07.354108)
+
+📁 ./.git/objects/b7
+  └── 0a4cbb866337c24b56d6234d066096d862d314 (🧮 3 lines, 📦 194 bytes, 🕓 2025-06-22T08:58:25.872039)
+  └── 6df5293d5cd16c1ffa8591923755e0884b0084 (🧮 2 lines, 📦 88 bytes, 🕓 2025-06-23T02:46:31.769843)
+  └── a4d94559bc40daaa1038444281eef131508412 (🧮 2 lines, 📦 165 bytes, 🕓 2025-06-23T10:24:06.871580)
+  └── e941acfe7a3bcc55ce33f841f0b84730077532 (🧮 3 lines, 📦 294 bytes, 🕓 2025-06-23T06:27:39.981517)
+  └── fcf44d870e3cfe0145efa3d99a692d92576215 (🧮 2 lines, 📦 456 bytes, 🕓 2025-06-22T08:53:04.068214)
+
+📁 ./.git/objects/b8
+  └── 16eed000363ea241f20d1bc85a398950babd4c (🧮 2 lines, 📦 90 bytes, 🕓 2025-06-22T06:47:05.048882)
+  └── 970c4faf03f81208907056ded694b09f7436ac (🧮 4 lines, 📦 194 bytes, 🕓 2025-06-22T08:50:07.331848)
+  └── 9e5c1dae9eea334d66b11d3372225664bd16c4 (🧮 3 lines, 📦 128 bytes, 🕓 2025-06-23T07:06:32.741897)
+  └── f12cf3b749ba0a2b7eb008bd277791640f16bc (🧮 2 lines, 📦 107 bytes, 🕓 2025-06-21T04:25:15.764085)
+
+📁 ./.git/objects/b9
+  └── 4a7dbb1ed988542c38ed8021f21b90ac0da900 (🧮 3 lines, 📦 769 bytes, 🕓 2025-06-21T04:25:15.874005)
+  └── 6a5d44f847370e8263e95498cdbfc00abfbb37 (🧮 1 lines, 📦 27 bytes, 🕓 2025-06-21T04:32:49.680769)
+  └── 88938af5b4d942ade4e111024ac9a2f15402ba (🧮 3 lines, 📦 130 bytes, 🕓 2025-06-23T07:32:41.794153)
+  └── fcee3b968c99afb1817e2e574e409f4e56ca7f (🧮 1 lines, 📦 156 bytes, 🕓 2025-06-21T04:25:02.954551)
+
+📁 ./.git/objects/ba
+  └── 1e6cd486296404efc9b1926bcf938626d3a6da (🧮 3 lines, 📦 166 bytes, 🕓 2025-06-23T10:24:06.901253)
+  └── 3c5db59a6deea6ccd3460ed54021b31ead58b2 (🧮 2 lines, 📦 189 bytes, 🕓 2025-06-22T08:58:25.869038)
+  └── 712cc20268b9b8d767706710444a7e8c18901f (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-22T09:50:05.974027)
+  └── 7f21aa6670172fe7cef7aa00c06a7353dc6752 (🧮 1 lines, 📦 129 bytes, 🕓 2025-06-20T09:30:10.905631)
+  └── b1dee4d6471121492d764d42d31aef05c28a8c (🧮 7 lines, 📦 1252 bytes, 🕓 2025-06-22T09:50:05.991027)
+  └── c23a33fe3b2c473abbdf261d9e776b6bcfd992 (🧮 3 lines, 📦 158 bytes, 🕓 2025-06-21T09:27:14.370240)
+  └── f52271afec176ec25d5e9aec4da162457e4134 (🧮 3 lines, 📦 245 bytes, 🕓 2025-06-21T11:26:56.166486)
+
+📁 ./.git/objects/bb
+  └── 84f2a81c87d825eb573eed75c84c1156722ee1 (🧮 2 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:07.415622)
+  └── 94b4ac896a053ddc0eecbd98061f7e0006ebb8 (🧮 4 lines, 📦 190 bytes, 🕓 2025-06-22T08:58:25.867037)
+  └── 9bc53bd8fe127f87e41953daca122faabb8e7b (🧮 1 lines, 📦 170 bytes, 🕓 2025-06-23T10:24:07.057634)
+  └── f22d51e012a1f37ceeac7b7b80ad120a116c8b (🧮 11 lines, 📦 1228 bytes, 🕓 2025-06-22T06:02:24.851165)
+
+📁 ./.git/objects/bc
+  └── 2d61a41017b52837ab6d86780250a63d35a077 (🧮 2 lines, 📦 149 bytes, 🕓 2025-06-20T09:30:10.977942)
+  └── 46c99f68510f2d427e5a24471174a8609eccf1 (🧮 1 lines, 📦 440 bytes, 🕓 2025-06-23T08:06:14.508053)
+  └── 675e1803283e61a2d774d025703f339e43f15e (🧮 2 lines, 📦 133 bytes, 🕓 2025-06-23T11:07:44.578130)
+  └── 70cdcce2ddaf794d3f4cc87fc30cc15cb967c4 (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-23T10:58:31.254197)
+  └── b333d0d7dd62fc52e22503c1dcd7ef249997ac (🧮 1 lines, 📦 66 bytes, 🕓 2025-06-23T02:46:31.789224)
+  └── bba18bfbf4d7515909657a50129a399af9fa3c (🧮 1 lines, 📦 161 bytes, 🕓 2025-06-20T12:07:34.078001)
+  └── d5044cadfa4f0b2a21b96c9e52b89c5a8c33ff (🧮 3 lines, 📦 53 bytes, 🕓 2025-06-22T07:13:41.211327)
+  └── e8bfe98285f4620d21e0b4c24605dd3d301d8f (🧮 5 lines, 📦 994 bytes, 🕓 2025-06-22T09:50:05.981031)
+  └── ed5b3a1deffa51a7d41812d84779319558c672 (🧮 3 lines, 📦 91 bytes, 🕓 2025-06-21T12:17:07.664234)
+  └── f4f0dcf721920ecd271e97d565134020c77807 (🧮 1 lines, 📦 78 bytes, 🕓 2025-06-20T12:07:34.076002)
+
+📁 ./.git/objects/bd
+  └── 00c6084846bdc9c68a636357e50723a34021ab (🧮 18 lines, 📦 2678 bytes, 🕓 2025-06-20T11:13:25.124594)
+  └── 0f8d7c168ebc4900f3bc98c58485373df192ec (🧮 3 lines, 📦 278 bytes, 🕓 2025-06-22T09:50:05.868747)
+  └── 120b4a7785bb85c2ebb7ab5846417a4e15dc66 (🧮 8 lines, 📦 674 bytes, 🕓 2025-06-21T10:38:05.998120)
+  └── 9f5fd6638b172465c9ffff952097c531262d89 (🧮 17 lines, 📦 1627 bytes, 🕓 2025-06-21T10:38:06.004050)
+  └── bedba9ab98ee21f5879bccc774748135a198d6 (🧮 2 lines, 📦 221 bytes, 🕓 2025-06-20T09:29:17.775685)
+
+📁 ./.git/objects/be
+  └── 008e41c992098efdb400ee2c991c8dff90004e (🧮 8 lines, 📦 854 bytes, 🕓 2025-06-21T11:32:58.321740)
+  └── 5eecb17df0d7524acf6f422f28f1593e061185 (🧮 11 lines, 📦 925 bytes, 🕓 2025-06-21T09:19:06.847319)
+  └── c5247faa204415371e3197667a1c0ed1b10dad (🧮 2 lines, 📦 335 bytes, 🕓 2025-06-23T05:51:20.198002)
+
+📁 ./.git/objects/bf
+  └── 2a97cdff110590b24a581a0d73d4aa4e10834e (🧮 4 lines, 📦 546 bytes, 🕓 2025-06-23T07:41:42.549296)
+  └── 340743a55a9414b30104dac13d7924046d5958 (🧮 2 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.757873)
+  └── adf0d0ae3200f1fe923fec7961c02156c9cfb2 (🧮 1 lines, 📦 138 bytes, 🕓 2025-06-20T09:30:10.967940)
+  └── fe5c130fb76e7ce84c72461d7db8ae2e47e75a (🧮 2 lines, 📦 108 bytes, 🕓 2025-06-21T04:25:15.784274)
+
+📁 ./.git/objects/c0
+  └── 0644e1267279da50dc257f9840cd739d923e92 (🧮 3 lines, 📦 438 bytes, 🕓 2025-06-22T08:50:07.452640)
+  └── 4a5cfad66e1de2ba352f7e3887ec579b687a83 (🧮 4 lines, 📦 336 bytes, 🕓 2025-06-23T06:27:04.049623)
+  └── 5012888832a293f36c3de4427cac064cdb75a4 (🧮 2 lines, 📦 159 bytes, 🕓 2025-06-21T09:27:14.374690)
+  └── 8a0a416e170467583940213c3aaa6d07edf4c0 (🧮 11 lines, 📦 1228 bytes, 🕓 2025-06-22T08:50:07.419482)
+  └── bbedb58347e9fff9f6fbc440005be5d7a34409 (🧮 113 lines, 📦 13629 bytes, 🕓 2025-06-23T05:59:58.339405)
+  └── c849d636451307b4985d5294b531e27695c645 (🧮 9 lines, 📦 1091 bytes, 🕓 2025-06-22T08:50:07.357107)
+
+📁 ./.git/objects/c1
+  └── 02d2383165f247eebd918bb56b7e8040952a2e (🧮 3 lines, 📦 189 bytes, 🕓 2025-06-23T05:43:07.761877)
+  └── 6ad0d467d5d943bab224ebd815fdedc688a8a5 (🧮 5 lines, 📦 337 bytes, 🕓 2025-06-23T10:24:06.936602)
+  └── beb95ca0ceb7d8f5d650365085db15fd766e3d (🧮 2 lines, 📦 126 bytes, 🕓 2025-06-21T09:18:23.344634)
+  └── d944b4ebcf94ab11cf7eec43d54de2eea69908 (🧮 11 lines, 📦 1289 bytes, 🕓 2025-06-23T02:46:31.847767)
+
+📁 ./.git/objects/c2
+  └── 066bc2b798bf6ce2c6df6db4859d5f8fde48c8 (🧮 1 lines, 📦 184 bytes, 🕓 2025-06-23T11:06:03.424691)
+  └── 0ab314669961c276974cd3d3508b4fc9127adb (🧮 1 lines, 📦 63 bytes, 🕓 2025-06-22T06:02:24.858795)
+  └── 206a2881d6f63c771dc59151919f0bc26f6114 (🧮 32 lines, 📦 3246 bytes, 🕓 2025-06-20T09:29:17.759244)
+  └── ae8ae5586100e73d57bcba1895b85c07a2399c (🧮 3 lines, 📦 257 bytes, 🕓 2025-06-21T12:18:06.134771)
+  └── ba7b8ac532ef97f36eb0947da1a48977a4f7a3 (🧮 10 lines, 📦 908 bytes, 🕓 2025-06-23T05:43:07.765877)
+
+📁 ./.git/objects/c3
+  └── 140f7c6e5ef12146e3dc01fb97e8b01860cbb2 (🧮 10 lines, 📦 917 bytes, 🕓 2025-06-23T05:43:07.767873)
+  └── 2e0a322825ccf312024f16e16e240b43d08499 (🧮 2 lines, 📦 128 bytes, 🕓 2025-06-23T07:06:32.755896)
+  └── 78f7ccdb3f729e17f484687bd0aa353f1c7ac4 (🧮 2 lines, 📦 549 bytes, 🕓 2025-06-23T10:24:07.101200)
+  └── 7e12122d3c372913d78044b8794afd828ff5f5 (🧮 8 lines, 📦 513 bytes, 🕓 2025-06-23T02:45:50.835352)
+  └── 8a18202f9dbe1715a25da081c63e15606e902c (🧮 5 lines, 📦 542 bytes, 🕓 2025-06-23T02:46:31.734163)
+  └── f8bcdb24c7ca195828afd12e1326f8a98e559e (🧮 3 lines, 📦 245 bytes, 🕓 2025-06-23T06:43:54.051165)
+  └── f9b7cb64f13ef2ba23cb7aa1ba2373cfe7f216 (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-23T10:58:44.098676)
+
+📁 ./.git/objects/c4
+  └── 50d4d4b1323884d1c4500af57b0ff3c60fb96e (🧮 8 lines, 📦 746 bytes, 🕓 2025-06-23T10:24:06.989630)
+  └── 54da7a4a18d82744a87ff3f4215c711549305d (🧮 1 lines, 📦 242 bytes, 🕓 2025-06-21T04:25:15.747324)
+  └── 8997da53f02601a786360de8aee38fc88d3549 (🧮 2 lines, 📦 203 bytes, 🕓 2025-06-23T07:41:42.487298)
+  └── c3bcb35ad81c894d78049539ca8ffcb0ca85c4 (🧮 7 lines, 📦 403 bytes, 🕓 2025-06-22T08:53:04.079762)
+  └── c6fadc5c21d1a23722e6fabc20876a999322b7 (🧮 1 lines, 📦 155 bytes, 🕓 2025-06-21T04:25:02.935024)
+  └── d52fcc7c1586334e8e3bb389112b920afc847f (🧮 1 lines, 📦 138 bytes, 🕓 2025-06-20T09:30:10.961088)
+  └── fbdd1676f3dff601ecc7bea01effe64ff2943d (🧮 1 lines, 📦 105 bytes, 🕓 2025-06-21T04:25:15.770597)
+
+📁 ./.git/objects/c5
+  └── 1683bcc0241a9812ac5433c520a2f554b4326d (🧮 1 lines, 📦 97 bytes, 🕓 2025-06-21T11:37:14.297909)
+  └── 3bc8fb376aee4cfb131a072e74faaaf7c862de (🧮 7 lines, 📦 769 bytes, 🕓 2025-06-20T09:24:18.922417)
+  └── 44bad3fa05900a5e091b6531874bc8aa8d0f16 (🧮 1 lines, 📦 166 bytes, 🕓 2025-06-20T12:07:34.081002)
+  └── ede0f411f98cd509007f453c8b07921caa3fb5 (🧮 1 lines, 📦 186 bytes, 🕓 2025-06-20T12:10:00.071451)
+  └── fc6c00d95332ba44257774b6b7a603e9975d34 (🧮 1 lines, 📦 49 bytes, 🕓 2025-06-23T02:46:31.761925)
+
+📁 ./.git/objects/c6
+  └── 5b1f737d7d610fd32339a9156b7ef4f3df2fdd (🧮 3 lines, 📦 147 bytes, 🕓 2025-06-20T12:06:11.734531)
+  └── 870cf5113407fb5c82e58d8a77dd80d0510af1 (🧮 2 lines, 📦 188 bytes, 🕓 2025-06-23T11:05:51.434624)
+  └── 931f4fb5ef025a94b42910a895d29b332d3739 (🧮 1 lines, 📦 146 bytes, 🕓 2025-06-20T09:29:17.681586)
+
+📁 ./.git/objects/c7
+  └── 21e7d6e220671e33099d9500d6f32dacdb5738 (🧮 2 lines, 📦 207 bytes, 🕓 2025-06-23T02:45:50.907390)
+  └── 2b04c0cbd4345174b68cdb77af35997e0658f0 (🧮 1 lines, 📦 156 bytes, 🕓 2025-06-21T04:25:02.947684)
+  └── 3e0f1dcce893260807a83f41025eb6ebd59ddb (🧮 3 lines, 📦 109 bytes, 🕓 2025-06-21T04:25:15.757086)
+  └── 3ef4b9c96ffdc53f5b6adde3b2c2b789a47606 (🧮 10 lines, 📦 708 bytes, 🕓 2025-06-22T09:36:55.799684)
+  └── 8a8265c32cbf61a7d1daee09458e0627004d07 (🧮 9 lines, 📦 1051 bytes, 🕓 2025-06-21T11:26:56.189796)
+  └── a7b3dc4aa6080660475f4e88435adb7d808792 (🧮 4 lines, 📦 919 bytes, 🕓 2025-06-23T04:41:42.868844)
+  └── b289ccfd5a369daf02c7d21069dc6d01e8bbe5 (🧮 15 lines, 📦 1174 bytes, 🕓 2025-06-20T09:29:17.690910)
+
+📁 ./.git/objects/c8
+  └── 007f0211c514413baa50650c16e666c5cec7a1 (🧮 3 lines, 📦 500 bytes, 🕓 2025-06-23T02:45:50.828350)
+  └── 444b4e0f31d3ff0c86ed8e9a2243f283caff1b (🧮 14 lines, 📦 1915 bytes, 🕓 2025-06-22T09:36:55.800684)
+  └── 69f5e10a1cf05d9773dc06c7d823f170985a1b (🧮 5 lines, 📦 924 bytes, 🕓 2025-06-23T02:46:31.664179)
+  └── ae8b83488543e6879844cacd2d8aaba6b46e7d (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.769874)
+  └── bcc2bf40c232b44bc1e32c260fe04b53fba318 (🧮 1 lines, 📦 68 bytes, 🕓 2025-06-23T11:05:51.426624)
+  └── c513a6fcf69326b63f5d0338e1b2ac87ef0836 (🧮 1 lines, 📦 163 bytes, 🕓 2025-06-21T04:25:02.992357)
+  └── f12c2893afe4f0497d96cafd4821d47967623b (🧮 12 lines, 📦 957 bytes, 🕓 2025-06-22T09:12:45.802947)
+  └── ff66daa0579d833bb388f4e414ff71e598dcb6 (🧮 1 lines, 📦 233 bytes, 🕓 2025-06-23T06:43:54.055165)
+
+📁 ./.git/objects/c9
+  └── 00201639ad727e370dbaba453c8ce3b8e71039 (🧮 7 lines, 📦 608 bytes, 🕓 2025-06-23T10:24:06.911251)
+  └── 0cf494f8e6b705faefa08e31850b60af6c61c0 (🧮 1 lines, 📦 133 bytes, 🕓 2025-06-20T09:30:10.926372)
+  └── 21021a09d2e931727bfa6840e607fd75c09148 (🧮 14 lines, 📦 1368 bytes, 🕓 2025-06-23T02:46:31.707299)
+  └── 32ce9b38aa8fad8e3c56a073a15280e7744ba8 (🧮 16 lines, 📦 2641 bytes, 🕓 2025-06-21T08:36:35.390774)
+  └── b91da5790810853403edec0a75f4c9dd50264b (🧮 3 lines, 📦 189 bytes, 🕓 2025-06-23T05:43:07.673481)
+
+📁 ./.git/objects/ca
+  └── 33ec486b4eaa7bb5cab4f32ef951ef9ea8d2d8 (🧮 2 lines, 📦 332 bytes, 🕓 2025-06-23T02:45:50.932717)
+  └── 9be868c1044132b23130cbcdd8b4b1dadb71f2 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T02:46:31.824136)
+  └── b76db6a5d7c8d9b5bbb1b9211ba475c6841054 (🧮 5 lines, 📦 925 bytes, 🕓 2025-06-23T05:43:07.773873)
+  └── ba6346fd81d3682fd961ed528bf47ef7ec98b0 (🧮 3 lines, 📦 212 bytes, 🕓 2025-06-23T02:45:50.807352)
+  └── c75be653cde2be8b2b41be97f8cf38ad64ec8f (🧮 15 lines, 📦 925 bytes, 🕓 2025-06-21T09:53:19.571988)
+
+📁 ./.git/objects/cb
+  └── 39f6b6d224c58840657b49634ae147d380df18 (🧮 2 lines, 📦 111 bytes, 🕓 2025-06-21T04:25:15.818578)
+  └── 5cfb4aeab56ad84608dda63f05c1f0db7159ba (🧮 4 lines, 📦 329 bytes, 🕓 2025-06-22T07:49:27.015243)
+  └── 874aee542229479eac0ab4ccbd4654d795af9d (🧮 3 lines, 📦 53 bytes, 🕓 2025-06-22T08:50:24.126225)
+  └── e86a9c8d381f7702d6ff992bb109a722dcd018 (🧮 5 lines, 📦 318 bytes, 🕓 2025-06-21T12:23:39.829978)
+
+📁 ./.git/objects/cc
+  └── 53e0ed13ff9be6d3bb9a6590a3676c5964b8c9 (🧮 1 lines, 📦 107 bytes, 🕓 2025-06-21T04:25:15.751088)
+  └── ebc33ec3803362fa6bdd928766ddc61f090a80 (🧮 4 lines, 📦 127 bytes, 🕓 2025-06-23T07:32:41.793154)
+
+📁 ./.git/objects/cd
+  └── 0c9111f8cc996774c1d4ca0d3a8e96abd39916 (🧮 4 lines, 📦 462 bytes, 🕓 2025-06-22T08:53:04.077762)
+  └── 0d5a9c7af6bb41be562adfc8f40088ce032b94 (🧮 1 lines, 📦 190 bytes, 🕓 2025-06-23T05:43:07.844618)
+  └── 14f4c607db279ee20585f6b5588cd6b99c9f61 (🧮 4 lines, 📦 116 bytes, 🕓 2025-06-23T10:24:06.889578)
+  └── 22edd83db33f6b18af7e5400c88c98b9d4e0e9 (🧮 9 lines, 📦 1211 bytes, 🕓 2025-06-22T09:36:55.800684)
+  └── 406e0188923ff50c54027750297b3ef1a392f4 (🧮 2 lines, 📦 147 bytes, 🕓 2025-06-20T12:06:11.751608)
+  └── 6cde92e382b33343f95cdd1b98115109b44d2d (🧮 2 lines, 📦 174 bytes, 🕓 2025-06-22T07:09:29.717311)
+  └── a29e9790fc3f05dba0fac5ac33df010430fba4 (🧮 4 lines, 📦 317 bytes, 🕓 2025-06-22T09:50:05.971488)
+  └── e10a91cfd791f00a89caacae10d5092117519c (🧮 2 lines, 📦 151 bytes, 🕓 2025-06-23T08:06:14.492054)
+  └── ec30c79948164e0630bc887e22c5f21cbe4d76 (🧮 1 lines, 📦 68 bytes, 🕓 2025-06-20T09:30:10.898634)
+  └── f217d78c225a093b12053f0160ff903b99a32e (🧮 1 lines, 📦 31 bytes, 🕓 2025-06-20T13:37:27.170710)
+  └── fc1a00e103e7eba2e54abd1a54795ba849ad5d (🧮 7 lines, 📦 807 bytes, 🕓 2025-06-23T06:43:53.984782)
+
+📁 ./.git/objects/ce
+  └── 0667f2f503c1eb9e64d8cd7beeb582230af685 (🧮 10 lines, 📦 1228 bytes, 🕓 2025-06-22T07:09:40.208973)
+  └── 31aa843a991dfa67b3d1eb1f5bde55d2d4cd63 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T07:29:50.764876)
+  └── 358e44675d16a2b0739df2a237b58f047ca563 (🧮 1 lines, 📦 225 bytes, 🕓 2025-06-21T09:53:20.163772)
+  └── 4945ee486ee772ae3ce44ac10ec95790120c46 (🧮 3 lines, 📦 53 bytes, 🕓 2025-06-22T09:50:05.967487)
+  └── 75440b956879fac72c9e078ce17336ed2362ea (🧮 3 lines, 📦 158 bytes, 🕓 2025-06-21T09:53:19.563616)
+  └── 848d783c97003c6291b01b9466391bb305f8f6 (🧮 5 lines, 📦 335 bytes, 🕓 2025-06-22T06:43:41.137038)
+  └── cfee9cae48a94e6ed560a92456908f506c002b (🧮 5 lines, 📦 920 bytes, 🕓 2025-06-22T08:50:24.109867)
+
+📁 ./.git/objects/cf
+  └── 05ae9edb8ffb03364349a022ba8407ad753f9b (🧮 13 lines, 📦 922 bytes, 🕓 2025-06-21T12:17:07.674643)
+  └── 3ef72f1eb5dbdd50ca9da62df957ecb13bbe5f (🧮 1 lines, 📦 86 bytes, 🕓 2025-06-23T02:46:31.807306)
+  └── 4a28daa92159c96490a30ecc0195d992c2f034 (🧮 5 lines, 📦 130 bytes, 🕓 2025-06-23T07:32:41.794153)
+  └── 4a94bf3bc03e97eb8ec39f6bea8222d800dcbc (🧮 1 lines, 📦 158 bytes, 🕓 2025-06-23T05:43:07.850290)
+  └── 591c2a20c98809fe000df40786e8704f46bc68 (🧮 4 lines, 📦 360 bytes, 🕓 2025-06-23T05:43:07.775873)
+  └── 5b8f565851d6356622236428a047bb47af4ce1 (🧮 4 lines, 📦 173 bytes, 🕓 2025-06-22T06:43:41.123256)
+  └── 78aa2a4401446bdefb2129e8eb0bfc9827dabc (🧮 2 lines, 📦 210 bytes, 🕓 2025-06-22T08:50:07.421482)
+  └── 878b2da62bf4be47f61af4376cd212c9a81761 (🧮 1 lines, 📦 250 bytes, 🕓 2025-06-20T12:07:34.044002)
+
+📁 ./.git/objects/d0
+  └── 18e1370f6fc5a5ac48e79c3438970642d633c0 (🧮 9 lines, 📦 924 bytes, 🕓 2025-06-21T12:17:07.736500)
+  └── 2026969a13d6239f1cc2b0bc16a26f3b173a62 (🧮 4 lines, 📦 53 bytes, 🕓 2025-06-22T08:50:07.360109)
+  └── 6bc8887934c4deb72e959e19a178cc2f1492ea (🧮 4 lines, 📦 286 bytes, 🕓 2025-06-23T10:58:44.052678)
+  └── b7763249b427ab00c1d853294d3e11644bd1ea (🧮 6 lines, 📦 685 bytes, 🕓 2025-06-20T12:07:34.039002)
+  └── f857538ed64590a1251100d0fd8d638279e88e (🧮 1 lines, 📦 168 bytes, 🕓 2025-06-20T12:07:34.079002)
+
+📁 ./.git/objects/d1
+  └── 40886102fce5dd5a1db3c8b3fbc21eb1ae5489 (🧮 4 lines, 📦 255 bytes, 🕓 2025-06-23T10:58:44.038518)
+  └── 4227dce36f08bc23999580e67e438060068568 (🧮 7 lines, 📦 2257 bytes, 🕓 2025-06-21T11:03:51.724113)
+  └── 7266f4385187c0f14b00c0278043659951008f (🧮 2 lines, 📦 224 bytes, 🕓 2025-06-20T12:10:00.027507)
+  └── 96728cc66f0752c2313ee190e363a375a38f87 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.962958)
+  └── af2658c58047ec3184050435c238dcd72188bf (🧮 5 lines, 📦 1052 bytes, 🕓 2025-06-21T11:32:58.324906)
+  └── d3ae2583a608605ab5e954cd053924c2b6e7b7 (🧮 1 lines, 📦 201 bytes, 🕓 2025-06-22T07:49:26.889451)
+
+📁 ./.git/objects/d2
+  └── 065edf584b1132f087e47fedac82335e93ebb2 (🧮 3 lines, 📦 152 bytes, 🕓 2025-06-22T09:12:45.817983)
+  └── 7fd707e1a812a77c94231dcc8e092e32df1391 (🧮 2 lines, 📦 140 bytes, 🕓 2025-06-20T12:06:11.715162)
+  └── e840e0703a7bf02cabc62eda893d0fdb5fb6bf (🧮 2 lines, 📦 193 bytes, 🕓 2025-06-22T08:58:25.870038)
+  └── f61fe38f2a4b5de38383024824cc010ebc9cc5 (🧮 3 lines, 📦 165 bytes, 🕓 2025-06-23T07:32:41.788155)
+
+📁 ./.git/objects/d3
+  └── 0d54f729c7d70cafbe55d09c00f22892a303b8 (🧮 1 lines, 📦 123 bytes, 🕓 2025-06-23T02:45:50.895350)
+  └── 35e7f3b1b2042b68a2f8f8665c33f5d0f56c08 (🧮 9 lines, 📦 1061 bytes, 🕓 2025-06-20T12:07:34.045002)
+  └── 5ca9182498910fe9302bd857367fc25ba8adc2 (🧮 1 lines, 📦 88 bytes, 🕓 2025-06-21T11:26:56.169491)
+  └── 6fc9fe34d44487aa6da2d46754dfdf27b8c772 (🧮 3 lines, 📦 119 bytes, 🕓 2025-06-23T07:32:41.790154)
+  └── a5c23ee1ff73c4eee7dc2a509b4b23cd449d81 (🧮 10 lines, 📦 1229 bytes, 🕓 2025-06-22T06:43:41.155499)
+
+📁 ./.git/objects/d4
+  └── 2f0b97d00946d2be55bcced1691ba45b61c293 (🧮 4 lines, 📦 202 bytes, 🕓 2025-06-20T09:31:56.516244)
+  └── 701324c1f16ec961fe235044cdc73b8defb7cf (🧮 1 lines, 📦 159 bytes, 🕓 2025-06-21T04:25:02.962021)
+  └── a5c2286690c1f1e990a7480e21f97185087d05 (🧮 11 lines, 📦 824 bytes, 🕓 2025-06-23T11:06:15.879596)
+  └── afe19c12892f73e8742ae82759fee7dd5f2129 (🧮 36 lines, 📦 3686 bytes, 🕓 2025-06-21T09:24:45.811550)
+  └── b50af52c4de4e4e213eb33f3d46479d3afd943 (🧮 10 lines, 📦 767 bytes, 🕓 2025-06-22T08:53:04.066712)
+  └── dea0013375cc78e213363c45c3f2a7b304cf19 (🧮 9 lines, 📦 1226 bytes, 🕓 2025-06-22T07:49:26.892967)
+  └── f5cdc6a184ebad577ae3abfbbe2a823ec2165c (🧮 5 lines, 📦 681 bytes, 🕓 2025-06-23T02:46:31.831613)
+
+📁 ./.git/objects/d5
+  └── 58115e826a1b4f925136b0fea49cf630c21ea4 (🧮 1 lines, 📦 69 bytes, 🕓 2025-06-23T06:27:04.107861)
+  └── 63f5e415d62f2ac4a073c7cbca2daa4f958eab (🧮 3 lines, 📦 462 bytes, 🕓 2025-06-22T08:53:04.070762)
+  └── 64d0bc3dd917926892c55e3706cc116d5b165e (🧮 1 lines, 📦 53 bytes, 🕓 2025-06-23T04:41:42.899730)
+  └── ba5ff19a443319c5d3d1b1988fe6caee31e10f (🧮 13 lines, 📦 1229 bytes, 🕓 2025-06-22T06:43:41.153500)
+  └── bb66abfa840bbb202d6fd404a5be54e69cdf41 (🧮 3 lines, 📦 336 bytes, 🕓 2025-06-21T09:27:14.332747)
+
+📁 ./.git/objects/d6
+  └── 1c9f32db964a3599629a66fd019051f701c3f8 (🧮 9 lines, 📦 935 bytes, 🕓 2025-06-22T09:50:05.857617)
+  └── 212a7b2e8a4760e63e792e74bac017d6743dac (🧮 14 lines, 📦 1999 bytes, 🕓 2025-06-20T11:13:25.145188)
+  └── 76580b6f4f56d0548d2e8cdf7a98ff33797786 (🧮 1 lines, 📦 205 bytes, 🕓 2025-06-20T12:06:11.704267)
+  └── 775c84e2db9fb585e201c720772e6ad5b29a52 (🧮 3 lines, 📦 256 bytes, 🕓 2025-06-23T10:24:06.933068)
+  └── 78ff4ae75eb4bca59ddfa8deb43d3f867414bf (🧮 1 lines, 📦 180 bytes, 🕓 2025-06-23T06:27:04.114860)
+  └── fe0e1042709215ec2598bf72357856439798f6 (🧮 8 lines, 📦 892 bytes, 🕓 2025-06-23T05:43:07.779873)
+
+📁 ./.git/objects/d7
+  └── 06c64375da79802bff3dce0ee5c80d673e86e8 (🧮 2 lines, 📦 172 bytes, 🕓 2025-06-23T07:32:41.846152)
+  └── a59e14d3f5a1d11356c80097dc1d462219f135 (🧮 2 lines, 📦 195 bytes, 🕓 2025-06-20T11:13:25.207466)
+  └── b250a82d94444a56cfa6dcf2fc4775ca10a521 (🧮 10 lines, 📦 434 bytes, 🕓 2025-06-22T08:50:07.493315)
+  └── ce62de79181347291a8d172e79b51996bc8d35 (🧮 3 lines, 📦 277 bytes, 🕓 2025-06-23T10:24:06.858978)
+  └── d879ac92d172080f6a39dfe1b106630d90aad2 (🧮 16 lines, 📦 1632 bytes, 🕓 2025-06-20T12:07:34.038002)
+  └── f9374d1d7146147960936de72f84aa7707737e (🧮 2 lines, 📦 159 bytes, 🕓 2025-06-21T09:24:45.853571)
+
+📁 ./.git/objects/d8
+  └── 1437dbcd43a31bad2c7f03376b1c31fd87b9b1 (🧮 1 lines, 📦 278 bytes, 🕓 2025-06-23T02:45:50.918394)
+  └── c8807c1003223f0c47bc91c540d8c01b3edcf8 (🧮 4 lines, 📦 146 bytes, 🕓 2025-06-22T06:44:45.700330)
+
+📁 ./.git/objects/d9
+  └── 05805db4c7f97c87c4d2c69bc37ede6e13c5f9 (🧮 4 lines, 📦 241 bytes, 🕓 2025-06-23T05:43:07.781873)
+  └── 7a6304015ee3f2b2f8000632840c8798f8cc1b (🧮 3 lines, 📦 94 bytes, 🕓 2025-06-23T06:27:04.103851)
+  └── ac3657732904b365e8f4b81257949e2a039abb (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T06:43:54.034127)
+  └── c119e786bcdeafa04cbec9ddb4df6cdd146217 (🧮 1 lines, 📦 165 bytes, 🕓 2025-06-20T12:07:34.079002)
+  └── f09ec38f58717c8152f46057be78ec9d2a5dd0 (🧮 1 lines, 📦 190 bytes, 🕓 2025-06-22T09:50:05.913241)
+
+📁 ./.git/objects/da
+  └── 633b04018ddb7a78004140e926588719e442f5 (🧮 1 lines, 📦 178 bytes, 🕓 2025-06-20T09:25:10.475369)
+  └── 68149313906152d45909a46059973b076678a7 (🧮 5 lines, 📦 943 bytes, 🕓 2025-06-21T11:35:14.632485)
+
+📁 ./.git/objects/db
+  └── 07f2af3d076aaf2470795fa69e66a4614eb4e7 (🧮 2 lines, 📦 113 bytes, 🕓 2025-06-21T11:26:56.173493)
+  └── 6ac2b5475eb43c79e0d025d4b8f687ac1531f5 (🧮 2 lines, 📦 199 bytes, 🕓 2025-06-23T05:43:07.784873)
+  └── 82e827a4d543a83b616c140dae8c7cb78a3981 (🧮 5 lines, 📦 955 bytes, 🕓 2025-06-22T09:12:45.809909)
+  └── 8dacc5a79f9253d7764d7dbd89f15ac71bf247 (🧮 8 lines, 📦 924 bytes, 🕓 2025-06-23T05:43:07.787873)
+  └── 8ef8d5ffc63277d742f86e035122e685e1dca7 (🧮 12 lines, 📦 930 bytes, 🕓 2025-06-21T12:22:56.151848)
+  └── e2eeec034a5600ef55d7076343ca99f8a5e46a (🧮 3 lines, 📦 432 bytes, 🕓 2025-06-22T08:50:07.497320)
+
+📁 ./.git/objects/dc
+  └── 1df91fb2448833466a9fa8b897179a0a967c68 (🧮 8 lines, 📦 751 bytes, 🕓 2025-06-23T07:06:32.682875)
+  └── 4cf1ff6b678b56c68a18b39af529deb9df89dc (🧮 2 lines, 📦 163 bytes, 🕓 2025-06-23T07:06:32.668873)
+  └── 539a22782f095c366a4c997559e0cabda72e16 (🧮 4 lines, 📦 811 bytes, 🕓 2025-06-21T11:26:56.132606)
+  └── 63e771d20e9ff194b59c5020068933a42f8c18 (🧮 5 lines, 📦 328 bytes, 🕓 2025-06-20T09:29:17.786047)
+  └── 943f2b1c2b9c219d8f9b2ccefd70d2266e4f43 (🧮 1 lines, 📦 98 bytes, 🕓 2025-06-23T02:46:31.796306)
+  └── a9684445e790c6832d87a166cf6f0965eb8c8d (🧮 8 lines, 📦 746 bytes, 🕓 2025-06-23T10:24:06.980678)
+
+📁 ./.git/objects/dd
+  └── 31de401cc0c48fccd9cb158d45070fc8410fff (🧮 10 lines, 📦 902 bytes, 🕓 2025-06-23T05:43:07.790874)
+  └── 4c7cc9048f3337d74bf6c4e6fb624f230b0f78 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T11:07:44.582130)
+  └── 4db956cf98f38fca9fa16c9328881e230b89e6 (🧮 7 lines, 📦 1248 bytes, 🕓 2025-06-22T08:58:25.883037)
+  └── 80d5aaace9d0f45a110d4b6f30b1484e9c9068 (🧮 1 lines, 📦 54 bytes, 🕓 2025-06-20T09:27:42.792898)
+  └── 8c180dbf165197f42a9d2bad684681fdb15bda (🧮 1 lines, 📦 171 bytes, 🕓 2025-06-23T07:32:41.847150)
+
+📁 ./.git/objects/de
+  └── 418e9257107e01eaf76b79046f8e04018c8546 (🧮 4 lines, 📦 190 bytes, 🕓 2025-06-22T08:58:25.870038)
+  └── 4b74f23f1ff7c1f29947378bf5efec3105cc68 (🧮 1 lines, 📦 188 bytes, 🕓 2025-06-20T12:10:00.081681)
+  └── 5abeec6566db11d7c5e8808e245fae71b784b7 (🧮 1 lines, 📦 161 bytes, 🕓 2025-06-21T04:25:02.965018)
+  └── 910138a11d04e39237121461f2a231fd757a09 (🧮 2 lines, 📦 359 bytes, 🕓 2025-06-22T09:12:45.842790)
+  └── af458871a61cdf98d1d3c33b86dda672958029 (🧮 7 lines, 📦 979 bytes, 🕓 2025-06-21T08:36:35.490190)
+
+📁 ./.git/objects/df
+  └── 899eea3189c9666f772b4e5b2371006510b0da (🧮 14 lines, 📦 1093 bytes, 🕓 2025-06-23T02:45:50.926257)
+  └── 8e78dc65e1eba3dce638858af67222cbac726c (🧮 9 lines, 📦 673 bytes, 🕓 2025-06-21T09:36:08.131260)
+  └── b1ebf6299dd1e88948b077d920d6aeca087194 (🧮 13 lines, 📦 1151 bytes, 🕓 2025-06-20T11:13:25.143189)
+
+📁 ./.git/objects/e0
+  └── 2e8f37f4f362c86d88507a67a7e7dc7e541566 (🧮 1 lines, 📦 104 bytes, 🕓 2025-06-23T07:06:32.752897)
+  └── 5f8b2f08d0dfbd3b15abd2fc7e9db86358b5a4 (🧮 2 lines, 📦 192 bytes, 🕓 2025-06-22T08:58:25.867037)
+  └── a78c660cd64b4365ebb5136acd616d58f185f3 (🧮 2 lines, 📦 113 bytes, 🕓 2025-06-21T04:25:15.853303)
+  └── e16d5e3ee68ce289e5ae5dcfd169cbf9456a47 (🧮 7 lines, 📦 668 bytes, 🕓 2025-06-21T09:35:51.230207)
+
+📁 ./.git/objects/e1
+  └── 2ca86f22cd167776cd414f2fa55d26153f9cca (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-23T02:46:31.751925)
+  └── 6d7099b5d4aa2896660eaac6e39dd555332c74 (🧮 3 lines, 📦 213 bytes, 🕓 2025-06-22T08:50:07.425482)
+  └── 8292e2f3d6b18e8bf9e20dfbd5e6c95d9d2603 (🧮 3 lines, 📦 131 bytes, 🕓 2025-06-21T11:26:56.129607)
+  └── 89c24c75b8a06837cb5f108967e4c8a59f8811 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T07:29:50.771578)
+  └── d75526e4ddcdeb45261de3fe632db863be75cd (🧮 4 lines, 📦 957 bytes, 🕓 2025-06-22T09:12:45.839786)
+
+📁 ./.git/objects/e2
+  └── bed91f7728d51e82d86b0cf4fc8ad773dac371 (🧮 1 lines, 📦 52 bytes, 🕓 2025-06-20T09:52:08.288054)
+  └── d1ba53e25abaec757709c4ef0c9b8851d98350 (🧮 2 lines, 📦 103 bytes, 🕓 2025-06-20T09:30:10.887842)
+  └── f135917e7bf68da387078b348083bec45af9fb (🧮 3 lines, 📦 435 bytes, 🕓 2025-06-22T08:50:07.500319)
+
+📁 ./.git/objects/e3
+  └── 086bb47e576c17718655dce95413ecec339a39 (🧮 1 lines, 📦 276 bytes, 🕓 2025-06-23T02:46:31.712298)
+  └── 2bed67b315b9d3585c0fdac274cbad54937efc (🧮 34 lines, 📦 3780 bytes, 🕓 2025-06-20T09:29:17.703910)
+  └── 951bd1dfc4fc409903f3cea91726ecca18704e (🧮 3 lines, 📦 249 bytes, 🕓 2025-06-21T04:25:15.761086)
+  └── f08e6d810849fdd2263a360055a2328f11f213 (🧮 1 lines, 📦 193 bytes, 🕓 2025-06-22T09:50:05.921329)
+  └── f0b7d1f76847e69c39413a75e15714e5b880cf (🧮 18 lines, 📦 2211 bytes, 🕓 2025-06-21T08:36:35.501699)
+  └── fc327654f664842b188e2190a3d602e8f2e1d3 (🧮 8 lines, 📦 930 bytes, 🕓 2025-06-21T08:36:35.639484)
+
+📁 ./.git/objects/e4
+  └── 074e39f2bec05fd00a7c8efe9044d733a6320a (🧮 3 lines, 📦 336 bytes, 🕓 2025-06-22T08:50:07.527537)
+  └── 0e6b6abd06a6076b13f97976f98a3dc8cf348e (🧮 7 lines, 📦 947 bytes, 🕓 2025-06-21T08:36:35.513094)
+  └── 175a00bf47bdc1667a2071b82cf26544fa8ed3 (🧮 1 lines, 📦 57 bytes, 🕓 2025-06-22T09:12:45.833716)
+  └── 277e66fe34f1107f8ad9a2628815dbaa8c3df3 (🧮 4 lines, 📦 141 bytes, 🕓 2025-06-23T10:24:06.947610)
+  └── 2e8b552b5357a3cf200052d2aa80036a919f86 (🧮 4 lines, 📦 138 bytes, 🕓 2025-06-23T10:24:06.954610)
+  └── 2f1d12c1a59a0685ca672e587fb7efe123d56a (🧮 3 lines, 📦 216 bytes, 🕓 2025-06-21T09:24:46.427352)
+  └── 323edb51922be35ec595617d397566b7a35ce6 (🧮 1 lines, 📦 108 bytes, 🕓 2025-06-21T12:37:48.290432)
+  └── 3db40caa2bc9e40f33b2fd60775381d0c16cb4 (🧮 1 lines, 📦 184 bytes, 🕓 2025-06-22T08:50:07.504319)
+  └── 7c7de42539a29521d08e0d950bea5c71c85bd6 (🧮 2 lines, 📦 152 bytes, 🕓 2025-06-23T02:45:50.891351)
+  └── c7577ebe6ca5f07135f9813197996c2431df6a (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-22T08:50:24.119884)
+  └── cf0fb5112cd82e8405b53fdc6ccf883bb1ff5c (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:51:20.161001)
+  └── d029258910f836704790433fe8b0bfff1008d1 (🧮 5 lines, 📦 733 bytes, 🕓 2025-06-21T04:32:49.684768)
+
+📁 ./.git/objects/e5
+  └── 1772b4d48d3e84a170fc97d74bb0ab6160d25b (🧮 7 lines, 📦 509 bytes, 🕓 2025-06-21T12:17:07.707526)
+  └── 679fa741b288df99447932839eafe0ddc5c41a (🧮 2 lines, 📦 52 bytes, 🕓 2025-06-22T08:50:07.363141)
+  └── 718e429aace54d5d3ea196321a15cd57ec1599 (🧮 2 lines, 📦 165 bytes, 🕓 2025-06-23T07:06:32.655874)
+  └── 98e0f35ba486441067f4176ce1f85987b68bab (🧮 13 lines, 📦 1226 bytes, 🕓 2025-06-22T07:49:19.866210)
+  └── 9bcda854a4d315823d1f565c19bf21d659a3fe (🧮 1 lines, 📦 56 bytes, 🕓 2025-06-23T02:45:50.898603)
+  └── c6c3f94928943af4cc4d6b310ba82b255003b2 (🧮 2 lines, 📦 111 bytes, 🕓 2025-06-21T04:25:15.812587)
+  └── ffe6f05040b896dde64e32de57841d3e98eca6 (🧮 10 lines, 📦 1227 bytes, 🕓 2025-06-22T08:50:07.508321)
+
+📁 ./.git/objects/e6
+  └── 184998da32d53273b363526b0552d6fe0f7763 (🧮 3 lines, 📦 198 bytes, 🕓 2025-06-22T08:58:25.874038)
+  └── 46c3b910680c147207be289b7e527e887265bc (🧮 8 lines, 📦 840 bytes, 🕓 2025-06-21T09:19:06.726836)
+  └── 62c72d773d7abc18283cec8b512e4b5ba3735a (🧮 12 lines, 📦 2154 bytes, 🕓 2025-06-20T09:29:17.663231)
+  └── 93e1bd48108dc39fd4685347d0ed4428f90fa5 (🧮 1 lines, 📦 252 bytes, 🕓 2025-06-21T04:25:15.850072)
+  └── 9de29bb2d1d6434b8b29ae775ad8c2e48c5391 (🧮 1 lines, 📦 15 bytes, 🕓 2025-06-23T11:05:51.389612)
+  └── b480e5b245fdd9bb0d3a67c9bb58607a24d5db (🧮 1 lines, 📦 150 bytes, 🕓 2025-06-22T06:43:41.150500)
+
+📁 ./.git/objects/e7
+  └── 70e3e5c8494543bc6d6a137e9a1d118a9f0529 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-23T10:24:07.051318)
+  └── 9d69ac4a03275dd30c3fa7ab36bee3eb51961f (🧮 2 lines, 📦 111 bytes, 🕓 2025-06-21T11:26:56.199306)
+  └── b1b8a10e2b603d4e8d54e05a834eaa930e37ce (🧮 4 lines, 📦 175 bytes, 🕓 2025-06-22T09:50:05.859632)
+  └── f779cc2d70437df74fcc3a8151bd2e25a90d73 (🧮 7 lines, 📦 507 bytes, 🕓 2025-06-21T12:17:07.721195)
+
+📁 ./.git/objects/e8
+  └── 2d3e39ae9ceeff5bc1d14e4c803e8aa74ca677 (🧮 5 lines, 📦 1053 bytes, 🕓 2025-06-21T11:26:56.123624)
+  └── 51774ea55f4b05440a52c0ebce603e2adf3112 (🧮 4 lines, 📦 196 bytes, 🕓 2025-06-21T08:36:35.528324)
+  └── 66c9f17433c1328612888cf4fe1b1d183c1b26 (🧮 1 lines, 📦 48 bytes, 🕓 2025-06-23T05:59:58.335402)
+
+📁 ./.git/objects/e9
+  └── 20f326c85eea38d422539ab86f10b2cc849cc2 (🧮 7 lines, 📦 656 bytes, 🕓 2025-06-21T11:26:56.177495)
+  └── 28953b7e581fe689c992c44fce71dbe2d15947 (🧮 1 lines, 📦 71 bytes, 🕓 2025-06-20T12:09:59.977966)
+  └── 4ab2914fd0fc500adac8464077c47516a357bc (🧮 3 lines, 📦 219 bytes, 🕓 2025-06-23T10:24:06.939610)
+  └── 7da1cda8d91a13901c98174e8027deeb37f663 (🧮 34 lines, 📦 3891 bytes, 🕓 2025-06-20T09:29:17.732245)
+  └── ba4042be01475b91ac7851eff91545bcc55d57 (🧮 1 lines, 📦 172 bytes, 🕓 2025-06-23T10:24:07.054317)
+  └── da2ba0040e8166d5245f2b18162f66e6cc13e5 (🧮 4 lines, 📦 458 bytes, 🕓 2025-06-22T08:53:04.072762)
+
+📁 ./.git/objects/ea
+  └── b34bf49df1b99d3415160654e89b8e6766993c (🧮 1 lines, 📦 113 bytes, 🕓 2025-06-21T12:17:07.738498)
+  └── c3ee9b5113923379b39db87de108036eced82d (🧮 16 lines, 📦 1550 bytes, 🕓 2025-06-20T11:13:25.147461)
+  └── ef26ad0e5f84bac2fa5bf207814600e31b0758 (🧮 1 lines, 📦 73 bytes, 🕓 2025-06-22T08:50:07.367392)
+
+📁 ./.git/objects/eb
+  └── 19c87da3950880fddb371dd285e6615de55dd3 (🧮 3 lines, 📦 238 bytes, 🕓 2025-06-22T06:02:24.875757)
+  └── 388bcae9c32139a43cf04d49f6860d459b29d9 (🧮 4 lines, 📦 201 bytes, 🕓 2025-06-21T12:37:04.268903)
+  └── 7fd0f0b63a9e5956641c9d76006660bc12c427 (🧮 1 lines, 📦 149 bytes, 🕓 2025-06-20T09:31:55.913474)
+  └── c8e3fc96fbb66ddb558d13a702e2848cea681d (🧮 3 lines, 📦 128 bytes, 🕓 2025-06-23T06:43:54.044282)
+
+📁 ./.git/objects/ec
+  └── 139898f4b90e8c72d158f32053682bcf709f39 (🧮 5 lines, 📦 926 bytes, 🕓 2025-06-21T11:32:58.282707)
+  └── 2d1db95e04b9c993c72204199ee4b25d6969be (🧮 2 lines, 📦 124 bytes, 🕓 2025-06-22T08:50:24.320536)
+  └── 30d481c6d700e11cd1df2e9bf935ce90964d23 (🧮 16 lines, 📦 1516 bytes, 🕓 2025-06-21T10:14:23.087741)
+  └── 5b53fb9528727f67d3605cebb0e4311af46f4c (🧮 9 lines, 📦 978 bytes, 🕓 2025-06-21T08:36:35.523096)
+  └── 646d96a8dd59722f214f19ba6ffd6df6171a63 (🧮 2 lines, 📦 200 bytes, 🕓 2025-06-20T12:06:12.438799)
+  └── 7fcf9cc2ea962f92adcd4a15a3dda8b2681443 (🧮 3 lines, 📦 135 bytes, 🕓 2025-06-21T10:38:06.006057)
+  └── c1f5cf059b8b269cca1c6786beba3a7e849a49 (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-22T08:58:25.869038)
+  └── c3810ef42a383486ebc09b7276122d59cf8909 (🧮 10 lines, 📦 1160 bytes, 🕓 2025-06-21T12:37:48.292140)
+  └── db91ca24f3e1d3d3fb4f68d2e22fd848bf8893 (🧮 1 lines, 📦 269 bytes, 🕓 2025-06-20T12:06:11.657713)
+
+📁 ./.git/objects/ed
+  └── 0b8bbb177b89a3c60546f3130bcb2aace59644 (🧮 2 lines, 📦 526 bytes, 🕓 2025-06-21T12:17:07.680578)
+  └── 32cd2bce4eab795d852a0aa239d20150058deb (🧮 2 lines, 📦 165 bytes, 🕓 2025-06-23T10:24:06.885578)
+  └── a2ac1cf86271025857d2c509a2e2ddacda4008 (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-21T12:17:07.668236)
+  └── a41408d465b013439174b501c7bcdb2aa85bb6 (🧮 1 lines, 📦 74 bytes, 🕓 2025-06-23T10:58:44.109709)
+
+📁 ./.git/objects/ee
+  └── 01cb673244830379e6949fb81b2e0846c9db67 (🧮 4 lines, 📦 994 bytes, 🕓 2025-06-23T02:45:50.929716)
+  └── 07e5eadd03af88b2f6b2e4089fd2f625459061 (🧮 6 lines, 📦 924 bytes, 🕓 2025-06-23T02:46:31.694364)
+  └── 0816f7d6f568ee28986e27a0c10340a168dc9a (🧮 4 lines, 📦 772 bytes, 🕓 2025-06-23T10:24:06.964985)
+  └── 61671cf1ea45e415c1c65c44555f5320513fcf (🧮 1 lines, 📦 172 bytes, 🕓 2025-06-23T10:24:07.068750)
+  └── d9ad1cfb5ee3e6736e956ed51decf658e4c22f (🧮 3 lines, 📦 167 bytes, 🕓 2025-06-23T05:43:07.847190)
+  └── e7665f9f09146c7b3774901b02ff02de5eb8d9 (🧮 4 lines, 📦 185 bytes, 🕓 2025-06-22T07:24:53.896824)
+  └── f08870d81162af2e9141616d7f870ed75b813b (🧮 2 lines, 📦 158 bytes, 🕓 2025-06-21T10:52:46.319960)
+
+📁 ./.git/objects/ef
+  └── 08392a8c5eddf4be5e9616a5b25eb58b918329 (🧮 4 lines, 📦 246 bytes, 🕓 2025-06-21T04:25:15.794822)
+  └── 0e4968d14358f9b00d0c1386fbcfc2333ca3cc (🧮 3 lines, 📦 245 bytes, 🕓 2025-06-21T11:40:51.205171)
+  └── 1ac56502b28014ccc22d2dd434d113bad03762 (🧮 1 lines, 📦 124 bytes, 🕓 2025-06-22T06:43:41.130038)
+  └── 2c95a0311f7ca1f97b8af6b774f7541ab2043b (🧮 3 lines, 📦 191 bytes, 🕓 2025-06-22T09:50:05.935870)
+  └── 534d8a8b00d0009e60df3eb5035326063e6a7b (🧮 6 lines, 📦 506 bytes, 🕓 2025-06-21T11:41:21.537042)
+  └── 85e2e90ed0a6c48d8f5d0a876138d3279b4b21 (🧮 1 lines, 📦 54 bytes, 🕓 2025-06-20T09:27:21.074248)
+  └── bea7532ddd6c81c68e082a6adf3a7e3633d5df (🧮 5 lines, 📦 217 bytes, 🕓 2025-06-23T02:46:31.667264)
+  └── e6cb6f5a38cffeadd6a748ec50d0bea90d628c (🧮 2 lines, 📦 194 bytes, 🕓 2025-06-23T07:32:41.800152)
+  └── f9c355956ae38f3d125aa59a96e5fe004a93d2 (🧮 8 lines, 📦 826 bytes, 🕓 2025-06-21T09:35:51.218353)
+
+📁 ./.git/objects/f0
+  └── 4474647506458f3e55f0e2debc48a63f258ddf (🧮 2 lines, 📦 291 bytes, 🕓 2025-06-23T05:43:07.792878)
+  └── 7b53c55141e801a14cb821346be43349c36c77 (🧮 1 lines, 📦 104 bytes, 🕓 2025-06-23T06:43:54.040276)
+  └── 8c9f4bf46f32d1b7579a79b9d01a3112a82ac3 (🧮 2 lines, 📦 132 bytes, 🕓 2025-06-20T09:30:10.909632)
+  └── 9691caa5a9536cb1e1cd90b18a4895328a0e55 (🧮 1 lines, 📦 177 bytes, 🕓 2025-06-23T07:06:32.676874)
+  └── cac1faf6834700c525446ed8c1f9aa7aa449aa (🧮 2 lines, 📦 157 bytes, 🕓 2025-06-22T07:49:19.865210)
+
+📁 ./.git/objects/f1
+  └── 10159841798e2ebd6f8796fb4bc35188f4f2dd (🧮 55 lines, 📦 4362 bytes, 🕓 2025-06-20T09:29:17.698910)
+  └── 133d1b1a5b7c1f944efc84f2e026e47797f9e5 (🧮 1 lines, 📦 97 bytes, 🕓 2025-06-21T08:36:35.604975)
+  └── 90817beb1cbee705af76b7acdf9534fd35c992 (🧮 1 lines, 📦 191 bytes, 🕓 2025-06-23T05:43:07.837617)
+  └── 9558179d8717b6f0418002680e123a1e8c9cce (🧮 2 lines, 📦 159 bytes, 🕓 2025-06-21T09:53:19.567658)
+
+📁 ./.git/objects/f2
+  └── 84feff79ccc1ebcf45fd8c4d7ec056e0aba067 (🧮 1 lines, 📦 364 bytes, 🕓 2025-06-23T06:43:54.059166)
+  └── b863acfe3bdec392e7636a6c61ed93438241b5 (🧮 1 lines, 📦 192 bytes, 🕓 2025-06-22T09:50:05.938870)
+  └── c0e79c67455d661283687e846f711739cf7bff (🧮 4 lines, 📦 1158 bytes, 🕓 2025-06-21T08:36:35.454163)
+
+📁 ./.git/objects/f3
+  └── 0a72fbf1416532d5f7982ec2f6f7e87340a86b (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-20T11:13:25.189936)
+  └── 1c7dfad89fee5fe4323660b4ac7c32554d6776 (🧮 6 lines, 📦 728 bytes, 🕓 2025-06-23T02:45:50.832350)
+  └── 1fa1e8df66a145173626c8e6f9674a79a93b7c (🧮 4 lines, 📦 195 bytes, 🕓 2025-06-22T08:58:25.871038)
+  └── 825f0522088ddc52dd097ba23f18d1a9df6b14 (🧮 13 lines, 📦 1493 bytes, 🕓 2025-06-21T08:36:35.464380)
+  └── cae6a02ae16ceb526a5f2cef4f40496d36d8ff (🧮 1 lines, 📦 181 bytes, 🕓 2025-06-20T12:10:00.041584)
+
+📁 ./.git/objects/f4
+  └── 01c6cda31e010efc3841ff7f279d5cb19a4c3f (🧮 2 lines, 📦 163 bytes, 🕓 2025-06-20T12:07:34.078001)
+  └── 1b10f6ccfefc086f06ad52704b7c47e89ce250 (🧮 1 lines, 📦 185 bytes, 🕓 2025-06-20T12:10:00.055298)
+  └── 30e88778ebe589a3521bc179a20ea92b0121ae (🧮 1 lines, 📦 167 bytes, 🕓 2025-06-20T12:07:34.081002)
+  └── 7571b44e4185b8387686db41ef10c75f77da59 (🧮 4 lines, 📦 549 bytes, 🕓 2025-06-23T11:06:03.434695)
+  └── c8e9db2dce083aedea3375801d24f4a0e63441 (🧮 1 lines, 📦 142 bytes, 🕓 2025-06-20T12:06:11.697267)
+
+📁 ./.git/objects/f5
+  └── 0275d8486e833bef21179020d040f2ebef1dd9 (🧮 1 lines, 📦 248 bytes, 🕓 2025-06-21T04:25:15.788486)
+  └── 3034765d0022fec6da8c3e465b0cacb92cc957 (🧮 1 lines, 📦 90 bytes, 🕓 2025-06-22T06:43:41.143457)
+  └── 336b4b51f21e7817fea99c0f60c1a89cc4e79e (🧮 11 lines, 📦 928 bytes, 🕓 2025-06-23T05:43:07.796873)
+  └── 537b5c2a2f64245565fe8b30be28c61565ab07 (🧮 6 lines, 📦 587 bytes, 🕓 2025-06-20T12:09:59.985965)
+  └── 79c488039a03b68ab1d153e4bfb6984026ebbd (🧮 11 lines, 📦 925 bytes, 🕓 2025-06-21T09:24:45.857582)
+  └── 9aa97c804b0b73e78308991c23401ed16b93f5 (🧮 9 lines, 📦 1105 bytes, 🕓 2025-06-23T02:45:50.842348)
+  └── c30356a58766d707406910d9f6aa4afb2dbe61 (🧮 1 lines, 📦 96 bytes, 🕓 2025-06-21T11:35:14.669414)
+  └── cf985ee85e74206b453ce25bd74b9360f6568b (🧮 6 lines, 📦 283 bytes, 🕓 2025-06-23T11:05:51.385901)
+
+📁 ./.git/objects/f6
+  └── 15a9900ab978e531bbc04409e44442a008560b (🧮 9 lines, 📦 949 bytes, 🕓 2025-06-23T02:46:31.689189)
+  └── 1ec5cab273aaa2127ae1f05b6ccfe5c9323291 (🧮 3 lines, 📦 138 bytes, 🕓 2025-06-20T07:57:01.973454)
+  └── 447ffaee8f7bcc6dd45cd6015c3f9b908a7d55 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.798874)
+  └── 51e7a0202dc0f59d7fc9e7578a25982f203025 (🧮 4 lines, 📦 534 bytes, 🕓 2025-06-20T12:07:34.083002)
+  └── 82cd3ddd040cfc78a437b92b85a9e236ae3eb8 (🧮 2 lines, 📦 205 bytes, 🕓 2025-06-20T11:13:25.777164)
+  └── 83ba7ee216bd91e4a14ef7971b3366925587cc (🧮 7 lines, 📦 909 bytes, 🕓 2025-06-23T05:43:07.801873)
+  └── 85bf20683ebc6bb4d7f5fb033972c08166f16c (🧮 2 lines, 📦 263 bytes, 🕓 2025-06-23T10:24:06.925779)
+  └── fe82b6884a813ad9ec83bda767c7c73adb221e (🧮 8 lines, 📦 930 bytes, 🕓 2025-06-21T08:49:31.232693)
+
+📁 ./.git/objects/f7
+  └── 144577da0960b73564fc10ce7011ee0825fffe (🧮 8 lines, 📦 458 bytes, 🕓 2025-06-22T08:53:04.073762)
+  └── 6a483c3dac3aa346af984aa6312834e0628faa (🧮 1 lines, 📦 195 bytes, 🕓 2025-06-23T05:43:07.828617)
+  └── 9f72e858ce94ee799c9e180d3cff83e53df5e9 (🧮 9 lines, 📦 1395 bytes, 🕓 2025-06-23T02:46:31.974165)
+
+📁 ./.git/objects/f8
+  └── 4033077c77b2696ee358805abac2d7e3b7dc83 (🧮 1 lines, 📦 48 bytes, 🕓 2025-06-23T02:46:31.800306)
+  └── 40f9bb2f0e5a05844224dcc682b85051eb79b4 (🧮 3 lines, 📦 160 bytes, 🕓 2025-06-23T05:43:07.832616)
+  └── 5545c703da41a4078c8c98c8097015c84cbac5 (🧮 1 lines, 📦 129 bytes, 🕓 2025-06-22T07:09:29.112726)
+  └── 7e8390fe98657bf549b6458e15ce087275c843 (🧮 6 lines, 📦 305 bytes, 🕓 2025-06-23T06:44:39.215639)
+  └── b4be4e6903fd8a4ff41fd8738f3c28ad2e7c43 (🧮 1 lines, 📦 38 bytes, 🕓 2025-06-23T05:43:07.803873)
+  └── e3064e9e5bc9c29d8718967bf0b9c52684c15e (🧮 2 lines, 📦 214 bytes, 🕓 2025-06-22T08:50:07.428358)
+
+📁 ./.git/objects/f9
+  └── 2b82515e3e6d284ef0b412dbd5412dd3420696 (🧮 5 lines, 📦 613 bytes, 🕓 2025-06-20T12:09:59.947958)
+  └── 9d52b728435effaed9604d96ee9e7e4d495a05 (🧮 3 lines, 📦 561 bytes, 🕓 2025-06-23T07:06:32.672877)
+  └── bf74ed83890c6aec1248e579b80fff03331493 (🧮 3 lines, 📦 221 bytes, 🕓 2025-06-22T08:58:21.179743)
+  └── f4a945da580abb686d7da60e6abfcc38fffd05 (🧮 1 lines, 📦 110 bytes, 🕓 2025-06-23T10:58:31.258073)
+
+📁 ./.git/objects/fa
+  └── 01c1cf2c78f33830c08571cdf32e74e800aa0f (🧮 9 lines, 📦 672 bytes, 🕓 2025-06-22T06:43:41.141150)
+  └── 0bd62d5ac33cefdc9dded8cbd57d1b0821f069 (🧮 4 lines, 📦 185 bytes, 🕓 2025-06-22T08:58:21.180748)
+  └── 4a865f528f5b8b2701361972b1a42888363955 (🧮 1 lines, 📦 67 bytes, 🕓 2025-06-22T09:50:05.959873)
+  └── 924f0bf904767a8ab5c20da91ecc53c97257d5 (🧮 2 lines, 📦 107 bytes, 🕓 2025-06-21T08:36:35.609113)
+  └── e97d26823b5c87e15484d3499e9fe7d0f57685 (🧮 34 lines, 📦 4047 bytes, 🕓 2025-06-20T09:29:17.694910)
+  └── f78ec7e354844583557991514e566be0879582 (🧮 1 lines, 📦 48 bytes, 🕓 2025-06-23T04:41:42.896327)
+
+📁 ./.git/objects/fb
+  └── 0d300294f7edb0d019ecea43d057f26dc0ace4 (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T05:43:07.807873)
+  └── 31a5f70d98c3b182d25ff7682a861d30cb3f1a (🧮 5 lines, 📦 221 bytes, 🕓 2025-06-21T11:31:14.696793)
+  └── 611ac5a5a60640fbf6bdba03f1596a4d13fab4 (🧮 2 lines, 📦 202 bytes, 🕓 2025-06-22T06:44:29.829626)
+  └── b79aab389bac2b6aa0a0d244895e9f37b611b7 (🧮 1 lines, 📦 52 bytes, 🕓 2025-06-23T10:27:18.931049)
+  └── d2a4fb7a919ebd5415964ffdc8aca6cb31cd8c (🧮 6 lines, 📦 502 bytes, 🕓 2025-06-23T10:24:06.915528)
+
+📁 ./.git/objects/fc
+  └── 1adb546a2175c317c6e49ad935374e4a78b4bb (🧮 4 lines, 📦 549 bytes, 🕓 2025-06-23T10:27:18.935173)
+  └── 1c009e1028b8b8da9b07fff34235327e27e1ca (🧮 3 lines, 📦 104 bytes, 🕓 2025-06-23T07:41:42.541298)
+  └── 1fb91557be1e745d828c2e2b3861ec4edfacac (🧮 3 lines, 📦 53 bytes, 🕓 2025-06-22T07:49:27.011206)
+  └── 23d214698d262397f75d0e977662083925b5e9 (🧮 1 lines, 📦 57 bytes, 🕓 2025-06-23T10:24:07.034996)
+  └── 2c52f7bd5c72b792c86778e930ccfbf417238a (🧮 36 lines, 📦 4000 bytes, 🕓 2025-06-21T10:38:06.002051)
+  └── 8cd179a52e8ad3800ea53d020f14c0b4e58354 (🧮 1 lines, 📦 141 bytes, 🕓 2025-06-20T12:06:11.718248)
+  └── a783aa5ad981aff5675038f3c84f234d56a580 (🧮 2 lines, 📦 190 bytes, 🕓 2025-06-22T09:50:05.917324)
+
+📁 ./.git/objects/fd
+  └── 022a9c143d16272958471c750f148c98718fd3 (🧮 5 lines, 📦 308 bytes, 🕓 2025-06-23T10:59:16.133025)
+  └── 0b6e25b61df7a22fb84e577e9370bfeb4439b0 (🧮 6 lines, 📦 776 bytes, 🕓 2025-06-22T08:50:07.372960)
+  └── 701b838e8c318e5a5d2dcb528a6de2f55fe960 (🧮 11 lines, 📦 958 bytes, 🕓 2025-06-21T10:52:46.327856)
+  └── 756ba054c7be47791a967e4ccb06b8385be95c (🧮 7 lines, 📦 1181 bytes, 🕓 2025-06-20T12:07:34.037002)
+  └── 955af87c158081cf98a5ed88438d948cd7bda4 (🧮 3 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:07.432681)
+  └── a7b7a3f38e902e38a774add53832c77a9ab196 (🧮 3 lines, 📦 135 bytes, 🕓 2025-06-22T07:09:40.173166)
+  └── fdee0448baec0fe357017de3bf235d90cf7587 (🧮 3 lines, 📦 219 bytes, 🕓 2025-06-23T06:43:53.988781)
+
+📁 ./.git/objects/fe
+  └── 3408c567f90f2f51d75e27d360f5c63c84861c (🧮 2 lines, 📦 327 bytes, 🕓 2025-06-21T11:51:51.028929)
+  └── 3cc0bbf03a45281a7fac3bc8739e8445db7069 (🧮 4 lines, 📦 193 bytes, 🕓 2025-06-21T11:26:56.186541)
+  └── 75604748d47ac43a3c7e7bf4ae3e595ca6a782 (🧮 14 lines, 📦 1132 bytes, 🕓 2025-06-23T02:46:31.773168)
+  └── 8f13b6ad84cc53e8c30a122f1501df26d467c4 (🧮 121 lines, 📦 19347 bytes, 🕓 2025-06-23T06:43:53.968782)
+  └── 9f4b98473758ae1e8730aac5deb36cf67927b8 (🧮 1 lines, 📦 164 bytes, 🕓 2025-06-20T12:07:34.080002)
+  └── a75da3e31357903de170c8b3b9a9e6cd900575 (🧮 7 lines, 📦 1013 bytes, 🕓 2025-06-21T11:36:58.815660)
+  └── b9acb2f0728dddff8f906b66f7e287f50023e5 (🧮 3 lines, 📦 189 bytes, 🕓 2025-06-23T10:58:44.105325)
+
+📁 ./.git/objects/ff
+  └── 30b18b91d24b08fc0d9db9fb895f46f0eb15fd (🧮 3 lines, 📦 184 bytes, 🕓 2025-06-20T12:10:00.065298)
+  └── 3107aa7369a9be51a3c60f75b14c32de5bd07d (🧮 1 lines, 📦 65 bytes, 🕓 2025-06-21T09:53:19.564657)
+  └── b69c13e7b74ec536b3037ae9c5117b85d8a461 (🧮 11 lines, 📦 925 bytes, 🕓 2025-06-21T09:35:51.220351)
+  └── c583b1074ae16803cd1c0c111f579d0cb49da5 (🧮 4 lines, 📦 471 bytes, 🕓 2025-06-22T08:50:07.374958)
+  └── fe98b2cd7d921e5388ffb371c149307fe96485 (🧮 5 lines, 📦 211 bytes, 🕓 2025-06-22T08:50:07.435881)
+
+📁 ./.git/objects/info
+
+📁 ./.git/objects/pack
+  └── pack-16affc798075d4e4ac6acf41a96f9f4da9c62f9d.idx (🧮 49 lines, 📦 8128 bytes, 🕓 2025-06-21T07:13:48.616065)
+  └── pack-16affc798075d4e4ac6acf41a96f9f4da9c62f9d.pack (🧮 456 lines, 📦 64486 bytes, 🕓 2025-06-21T07:13:48.615064)
+  └── pack-16affc798075d4e4ac6acf41a96f9f4da9c62f9d.rev (🧮 3 lines, 📦 1060 bytes, 🕓 2025-06-21T07:13:48.617652)
+  └── pack-4aa2d8b52f1990d25e21d50afec2d0b7bd5654a3.idx (🧮 54 lines, 📦 8464 bytes, 🕓 2025-06-22T06:00:11.877104)
+  └── pack-4aa2d8b52f1990d25e21d50afec2d0b7bd5654a3.pack (🧮 617 lines, 📦 81698 bytes, 🕓 2025-06-22T06:00:11.875108)
+  └── pack-4aa2d8b52f1990d25e21d50afec2d0b7bd5654a3.rev (🧮 4 lines, 📦 1108 bytes, 🕓 2025-06-22T06:00:11.878917)
+  └── pack-52b6ca56fa37da42ed06992fe37544de71f0b55d.idx (🧮 35 lines, 📦 5832 bytes, 🕓 2025-06-21T04:22:34.677754)
+  └── pack-52b6ca56fa37da42ed06992fe37544de71f0b55d.pack (🧮 360 lines, 📦 48419 bytes, 🕓 2025-06-21T04:22:34.676754)
+  └── pack-52b6ca56fa37da42ed06992fe37544de71f0b55d.rev (🧮 3 lines, 📦 732 bytes, 🕓 2025-06-21T04:22:34.679754)
+  └── pack-5b7c65e532c32bb92e8d2ef27620a41ffcbce427.idx (🧮 44 lines, 📦 7008 bytes, 🕓 2025-06-20T12:07:17.028463)
+  └── pack-5b7c65e532c32bb92e8d2ef27620a41ffcbce427.pack (🧮 206 lines, 📦 23513 bytes, 🕓 2025-06-20T12:07:34.038002)
+  └── pack-5b7c65e532c32bb92e8d2ef27620a41ffcbce427.rev (🧮 3 lines, 📦 900 bytes, 🕓 2025-06-20T12:07:17.029462)
+
+📁 ./.git/refs
+
+📁 ./.git/refs/heads
+  └── main (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T08:06:40.909040)
+
+📁 ./.git/refs/heads/dummy
+  └── ruleset-trigger (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T11:07:44.597130)
+
+📁 ./.git/refs/heads/feat
+  └── prompt-builder-v1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:49:10.960655)
+  └── prompt-builder-v2 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:50:37.328532)
+  └── prompt-builder-v3 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:52:09.675703)
+  └── pyyaml-dep (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:33:26.612980)
+  └── self-evolving-gpt-skeleton (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:25:16.606106)
+
+📁 ./.git/refs/heads/upgrade
+  └── deep_dive_v1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:26:10.351125)
+  └── phase_enforcement_v1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:02:24.952091)
+
+📁 ./.git/refs/heads/xw9h8q-codex
+  └── refactor-core-module-for-dynamic-validation (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T09:36:17.035530)
+
+📁 ./.git/refs/remotes
+
+📁 ./.git/refs/remotes/origin
+  └── HEAD (🧮 1 lines, 📦 30 bytes, 🕓 2025-06-21T04:22:34.726332)
+  └── main (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T08:18:40.152910)
+
+📁 ./.git/refs/remotes/origin/codex
+  └── add-.flake8-config-and-relax-lint-rules (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.649281)
+  └── add-autonomous-orchestrator-for-himks-upgrade (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T11:27:43.174438)
+  └── add-build_diff_summary_prompt-method (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.650278)
+  └── add-code-analytics-and-fatigue-simulation (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.665926)
+  └── add-codex-reflection-and-validation-tools (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.668973)
+  └── add-custom-gpt-action-api-and-openapi-schema (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.652278)
+  └── add-digital-twin-module-and-integration (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.669607)
+  └── add-dynamic-phase-progression-engine (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.671646)
+  └── add-evolutionorchestrator-and-testrunner (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.653279)
+  └── add-executionorchestrator-module-and-tests (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.654279)
+  └── add-github-action-for-csv-to-json-conversion (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.431701)
+  └── add-microphase-logic-and-integrate-into-phase_manager (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.672644)
+  └── add-patchsummarizationagent-for-codex-diff-summaries (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.656104)
+  └── add-prauthoragent-for-codex-powered-pr-metadata-generation (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.657109)
+  └── add-recovery-logic-to-feedback-and-protocol-engines (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.673647)
+  └── add-repomanager-and-changeapplier-modules (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.658883)
+  └── add-toolregistry-and-dispatcheragent (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.659889)
+  └── add-vectorstore-and-memoryagent-for-task-memory (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.661888)
+  └── add-weekly-health-report-github-action (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.434704)
+  └── clean-up-todo-and-fixme-markers (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:17:07.785187)
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.662888)
+  └── create-phase-1-core-setup-for-flexiusgpt (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T04:41:42.940773)
+  └── create-user-profile-for-aetherfitness (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.436702)
+  └── enable-api-triggered-workflow-with-repository_dispatch (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.437702)
+  └── enable-coordinator-branch-creation-for-phase-enforcement-blu (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:37:04.314605)
+  └── finalize-batch-5--digest-and-export (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.675645)
+  └── fix-deep_repo_orchestrator-call-failure (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.439702)
+  └── fix-deep_repo_orchestrator-test_mode-issue (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.441703)
+  └── fix-invalid-or-missing-api-key-error (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T07:24:53.945525)
+  └── fix-pythonpath-for-openapi-export-workflow (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.666894)
+  └── fix-server-url-origin-mismatch (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T07:08:52.884382)
+  └── implement-adaptive-feedback-scaling-and-trend-analytics (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.676643)
+  └── implement-autodocagent-and-docs-ci-workflow (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.667894)
+  └── implement-batch-1-for-codex-integration (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.678151)
+  └── implement-filemutationagent-for-codex-driven-file-rewrites (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.668894)
+  └── implement-github-ingestion-and-feedback-hooks (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.682204)
+  └── implement-himks-upgrade-toolkit (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:17:07.786188)
+  └── implement-peak-performance-feedback-and-protocol-nudging (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.684204)
+  └── implement-promptbuilder-for-codex-prompts (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.670894)
+  └── implement-unified-upgrade-path-for-codex-integration (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.685204)
+  └── initialize-healthconnect-insight-app (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.442703)
+  └── integrate-ci-with-self-evolution-workflow (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.671896)
+  └── modularize-feedback-engine-for-multi-modal-input (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.687203)
+  └── refactor-core-module-for-dynamic-validation (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T07:49:27.078883)
+  └── refactor-python-logic-files-with-improvements (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:22:34.720331)
+  └── remove-test_mode-from-backend-schema (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.444702)
+  └── restore-himks-core-logic-and-audit-tools (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T11:27:43.176438)
+  └── run-and-fix-code-structure-tests (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.688204)
+  └── scaffold-core-package-for-phase-1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:22:34.722332)
+  └── set-up-environment-for-local-gpt-evolution (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.673893)
+  └── set-up-healthconnect-insight-hub-backend (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.446703)
+  └── set-up-healthconnect-insight-hub-module (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T02:46:41.448500)
+  └── standardize-payload-structure-and-improve-validation (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T09:12:45.891078)
+  └── unify-code-structure-and-integrate-connector (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.689961)
+  └── update-compliance-framework-for-zero-cost-policy (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.690578)
+  └── update-ngrok-url (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T07:08:52.886383)
+  └── upgrade-logic-files-with-codex (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:22:34.723331)
+  └── validate-codex-structure-and-prevent-duplicates (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.692585)
+
+📁 ./.git/refs/remotes/origin/codex/fix-flake8-f401
+  └── f841-issues (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.664894)
+
+📁 ./.git/refs/remotes/origin/codex/implement-dynamic-guardrails-for-phase
+  └── session-management (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T06:07:08.680204)
+
+📁 ./.git/refs/remotes/origin/codex/standardize-
+  └── module-endpoint-payload-structure (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T09:37:39.431799)
+
+📁 ./.git/refs/remotes/origin/dummy
+  └── ruleset-trigger (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-23T11:07:54.714370)
+
+📁 ./.git/refs/remotes/origin/feat
+  └── prompt-builder-v1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:49:35.319487)
+  └── prompt-builder-v2 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:50:39.889250)
+  └── prompt-builder-v3 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:52:12.198754)
+  └── pyyaml-dep (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:32:49.710771)
+  └── self-evolving-gpt-skeleton (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T04:25:25.301762)
+
+📁 ./.git/refs/remotes/origin/ixxttp-codex
+  └── implement-himks-upgrade-toolkit (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:17:07.788189)
+
+📁 ./.git/refs/remotes/origin/lo68oc-codex
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.674893)
+
+📁 ./.git/refs/remotes/origin/srhtwg-codex
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.676893)
+
+📁 ./.git/refs/remotes/origin/upgrade
+  └── deep_dive_v1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:26:12.436555)
+  └── phase_enforcement_v1 (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T12:37:50.851221)
+
+📁 ./.git/refs/remotes/origin/x4h8da-codex
+  └── create-agentbase-interface-for-dynamic-agent-execution (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-21T07:13:48.678894)
+
+📁 ./.git/refs/remotes/origin/xw9h8q-codex
+  └── refactor-core-module-for-dynamic-validation (🧮 1 lines, 📦 41 bytes, 🕓 2025-06-22T08:58:36.315765)
+
+📁 ./.git/refs/tags
+
+📁 ./.github
+
+📁 ./.github/workflows
+  └── ci.yml (🧮 56 lines, 📦 1513 bytes, 🕓 2025-06-23T11:07:37.862521)
+  └── integrity-check.yml (🧮 21 lines, 📦 721 bytes, 🕓 2025-06-23T05:43:39.660176)
+  └── protection-audit.yml (🧮 15 lines, 📦 436 bytes, 🕓 2025-06-23T05:43:39.660176)
+
+📁 ./.pytest_cache
+  └── .gitignore (🧮 2 lines, 📦 39 bytes, 🕓 2025-06-23T05:50:28.778739)
+  └── CACHEDIR.TAG (🧮 4 lines, 📦 191 bytes, 🕓 2025-06-23T05:50:28.778739)
+  └── README.md (🧮 8 lines, 📦 310 bytes, 🕓 2025-06-23T05:50:28.778739)
+
+📁 ./.pytest_cache/v
+
+📁 ./.pytest_cache/v/cache
+  └── lastfailed (🧮 8 lines, 📦 427 bytes, 🕓 2025-06-23T11:04:59.651095)
+  └── nodeids (🧮 24 lines, 📦 1867 bytes, 🕓 2025-06-23T11:05:27.808587)
+  └── stepwise (🧮 1 lines, 📦 2 bytes, 🕓 2025-06-23T11:05:27.809587)
+
+📁 ./infra
+
+📁 ./infra/secure
+  └── .gitkeep (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T05:43:39.662175)
+
+📁 ./modules
+  └── __init__.py (🧮 11 lines, 📦 327 bytes, 🕓 2025-06-23T09:33:08.896968)
+
+📁 ./modules/00_integrity_audit
+  └── interface.py (🧮 52 lines, 📦 1616 bytes, 🕓 2025-06-23T10:47:01.622051)
+
+📁 ./modules/module01_core_rules
+  └── interface.py (🧮 53 lines, 📦 1692 bytes, 🕓 2025-06-23T09:42:09.324573)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T09:57:30.790011)
+
+📁 ./modules/module02_phase_manager
+  └── interface.py (🧮 19 lines, 📦 486 bytes, 🕓 2025-06-23T09:53:09.056313)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T09:57:42.646044)
+
+📁 ./modules/module03_compliance_engine
+  └── interface.py (🧮 11 lines, 📦 273 bytes, 🕓 2025-06-23T09:53:09.053313)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T09:57:56.908167)
+
+📁 ./modules/module04_safety_overrides
+  └── interface.py (🧮 11 lines, 📦 229 bytes, 🕓 2025-06-23T09:53:09.053313)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T09:58:07.085972)
+
+📁 ./modules/module05_recovery_stack
+  └── interface.py (🧮 11 lines, 📦 220 bytes, 🕓 2025-06-23T09:33:08.948972)
+  └── module05_recovery_stack.py (🧮 7 lines, 📦 129 bytes, 🕓 2025-06-23T09:33:08.944969)
+  └── README.md (🧮 3 lines, 📦 88 bytes, 🕓 2025-06-23T07:30:05.096521)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T07:30:05.097521)
+
+📁 ./modules/module06_user_profile
+  └── interface.py (🧮 11 lines, 📦 218 bytes, 🕓 2025-06-23T09:33:08.970968)
+  └── module06_user_profile.py (🧮 5 lines, 📦 114 bytes, 🕓 2025-06-23T09:33:08.968971)
+  └── README.md (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T07:30:05.100521)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T07:30:05.100521)
+
+📁 ./modules/module07_session_engine
+  └── interface.py (🧮 11 lines, 📦 220 bytes, 🕓 2025-06-23T09:33:08.970968)
+  └── module07_session_engine.py (🧮 5 lines, 📦 130 bytes, 🕓 2025-06-23T09:33:08.973968)
+  └── README.md (🧮 3 lines, 📦 80 bytes, 🕓 2025-06-23T07:30:05.102521)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T07:30:05.102521)
+
+📁 ./modules/module08_feedback_engine
+  └── interface.py (🧮 11 lines, 📦 221 bytes, 🕓 2025-06-23T09:33:08.898969)
+  └── module08_feedback_engine.py (🧮 5 lines, 📦 153 bytes, 🕓 2025-06-23T09:33:08.901970)
+  └── README.md (🧮 3 lines, 📦 71 bytes, 🕓 2025-06-23T07:30:05.104521)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T07:30:05.105521)
+
+📁 ./modules/module09_knowledge_base
+  └── interface.py (🧮 11 lines, 📦 220 bytes, 🕓 2025-06-23T09:33:08.907971)
+  └── module09_knowledge_base.py (🧮 5 lines, 📦 106 bytes, 🕓 2025-06-23T09:33:08.905972)
+  └── README.md (🧮 3 lines, 📦 86 bytes, 🕓 2025-06-23T07:30:05.106521)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T07:30:05.107521)
+
+📁 ./modules/module10_repo_analyzer
+  └── interface.py (🧮 80 lines, 📦 2081 bytes, 🕓 2025-06-23T11:32:46.431440)
+  └── module10_repo_analyzer.py (🧮 60 lines, 📦 1453 bytes, 🕓 2025-06-23T11:15:22.283678)
+
+📁 ./modules/module11_repo_summaries
+  └── interface.py (🧮 41 lines, 📦 992 bytes, 🕓 2025-06-23T10:02:52.199269)
+  └── README.md (🧮 1 lines, 📦 51 bytes, 🕓 2025-06-23T07:48:09.981241)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T07:48:09.959220)
+
+📁 ./modules/module11_repo_summaries/summaries
+  └── 2025-06-23_07-57-11_save_summary.txt (🧮 1 lines, 📦 22 bytes, 🕓 2025-06-23T07:57:11.869370)
+  └── 2025-06-23_09-31-07_save_summary.txt (🧮 1 lines, 📦 23 bytes, 🕓 2025-06-23T09:31:07.801167)
+  └── 2025-06-23_10-28-56_deep_repo_summary.txt (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T10:28:56.228003)
+  └── 2025-06-23_10-28-56_save_summary.txt (🧮 1 lines, 📦 23 bytes, 🕓 2025-06-23T10:28:56.185001)
+  └── 2025-06-23_10-32-18_deep_repo_summary.txt (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T10:32:18.268108)
+  └── 2025-06-23_10-32-18_save_summary.txt (🧮 1 lines, 📦 23 bytes, 🕓 2025-06-23T10:32:18.228107)
+  └── 2025-06-23_10-47-21_deep_repo_summary.txt (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T10:47:21.063481)
+  └── 2025-06-23_10-47-21_save_summary.txt (🧮 1 lines, 📦 23 bytes, 🕓 2025-06-23T10:47:21.023482)
+  └── 2025-06-23_10-58-06_deep_repo_summary.txt (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T10:58:06.289728)
+  └── 2025-06-23_11-04-59_deep_repo_summary.txt (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T11:04:59.647094)
+  └── 2025-06-23_11-05-27_deep_repo_summary.txt (🧮 3 lines, 📦 78 bytes, 🕓 2025-06-23T11:05:27.805590)
+  └── 2025-06-23_11-25-36_summary_report.txt (🧮 23 lines, 📦 506 bytes, 🕓 2025-06-23T11:25:36.999875)
+  └── 2025-06-23_11-25-37_summary_report.txt (🧮 23 lines, 📦 506 bytes, 🕓 2025-06-23T11:25:37.583875)
+  └── 2025-06-23_11-29-49_summary_report.txt (🧮 23 lines, 📦 506 bytes, 🕓 2025-06-23T11:29:49.184533)
+  └── 2025-06-23_11-33-12_summary_report.txt (🧮 23 lines, 📦 506 bytes, 🕓 2025-06-23T11:33:12.082922)
+  └── 2025-06-23_11-42-06_summary_report.txt (🧮 23 lines, 📦 506 bytes, 🕓 2025-06-23T11:42:06.580896)
+  └── 2025-06-23_repo_analysis_summary.txt (🧮 717 lines, 📦 11918 bytes, 🕓 2025-06-23T07:43:08.163742)
+  └── 2025-06-23_repo_scan.txt (🧮 1 lines, 📦 48 bytes, 🕓 2025-06-23T07:48:43.425338)
+
+📁 ./modules/module11_repo_summaries/tests
+  └── test_11_repo_summaries.py (🧮 10 lines, 📦 305 bytes, 🕓 2025-06-23T09:53:09.073312)
+
+📁 ./modules/module11_repo_summaries/tests/__pycache__
+  └── test_11_repo_summaries.cpython-311-pytest-7.4.4.pyc (🧮 11 lines, 📦 1410 bytes, 🕓 2025-06-23T09:30:47.867841)
+
+📁 ./modules/module15_deep_repo_orchestrator
+  └── interface.py (🧮 43 lines, 📦 1172 bytes, 🕓 2025-06-23T10:35:02.159555)
+  └── pyproject.toml (🧮 19 lines, 📦 441 bytes, 🕓 2025-06-23T10:27:57.222622)
+  └── README.md (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T10:27:57.219623)
+
+📁 ./modules/module15_deep_repo_orchestrator/src
+
+📁 ./modules/module15_deep_repo_orchestrator/src/module15_deep_repo_orchestrator
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T10:27:57.219623)
+
+📁 ./modules/module15_deep_repo_orchestrator/tests
+  └── test_interface.py (🧮 8 lines, 📦 232 bytes, 🕓 2025-06-23T10:32:12.154488)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T10:27:57.219623)
+
+📁 ./modules/module16_meta_reporter
+  └── interface.py (🧮 83 lines, 📦 2832 bytes, 🕓 2025-06-23T11:41:48.436059)
+  └── pyproject.toml (🧮 19 lines, 📦 423 bytes, 🕓 2025-06-23T10:49:58.659180)
+  └── README.md (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T10:49:58.657178)
+
+📁 ./modules/module16_meta_reporter/src
+
+📁 ./modules/module16_meta_reporter/src/module16_meta_reporter
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T10:49:58.657178)
+
+📁 ./modules/module16_meta_reporter/summaries
+  └── 2025-06-23_10-58-06_meta_summary.json (🧮 37 lines, 📦 809 bytes, 🕓 2025-06-23T10:58:06.289728)
+  └── 2025-06-23_10-58-06_meta_summary.txt (🧮 4 lines, 📦 108 bytes, 🕓 2025-06-23T10:58:06.290731)
+  └── 2025-06-23_11-04-59_meta_summary.json (🧮 37 lines, 📦 809 bytes, 🕓 2025-06-23T11:04:59.648107)
+  └── 2025-06-23_11-04-59_meta_summary.txt (🧮 4 lines, 📦 108 bytes, 🕓 2025-06-23T11:04:59.649095)
+  └── 2025-06-23_11-05-27_meta_summary.json (🧮 37 lines, 📦 809 bytes, 🕓 2025-06-23T11:05:27.806587)
+  └── 2025-06-23_11-05-27_meta_summary.txt (🧮 4 lines, 📦 108 bytes, 🕓 2025-06-23T11:05:27.806587)
+
+📁 ./modules/module16_meta_reporter/tests_mr
+  └── test_mr.py (🧮 12 lines, 📦 387 bytes, 🕓 2025-06-23T10:57:34.034719)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T10:49:58.657178)
+
+📁 ./modules/module17_codex_dispatcher
+  └── interface.py (🧮 45 lines, 📦 1135 bytes, 🕓 2025-06-23T11:03:36.648945)
+  └── pyproject.toml (🧮 19 lines, 📦 429 bytes, 🕓 2025-06-23T11:00:20.598068)
+  └── README.md (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T11:00:20.594066)
+
+📁 ./modules/module17_codex_dispatcher/src
+
+📁 ./modules/module17_codex_dispatcher/src/module17_codex_dispatcher
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T11:00:20.594066)
+
+📁 ./modules/module17_codex_dispatcher/tests
+  └── test_codex_dispatcher.py (🧮 27 lines, 📦 720 bytes, 🕓 2025-06-23T11:04:36.057597)
+  └── __init__.py (🧮 0 lines, 📦 0 bytes, 🕓 2025-06-23T11:00:20.595066)
+
+📁 ./summaries
+  └── meta_report_2025-06-23T11-29-49.188532.json (🧮 10 lines, 📦 170 bytes, 🕓 2025-06-23T11:29:49.189533)
+  └── meta_report_2025-06-23T11-29-49.188532.txt (🧮 12 lines, 📦 165 bytes, 🕓 2025-06-23T11:29:49.188533)
+  └── meta_report_2025-06-23T11-33-12.086915.json (🧮 10 lines, 📦 170 bytes, 🕓 2025-06-23T11:33:12.086915)
+  └── meta_report_2025-06-23T11-33-12.086915.txt (🧮 12 lines, 📦 165 bytes, 🕓 2025-06-23T11:33:12.086915)
+  └── repo_analysis_latest.json (🧮 25 lines, 📦 620 bytes, 🕓 2025-06-23T11:42:06.584897)
+
+📁 ./tests
+  └── test_00_integrity_audit.py (🧮 26 lines, 📦 483 bytes, 🕓 2025-06-23T10:40:15.697879)
+  └── test_core_lock_enforcement.py (🧮 19 lines, 📦 665 bytes, 🕓 2025-06-23T09:33:08.944969)
+  └── test_module01_core_rules.py (🧮 13 lines, 📦 477 bytes, 🕓 2025-06-23T09:33:08.945968)
+  └── test_module02_phase_manager.py (🧮 6 lines, 📦 181 bytes, 🕓 2025-06-23T09:33:08.941969)
+  └── test_module03_compliance_engine.py (🧮 11 lines, 📦 229 bytes, 🕓 2025-06-23T10:37:56.497131)
+  └── test_module04_safety_overrides.py (🧮 11 lines, 📦 231 bytes, 🕓 2025-06-23T10:38:23.300247)
+  └── test_module05_recovery_stack.py (🧮 6 lines, 📦 188 bytes, 🕓 2025-06-23T07:30:05.109520)
+  └── test_module06_user_profile.py (🧮 6 lines, 📦 184 bytes, 🕓 2025-06-23T07:30:05.110521)
+  └── test_module07_session_engine.py (🧮 6 lines, 📦 188 bytes, 🕓 2025-06-23T07:30:05.110521)
+  └── test_module08_feedback_engine.py (🧮 6 lines, 📦 190 bytes, 🕓 2025-06-23T07:30:05.111521)
+  └── test_module09_knowledge_base.py (🧮 6 lines, 📦 188 bytes, 🕓 2025-06-23T07:30:05.111521)
+  └── test_module10_repo_analyzer.py (🧮 7 lines, 📦 216 bytes, 🕓 2025-06-23T09:33:08.951969)
+  └── test_plugin_interfaces.py (🧮 23 lines, 📦 744 bytes, 🕓 2025-06-23T09:33:08.958969)
+
+📁 ./tests/__pycache__
+  └── test_00_integrity_audit.cpython-311-pytest-7.4.4.pyc (🧮 21 lines, 📦 1667 bytes, 🕓 2025-06-23T09:30:47.906843)
+  └── test_core_lock_enforcement.cpython-311-pytest-7.4.4.pyc (🧮 22 lines, 📦 2082 bytes, 🕓 2025-06-23T09:30:47.909840)
+  └── test_module01_core_rules.cpython-311-pytest-7.4.4.pyc (🧮 24 lines, 📦 4355 bytes, 🕓 2025-06-23T09:30:47.912843)
+  └── test_module02_phase_manager.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1556 bytes, 🕓 2025-06-23T09:30:47.914841)
+  └── test_module03_compliance_engine.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1567 bytes, 🕓 2025-06-23T09:30:47.916841)
+  └── test_module04_safety_overrides.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1568 bytes, 🕓 2025-06-23T09:30:47.918842)
+  └── test_module05_recovery_stack.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1564 bytes, 🕓 2025-06-23T09:30:47.920842)
+  └── test_module06_user_profile.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1558 bytes, 🕓 2025-06-23T09:30:47.922841)
+  └── test_module07_session_engine.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1564 bytes, 🕓 2025-06-23T09:30:47.924841)
+  └── test_module08_feedback_engine.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1567 bytes, 🕓 2025-06-23T09:30:47.926841)
+  └── test_module09_knowledge_base.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1564 bytes, 🕓 2025-06-23T09:30:47.928842)
+  └── test_module10_repo_analyzer.cpython-311-pytest-7.4.4.pyc (🧮 14 lines, 📦 1551 bytes, 🕓 2025-06-23T09:30:47.930840)
+  └── test_plugin_interfaces.cpython-311-pytest-7.4.4.pyc (🧮 19 lines, 📦 2285 bytes, 🕓 2025-06-23T09:30:47.933305)
+
+📁 ./__pycache__
+  └── sitecustomize.cpython-311.pyc (🧮 7 lines, 📦 224 bytes, 🕓 2025-06-23T09:33:17.255328)
+  └── sitecustomize.cpython-312.pyc (🧮 4 lines, 📦 210 bytes, 🕓 2025-06-23T09:33:16.310940)

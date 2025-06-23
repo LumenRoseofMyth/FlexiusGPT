@@ -1,0 +1,10 @@
+{
+  "orchestrator": {
+    "status": "fail",
+    "error": "'summary_file'"
+  },
+  "repo_analysis": {
+    "status": "skipped",
+    "note": "Handled upstream"
+  }
+}

@@ -1,0 +1,23 @@
+# Repository Summary
+
+## Modules
+- 00_integrity_audit
+- __init__.py
+- module01_core_rules
+- module02_phase_manager
+- module03_compliance_engine
+- module04_safety_overrides
+- module05_recovery_stack
+- module06_user_profile
+- module07_session_engine
+- module08_feedback_engine
+- module09_knowledge_base
+- module10_repo_analyzer
+- module11_repo_summaries
+- module15_deep_repo_orchestrator
+- module16_meta_reporter
+- module17_codex_dispatcher
+
+## Root Files
+- README.md
+- sitecustomize.py

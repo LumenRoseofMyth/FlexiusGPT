@@ -1,33 +1,60 @@
-# modules/module10_repo_analyzer/module10_repo_analyzer.py
+from pydantic import BaseModel
 import os
-from datetime import datetime
+import json
 
-REPORT_PATH = "repo_analysis_summary.txt"
-LOCKED_DIRS = {".core", "infra/secure", "src/engine", "internal"}
+from modules.module11_repo_summaries.interface import (
+    run_module as run_summaries,
+)
+from modules.module16_meta_reporter.interface import (
+    run_module as run_meta_report,
+)
 
 
-def run_analysis(payload):
-    lines = []
-    lines.append(f"📦 Repository Analysis Report — {datetime.now()}")
-    lines.append("=" * 80)
+class Input(BaseModel):
+    action: str
+    data: dict
 
-    for root, dirs, files in os.walk("."):
-        if any(root.startswith(f"./{lock}") for lock in LOCKED_DIRS):
-            continue
 
-        lines.append(f"\n📁 {root}")
-        for file in files:
-            if file.endswith(".py"):
-                path = os.path.join(root, file)
-                lines.append(f"  └── {file}")
-                with open(path, "r", encoding="utf-8") as f:
-                    head = f.readline().strip()
-                    if head.startswith("# @lock"):
-                        lines.append("     🔒 LOCKED")
-                    if "run_module" in f.read():
-                        lines.append("     ✅ Interface: run_module() detected")
+def run_analysis(_: dict) -> dict:
+    result = {
+        "status": "complete",
+        "structure": sorted(os.listdir("modules")),
+        "root_files": sorted(
+            f for f in os.listdir(".")
+            if f.endswith(".py") or f.endswith(".md")
+        ),
+    }
 
-    with open(REPORT_PATH, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+    os.makedirs("summaries", exist_ok=True)
+    with open(
+        "summaries/repo_analysis_latest.json", "w", encoding="utf-8"
+    ) as f:
+        json.dump(result, f, indent=2)
 
-    return {"status": "ok", "summary_file": REPORT_PATH}
+    return result
+
+
+def run_module(*, payload: dict) -> dict:
+    validated = Input(**payload)
+
+    if validated.action != "analyze":
+        return {
+            "status": "error",
+            "message": f"Unsupported action: {validated.action}",
+        }
+
+    result = run_analysis(validated.data)
+
+    summary_result = run_summaries(
+        payload={"action": "summary_report", "data": {}}
+    )
+    meta_result = run_meta_report(
+        payload={"action": "test", "data": {}}
+    )
+
+    return {
+        "status": "chain_complete",
+        "analysis": result,
+        "summary": summary_result,
+        "meta_report": meta_result,
+    }
