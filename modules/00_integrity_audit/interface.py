@@ -23,7 +23,9 @@ def run_module(payload: Dict) -> Dict:
                 with open(path, "r", encoding="utf-8") as file:
                     first = file.readline().strip()
                     if first != "# @lock":
-                        results["missing_locks"].append(path)
+                        results["missing_locks"].append(
+                            path
+                        )
 
     # 2. Check plugin folders
     for mod in os.listdir("modules"):
@@ -46,5 +48,5 @@ def run_module(payload: Dict) -> Dict:
 
     return {
         "status": "fail" if any(results.values()) else "pass",
-        "details": results,
+        "results": results
     }

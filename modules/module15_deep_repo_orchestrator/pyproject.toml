@@ -1,0 +1,19 @@
+[project]
+name = "module15-deep-repo-orchestrator"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "LumenRoseofMyth",email = "lumenroseofmyth@email.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "module15_deep_repo_orchestrator", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

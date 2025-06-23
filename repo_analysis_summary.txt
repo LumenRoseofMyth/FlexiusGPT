@@ -1,4 +1,4 @@
-📦 Repository Analysis Report — 2025-06-23 09:25:36.346905
+📦 Repository Analysis Report — 2025-06-23 10:58:06.252727
 ================================================================================
 
 📁 .
@@ -354,6 +354,8 @@
 
 📁 .\.git\objects\91
 
+📁 .\.git\objects\92
+
 📁 .\.git\objects\93
 
 📁 .\.git\objects\94
@@ -706,6 +708,36 @@
   └── test_11_repo_summaries.py
      ✅ Interface: run_module() detected
 
+📁 .\modules\module11_repo_summaries\tests\__pycache__
+
+📁 .\modules\module15_deep_repo_orchestrator
+  └── interface.py
+     ✅ Interface: run_module() detected
+
+📁 .\modules\module15_deep_repo_orchestrator\src
+
+📁 .\modules\module15_deep_repo_orchestrator\src\module15_deep_repo_orchestrator
+  └── __init__.py
+
+📁 .\modules\module15_deep_repo_orchestrator\tests
+  └── test_interface.py
+     ✅ Interface: run_module() detected
+  └── __init__.py
+
+📁 .\modules\module16_meta_reporter
+  └── interface.py
+     ✅ Interface: run_module() detected
+
+📁 .\modules\module16_meta_reporter\src
+
+📁 .\modules\module16_meta_reporter\src\module16_meta_reporter
+  └── __init__.py
+
+📁 .\modules\module16_meta_reporter\tests_mr
+  └── test_mr.py
+     ✅ Interface: run_module() detected
+  └── __init__.py
+
 📁 .\tests
   └── test_00_integrity_audit.py
      ✅ Interface: run_module() detected
@@ -732,5 +764,7 @@
      ✅ Interface: run_module() detected
   └── test_plugin_interfaces.py
      ✅ Interface: run_module() detected
+
+📁 .\tests\__pycache__
 
 📁 .\__pycache__
