@@ -45,3 +45,7 @@ profile = "black"
 version_variables = ["flexius_monorepo/__init__.py:__version__"]
 branch = "main"
 upload_to_pypi = false
+[tool.poetry.scripts]
+financegpt = "flexius_monorepo.__main__:main"
+[tool.semantic_release.changelog]
+changelog_file = "CHANGELOG.md"
