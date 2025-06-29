@@ -1,0 +1,8 @@
+{
+  // Activate classic “basic” (not strict) type-checking
+  "typeCheckingMode": "basic",
+
+  // Silence noisy “unknown type” nags - we validate at runtime
+  "reportUnknownParameterType": false,
+  "reportUnknownVariableType": false
+}

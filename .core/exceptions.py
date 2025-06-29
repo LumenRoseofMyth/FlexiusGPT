@@ -1,16 +1,15 @@
-# @lock
 """
-Custom core exceptions for FlexiusGPT routing.
+Central core exceptions for FlexiusGPT.
 """
 
 
-class CorePermissionError(PermissionError):
-    """Raised when a call tries to touch protected core without override."""
+class PayloadValidationError(Exception):
+    """Raised when the input payload fails schema validation."""
 
 
-class ModuleInterfaceError(ImportError):
-    """Raised when a module or its run_module entry is missing."""
+class CorePermissionError(Exception):
+    """Raised when a caller tries to invoke protected core logic without override."""
 
 
-class PayloadValidationError(ValueError):
-    """Raised when payload schema validation fails."""
+class ModuleInterfaceError(Exception):
+    """Raised when a module does not implement the required `run_module` interface."""
