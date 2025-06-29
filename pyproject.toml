@@ -24,6 +24,7 @@ pytest-cov = "^6.2.1"
 codecov = "^2.1.13"
 ruff = "^0.12.1"
 python-semantic-release = "^10.1.0"
+pytest-mock = "^3.14.1"
 
 [tool.poetry.urls]
 Homepage = "https://github.com/LumenRoseofMyth/FlexiusGPT"
