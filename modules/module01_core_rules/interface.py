@@ -1,9 +1,12 @@
-from pydantic import BaseModel, ValidationError
 import os
+
+from pydantic import BaseModel
+
 
 class Input(BaseModel):
     action: str
     data: dict
+
 
 def run_module(*, payload: dict) -> dict:
     Input(**payload)  # validation check

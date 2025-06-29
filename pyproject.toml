@@ -1,21 +1,29 @@
 [tool.poetry]
-packages = []
-package-mode = false
-name = "flexius-monorepo"
-version = "1.0.0"
+name        = "flexius-monorepo"
+version     = "1.0.0"
 description = "FlexiusGPT Monorepo"
-authors = ["Flexius Team"]
+authors     = ["Flexius Team"]
+packages    = []
 
 [tool.poetry.dependencies]
+python     = "^3.10"
 jsonschema = "^4.0"
-python = "^3.10"
-pydantic = "^2.11.7"
+pydantic   = "^2.11.7"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.0"
-flake8 = "^6.0"
-black = "^23.0"
+pytest       = "^7.0"
+flake8       = "^6.0"
+black        = "^23.0"
+isort        = "^6.0.1"
+bandit       = "^1.8.5"
+pre-commit   = "^4.2.0"
 
 [tool.poetry.urls]
-"Homepage" = "https://github.com/LumenRoseofMyth/FlexiusGPT"
+Homepage = "https://github.com/LumenRoseofMyth/FlexiusGPT"
 
+[tool.flake8]
+max-line-length = 88
+extend-ignore = [
+  "E203",  # whitespace before : (Black does E203 differently)
+  "W503",  # line break before binary operator (Black’s preference)
+]

@@ -9,14 +9,11 @@ Responsibilities
 * Invoke run_module and propagate result / errors
 """
 from importlib import import_module
-from typing import Dict, Any
+from typing import Any, Dict
 
+from .exceptions import (CorePermissionError, ModuleInterfaceError,
+                         PayloadValidationError)
 from .validator import validate_payload
-from .exceptions import (
-    CorePermissionError,
-    ModuleInterfaceError,
-    PayloadValidationError,
-)
 
 PROTECTED_PREFIXES = ("core.", ".core", "infra.", ".infra", "_")
 

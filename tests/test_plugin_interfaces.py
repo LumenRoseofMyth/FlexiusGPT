@@ -1,5 +1,6 @@
 import os
 
+
 def test_all_modules_have_interface_and_run_module():
     base = "modules"
     missing = []

@@ -1,8 +1,10 @@
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel
+
 
 class Input(BaseModel):
     action: str
     data: dict
+
 
 def run_module(*, payload: dict) -> dict:
     Input(**payload)  # raises ValidationError if invalid

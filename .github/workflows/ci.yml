@@ -88,4 +88,3 @@ jobs:
 
       - name: Run 00_integrity_audit
         run: poetry run pytest -q tests/test_00_integrity_audit.py
-

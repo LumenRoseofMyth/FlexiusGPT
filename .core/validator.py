@@ -2,7 +2,7 @@
 """
 Payload schema and validator for FlexiusGPT.
 """
-from jsonschema import validate, ValidationError
+from jsonschema import ValidationError, validate
 
 SCHEMA = {
     "type": "object",
