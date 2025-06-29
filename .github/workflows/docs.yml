@@ -1,17 +1,18 @@
-name: Deploy Docs
+name: Docs
 
-on: [push]
+on:
+  push:
+    branches: [main]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
-      - name: Install MkDocs
-        run: pip install mkdocs-material
-      - name: Deploy Docs
-        run: mkdocs gh-deploy --force
+          python-version: "3.11"
+      - run: |
+          pip install poetry
+          poetry install --with docs --no-root
+          poetry run mkdocs gh-deploy --force

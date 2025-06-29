@@ -1,1 +1,21 @@
-site_name: My Docs
+site_name: FinanceGPT
+repo_url: https://github.com/LumenRoseofMyth/FlexiusGPT
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - content.code.copy
+nav:
+  - Home: index.md
+  - Modules:
+      - Core: modules/core.md
+      - Debt Strategy: modules/debt.md
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
