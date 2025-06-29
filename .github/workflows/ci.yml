@@ -63,10 +63,10 @@ jobs:
         run: poetry install --no-root
 
       - name: Run pytest
-        run: poetry run pytest -q
+        run: poetry run pytest --cov=. -q
 
       - name: Run integrity module test
-        run: poetry run pytest -q tests/test_module01_core_rules.py
+        run: poetry run pytest --cov=. -q tests/test_module01_core_rules.py
 
 # ─────────────────────────────────── integrity-audit ─────────────────────
   integrity-audit:
@@ -87,4 +87,4 @@ jobs:
         run: poetry install --no-root
 
       - name: Run 00_integrity_audit
-        run: poetry run pytest -q tests/test_00_integrity_audit.py
+        run: poetry run pytest --cov=. -q tests/test_00_integrity_audit.py
