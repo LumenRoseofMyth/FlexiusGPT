@@ -23,6 +23,7 @@ coverage = "^7.9.1"
 pytest-cov = "^6.2.1"
 codecov = "^2.1.13"
 ruff = "^0.12.1"
+python-semantic-release = "^10.1.0"
 
 [tool.poetry.urls]
 Homepage = "https://github.com/LumenRoseofMyth/FlexiusGPT"
@@ -33,3 +34,7 @@ extend-ignore = ["E203", "W503"]
 
 [tool.isort]
 profile = "black"
+[tool.semantic_release]
+version_variables = ["flexius_monorepo/__init__.py:__version__"]
+branch = "main"
+upload_to_pypi = false

@@ -1,0 +1,18 @@
+name: Pre-commit Autoupdate
+on:
+  schedule:
+    - cron: "0 3 1 * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          pip install pre-commit
+          pre-commit autoupdate
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .pre-commit-config.yaml
+          git commit -m "chore: pre-commit autoupdate" || exit 0
+          git push

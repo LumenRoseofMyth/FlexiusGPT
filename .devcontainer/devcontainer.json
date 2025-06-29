@@ -1,0 +1,5 @@
+{
+  "name": "FinanceGPT Dev",
+  "image": "ghcr.io/${localWorkspaceFolderBasename}:latest",
+  "postCreateCommand": "poetry install --with dev --no-root"
+}
