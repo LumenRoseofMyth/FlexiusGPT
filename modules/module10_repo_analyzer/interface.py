@@ -1,14 +1,10 @@
-# modules/module10_repo_analyzer/interface.py
-from pydantic import BaseModel
+"""
+Thin public interface for module10_repo_analyzer.
+"""
 
-from .module10_repo_analyzer import run_analysis
-
-
-class Input(BaseModel):
-    action: str
-    data: dict
+from .module10_repo_analyzer import run_module as _run_module  # re-export
 
 
-def run_module(*, payload: dict) -> dict:
-    Input(**payload)  # validate
-    return run_analysis(payload)
+def run_module(payload: dict):  # noqa: D401, F401  (needed for test harness)
+    """Proxy to the real implementation."""
+    return _run_module(payload)

@@ -1,5 +1,6 @@
 import pytest
-from core.orchestrator import (
+
+from flexius_monorepo.core.orchestrator import (
     CorePermissionError,
     PayloadValidationError,
     call_module_logic,

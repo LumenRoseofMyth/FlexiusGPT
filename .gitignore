@@ -3,3 +3,6 @@ __pycache__/
 .env
 .venv
 site/
+
+# repo-summaries output
+modules/module11_repo_summaries/summaries/

@@ -1,4 +1,4 @@
-from core.exceptions import (
+from flexius_monorepo.core.exceptions import (
     CorePermissionError,
     ModuleInterfaceError,
     PayloadValidationError,

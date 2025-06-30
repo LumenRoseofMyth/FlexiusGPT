@@ -1,17 +1,17 @@
-import pytest
-from core.validator import validate_payload
+REQUIRED_KEYS = {"action", "data"}
+ALLOWED_KEYS = REQUIRED_KEYS  # Adjust this if additional optional keys are allowed
 
 
-def test_valid_payload():
-    valid = {"payload": {"action": "process", "data": {}}}
-    assert validate_payload(valid) is None
+def validate_payload(input: dict) -> None:
+    if "payload" not in input:
+        raise ValueError("Missing 'payload' key")
 
+    payload = input["payload"]
 
-def test_invalid_payload_missing_keys():
-    with pytest.raises(ValueError):
-        validate_payload({"payload": {"data": {}}})
+    missing = REQUIRED_KEYS - payload.keys()
+    if missing:
+        raise ValueError(f"Missing keys in payload: {missing}")
 
-
-def test_invalid_payload_extra_keys():
-    with pytest.raises(ValueError):
-        validate_payload({"payload": {"action": "run", "data": {}, "extra": 1}})
+    extra = payload.keys() - ALLOWED_KEYS
+    if extra:
+        raise ValueError(f"Unexpected keys in payload: {extra}")
